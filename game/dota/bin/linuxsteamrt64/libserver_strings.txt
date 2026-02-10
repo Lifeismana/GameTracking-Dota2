@@ -2690,7 +2690,6 @@ $$%% Null bot mode for unit %s\n
 14CUserMessagePBILi628E23CDOTAUserMsg_TimerAlertL19NetChannelBufType_t1EE
 14CUserMessagePBILi629E26CDOTAUserMsg_MadstoneAlertL19NetChannelBufType_t1EE
 14CUserMessagePBILi630E37CDOTAUserMsg_CourierLeftFountainAlertL19NetChannelBufType_t1EE
-14CUserMessagePBILi631E50CDOTAUserMsg_MonsterHunter_InvestigationsAvailableL19NetChannelBufType_t1EE
 14CUserMessagePBILi632E49CDOTAUserMsg_MonsterHunter_InvestigationGameStateL19NetChannelBufType_t1EE
 14CUserMessagePBILi633E36CDOTAUserMsg_MonsterHunter_HuntAlertL19NetChannelBufType_t1EE
 14CUserMessagePBILi634E27CDOTAUserMsg_TormentorTimerL19NetChannelBufType_t1EE
@@ -18375,7 +18374,6 @@ $$%% Null bot mode for unit %s\n
 51CMsgSurvivorsUserData_AttributeLevelsEntry_DoNotUse
 51CUserMsg_ParticleManager_SetSceneObjectTintAndDesat
 51CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE
-52CDOTAUserMsg_MonsterHunter_InvestigationsAvailable_t
 52CDOTAUserMsg_MuertaReleaseEvent_AssignedTargetKilled
 52CDOTA_Ability_CDOTA_Ability_Special_Bonus_Unique_Nyx
 52CDOTA_Ability_Largo_AmphibianRhapsody_GoodVibrations
@@ -25315,7 +25313,6 @@ GetHeroNameByID_Script
 GetHeroNameForUnitName
 GetHeroNameForUnitName_Script
 GetHeroPickState
-GetHeroRandomHeroDefinition
 GetHeroUnitNameByID
 GetHeroUnitNameByID_Script
 GetHitgroupDisableListSaveRestoreOps
@@ -43038,7 +43035,6 @@ m_pSpringJoint
 m_pSubclassVData
 m_pSurfaceData
 m_pVPhysicsAggregate
-m_pWorldDefinition != nullptr
 m_pfnBlocked
 m_pfnMoveDone
 m_pfnTouch
@@ -47045,15 +47041,10 @@ monkey_king_transfiguration
 monkey_king_tree_dance
 monkey_king_untransform
 monkey_king_wukongs_command
-monster_hunter.hunt_on
-monster_hunter.hunt_prevented
 monster_hunter.poogie.death
 monster_hunter.poogie.hi5
 monster_hunter.poogie.hi5.success
 monster_hunter.poogie.hi5.success.rare100
-monster_hunter.quest_fail
-monster_hunter.quest_success
-monster_hunter.quest_success.3d
 monster_kill
 month
 mood
