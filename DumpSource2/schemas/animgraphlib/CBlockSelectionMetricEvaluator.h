@@ -2,11 +2,11 @@
 //	"_class": "CBlockSelectionMetricEvaluator",
 //	"m_means":
 //	[
-//		422550015135711232.000000
+//		7089212874735096652890112.000000
 //	],
 //	"m_standardDeviations":
 //	[
-//		422551114647339008.000000
+//		7089231321479170362441728.000000
 //	],
 //	"m_flWeight": 0.000000,
 //	"m_nDimensionStartIndex": -1
