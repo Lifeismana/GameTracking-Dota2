@@ -31182,6 +31182,7 @@ Attempting to precache resource, but resource name is NULL or empty\n
 Attempting to re-establish GC connection.\n
 Attempting to select already-banned hero: %s!\n
 Attempting to select already-selected hero: %s!\n
+Attempting to set nonresident model '%s' for item ID %llu item Def %u (%s) owner %d\n
 Attrib_Autograph
 Attrib_AutographTool
 Attrib_Community_Description
@@ -45128,6 +45129,7 @@ G0Tv~:
 G1b1
 G2bQ
 G2xVo\?
+G<Ul
 GAME INSTRUCTOR: 
 GAMEEVENTSMANAGER002
 GAMEINSTRUCTOR_SAVE_RESTORE_VERSION
@@ -59979,7 +59981,6 @@ ShowMana
 ShowMapLoadingScreen
 ShowMapVariantControls
 ShowMarkForBuy
-ShowMarkForSellNewBadge
 ShowMarker
 ShowMatchDiscardedSection
 ShowMatchQualityInfo

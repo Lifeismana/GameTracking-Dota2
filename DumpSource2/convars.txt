@@ -5446,9 +5446,6 @@ dota_map_stats_tracking_enable false (developmentonly clientdll cheat)
 dota_map_stats_use_fake_stats false (developmentonly clientdll cheat)
 	Use fake map stats
 
-dota_mark_for_sell_new_badge true (clientdll archive)
-	Show the Mark for Sell new badge
-
 dota_market_main_uses_public_pricing true (developmentonly clientdll)
 	Always use public market pricing for Main Branch builds, even in other Steam universes
 
