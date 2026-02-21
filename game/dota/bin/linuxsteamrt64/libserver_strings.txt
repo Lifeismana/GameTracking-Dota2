@@ -19165,7 +19165,6 @@ $$%% Null bot mode for unit %s\n
 ?16ILoggingListener
 ???CRR_Response bogus index
 ?fff?
-@@8zJ
 @end_camera
 @player_start_teleport_destination
 A Dota Bot Team Commander
@@ -55930,6 +55929,7 @@ yfriction
 yielding
 ymax
 ymin
+zD8K
 zFar
 zNear
 zPos
