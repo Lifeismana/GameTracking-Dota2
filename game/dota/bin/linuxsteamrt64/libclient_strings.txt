@@ -64881,6 +64881,7 @@ Z~wl
 \nAction '%s' score '%s' didn't specify valid 'charges'
 \nAction '%s' specifies out-of-range level %d for action '%s'
 \nDictionary: %s\n
+\nFailed to load season definition file '%s' for event %d.
 \nFailed to load single event definition file '%s' for event '%s'.
 \nFinished generating SSTs (%.1f seconds)\n\n
 \nSimulating Entities:\n\n
@@ -69691,6 +69692,7 @@ disableclose
 disablecreepspawn
 disabled by parent
 disabled for fips
+disabledInclude
 disabled_features
 disabledoubleclick
 disablefow

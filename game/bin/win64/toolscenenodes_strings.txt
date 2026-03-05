@@ -16918,7 +16918,6 @@ m_flConstraintMinX
 m_flConstraintMinY
 m_flConstraintMinZ
 m_flDeltaValue
-m_flDensity
 m_flDimensionsInOutValue
 m_flDimensionsSizeValue
 m_flDisplayRadius

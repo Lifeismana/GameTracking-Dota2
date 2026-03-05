@@ -42990,7 +42990,6 @@ m_flConstraintMinY
 m_flConstraintMinZ
 m_flDampingConstant
 m_flDeltaValue
-m_flDensity
 m_flDesiredMidPoint
 m_flDimensionsInOutValue
 m_flDimensionsSizeValue

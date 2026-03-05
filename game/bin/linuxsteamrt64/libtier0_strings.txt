@@ -667,7 +667,6 @@ $xmm9
 3Pzr)
 3R`w
 3o=q
-3u\jd
 3wl'
 40CVProfileOutputColumn_AverageTimePerCall
 41CVProfileOutputColumn_AverageTimePerFrame
@@ -2452,6 +2451,7 @@ C_INIT_CreateInEpitrochoid
 C_INIT_CreateOnModel
 C_INIT_CreateOnModelAtHeight
 C_INIT_CreateSequentialPath
+C_INIT_CreateSpiralSphere
 C_INIT_CreateWithinBox
 C_INIT_CreateWithinSphere
 C_INIT_CreateWithinSphereTransform
@@ -7515,6 +7515,7 @@ m_flConstValue
 m_flDegrees
 m_flDegreesMax
 m_flDegreesMin
+m_flDensity
 m_flDuration
 m_flDurationSec
 m_flEmissionDuration
@@ -7661,6 +7662,7 @@ m_nControlPointNumber
 m_nControlPointNumberMax
 m_nControlPointRangeMax
 m_nDeltaControlPoint
+m_nDensity
 m_nElementID
 m_nEndCP
 m_nFeatheringMode
@@ -11463,6 +11465,7 @@ vpcf61
 vpcf62
 vpcf63
 vpcf64
+vpcf65
 vpcf7
 vpcf8
 vpcf9

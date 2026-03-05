@@ -15,7 +15,6 @@
  <-- Retval '%s'
  Child collection: [%p]
  Child: 
- Pi0&
  Vector b
  [*OBSERVABLE*]
  animtime[

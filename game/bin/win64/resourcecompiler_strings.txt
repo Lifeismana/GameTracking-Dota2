@@ -20547,7 +20547,6 @@ $prefix_element$
 0;Q5[
 0<cz
 0E>X
-0L8W
 0M2~@p
 0T.Q
 0W/5
@@ -20559,6 +20558,7 @@ $prefix_element$
 0\tV_isfinited
 0e\r8
 0iN>/
+0l8W
 0pp@5tqE?|sO541
 0tU+xc:
 0x%llx
@@ -21152,7 +21152,7 @@ $prefix_element$
 ?FixSlashes@CUtlString@@QEAAXD@Z
 ?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?FixupPathName@CUtlString@@QEAAXXZ
-?Foot Cycle Override toe lift frame is larger than the number of frames
+?Foot Cycle Override toe lift frame is less than zero
 ?ForEachInBox@CVertexKDTree@@QEBAXAEBV?$Vec3D@M@@0AEBV?$function@$$A6AXPEBM@Z@std@@H@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Format@CUtlString@@QEAAHPEBDZZ
@@ -21899,7 +21899,6 @@ Aim Matrix yaw offset %.3f is > max yaw %.3f
 Aim Offset
 Air/Cloth Density implies there is no air pressure. Please specify a reasonable positive number. In normal sea level atmospheric pressure on Earth 1 ~= Chiffon, 3-4 = heavy silk or office paper, 10 = heavy duty tarp
 AirToCloth
-AjP$W
 AlembicLoader_BSplineCurveVertexCount
 AlembicLoader_GroomMeshFile
 Algo
@@ -29288,7 +29287,7 @@ Foot Cycle Override start frame is larger than the number of frames
 Foot Cycle Override start frame is less than zero
 Foot Cycle Override toe land frame is larger than the number of frames
 Foot Cycle Override toe land frame is less than zero
-Foot Cycle Override toe lift frame is less than zero
+Foot Cycle Override toe lift frame is larger than the number of frames
 Foot Lock node (%s): Failed to find foot with name "%s"
 Foot Lock node (%s): No feet defined; node will do nothing 
 Foot Locking
@@ -44993,7 +44992,6 @@ m_flDefault
 m_flDelayLeft
 m_flDelayRight
 m_flDeltaValue
-m_flDensity
 m_flDesiredDuration
 m_flDesiredVelocity
 m_flDestinationValue

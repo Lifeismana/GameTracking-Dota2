@@ -14422,7 +14422,6 @@ $x(<*L(^$*.d$40.2Z$D6@$Q
 <font color=red>&nbsp;&nbsp;ERROR: Failed to read VTEX file.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to read file.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to save kv1: %s.</font><br>\n
-<font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3 to buffer: %s.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3: %s.</font><br>\n
 <font color=red>&nbsp;&nbsp;ERROR: Failed to write fixed-up data %s</font><br>\n
 <font color=red>ERROR: Failed to load file %s.</font><br>\n
@@ -16426,6 +16425,7 @@ Body Heading
 Body Vector
 BodyGroupList
 Bone "%s" parent bone %d doesn't exist.  Only %d bones currently defined.\n
+Bone "%s" specified as bone %d but should be bone %d\n
 Bone %d to %d
 Bone '%s' already existed in the bind pose
 Bone '%s' already existed in the mesh
@@ -16809,6 +16809,7 @@ CMAD CheckForMoves \n
 CMAD CopyRename Compiling %s\n
 CMAD CopyRename END Compiling %s\n
 CMAD DotaSpecialException %s in %s\n
+CMAD ERROR %s %s\n
 CMAD ERROR (INFO) DMX DMFILEID_INVALID %s\n
 CMAD ERROR (info) FBX L2 Version out of range, cur %d, min %d, max %d %s #%d\n
 CMAD ERROR INFO bad path %s\n
@@ -25290,6 +25291,7 @@ Zpm"U
 \ng default\n
 \nh?oT
 \nk>oB
+\r<font color=red>&nbsp;&nbsp;ERROR: Failed to save kv3 to buffer: %s.</font><br>\n
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?event@QObject@@UEAA_NPEAVQEvent@@@Z
 \r?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
@@ -25304,8 +25306,6 @@ Zpm"U
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z
 \r?initPainter@QWidget@@MEBAXPEAVQPainter@@@Z
-\rBone "%s" specified as bone %d but should be bone %d\n
-\rCMAD ERROR %s %s\n
 \rGraph Object is null
 \rModelDoc
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
@@ -25318,9 +25318,8 @@ Zpm"U
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
 \r\tV_expf
-\rm_fileName
 \rp\f`\v0\nP!'\f
-\rsmartprop2
+\rvsmart
 \src\shaders\
 \t2t4J6$"$
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
@@ -28781,7 +28780,6 @@ m_flDampedValue
 m_flDebugNormalizedLength
 m_flDefault
 m_flDeltaValue
-m_flDensity
 m_flDimensionsInOutValue
 m_flDimensionsSizeValue
 m_flDisplayRadius
@@ -31377,7 +31375,6 @@ vs_5_0
 vs_6_0
 vscale
 vsky
-vsmart
 vsubgrph
 vsutils_py
 vtex
@@ -31453,6 +31450,7 @@ yaw_stiffness
 yields
 z00.
 z000.
+z>Hk
 zDconst char *__cdecl Reflection::Internal::GetFuncName<class CFootPinningPoseOperation>(void)
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\nB\fz

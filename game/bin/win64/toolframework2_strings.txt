@@ -16483,7 +16483,6 @@ m_flBlendWeightFullDenstity
 m_flBlendWeightMax
 m_flBlendWeightMin
 m_flBlendWeightMinScale
-m_flDensity
 m_flMaxRadians
 m_flMaxSurfaceSlope
 m_flMinRadians

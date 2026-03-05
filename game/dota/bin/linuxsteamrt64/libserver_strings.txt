@@ -36130,6 +36130,7 @@ Zone2Distance
 \nAction '%s' score '%s' didn't specify valid 'charges'
 \nAction '%s' specifies out-of-range level %d for action '%s'
 \nDictionary: %s\n
+\nFailed to load season definition file '%s' for event %d.
 \nFailed to load single event definition file '%s' for event '%s'.
 \nSimulating Entities:\n\n
 \nUnknown reward type '%s' for action '%s' at score '%s'
@@ -38592,6 +38593,7 @@ disable_hero_portrait_override
 disable_merging
 disable_mip_gen
 disabled,q=1
+disabledInclude
 disabledValue
 disablelowviolence
 disablereceiveshadows
@@ -55929,7 +55931,7 @@ yfriction
 yielding
 ymax
 ymin
-zD8L
+zD8Z
 zFar
 zNear
 zPos
