@@ -19399,7 +19399,6 @@ ADDED %s (%s) to transition.\n
 ADDED.\n
 ADJACENCY
 AD_DVCS
-AEJ 
 AES-128-CBC
 AES-128-CBC-HMAC-SHA1
 AES-128-CBC-HMAC-SHA256
@@ -29548,6 +29547,7 @@ Move To Path Node [name=%s]
 Move to Mark
 Move to a target to attack.
 Move to follow a unit.
+MoveCameraToLocation
 MoveDistance
 MovePingSound
 MovePlayersRadius
@@ -29577,6 +29577,7 @@ MovementSpeed
 MovementSpeedActivityModifiers
 MovementTurnRate
 Movers
+Moves the camera to a position.
 Moveto: %s
 Moving away as an escape.
 Muerta Release Minigame: Finished Initialization\n
@@ -55935,6 +55936,7 @@ yfriction
 yielding
 ymax
 ymin
+zD8_
 zFar
 zNear
 zPos
