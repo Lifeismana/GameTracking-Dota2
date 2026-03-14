@@ -7,7 +7,7 @@ cd "${0%/*}"
 echo "Processing Dota 2..."
 
 set +e
-../tools/dump_source2.sh dota DOTA
+../tools/dump_source2.sh DOTA
 DUMPER_EXIT_CODE=$?
 set -e
 
@@ -22,7 +22,7 @@ ProcessToolAssetInfo
 
 FixUCS2
 
-CreateCommit "$(grep "ClientVersion=" game/dota/steam.inf | grep -o '[0-9\.]*')" "${1:-}"
+CreateCommit "$(grep "ClientVersion=" game/dota/steam.inf | grep -o '[0-9\.]*')" "$(grep -o '[0-9\.]*' steam_buildid.txt)"
 
 echo "Done"
 
