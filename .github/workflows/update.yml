@@ -18,7 +18,9 @@ jobs:
         permissions:
             contents: write
         uses: steamtracking/gametracking/.github/workflows/gametracking.yml@master    
-        secrets: inherit
+        secrets: 
+            STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+            STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
         with:
           branch: ${{ github.event.inputs.branch }}
           appid: 570
