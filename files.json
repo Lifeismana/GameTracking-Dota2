@@ -12,19 +12,11 @@
 	],
 	"373306": // dota 2 linux
 	[
-		"regex:.+?\\.(so|so\\.[0-9]+|sh)",
+		"regex:.+?\\.sh",
 		"regex:.+?_dir\\.vpk",
 	],
 	"373303": // dota 2 windows
 	[
-		"game/bin/win64/bakedlodbuilder.dll",
-		"game/bin/win64/physicsbuilder.dll",
-		"game/bin/win64/resourcecompiler.dll",
-		"game/bin/win64/subtools/bugreporter_subtool.dll",
-		"game/bin/win64/subtools/netgraph_subtool.dll",
-		"game/bin/win64/toolframework2.dll",
-		"game/bin/win64/toolscript.dll",
-		"game/bin/win64/vfxcompile.dll",
-		"game/bin/win64/visbuilder.dll"
+		"regex:.+?\\.(dll|exe)",
 	],
 }
