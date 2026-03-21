@@ -7033,25 +7033,25 @@ dota_save_sets_max_per_hero 0 (developmentonly clientdll hidden missing1 defensi
 dota_save_sets_total 0 (developmentonly clientdll hidden missing1 defensive)
 	<no description>
 
-dota_saved_camera_pos_1 [-2230, 1630, -2230] (clientdll archive per_user)
+dota_saved_camera_pos_1 [-2230, 1630, 0] (clientdll archive per_user)
 	<no description>
 
 dota_saved_camera_pos_10 [0, 0, 0] (clientdll archive per_user)
 	<no description>
 
-dota_saved_camera_pos_2 [2800, -2345, 2800] (clientdll archive per_user)
+dota_saved_camera_pos_2 [2800, -2345, 0] (clientdll archive per_user)
 	<no description>
 
-dota_saved_camera_pos_3 [3870, -1930, 3870] (clientdll archive per_user)
+dota_saved_camera_pos_3 [3870, -1930, 0] (clientdll archive per_user)
 	<no description>
 
-dota_saved_camera_pos_4 [-6220, 3645, -6220] (clientdll archive per_user)
+dota_saved_camera_pos_4 [-6220, 3645, 0] (clientdll archive per_user)
 	<no description>
 
-dota_saved_camera_pos_5 [-530, -400, -530] (clientdll archive per_user)
+dota_saved_camera_pos_5 [-530, -400, 0] (clientdll archive per_user)
 	<no description>
 
-dota_saved_camera_pos_6 [6145, -2840, 6145] (clientdll archive per_user)
+dota_saved_camera_pos_6 [6145, -2840, 0] (clientdll archive per_user)
 	<no description>
 
 dota_saved_camera_pos_7 [0, 0, 0] (clientdll archive per_user)
@@ -10012,7 +10012,7 @@ mat_max_lighting_complexity 8 (cheat)
 mat_overdraw 0 (cheat)
 	Visualize overdraw
 
-mat_overdraw_color [0.075, 0.15, 0.075] (cheat)
+mat_overdraw_color [0.075, 0.15, 0.3] (cheat)
 	<no description>
 
 mat_shader_cache true (developmentonly)
@@ -10021,7 +10021,7 @@ mat_shader_cache true (developmentonly)
 mat_shading_complexity false (cheat)
 	Visualize shading complexity
 
-mat_shading_complexity_color [1, 0.5, 1] (cheat)
+mat_shading_complexity_color [1, 0.5, 0.25] (cheat)
 	<no description>
 
 mat_shading_complexity_max_instruction_count 1024 (cheat)
@@ -12607,7 +12607,7 @@ r_wait_on_present false (developmentonly defensive)
 r_world_frame_load_threshold_ms 10 (developmentonly defensive)
 	<no description>
 
-r_world_wind_dir [0.707, 0.707, 0.707] (developmentonly defensive)
+r_world_wind_dir [0.707, 0.707, 0] (developmentonly defensive)
 	<no description>
 
 r_world_wind_frequency_grass 0.03 (developmentonly defensive)
@@ -12616,7 +12616,7 @@ r_world_wind_frequency_grass 0.03 (developmentonly defensive)
 r_world_wind_frequency_trees 0.003 (developmentonly defensive)
 	<no description>
 
-r_world_wind_offset_speed [0.25, 0.3, 0.25] (developmentonly defensive)
+r_world_wind_offset_speed [0.25, 0.3, 0.2] (developmentonly defensive)
 	<no description>
 
 r_world_wind_smooth_time 2 (developmentonly defensive)
