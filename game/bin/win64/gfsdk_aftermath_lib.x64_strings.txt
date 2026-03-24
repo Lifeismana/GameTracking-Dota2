@@ -961,6 +961,7 @@ $@(2.(0f6(:b@
 2N4"6Z8Z:T<(>Z@ZBTD(FZH^JTL(NZPZRTT(VZXZZT\(^Z`ZbTd(f
 2N4"6Z8Z:T<(>Z@^BTD(FZHZJTL(NZPZRTT(VZXZZT\(^Z`ZbTd(fZhZjTl(n
 2\>lX4hE
+2\vpt
 2dq.256
 2dq.512
 2f.r
@@ -1087,7 +1088,6 @@ $@(2.(0f6(:b@
 =5au
 >global
 @08B
-@08N
 @20z\n
 @HJP~
 @HPV
@@ -3901,7 +3901,6 @@ RT_INTERNAL_FUNC_LABEL
 RT_INTERNAL_FUNC_TYPE
 RUNE
 R\fpt
-R\vpt
 R]Fe
 Radians
 Ran out of stack space trying to match the regular expression.
@@ -6356,7 +6355,6 @@ invalid element type for struct
 invalid empty array initializer
 invalid extractelement operands
 invalid field '
-invalid format specifier
 invalid forward reference to function '
 invalid forward reference to function as global value!
 invalid function forward reference in uselistorder_bb
@@ -6379,7 +6377,6 @@ invalid number; expected digit after exponent sign
 invalid numeric label in uselistorder_bb
 invalid operand type for instruction
 invalid operands to shufflevector
-invalid precision
 invalid redefinition of function '
 invalid regular expression
 invalid repetition count(s)
@@ -11662,6 +11659,8 @@ ndn.w
 nds4
 ndscale.p
 ndscale.s
+negative precision
+negative width
 negh
 nehalem
 neon
@@ -11908,6 +11907,7 @@ ppc_fp128
 ppcf128
 pprox.f
 pr.512
+precision is not integer
 prefetch
 prefix
 prescott
@@ -12376,7 +12376,6 @@ taid.
 tail
 tail 
 tanpi
-target
 target datalayout = "
 target triple = "
 task_
@@ -12713,6 +12712,7 @@ weak_odr
 webkit_jscc
 westmere
 while parsing 
+width is not integer
 wine_get_version
 wlaf47906in
 write area exhausted

@@ -20,6 +20,7 @@
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
  (%s ZSTD compressed %.1f%%)
+ (%s encoded @ %.1f bits per meshlet triangle v%i)
  (%s encoded @ %.1f bytes per triangle v%i)
  (%s encoded @ %.1f bytes per vertex v%i)
  (INVALID PSS PARAMETERS)\n
@@ -77,6 +78,7 @@
 != (or missing)
 !AECO
 !HRN
+!\tV_fflush
 !expected_len || s->s3->previous_client_finished_len
 !expected_len || s->s3->previous_server_finished_len
 !fUY\n
@@ -120,6 +122,7 @@ $HypYkf
 $J6"t
 $JXsZ
 $XI(6
+$\tV_fileno
 $d`D-laM
 $f;Zv9l\r
 $g#8lu#
@@ -191,7 +194,6 @@ $prefix_element$
 %E5u(
 %Gdnv
 %I64i
-%\tV_ftell
 %\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v
 %aIwV
 %bw+s
@@ -280,7 +282,6 @@ $prefix_element$
 'DAE
 'O6n
 'Z9t%
-'\tV_fwrite
 'g0dW
 'id' or 'name' missing
 'pSN.F
@@ -301,6 +302,7 @@ $prefix_element$
 (U1h
 (ZdOt\n&
 ([%d]%s:%g)
+(\tV_fopenUTF8
 (d4t8
 (fS{ggRcjh
 (h`H1pqA
@@ -1148,7 +1150,6 @@ $prefix_element$
 /2x1
 /5dJ
 /RIv
-/\tV_isdigit_str
 /content/
 /game/
 /src/
@@ -1169,58 +1170,69 @@ $prefix_element$
 0123456789ABCDEF
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
-016@
+013@
 02V8[
-033@
-035@
-045@
 05=k
 083@
 086@
 08bX
 09,h
-093@
+097@
 0;Q5[
 0<cz
+0A3@
+0A5@
 0B3@
+0B5@
+0C3@
 0D3@
-0E3@
-0G4@
+0F3@
+0F4@
 0H3@
-0H4@
-0H6@
 0I3@
+0K6@
 0M2~@p
+0M3@
+0M4@
 0MD5
-0N3@
-0P3@
-0Q6@
-0R3@
+0N6@
+0R5@
 0S3@
-0T3@
-0U3@
 0W/5
 0X3@
-0X6@
 0Y3@
+0Z5@
+0Z6@
 0Z@q
 0\r0#0)070;0U0Y0[0g0q0y0}0
-0a3@
 0b3@
+0d3@
+0e3@
 0e\r8
-0f6@
+0g4@
+0h3@
+0h4@
 0h6@
-0i6@
+0i3@
 0iN>/
-0j6@
-0m3@
+0l6@
+0n3@
+0p3@
 0pp@5tqE?|sO541
-0r5@
+0r3@
+0r6@
+0s3@
+0s6@
+0t3@
+0t6@
 0tU+xc:
-0u5@
-0v6@
+0u3@
+0u6@
+0w6@
 0x%llx
-0z4@
+0x3@
+0y3@
+0z6@
 0}dV
 1!1'1-191C1E1K1]1a1g1m1s1
 1#IND
@@ -1267,7 +1279,6 @@ $prefix_element$
 2\fWQx
 2\rU2t
 2\rlhp
-2\vpD
 2^pV
 2a"l
 2bT~
@@ -1308,6 +1319,7 @@ $prefix_element$
 4Mv8
 4Zis
 4\fPl
+4\tV_ftell
 4f h
 4tpD
 4zj@1;IJ
@@ -1343,6 +1355,7 @@ $prefix_element$
 6H,N
 6O|T%
 6Qd=
+6\tV_fwrite
 6_wEX
 6afD
 6bX+
@@ -1380,64 +1393,67 @@ $prefix_element$
 7zRQ
 8+Qw
 8-byte data pool
-803@
 80F2<
-813@
-823@
+816@
 826@
 82\n:XPH
-836@
+833@
+846@
 851Pe
 853@
-855@
-865@
-875@
-885@
+866@
 893@
 8<pl
 8= zp
-8A3@
 8A6j
 8C3@
 8ClipBoard
 8Csinf
-8F3@
-8F6@
+8E3@
 8G3@
 8GZS
-8I6@
 8J3@
 8L3@
-8M3@
-8N3@
+8L6@
 8O3@
 8P3@
-8P5@
 8P6@
+8Q3@
 8R3@
-8R6@
-8S6@
+8S5@
 8SIffK5W
 8TZvrv<
+8U3@
+8U6@
+8V6@
+8W5@
+8X5@
+8Y3@
+8Y5@
 8Y6@
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
 8]Vc2
+8a3@
 8a6@
 8b6@
+8c3@
+8c6@
 8ca1
 8dS2
-8g6@
-8k6@
-8l5@
-8n5@
-8o5@
-8p5@
+8f3@
+8g3@
+8i6@
+8j3@
+8j6@
+8l3@
+8m3@
+8n3@
+8o3@
+8p3@
 8pe7?
 8q-S*]X
+8r3@
 8sOy
-8t5@
-8u6@
-8x6@
 9#9%9)9/9=9A9M9[9k9y9}9
 9)PF
 9)jx
@@ -1544,6 +1560,7 @@ $prefix_element$
 >7^0g
 >Sem
 >WK6
+>\tV_isdigit_str
 >\v?\r?7?;?=?A?Y?_?e?g?y?}?
 >cQ6
 >fN46R^
@@ -1593,8 +1610,9 @@ $prefix_element$
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
@@ -1727,7 +1745,7 @@ $prefix_element$
 ?StripExtension@CUtlString@@QEBA?AV1@XZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
 ?StripTrailingSlash@CUtlString@@QEAAXXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
+?ThreadAtomicNotifyOne@@YAXPEBI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?ToLowerFast@CUtlString@@QEAAXXZ
 ?Trim@CBufferString@@QEAAPEBDPEBD@Z
@@ -2044,7 +2062,6 @@ ApplicationInfo
 April
 AreFileApisANSI
 Arms
-AssertFatalCast
 AssetBrowserSystem_001
 AssetEditInfoFilterFunc_t
 AssetEngineCommand_t
@@ -2248,7 +2265,6 @@ BlockEncodingForResource - Failed to load asset types configuration file: %s\n
 Blue
 BoX5
 Body
-Bpv/@
 BrowInV
 Bs'n
 Bu 5
@@ -2265,6 +2281,7 @@ C7HSY
 C:/Program Files/Beyond Compare 4/BCompare.exe
 C:\Program Files (x86)\Beyond Compare 3\BCompare.exe
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\utils\resourceinfo\_vpc_resourceinfo\default\win64\_msvc_\Retail\resourceinfo.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\appframework\gameinfo.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\tinyexr_impl.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
@@ -2576,6 +2593,7 @@ CSPName
 CSemiAutoRWLockT<class CThreadRWLock_FastRead>::LockForWrite
 CSemiAutoRWLockT<class CThreadRWLock_FastRead>::Unlock
 CSimpleAssetTypeInfo
+CSubassetTypeInfo
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
@@ -2610,8 +2628,8 @@ CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
@@ -2666,6 +2684,7 @@ ClQ(|
 Class data is a '%s', not a table\n
 Class does not allow allocation from its schema binding
 Cleanup
+ClientServerSharedHandleSystem001
 ClientToolsInfo_001
 CloseClipboard
 CloseHandle
@@ -2983,7 +3002,6 @@ DYNAMIC_CTRL
 DYNAMIC_GET_DATA_CTX
 DYNAMIC_LOAD
 DYNAMIC_SET_DATA_CTX
-D\tV_log2f
 Dampen Movement Relative to Control Point
 Data Encipherment
 DataModel needs the file system to function
@@ -3001,6 +3019,7 @@ Decompression failure
 Default_Keys
 DeleteCriticalSection
 DemoUpconverterVersion001
+Density Scale
 Dependencies
 DeregisterEventSource
 Detail Prop Type
@@ -3013,6 +3032,7 @@ Digital Signature
 DirName
 DirName: 
 Directory
+DisallowGameInfoConditionals
 Distance Between Control Points Scale
 Distance to Control Points Scale
 Dm Memory usage: type\t\t\t\tcount\ttotalsize\twastage %%\touter\t\tinner\t\tdatamodel\trefs\t\ttree\t\tatts\t\tdata\t(att count)\n
@@ -3420,6 +3440,7 @@ Error reading from loaded packed store "%s"
 Error reading in array attribute "%s" element %d
 Error: %s\n
 EvLa
+EvalGameInfoConditionals
 Ew`)9Q
 Excluded
 Executable Location
@@ -3524,15 +3545,15 @@ FloatBitMap_t::LoadFromBuffer: Received improper buffer size, skipping!\n
 FloatBitMap_t::LoadFromBuffer: Unsupported color format, skipping!\n
 FloatBitMap_t::WriteInMemoryEXRFast
 FloatBitMap_t::WriteInMemoryEXRFast(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\tinyexr_impl.cpp:170
-FloatBitMap_t::WriteToBuffer(989): Unsupported color format "%s", skipping!\n
+FloatBitMap_t::WriteToBuffer(993): Unsupported color format "%s", skipping!\n
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!\n
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1676
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1788
-FloatBitMap_t::WriteToBufferDXT_atitc(1047): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1132): Unsupported output color format "%s"!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1141): Error! Allocated %llu bytes when ATI's lib requires %d bytes!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1149): Error %d returned from ATI_TC_ConvertTexture()!\n
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1912
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1680
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1792
+FloatBitMap_t::WriteToBufferDXT_atitc(1051): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1136): Unsupported output color format "%s"!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1145): Error! Allocated %llu bytes when ATI's lib requires %d bytes!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1153): Error %d returned from ATI_TC_ConvertTexture()!\n
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp:1916
 FlsAlloc
 FlsFree
 FlsGetValue
@@ -3725,29 +3746,25 @@ Gz,J
 G{Ol
 H.aR
 H0+G+R
-H03@
-H06@
 H13@
-H23@
+H36@
 H43@
-H45@
 H5gRR-
 H8,2
 H83@
-H86@
 H8xp
 H=`HY
 H@H9xqI
-HB4@
+HA3@
+HA5@
+HB3@
+HB5@
 HBJ\nTRF
 HD3@
-HE3@
 HEAD 
-HG3@
 HH&a
-HH6@
+HH3@
 HH:mm:ss
-HI3@
 HIGH
 HK6@
 HMAC
@@ -3756,40 +3773,48 @@ HMAC routines
 HMAC-MD5
 HMAC-SHA1
 HMAC_Init_ex
+HN3@
+HO3@
+HO6@
 HO8?
-HP5@
-HQ6@
-HR6@
-HS3@
+HP3@
+HQ3@
+HR3@
+HR5@
 HT3@
-HT4@
-HU3@
+HT6@
+HU5@
 HU>mA$_E*
-HV3@
 HV6@
 HWyn
-HX4@
-HX6@
+HX3@
 HY6@
-HZ3@
+HZ5@
+HZ6@
+Ha6@
 Hammer temp export
 HammerMapLoader001
 Hash Algorithm: 
+Hb4@
+Hb6@
 HbAta
 Hc S
+Hc6@
 Hc8a"
+Hd3@
 HdEu
+He3@
 Heap32First
 Heap32ListFirst
 Heap32ListNext
 Heap32Next
 HelpSystem_001
+Hg3@
 Hg>?S
-Hh6@
 Hhr+g
+Hi3@
+Hi6@
 Hk6@
-Hn5@
-Ho5@
 Hofw
 Hold Instruction Call Issuer
 Hold Instruction Code
@@ -3800,9 +3825,18 @@ Hostname mismatch
 Hp)X?
 Hq,r/f
 HqI9x
+Hs3@
+Hs6@
+Ht3@
+Ht4@
 Ht4qw
-Hu5@
+Ht6@
+Hu3@
+Hv3@
 Hv6@
+Hw6@
+Hx4@
+Hz3@
 H{1S
 I"9|OxTex
 I+8G
@@ -3870,6 +3904,7 @@ Ij)s
 Ik\f`dub`D
 Illegal to wait on a task in a Windows Runtime STA
 Images (%u):\n
+Impl::AssertCastImpl
 Independent
 Inert VModuleMetadata
 InfoDataFilter_t
@@ -3994,7 +4029,7 @@ LG.HK
 LINEAR_D24S8
 LINEBUFFER_CTRL
 LIST_ADD
-LM3@
+LJ3@
 LOAD
 LOAD_IV
 LOG_DEVELOPER
@@ -4024,6 +4059,7 @@ LightmapUVW
 LipLoV
 LipUpV
 LipsV
+Lm3@
 Load certs from files in a directory
 Load file into cache
 LoadKV3Object error: %s\n
@@ -4170,7 +4206,8 @@ Minimum blend weight value for which the model will be placed. If the blend weig
 Minimum random scale value to apply to the model.
 Minimum range of random offset to apply along the model's local up direction
 Minimum range of the random rotation to apply the model. Random rotation is applied in the local space of the model. Rotation values are ordered pitch, yaw, roll.
-Minimum scale to apply to the model based on the blend weight. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
 Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value based on the surface normal where horizontal surface (floor) is 0, vertical surface (wall) is 90, and a horizontal upside down surface (ceiling) is 180.
 Mismatched CTier2AppSystemDict::SetAllowAddonChanges!!!\n
 Missing data block
@@ -4178,6 +4215,7 @@ Missing file '%s'
 Missing snapshot buffer block
 MlT8
 Mlt(J
+Mod specifies 'DisallowGameInfoConditionals' but %d conditionals were evaluated
 Model
 Model to be displayed.
 ModelDocUtils001
@@ -4197,7 +4235,6 @@ Movement Lock to Control Point
 Movement Maintain Position Along Path
 Movement Match Particle Velocities
 Movement Max Velocity
-MovementGaitId_t
 MovieSettings
 Mq~h
 MrFW
@@ -4439,14 +4476,15 @@ P-384
 P-521
 P16@
 P1\t98"
-P35@
-P36@
-P55@
+P46@
+P56@
 P5[1
-P65@
-P75@
+P63@
+P66@
+P76@
+P86@
 P93@
-PA3@
+P96@
 PAGN_4
 PARAMETERS
 PARSE_BAG
@@ -4454,8 +4492,6 @@ PARSE_BAGS
 PARSE_HTTP_LINE1
 PARSE_TAGGING
 PATHBYADDR
-PB3@
-PB4@
 PBE-MD2-DES
 PBE-MD2-RC2-64
 PBE-MD5-DES
@@ -4504,16 +4540,11 @@ PEM_read_bio
 PEM_read_bio_Parameters
 PEM_write
 PEM_write_bio
-PF3@
-PF6@
-PG3@
-PG4@
+PF4@
 PGr]
 PHAG2
 PHhn}Y
-PI6@
-PJ3@
-PJ6@
+PI3@
 PKCS #7 SIGNED DATA
 PKCS12
 PKCS12 lib
@@ -4627,9 +4658,10 @@ PKEY_RSA_VERIFYRECOVER
 PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
+PL6@
 PLATFORM
-PN3@
-PO3@
+PM4@
+PN6@
 POLICYINFO
 POLICYQUALINFO
 POLICY_CONSTRAINTS
@@ -4638,11 +4670,7 @@ POLICY_MAPPINGS
 POLICY_SECTION
 POST
 POST 
-PP3@
-PP4@
-PP6@
 PPz\v=
-PR3@
 PRB+
 PRINTABLE
 PRINTABLESTRING
@@ -4652,18 +4680,17 @@ PRNG not seeded
 PROCESS_PCI_VALUE
 PROXY_CERT_INFO_EXTENSION
 PROXY_POLICY
-PS6@
 PSC\n
 PSK-3DES-EDE-CBC-SHA
 PSK-AES128-CBC-SHA
 PSK-AES256-CBC-SHA
 PSK-RC4-SHA
 PSPECIFIED
-PT4@
 PUBLIC KEY
 PUT 
-PW3@
-PX4@
+PX5@
+PY3@
+PY5@
 Pa3@
 Packed store %s with refcount > 0.\n
 PackedBlobNormal
@@ -4675,20 +4702,20 @@ Parameters
 Particle Configuration File
 ParticleSystemMgr003
 Pb3@
-Pc6@
-Pe6@
+Pb4@
+Pc3@
 PeekNamedPipe
 Peer haven't sent GOST certificate, required for selected ciphersuite
 PerVertexLighting
 Permanent Identifier
 Permitted
+Pf3@
 Pg3@
+Pg4@
 Physics
 PhysicsBuilderMgr001
-Pi6@
 PivotPaint
-Pj6@
-Pl6@
+Pj3@
 Plat_AttachDebuggerToProcess
 Plat_CPUTickFrequency
 Plat_CheckSDL
@@ -4735,6 +4762,8 @@ Plat_UnloadModule
 Plat_UnloadSDL
 Pm8A?
 PmR"H?
+Pn3@
+Po3@
 Pointers cannot be used as numeric values
 Policy Qualifier CPS
 Policy Qualifier User Notice
@@ -4750,11 +4779,10 @@ Position Within Sphere Random
 Position on Model Random
 PostProcessingSystem_001
 PosterSettings
-Pp5@
-Pq5@
+Pp3@
+Pp4@
 Pr"V
-Pr5@
-Pr6@
+Pr3@
 Pre-Age Noise
 Prefix element cannot contain element or element_array attributes. ('%s')
 Preset File
@@ -4772,13 +4800,14 @@ Process32Next
 PropWorldOrigin
 PropertyEditorSystem_001
 Proxy Certificate Information
-Pt5@
+Pt4@
 Pu6@
 Public Key
 Public-Key
 Public-Key: (%d bit)\n
-Px6@
-Pz4@
+Pw3@
+Px4@
+Pz6@
 P|iC\r
 Q*hd
 Q/xtJ2
@@ -5065,11 +5094,7 @@ RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 RSDSa\W
-R\fpD
 R\r1>Vp
-R\tV_powf
-R\vp4
-R\vpD
 R]Di
 Radius Random
 Radius Scale
@@ -5348,7 +5373,6 @@ SXNET_add_id_ulong
 SXNET_get_id_asc
 SXNET_get_id_ulong
 SXNetID
-S\tV_qsort
 S\vQN
 Salt Length: 0x
 Saturday
@@ -5397,7 +5421,6 @@ Should instances of this model generate shadows in the lightmap. Note that shado
 Signature verification failed.
 SleepConditionVariableSRW
 Sn^G
-SortKey_t
 SoundOpSystem001
 SoundOpSystemEdit001
 SoundService_001
@@ -5444,6 +5467,8 @@ T61STRING
 T72[t
 TC\tf\
 TELETEXSTRING
+TG3@
+TL3@
 TLS Web Client Authentication
 TLS Web Server Authentication
 TLS1_CHECK_SERVERHELLO_TLSEXT
@@ -5512,7 +5537,7 @@ TS_VERIFY_CTX_new
 TUUUU
 TXJw^{
 TYPE=
-T\tV_qsort_s
+T\tV_log2f
 TanFrameQuat
 TerminateProcess
 Test
@@ -5708,7 +5733,6 @@ VMaterialSystem2_001
 VMediaFoundation001
 VP4003
 VPK directory for '%s' corrupt
-VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProfService_001
@@ -5810,8 +5834,6 @@ V_UnqualifiedFileName
 V_ZSTD_compress
 V_ZSTD_compressBound
 V_ZSTD_decompress
-V_atan2f
-V_atoi
 V_a|I
 Value indicating if the model's up direction should be matched to the surface. Value should be in the [ 0, 1 ] range, where 0 means that the model up will be model (or object space) up and will ignore the surface direction, and 1 indicates that the model up will exactly match the surface normal.
 Valve Map File
@@ -5900,17 +5922,15 @@ WrgoI
 WriteConsoleW
 WriteFile
 Writing .tga from float format image, values will be clamped [0..1].  Perhaps you want to write an .exr?\n
+Writing mesh data to %s\n
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X/4B
 X03@
-X13@
-X23@
 X24_TYPELESS_G8_UINT
+X26@
 X32_TYPELESS_G8X24_UINT
 X400Name
 X400Name:<unsupported>
-X43@
-X46@
 X500
 X500algorithms
 X509
@@ -6025,12 +6045,7 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X56@
-X63@
-X66@
 X73@
-X85@
-X86@
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -6049,48 +6064,72 @@ X9.62 curve over a 359 bit binary field
 X9.62 curve over a 368 bit binary field
 X9.62 curve over a 431 bit binary field
 X9.62/SECG curve over a 256 bit prime field
-X93@
-X95@
 X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
 X9cm
 X:vS
-XB4@
 XB`i|
+XC3@
+XD3@
 XD{p7
+XE3@
+XF3@
 XFle
-XG6@
 XG[r
 XH3@
+XI3@
+XJ3@
 XK3@
 XK6@
-XL3@
 XLuC'4
-XM3@
+XM6@
 XMM{*
-XN3@
 XNU`{3
+XO3@
 XP3@
+XP6@
 XQ3@
+XQ6@
+XR3@
 XRJ2
+XS5@
+XS6@
 XT3@
+XT5@
 XT6@
 XU6@
+XV3@
+XV5@
+XW3@
 XWY]
+XY3@
+XY6@
 XYD%
+XZ3@
+XZ6@
 X\tQo
+Xb4@
+Xc6@
 Xd3h
-Xf6@
 XfJ7
+Xh3@
+Xh6@
+Xi6@
+Xj6@
 XjfR
-Xk6@
+Xk3@
+Xl3@
+Xl6@
+Xm3@
+Xn3@
 Xo5@
+Xp3@
+Xq3@
 XqgA+
-Xs6@
+Xt3@
 Xuub
-Xw6@
 XwA0
 Xz"7
 Y-Ny
@@ -6205,6 +6244,7 @@ Z~wl
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
 \r@h!Aq8
 \rB6uZ
+\rINVALID
 \rKT8v
 \rLAM
 \rMinghuaQu\f
@@ -6220,7 +6260,6 @@ Z~wl
 \rjwB\t
 \roKK
 \rrCj
-\rtext
 \sG7tPD
 \t               
 \t                      by the engine DLL's, and game DLL's if mod is specified.  
@@ -6323,10 +6362,10 @@ Z~wl
 \tSpecified extraction type "%s" not supported for resource type %s!\n
 \tVPK File % 4d: /%s\n
 \tVTEX Version = %d\n
+\tV_atan2f
+\tV_atoi
 \tV_fclose
-\tV_fflush
-\tV_fileno
-\tV_fopenUTF8
+\tV_tanf
 \tV_vsnprintf
 \tVertex Buffer%s\n
 \tWarning
@@ -6408,7 +6447,6 @@ Z~wl
 ^J_spY
 ^Nij
 ^RB!r
-^\tV_sincosf
 _Ek6b]
 _Lx6
 _OPENSSL_isservice
@@ -6695,6 +6733,7 @@ bPb:L7X)
 bSh&+
 bV}TS
 b\fzUkm
+b\tV_powf
 b]jY
 background
 backgroundMap
@@ -6929,7 +6968,7 @@ cNAMERecord
 cNUGK
 cRLSign
 c\r1m
-c\tV_snprintf
+c\tV_qsort
 c`FE%
 ca dn length mismatch
 ca dn too long
@@ -7279,6 +7318,7 @@ d8L2
 d=%-2d hl=%ld l=%4ld 
 d=%-2d hl=%ld l=inf  
 dAN"
+dC3@
 dDV8
 dHHp
 dITRedirect
@@ -7288,6 +7328,7 @@ dSAQuality
 dWry
 dZ!2.
 d[kHy 
+d\tV_qsort_s
 d_r_0
 data
 data between ccs and finished
@@ -7878,68 +7919,75 @@ h*Ax
 h0'D
 h03@
 h0XB
-h13@
 h16@
-h26@
 h2Wl
 h2n_\
-h33@
-h36@
-h55@
-h56@
 h5N.
 h63@
-h73@
-h76@
+h66@
 h93@
-hB3@
-hC3@
+h96@
+hA3@
 hE3@
 hEM&!
-hF3@
 hF\rDz
 hFcg
-hI6@
-hJ3@
+hI3@
 hJxRX@_
-hM3@
+hK3@
+hL6@
 hN2D
-hQ6@
+hN6@
+hO3@
+hP3@
+hQ3@
+hR5@
 hRB.
-hS6@
-hV6@
+hS3@
+hU6@
+hV3@
 hW*m
 hW1M
 hW3@
+hW6@
 hW_z
+hX6@
 hX@e
+hY3@
+hY5@
+hY6@
+hZ3@
 h`Zr
 hammer
 hash
 hashAlgorithm
 hashFunc
+hb3@
 hb`V
 hbvc
+hc3@
 hc[N
 hc\raF
-he6@
+he3@
 header too long
 heartbeat request already pending
 height
 hex:
 hex_to_string
 hexkey
-hf6@
+hf3@
+hh6@
 hhwi
-hi6@
 hiddenFlags
 hiddenGroups
 hide_debug_complaints
 high_priority
 hitbox
+hj3@
+hk6@
 hl5v
-hl6@
 hloav\\t
+hm3@
 hmac
 hmac-md5
 hmac-sha1
@@ -7963,17 +8011,14 @@ host
 host unreachable
 houdini
 houseIdentifier
-hp5@
-hq5@
-hr5@
-hr6@
 hr_H
-ht5@
 http request
 https proxy request
 hu6@
+hv6@
 hvL&
-hz4@
+hw3@
+hw6@
 h|gg
 i <= EVP_MAX_MD_SIZE
 i%YR
@@ -8007,7 +8052,6 @@ iILV]
 iSXc
 iU[&l
 iVY2L
-i\tV_sscanf
 ia5org
 ia7@\t H9
 iana
@@ -8476,7 +8520,6 @@ jOJw"
 jTuf
 jV*d9O
 j[6Z
-j\tV_sscanf_s
 j\vIP{s
 janetMailbox
 jb:5
@@ -8596,6 +8639,8 @@ l4Ot
 l7@J
 lC57
 lDcW
+lJ3@
+lL3@
 lM2p
 language
 last octet invalid
@@ -8755,6 +8800,7 @@ m_SpecialInputDependencies
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
+m_SubassetTypes
 m_SupportedExts
 m_SuppressSubstrings
 m_TagAliases
@@ -8788,6 +8834,7 @@ m_bDebugCommandline
 m_bDoNotWarnAboutLargeAssetBatches
 m_bDrawLast
 m_bFileExists
+m_bFollowReferences
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHideTypeByDefault
@@ -8825,6 +8872,7 @@ m_flBlendWeightMax
 m_flBlendWeightMin
 m_flBlendWeightMinScale
 m_flDensity
+m_flDensityMinScale
 m_flEndFadeSize
 m_flMaxSurfaceSlope
 m_flMinSurfaceSlope
@@ -8848,6 +8896,7 @@ m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
 m_nMeshIndex
+m_nMeshoptMeshletEncodeVersion
 m_nMorphBlock
 m_nOffset
 m_nSemanticIndex
@@ -8862,7 +8911,6 @@ m_pName
 m_pSemantic
 m_pSemanticName
 m_pVertexData
-m_sId
 m_szShaderSemantic
 m_toolsBuffers
 m_vRandomRotationMax
@@ -9047,7 +9095,7 @@ nStf,a
 nSw}Z\tu
 nTries < 10000000
 n\r2S
-n\tV_stricmp_fast
+n\tV_sincosf
 n`3i
 name
 name constraints minimum and maximum not supported
@@ -9333,6 +9381,7 @@ operaton not initialized
 operator
 operator "" 
 operator co_await
+operator short
 operator<=>
 operators
 optionalSignature
@@ -9386,49 +9435,42 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p23@
+p13@
 p2{l
-p35@
-p46@
+p43@
 p4Z3
 p4diff
 p53@
 p5Z3
 p5\nL,
 p618
-p66@
-p85@
-p86@
-p95@
+p64@
+p73@
 p@0pqE5tsO?|1
-pA3@
-pB4@
+pC3@
 pD3@
 pD4t
-pG6@
+pF3@
+pF4@
 pG_*h
-pH3@
-pI3@
 pIp 
-pK3@
-pL3@
-pN3@
+pK6@
+pM3@
+pM4@
+pM6@
 pO0h
-pP3@
-pQ3@
-pR6@
+pR3@
 pRTH
+pS5@
 pSPo
 pSourceFunc
 pSpecified
-pT3@
-pT4@
-pT6@
-pU6@
+pT5@
+pU3@
 pU>\AL
-pV3@
-pX3@
-pX6@
+pV5@
+pV6@
+pX5@
 pZ6@
 p^i9
 pa3@
@@ -9466,6 +9508,7 @@ pathlen
 pattern
 payload + padding <= 16381
 payment gateway capabilities
+pb4@
 pbeWithMD2AndDES-CBC
 pbeWithMD2AndRC2-CBC
 pbeWithMD5AndCast5CBC
@@ -9479,9 +9522,8 @@ pbeWithSHA1And40BitRC2-CBC
 pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
-pc6@
 pcPathLengthConstraint
-pd6@
+pd3@
 peer did not return a certificate
 peer does not accept heartbeats
 peer error
@@ -9499,12 +9541,15 @@ permittedSubtrees
 personalSignature
 personalTitle
 pg6@
+ph3@
 photo
 phrase is too short, needs to be at least %d chars\n
 physicalDeliveryOfficeName
 physics
 physicsSimplificationError
 physicsSimplificationOverride
+pi3@
+pi6@
 pilot
 pilotAttributeSyntax
 pilotAttributeType
@@ -9519,7 +9564,7 @@ pinEnabled
 pin_enabled
 pivotOffset
 pixelAspectRatio
-pk6@
+pk3@
 pkL'
 pkcs
 pkcs decoding error
@@ -9552,6 +9597,9 @@ pkey
 pkeyalg
 pkix
 pkparameters2group failure
+pl3@
+pl6@
+pn3@
 point arithmetic failure
 point at infinity
 point is not on curve
@@ -9590,7 +9638,10 @@ postprocessing
 posxyz
 pp == NULL || *pp != NULL
 pp&c
+pp3@
 ppBasis
+pq3@
+pq6@
 pqualid
 pre mac length too long
 prefab_has_runtime_entity_by_default
@@ -9655,6 +9706,8 @@ pseudonym
 psk identity not found
 psk no client cb
 psk no server cb
+pt3@
+pt4@
 pub: 
 pub_key
 pubkey
@@ -9672,10 +9725,13 @@ publiccontent
 publish_data
 publish_data.txt
 purecall
-pv6@
+pv3@
+pvConditionalsEvaluated
 pvk data too short
 pvk too short
-pz4@
+px3@
+py6@
+pz6@
 pzKD)
 q not prime
 q&A\nn
@@ -9718,10 +9774,8 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\fp4
 r\tVr.>T
 r\vDi
-r\vpD
 radiusScale
 radius_random
 radius_scale
@@ -9918,6 +9972,7 @@ sKu{~X
 sOARecord
 sT5w!
 sV u\t
+s\tV_snprintf
 s\tor
 saJ!
 safeContentsBag
@@ -10446,6 +10501,7 @@ string_list
 string_to_hex
 strlen(objstr) + 23 + 2 * enc->iv_len + 13 <= sizeof buf
 style
+subassettypes
 subgroup factor:
 subgroup order:
 subject
@@ -10477,6 +10533,7 @@ t2U
 t4O_
 t80z
 tA`KO/3G!\n7h=
+tG3@
 tGTS
 tLY^m`6
 tLl 
@@ -10516,6 +10573,7 @@ telexNumber
 texcoord
 texcoord$0
 texcoord$0Indices
+text
 text file busy
 text/plain
 text:
@@ -10996,12 +11054,12 @@ w{Z0
 x#Nb
 x,5J
 x/OA
-x03@
-x06@
 x121Address
-x13@
+x16@
+x26@
 x33@
-x45@
+x36@
+x46@
 x500UniqueIdentifier
 x509
 x509 certificate routines
@@ -11014,53 +11072,58 @@ x509_info
 x509_pkey
 x509_req
 x509_store
-x55@
-x56@
-x65@
-x75@
+x76@
+x83@
+x86@
 x931
-xE3@
-xF3@
-xF4@
-xF6@
+xB3@
+xD3@
 xFKF
-xG3@
-xG4@
-xH3@
-xH6@
-xJ6@
-xK6@
-xM3@
+xI3@
+xJ3@
+xL3@
 xN3@
 xO3@
+xO6@
 xOu\vsF
 xP3@
 xP6@
+xQ3@
+xQ6@
 xQfF
-xR3@
 xS3@
-xU3@
+xT6@
 xUN'
-xV6@
-xW3@
-xX3@
-xY3@
 x\v6V
-xf6@
+xa6@
+xb6@
+xe3@
+xf3@
+xf4@
 xg-9Ja
+xg3@
+xg4@
+xh3@
 xh6@
-xm5@
-xn5@
+xj6@
+xm3@
+xn3@
+xo3@
+xo5@
 xp$=S
+xp3@
 xpH8
 xqI9
-xr6@
+xr3@
 xrJ:DCG
+xs3@
 xsK;
 xt6@
-xu5@
-xw6@
+xu3@
+xw3@
+xx3@
 xxH}
+xy3@
 xzxv
 y#y&Jb
 y0JY
@@ -11076,6 +11139,7 @@ yRnkB\t
 yS/h
 yU\n2`
 yWTb?
+y\tV_sscanf
 y\teE
 y_jO
 ya<O
@@ -11089,6 +11153,7 @@ z>Hz
 zF):O4
 zG2m8
 zRXU 
+z\tV_sscanf_s
 zero
 zlVO
 zlib compression
@@ -11099,7 +11164,6 @@ zz2K
 {8w1
 {9d:c
 {H}yq
-{\tV_tanf
 {ghz6
 {ry\W
 {zFd
@@ -11125,6 +11189,7 @@ zz2K
 ~If D
 ~P2T
 ~R65Fu
+~\tV_stricmp_fast
 ~jLRG
 ~w]UG
 ~yhZ

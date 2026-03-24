@@ -38,6 +38,7 @@ shaders/vfx/generate_aggregate_cull_requests.ini CRC:0000000000 size:0
 shaders/vfx/generate_relaxed_cones.ini CRC:0000000000 size:0
 shaders/vfx/gpu_debug_draw2d.ini CRC:0000000000 size:0
 shaders/vfx/gpu_debug_draw3d.ini CRC:0000000000 size:0
+shaders/vfx/gpu_particles_initialize.ini CRC:0000000000 size:0
 shaders/vfx/gpu_vis_update_node_visibility.ini CRC:0000000000 size:0
 shaders/vfx/grasstile.ini CRC:0000000000 size:0
 shaders/vfx/grasstile_preview.ini CRC:0000000000 size:0
@@ -116,9 +117,11 @@ shaders/vfx/visualize_cloth.ini CRC:0000000000 size:0
 shaders/vfx/visualize_depth.ini CRC:0000000000 size:0
 shaders/vfx/visualize_distance_field.ini CRC:0000000000 size:0
 shaders/vfx/visualize_implicit.ini CRC:0000000000 size:0
+shaders/vfx/visualize_instanced.ini CRC:0000000000 size:0
 shaders/vfx/visualize_nav.ini CRC:0000000000 size:0
 shaders/vfx/visualize_physics.ini CRC:0000000000 size:0
 shaders/vfx/visualize_quad_overdraw.ini CRC:0000000000 size:0
+shaders/vfx/visualize_rtproxy.ini CRC:0000000000 size:0
 shaders/vfx/wind_controller_visualize.ini CRC:0000000000 size:0
 shaders/vfx/wind_noise_cs.ini CRC:0000000000 size:0
 shaders/vfx/wind_update_cs.ini CRC:0000000000 size:0

@@ -41,6 +41,7 @@
 !?unpolish@QCommonStyle@@UEAAXPEAVQApplication@@@Z
 !?unpolish@QCommonStyle@@UEAAXPEAVQWidget@@@Z
 !?unpolish@QProxyStyle@@UEAAXPEAVQApplication@@@Z
+!\tV_fflush
 !link
 ""?updateEditorGeometry@QStyledItemDelegate@@UEBAXPEAVQWidget@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 "%s" -addon %s
@@ -148,9 +149,10 @@
 #\f?focusNextPrevChild@QTextEdit@@MEAA_N_N@Z
 #\r?hide@QWidget@@QEAAXXZ
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+$\tV_fileno
 %02i/%02i %02i:%02i:%02i 
 %\?setUnderline@QFont@@QEAAX_N@Z
-%\tV_ftell
+%\tV_fmodd
 %lld
 %llu
 %s %s.lnk
@@ -175,12 +177,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 '%s' is not a valid variable type
 'OverrideClass' was specified but class '%s' has not been previously defined.\n
-'\tV_fwrite
 (*.gif; *.png; *.jpg)
 (Expecting %s)
 (Expecting EOF)
 (None)
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
+(\tV_fopenUTF8
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (channel = 
 (end of input).\n\t This indicates a poorly specified lexer RULE\n\t or unterminated input element such as: "STRING["]\n
@@ -188,11 +190,13 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
 )\r?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
+)\tV_fpclassifyd
 )\v?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 *****************: Cannot call CAppSystemDict::AddSystems without initializing first!\n
 *LANGUAGE*
 *StO9>T
+*\tV_fprintf
 *^?style@QBrush@@QEBA?AW4BrushStyle@Qt@@XZ
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +\f?focusOutEvent@QComboBox@@MEAAXPEAVQFocusEvent@@@Z
@@ -426,10 +430,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 /e,/select,"
 /game/
 /src/
-01:01:58
 0iN>/
+11:04:19
 11Y@
-1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
+1:1: Tokens : ( T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | SCOPE_QUALIFIER | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1AcceptIfItemPicked()
 1BotScriptComboBoxSelectionChanged( int )
 1BotScriptComboBoxTextChanged(QString)
@@ -470,10 +474,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2UpArrowPressed()
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpD2
-2\vptm
 2accepted()
 2clicked()
 2currentIndexChanged( int )
@@ -498,7 +499,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
+4\tV_ftell
 6\f?focusOutEvent@QPlainTextEdit@@MEAAXPEAVQFocusEvent@@@Z
+6\tV_fwrite
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
@@ -730,8 +733,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckForOtherRunningInstances@CSingleAppInstance@@QEAA_N_N0@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
@@ -810,7 +814,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?StripExtension@CUtlString@@QEBA?AV1@XZ
 ?StripFilename@CUtlString@@QEBA?AV1@XZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
+?ThreadAtomicNotifyOne@@YAXPEBI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?ToLowerFast@CUtlString@@QEAAXXZ
 ?ToUpperFast@CUtlString@@QEAAXXZ
@@ -1382,6 +1386,7 @@ ANTLR3_EXCEPTION: %s\n
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!\n
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
+A\tV_isnand
 AcceptIfItemPicked
 Access violation - no RTTI data!
 AcquireSRWLockExclusive
@@ -1395,7 +1400,6 @@ AlignedByteArray not properly aligned\n
 AllowAddonDependencies
 Already running on this machine. Only one instance at a time is allowed.
 AlternateBase
-AnimGraph2Clip()
 AnimGraphEditorUtils001
 AnimationSystemUtils_001
 AnimationSystem_001
@@ -1419,6 +1423,8 @@ Applies to array parents or non-array items (just not array members)
 April
 AreFileApisANSI
 AssetBrowse( %s )
+AssetBrowse( vnmclip )
+AssetBrowse( vnmgraph )
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetRenameSystem_001
@@ -1487,6 +1493,7 @@ ButtonHighlight
 ButtonPressed
 ButtonText
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\utils\workshopcfg\_vpc_dota2cfg\default\win64\_msvc_\Retail\dota2cfg.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\appframework\gameinfo.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mathlib\extended\generic_expr.g
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\appframework\tier2app.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\tslist.h
@@ -1578,6 +1585,7 @@ Cast of %s loses value information (returning %s)\n
 CharacterSetBuild
 CheckmarkPossible
 Class data is a '%s', not a table\n
+ClientServerSharedHandleSystem001
 ClientToolsInfo_001
 CloseHandle
 CoCreateInstance
@@ -1602,7 +1610,6 @@ DOUBLE_QUOTE_CHAR
 Dark
 DarkSplitter
 DarkSplitterHandle
-Dec 15 2025
 December
 DeclareCurrentThreadIsMainThread
 DefaultButtonBackground
@@ -1614,6 +1621,7 @@ DemoUpconverterVersion001
 Dependencies
 Didn't expect '=' for non-flags non-choices variable %s
 Disabled
+DisallowGameInfoConditionals
 Disallowed variable name: %s
 Do not show in the row (but maybe show in context menu)
 DockWidgetTitleBackground
@@ -1646,6 +1654,7 @@ Error, duplicate class '%s'. Use @OverrideClass to add keys to an existing class
 Error: missing 'filter_type' key in @VisGroupFilter specification
 Error: missing 'group' key in @VisGroupFilter specification
 Error: unknown vis group filter type: '%s' in @VisGroupFilter specification
+EvalGameInfoConditionals
 Executable Location
 Executable Location: %s
 ExitProcess
@@ -1656,6 +1665,7 @@ Expected a default value
 Expected a string literal for description
 Expected a string or integer as default value
 Expected an integer default value after <description> ':'
+Expected an integer default value after <friendlyName> ':'
 Expected identifier after '@'
 Expected matching '{' '}'
 Expected matching '{' '}' (started on line %d)
@@ -1882,6 +1892,7 @@ MVDataOutlinerLeafNameFn
 M\n?done@QDialog@@UEAAXH@Z
 MapListService_001
 Maps
+Mar 24 2026
 March
 MaterialUtils_001
 MemAlloc_AllocFunc
@@ -1907,6 +1918,7 @@ Mismatched set
 Missing file '%s'
 Missing token
 Missing token %s
+Mod specifies 'DisallowGameInfoConditionals' but %d conditionals were evaluated
 ModelAnimGraph2Identifier()
 ModelDocUtils001
 ModelMaterialGroupName()
@@ -2063,7 +2075,6 @@ RIGHT
 RSDS\6
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\r?hitTestComplexControl@QProxyStyle@@UEBA?AW4SubControl@QStyle@@W4ComplexControl@3@PEBVQStyleOptionComplex@@AEBVQPoint@@PEBVQWidget@@@Z
-R\vptm
 RaiseException
 Recognition Exception
 Recognition exception
@@ -2096,6 +2107,7 @@ S9>H
 S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
 S?paint@QIcon@@QEBAXPEAVQPainter@@AEBVQRect@@V?$QFlags@W4AlignmentFlag@Qt@@@@W4Mode@1@W4State@1@@Z
+SCOPE_QUALIFIER
 SDL [%s]: %s\n
 SDL_Init( 0x%X ) failed: %s\n
 SDL_VIDEO_ALLOW_SCREENSAVER
@@ -2124,7 +2136,6 @@ STEAMUGC_INTERFACE_VERSION019
 STEAMUSERSTATS_INTERFACE_VERSION013
 STEAMVIDEO_INTERFACE_V002
 STRING_CHAR
-S\tV_qsort
 Saturday
 SceneSystem_002
 SceneUtils_001
@@ -2204,7 +2215,6 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 TOK_COLON
 TUUUU
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
-T\tV_qsort_s
 TabBarBackgroundNotSelected
 TabTextInactive
 TerminateProcess
@@ -2304,7 +2314,6 @@ VMOD
 VMaterialSystem2_001
 VMediaFoundation001
 VP4003
-VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProfService_001
@@ -2335,8 +2344,6 @@ V_StringToUint64
 V_StripFilename
 V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
-V_atof
-V_atoi
 Va?width@QPixmap@@QEBAHXZ
 Variable %s has bad default value %s (no choices with that name or value)
 Video
@@ -2480,13 +2487,8 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \t?data@QTreeWidgetItem@@UEBA?AVQVariant@@HH@Z
 \t?dataChanged@QAbstractItemView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
+\tV_atoi
 \tV_fclose
-\tV_fflush
-\tV_fileno
-\tV_fmodd
-\tV_fopenUTF8
-\tV_fpclassifyd
-\tV_fprintf
 \tV_vsnprintf
 \tWarning
 \tWorldsize_Init
@@ -2514,6 +2516,7 @@ ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 \v?exec@QMenu@@QEAAPEAVQAction@@AEBVQPoint@@PEAV2@@Z
 \v?expandingDirections@QBoxLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
+\v\tV_atof
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
 ]Q?light@QPalette@@QEBAAEBVQBrush@@XZ
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
@@ -2598,48 +2601,9 @@ already connected
 angle
 animgraph
 animgraph2_clip
+animgraph2_graph
 animgraph2_identifier
 animgraph_enum
-antlr3BaseRecognizerNew
-antlr3BitsetCopy
-antlr3BitsetList
-antlr3BitsetLoad
-antlr3BitsetNew
-antlr3BitsetOf
-antlr3BitsetSetAPI
-antlr3CommonTokenDebugStreamSourceNew
-antlr3CommonTokenNew
-antlr3CommonTokenStreamNew
-antlr3CommonTokenStreamSourceNew
-antlr3EnumNew
-antlr3ExceptionNew
-antlr3Hash
-antlr3HashTableNew
-antlr3IntStreamNew
-antlr3IntTrieNew
-antlr3LexerNew
-antlr3LexerNewStream
-antlr3ListNew
-antlr3MTExceptionNew
-antlr3NewAsciiStringCopyStream
-antlr3NewAsciiStringInPlaceStream
-antlr3NewUCS2StringInPlaceStream
-antlr3ParserNew
-antlr3ParserNewStream
-antlr3ParserNewStreamDbg
-antlr3RecognitionExceptionNew
-antlr3SetTokenAPI
-antlr3SetVectorApi
-antlr3StackNew
-antlr3StringFactoryNew
-antlr3TokenFactoryNew
-antlr3TokenStreamNew
-antlr3UCS2StringFactoryNew
-antlr3VectorFactoryNew
-antlr3VectorNew
-antlr3dfapredict
-antlr3dfaspecialStateTransition
-antlr3dfaspecialTransition
 applicable_to
 application
 argument list too long
@@ -2671,14 +2635,15 @@ boolean
 branch gameinfo
 broken pipe
 button_zone
-c\tV_snprintf
+c\tV_qsort
 c\v?event@QSplitterHandle@@MEAA_NPEAVQEvent@@@Z
 cable
 cableclass
+choice_group
 choice_name
 choices
+choreoanchorclass
 clicked
-clip
 code
 collision_property
 collisionmesh
@@ -2694,6 +2659,7 @@ console.log
 core
 cross device link
 curve
+d\tV_qsort_s
 dddd, MMMM dd, yyyy
 decal
 default
@@ -2725,11 +2691,11 @@ expects_cpp_declaration
 explorer.exe
 expr
 false
+fgd_metadata_merge
 file exists
 file too large
 filename too long
 filesystem_stdio
-fillBufferExt
 filter
 filterText
 filter_type
@@ -2794,10 +2760,6 @@ gameinfo_branchspecific.gi
 gameitemclass
 gameunitclass
 generic
-generic_exprLexerNew
-generic_exprLexerNewSSD
-generic_exprParserNew
-generic_exprParserNewSSD
 global
 gridnav
 group
@@ -2810,7 +2772,6 @@ hidden
 host unreachable
 https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools
 i\r?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
-i\tV_sscanf
 i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
 icon
 identifier removed
@@ -2888,7 +2849,6 @@ n03>Pu
 nTries < 10000000
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-n\tV_stricmp_fast
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 name
 navlink
@@ -2915,6 +2875,7 @@ no_help_info
 node_dest
 node_id
 node_id_List
+none
 not a directory
 not a socket
 not a stream
@@ -2985,6 +2946,7 @@ publiccontent
 publish_data
 publish_data.txt
 purecall
+pvConditionalsEvaluated
 qt5_plugins
 qt5core.dll
 qt5cored.dll
@@ -3016,6 +2978,7 @@ resourcecopy.log
 resources
 restrict(
 result out of range
+s\tV_snprintf
 scale_bone_relative
 scale_world
 schemasystem
@@ -3104,7 +3067,6 @@ vmap
 vmat
 vmdl
 vmesh
-vnmclip
 void
 vpcf
 vphzc
@@ -3118,13 +3080,16 @@ w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotOb
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 windows
 workshop_testbed
+world_angle
 world_point
+world_transform
 writable_func
 write
 wrong protocol type
 xT?pointSizeF@QFont@@QEBANXZ
 x\f?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 y\n?dragLeaveEvent@QPlainTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
+y\tV_sscanf
 z\f?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
@@ -3133,3 +3098,4 @@ z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 }\n?dragMoveEvent@QAbstractItemView@@MEAAXPEAVQDragMoveEvent@@@Z
+~\tV_stricmp_fast

@@ -103,6 +103,7 @@
  vJza\r
  with 
 ! !K+hcF&db
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !#QRFt
 !(meth->ext_flags & SSL_EXT_FLAG_SENT)
 !3mmXs
@@ -447,6 +448,13 @@ $prefix_element$
 %sIndices
 %sVertices
 %s_%03d.vpk
+%s_ang
+%s_count
+%s_extent_max
+%s_extent_min
+%s_pos
+%s_radius
+%s_type
 %suncompressed data
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
 &'&)&5&;&?&K&S&Y&e&i&o&{&
@@ -457,7 +465,6 @@ $prefix_element$
 &V6J
 &Windows...
 &Ylb
-&\nNx+\nCh,\n'
 '%s' is not a valid variable type
 '()+,-./:=?
 '5'7'M'S'U'_'k'm's'w'
@@ -539,9 +546,7 @@ $prefix_element$
 *Y$ve
 *\f?focusOutEvent@QAbstractSpinBox@@MEAAXPEAVQFocusEvent@@@Z
 *\fhsD
-*_left
-*_right
-*extraFilterString=tileset
+*\nNx+\nCh,\n'
 *gFBk
 *hbJ1
 *initialFilterString=%s
@@ -680,8 +685,10 @@ $prefix_element$
 .?AUCAttr_m_Str@?1??GetAttributeTable_CMapDocTestStruct@CMapDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_StringArrayArray@?1??GetAttributeTable_CMapTestNode@CMapTestNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_StructArray@?1??GetAttributeTable_CMapTestNode@CMapTestNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetEntries@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TargetMapPath@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TargetMapPath@?1??GetAttributeTable_CMapTerrainPrefab@CMapTerrainPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TargetWarps@?1??GetAttributeTable_CMapChoreoAnchor@CMapChoreoAnchor@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TestEnum@?1??GetAttributeTable_CMapDocTestStruct@CMapDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintColor@?1??GetAttributeTable_CMapInstance@CMapInstance@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintColor@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -689,7 +696,9 @@ $prefix_element$
 .?AUCAttr_m_TintColor@?1??GetAttributeTable_CMapTestNode@CMapTestNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintInput@?1??GetAttributeTable_CMapTerrainDetail@CMapTerrainDetail@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_TintInput@?1??GetAttributeTable_CMapTerrainGrass@CMapTerrainGrass@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_TransformPin@?1??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_UseBaseNormals@?1??GetAttributeTable_CMapStaticOverlay@CMapStaticOverlay@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bBakeLightDoubleSided@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bBakeLighting@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bClosedLoop@?1??GetAttributeTable_CMapPath@CMapPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bCollisionEnabled@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -716,6 +725,7 @@ $prefix_element$
 .?AUCAttr_m_bOnlyMeshes@?1??GetAttributeTable_CMapTerrainLayerWorldHeight@CMapTerrainLayerWorldHeight@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bOrientToSurface@?1??GetAttributeTable_CMapTerrainDetail@CMapTerrainDetail@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPhysicsSimplificationOverride@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bPinAngles@?1??GetAttributeTable_CMapNodeTransformPin@CMapNodeTransformPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPrefabRuntimeEntity@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPropBakeLightingDoubleSided@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPropBakeToWorld@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -729,13 +739,16 @@ $prefix_element$
 .?AUCAttr_m_bRenderProbeRadius@?1??GetAttributeTable_CSteamAudioImportedProbeBoxNode@CSteamAudioImportedProbeBoxNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bRenderToCubemaps@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bRenderWithDynamic@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bReorientCamera@?1??GetAttributeTable_CMapWorkplaneMarker@CMapWorkplaneMarker@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bRoughnessMetalnessOverride@?1??GetAttributeTable_CMapDocMaterialAdjustStruct@CMapDocMaterialAdjustStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bShowCompressedIR@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bTransformLocked@?1??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bTwoWay@?1??GetAttributeTable_CMapNodeTransformPin@CMapNodeTransformPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bUseTargetnameAsPrefix@?1??GetAttributeTable_CMapPrefab@CMapPrefab@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bVisExclude@?1??GetAttributeTable_CMapInstance@CMapInstance@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bVisExclude@?1??GetAttributeTable_CMapMeshBase@CMapMeshBase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bVisOccluder@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_eType@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_fColorApha@?1??GetAttributeTable_CMapDocMaterialAdjustStruct@CMapDocMaterialAdjustStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_fColorBrightness@?1??GetAttributeTable_CMapDocMaterialAdjustStruct@CMapDocMaterialAdjustStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_fColorContrast@?1??GetAttributeTable_CMapDocMaterialAdjustStruct@CMapDocMaterialAdjustStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -767,6 +780,7 @@ $prefix_element$
 .?AUCAttr_m_flOrder11@?1??GetAttributeTable_CSteamAudioAmbisonicValues@CSteamAudioAmbisonicValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flOrder12@?1??GetAttributeTable_CSteamAudioAmbisonicValues@CSteamAudioAmbisonicValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flParticleSnapshotSpacing@?1??GetAttributeTable_CMapPath@CMapPath@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flPathParameter@?1??GetAttributeTable_CMapPathLocator@CMapPathLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flPathingDistanceRatio@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flPhysicsSimplificationError@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flPhysicsSimplificationError@?1??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -774,6 +788,8 @@ $prefix_element$
 .?AUCAttr_m_flPropEmissiveLightingBoost@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flQuadSize@?1??GetAttributeTable_CMapTerrainGround@CMapTerrainGround@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flRadius@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flRadius@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_flRadius@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flRandomAmount@?1??GetAttributeTable_CMapTerrainDetail@CMapTerrainDetail@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSampleSpacing@?1??GetAttributeTable_CMapTerrainLayerComposite@CMapTerrainLayerComposite@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_flSampleSpacing@?1??GetAttributeTable_CMapTerrainLayerWorldHeight@CMapTerrainLayerWorldHeight@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -814,10 +830,13 @@ $prefix_element$
 .?AUCAttr_m_nRandomSeed@?1??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nRenderAlpha@?1??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nSelectedProbeType@?1??GetAttributeTable_CSteamAudioImportedProbeBoxNode@CSteamAudioImportedProbeBoxNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nShapeType@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_nShapeType@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nTargetReferenceID@?1??GetAttributeTable_CMapNodeReference@CMapNodeReference@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nTextureOrientation@?1??GetAttributeTable_CMapCable@CMapCable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_pathingCoeffs@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_pathingEQ@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_qAngles@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_reverbTimes@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_sValue0@?1??GetAttributeTable_CSteamAudioMaterialValues@CSteamAudioMaterialValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_sValue1@?1??GetAttributeTable_CSteamAudioMaterialValues@CSteamAudioMaterialValues@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -826,34 +845,129 @@ $prefix_element$
 .?AUCAttr_m_strMovementReverse@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strPreviewForward@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strPreviewReverse@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_uLocatorIndex@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vDimensionsInsideSizeField@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vDimensionsOutsideField@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vExtentsMax@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vExtentsMax@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vExtentsMax@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vExtentsMin@?1??GetAttributeTable_CMapChoreoAnchorLocator@CMapChoreoAnchorLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vExtentsMin@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vExtentsMin@?1??GetAttributeTable_CMapSmartPropLocator@CMapSmartPropLocator@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vGraphPosition@?1??GetAttributeTable_CMapTerrainElement@CMapTerrainElement@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vInTangent@?1??GetAttributeTable_CMapPathNode@CMapPathNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vLocatorAngles@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vLocatorOffset@?1??GetAttributeTable_CMapNavLink@CMapNavLink@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vOffsetAngles@?1??GetAttributeTable_CMapNodeTransformPin@CMapNodeTransformPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vOffsetOrigin@?1??GetAttributeTable_CMapNodeTransformPin@CMapNodeTransformPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_vOrigin@?1??GetAttributeTable_CMapChoreoAnchorLocatorData_t@CMapChoreoAnchorLocatorData_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vOutTangent@?1??GetAttributeTable_CMapPathNode@CMapPathNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vPathingDirection@?1??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vSize@?1??GetAttributeTable_CMapDeformer@CMapDeformer@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CImagePlaneNode@CImagePlaneNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapCordon@CMapCordon@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapGrassTile@CMapGrassTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapGroup@CMapGroup@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapGroupProxy@CMapGroupProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapMesh@CMapMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapNodeReference@CMapNodeReference@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapPhysicsPin@CMapPhysicsPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapSmartProp@CMapSmartProp@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapStaticOverlay@CMapStaticOverlay@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTerrainLayerPaintable@CMapTerrainLayerPaintable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapTileSet@CMapTileSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapWeightedGroup@CMapWeightedGroup@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapWorld@CMapWorld@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CMapWorldLayer@CMapWorldLayer@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioData@CSteamAudioData@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioProbeExclusionVolume@CSteamAudioProbeExclusionVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioProbeNode@CSteamAudioProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CSteamAudioSignal@CSteamAudioSignal@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CTileMeshFace@CTileMeshFace@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CImagePlaneNode@CImagePlaneNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?3??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapPhysicsPin@CMapPhysicsPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapStaticOverlay@CMapStaticOverlay@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?3??GetAttributeTable_CMapTerrainLayerPaintable@CMapTerrainLayerPaintable@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapTileSet@CMapTileSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CMapWorld@CMapWorld@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CSteamAudioData@CSteamAudioData@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?3??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?3??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapPhysicsPin@CMapPhysicsPin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CMapTileSet@CMapTileSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?4??GetAttributeTable_CSteamAudioImportedProbeNode@CSteamAudioImportedProbeNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?4??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?5??GetAttributeTable_CMapNode@CMapNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?5??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?6??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?7??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CMapProxy@CMapProxy@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?8??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?9??GetAttributeTable_CSteamAudioProbeGenerationVolume@CSteamAudioProbeGenerationVolume@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BA@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BA@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BB@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BB@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BC@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BD@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BE@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?BF@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?L@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?L@??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?L@??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?L@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?M@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?M@??GetAttributeTable_CMapIsoSurface@CMapIsoSurface@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?M@??GetAttributeTable_CMapTile@CMapTile@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?M@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?N@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?N@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?O@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?O@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?P@??GetAttributeTable_CMapDotaTileGrid@CMapDotaTileGrid@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?P@??GetAttributeTable_CMapTileMesh@CMapTileMesh@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@@@
 .?AV<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -871,15 +985,18 @@ $prefix_element$
 .?AV<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
 .?AV<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@
 .?AV<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
-.?AV<lambda_1>@?1??ApplyMapVariableOverrideValuesToTargetMap@CMapPrefab@@AEBAXXZ@
 .?AV<lambda_1>@?1??CollectAreasAssociatedWithMovableMeshInternal@CNavMovableMeshCatalog@@AEAAXIPEAIPEAV?$CUtlVector@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@H$0A@@@@@PEAV?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??Restart@CNewParticleEffect@@QEAAXXZ@
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
 .?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
+.?AV<lambda_1>@?1??UpdateInstanceLocators@CMapPrefab@@AEAAXXZ@
+.?AV<lambda_1>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@
+.?AV<lambda_1>@?1??UpdateMapVariableLocators@CMapWorld@@QEAAXXZ@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_1>@?CC@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV2@HHPEAVCCallQueue@@@Z@
 .?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
+.?AV<lambda_1>@?O@??GetEditableAttributeInfo@CMapPrefab@@UEBA_NPEBDPEAUMapNodeAttributeInfo_t@@@Z@
 .?AV<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@
 .?AV<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
 .?AV<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@
@@ -891,6 +1008,7 @@ $prefix_element$
 .?AV<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@
 .?AV<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@
 .?AV<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@
+.?AV<lambda_2>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@
 .?AV<lambda_2>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
@@ -902,13 +1020,15 @@ $prefix_element$
 .?AV<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@
 .?AV<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
 .?AV<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@
-.?AV<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
-.?AV<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
-.?AV<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
+.?AV<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
+.?AV<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@
+.?AV<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
 .?AV<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_3>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
+.?AV<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@
+.?AV<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
+.?AV<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@
 .?AV<lambda_4>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@
 .?AV<lambda_4>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -931,16 +1051,25 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@HVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapDocTestStruct@@@@
+.?AV?$CBaseConcreteToolAttr@HVCMapDotaTileGrid@@@@
+.?AV?$CBaseConcreteToolAttr@HVCMapGroupProxy@@@@
+.?AV?$CBaseConcreteToolAttr@HVCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapTerrainLayerPaintable@@@@
 .?AV?$CBaseConcreteToolAttr@HVCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttr@HVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttr@HVCMapWeightedGroup@@@@
 .?AV?$CBaseConcreteToolAttr@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@HVCTerrainInput@@@@
+.?AV?$CBaseConcreteToolAttr@IVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@MVCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapCable@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapDocTestStruct@@@@
@@ -949,6 +1078,8 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@MVCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapNode@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapPath@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapPathLocator@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapSmartPropLocator@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapStaticOverlay@@@@
@@ -956,15 +1087,21 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@MVCMapTerrainGround@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapTerrainLayerComposite@@@@
 .?AV?$CBaseConcreteToolAttr@MVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttr@MVCMapTileSet@@@@
 .?AV?$CBaseConcreteToolAttr@MVCSteamAudioAmbisonicValues@@@@
 .?AV?$CBaseConcreteToolAttr@MVCSteamAudioBandValues@@@@
 .?AV?$CBaseConcreteToolAttr@MVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@MVCSteamAudioMaterialValues@@@@
+.?AV?$CBaseConcreteToolAttr@MVCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CBaseConcreteToolAttr@MVCSteamAudioProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@URange_t@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -975,15 +1112,23 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec2D@M@@VCMapTerrainElement@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapDeformer@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapNode@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapNodeTransformPin@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapPathNode@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapPhysicsPin@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCMapSmartPropLocator@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioImportedProbeNode@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioProbeExclusionVolume@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CBaseConcreteToolAttr@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapDocTestStruct@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCMapNodeReference@@VCMapSmartProp@@@@
+.?AV?$CBaseConcreteToolAttr@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCPiecewiseCurve@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCSteamAudioBandValues@@VCSteamAudioImportedProbeNode@@@@
@@ -994,15 +1139,21 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCTerrainInput@@VCMapTerrainGround@@@@
 .?AV?$CBaseConcreteToolAttr@VCTerrainInput@@VCMapTerrainGroupBase@@@@
 .?AV?$CBaseConcreteToolAttr@VCTerrainInput@@VCMapTerrainGroupOutputs@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapCable@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapCordon@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapDocTestStruct@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapDotaTileGrid@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapGrassTile@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapGroup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapPrefab@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTerrainDetail@@@@
@@ -1014,6 +1165,9 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapTileSet@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCSteamAudioMaterialValues@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCTerrainInput@@@@
 .?AV?$CBaseConcreteToolAttr@VColor@@VCMapCable@@@@
@@ -1024,18 +1178,28 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@VColor@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttr@VColor@@VCMapTileMesh@@@@
 .?AV?$CBaseConcreteToolAttr@VColor@@VCTileMeshFace@@@@
+.?AV?$CBaseConcreteToolAttr@VQAngle@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@VQAngle@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttr@VQAngle@@VCMapNode@@@@
+.?AV?$CBaseConcreteToolAttr@VQAngle@@VCMapNodeTransformPin@@@@
+.?AV?$CBaseConcreteToolAttr@W4AcousticGeometryShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CBaseConcreteToolAttr@W4AcousticMaterialShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CBaseConcreteToolAttr@W4AlignToAxisMode_t@@VCMapTile@@@@
 .?AV?$CBaseConcreteToolAttr@W4BendAxis_t@CLatticeDeformer@@VCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttr@W4BezierPathTangentType_t@@VCMapPathNode@@@@
+.?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttr@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttr@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttr@W4ImageMode_t@CMapTerrainLayerImage@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4InterpolationMode_t@CLatticeDeformer@@VCMapDeformerLattice@@@@
+.?AV?$CBaseConcreteToolAttr@W4MapNavLinkType_t@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttr@W4MapNodeDeformationMode_t@@VCMapGroup@@@@
 .?AV?$CBaseConcreteToolAttr@W4MapTestNodeEnum_t@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttr@W4MapTestNodeEnum_t@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttr@W4MapTileSetRampRule_t@@VCMapTileSet@@@@
+.?AV?$CBaseConcreteToolAttr@W4MapUsageType_t@@VCMapWorld@@@@
 .?AV?$CBaseConcreteToolAttr@W4OutputFormat_t@CMapTerrainLayerComposite@@V2@@@
 .?AV?$CBaseConcreteToolAttr@W4PathInterpolationType_t@@VCMapPath@@@@
 .?AV?$CBaseConcreteToolAttr@W4PathTextureOrientation_t@@VCMapCable@@@@
@@ -1047,33 +1211,52 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttr@_NVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapDocMaterialAdjustStruct@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapDotaTileGrid@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapInstance@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapNode@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapNodeTransformPin@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapPath@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapPhysicsPin@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapPrefab@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapTerrainDetail@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapTerrainLayerPaintable@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapWorkplaneMarker@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCMapWorld@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCSteamAudioImportedProbeNode@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCSteamAudioProbeGenerationVolume@@@@
 .?AV?$CBaseConcreteToolAttrValue@EVCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapDocTestStruct@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCMapDotaTileGrid@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCMapGroupProxy@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapTerrainLayerPaintable@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCMapWeightedGroup@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCTerrainInput@@@@
+.?AV?$CBaseConcreteToolAttrValue@IVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapCable@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapDocTestStruct@@@@
@@ -1082,6 +1265,8 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@MVCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapPath@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapPathLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapSmartPropLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapStaticOverlay@@@@
@@ -1089,28 +1274,45 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@MVCMapTerrainGround@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapTerrainLayerComposite@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCMapTileSet@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioAmbisonicValues@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioBandValues@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioImportedProbeNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioMaterialValues@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCSteamAudioProbeNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@URange_t@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec2D@M@@VCMapTerrainElement@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapDeformer@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapNodeTransformPin@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapPathNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapPhysicsPin@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCMapSmartPropLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCSteamAudioImportedProbeNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCSteamAudioProbeExclusionVolume@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCSteamAudioProbeGenerationVolume@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCPiecewiseCurve@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCImagePlaneNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapCable@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapCordon@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapDocTestStruct@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapDotaTileGrid@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapGrassTile@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapGroup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapNodeReference@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapPrefab@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTerrainDetail@@@@
@@ -1122,6 +1324,9 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTerrainPrefab@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapTileSet@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCSteamAudioMaterialValues@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCTerrainInput@@@@
 .?AV?$CBaseConcreteToolAttrValue@VColor@@VCMapCable@@@@
@@ -1132,18 +1337,28 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@VColor@@VCMapTestNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VColor@@VCMapTileMesh@@@@
 .?AV?$CBaseConcreteToolAttrValue@VColor@@VCTileMeshFace@@@@
+.?AV?$CBaseConcreteToolAttrValue@VQAngle@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@VQAngle@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttrValue@VQAngle@@VCMapNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@VQAngle@@VCMapNodeTransformPin@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4AcousticGeometryShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4AcousticMaterialShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4AlignToAxisMode_t@@VCMapTile@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4BendAxis_t@CLatticeDeformer@@VCMapDeformerSimple@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4BezierPathTangentType_t@@VCMapPathNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4ImageMode_t@CMapTerrainLayerImage@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4InterpolationMode_t@CLatticeDeformer@@VCMapDeformerLattice@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4MapNavLinkType_t@@VCMapNavLink@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4MapNodeDeformationMode_t@@VCMapGroup@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4MapTestNodeEnum_t@@VCMapDocTestStruct@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4MapTestNodeEnum_t@@VCMapTestNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4MapTileSetRampRule_t@@VCMapTileSet@@@@
+.?AV?$CBaseConcreteToolAttrValue@W4MapUsageType_t@@VCMapWorld@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4OutputFormat_t@CMapTerrainLayerComposite@@V2@@@
 .?AV?$CBaseConcreteToolAttrValue@W4PathInterpolationType_t@@VCMapPath@@@@
 .?AV?$CBaseConcreteToolAttrValue@W4PathTextureOrientation_t@@VCMapCable@@@@
@@ -1155,19 +1370,29 @@ $prefix_element$
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapCable@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapDeformerLattice@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapDocMaterialAdjustStruct@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapDotaTileGrid@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapInstance@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapIsoSurface@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapMesh@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapMeshBase@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapNodeTransformPin@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapPath@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapPhysicsPin@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapPrefab@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapProxy@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapSmartProp@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapStaticOverlay@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapTerrainDetail@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapTerrainLayerPaintable@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapTile@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapTileMesh@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapWorkplaneMarker@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCMapWorld@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCSteamAudioImportedProbeNode@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCSteamAudioProbeGenerationVolume@@@@
 .?AV?$CBaseTypesafeVDataFileManager@VCDetailPropType@@@@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullVData@@@@
@@ -1181,16 +1406,25 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@HVCMapCable@@X@@
 .?AV?$CConcreteToolAttr@HVCMapDeformerLattice@@X@@
 .?AV?$CConcreteToolAttr@HVCMapDocTestStruct@@X@@
+.?AV?$CConcreteToolAttr@HVCMapDotaTileGrid@@X@@
+.?AV?$CConcreteToolAttr@HVCMapGroupProxy@@X@@
+.?AV?$CConcreteToolAttr@HVCMapIsoSurface@@X@@
 .?AV?$CConcreteToolAttr@HVCMapNode@@X@@
 .?AV?$CConcreteToolAttr@HVCMapNodeReference@@X@@
 .?AV?$CConcreteToolAttr@HVCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@HVCMapStaticOverlay@@X@@
 .?AV?$CConcreteToolAttr@HVCMapTerrainLayerPaintable@@X@@
 .?AV?$CConcreteToolAttr@HVCMapTestNode@@X@@
+.?AV?$CConcreteToolAttr@HVCMapTile@@X@@
+.?AV?$CConcreteToolAttr@HVCMapWeightedGroup@@X@@
 .?AV?$CConcreteToolAttr@HVCSteamAudioImportedProbeBoxNode@@X@@
 .?AV?$CConcreteToolAttr@HVCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@HVCTerrainInput@@X@@
+.?AV?$CConcreteToolAttr@IVCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@MVCImagePlaneNode@@X@@
 .?AV?$CConcreteToolAttr@MVCMapCable@@X@@
+.?AV?$CConcreteToolAttr@MVCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@MVCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDeformerSimple@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDocMaterialAdjustStruct@@X@@
 .?AV?$CConcreteToolAttr@MVCMapDocTestStruct@@X@@
@@ -1199,6 +1433,8 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@MVCMapNavLink@@X@@
 .?AV?$CConcreteToolAttr@MVCMapNode@@X@@
 .?AV?$CConcreteToolAttr@MVCMapPath@@X@@
+.?AV?$CConcreteToolAttr@MVCMapPathLocator@@X@@
+.?AV?$CConcreteToolAttr@MVCMapProxy@@X@@
 .?AV?$CConcreteToolAttr@MVCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@MVCMapSmartPropLocator@@X@@
 .?AV?$CConcreteToolAttr@MVCMapStaticOverlay@@X@@
@@ -1206,15 +1442,21 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@MVCMapTerrainGround@@X@@
 .?AV?$CConcreteToolAttr@MVCMapTerrainLayerComposite@@X@@
 .?AV?$CConcreteToolAttr@MVCMapTerrainLayerWorldHeight@@X@@
+.?AV?$CConcreteToolAttr@MVCMapTile@@X@@
+.?AV?$CConcreteToolAttr@MVCMapTileMesh@@X@@
+.?AV?$CConcreteToolAttr@MVCMapTileSet@@X@@
 .?AV?$CConcreteToolAttr@MVCSteamAudioAmbisonicValues@@X@@
 .?AV?$CConcreteToolAttr@MVCSteamAudioBandValues@@X@@
 .?AV?$CConcreteToolAttr@MVCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@MVCSteamAudioMaterialValues@@X@@
+.?AV?$CConcreteToolAttr@MVCSteamAudioProbeGenerationVolume@@X@@
+.?AV?$CConcreteToolAttr@MVCSteamAudioProbeNode@@X@@
 .?AV?$CConcreteToolAttr@URange_t@@VCMapDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@X@@
+.?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@X@@
@@ -1225,15 +1467,23 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec2D@M@@VCMapTerrainElement@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapDeformer@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapNavLink@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapNode@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapNodeTransformPin@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapPathNode@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapPhysicsPin@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCMapSmartPropLocator@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioImportedProbeNode@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioProbeExclusionVolume@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCSteamAudioProbeGenerationVolume@@X@@
+.?AV?$CConcreteToolAttr@VCMapChoreoAnchorLocatorData_t@@VCMapChoreoAnchor@@X@@
 .?AV?$CConcreteToolAttr@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@X@@
 .?AV?$CConcreteToolAttr@VCMapDocTestStruct@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCMapNodeReference@@VCMapSmartProp@@X@@
+.?AV?$CConcreteToolAttr@VCMapNodeTransformPin@@VCMapNode@@X@@
 .?AV?$CConcreteToolAttr@VCPiecewiseCurve@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@X@@
 .?AV?$CConcreteToolAttr@VCSteamAudioBandValues@@VCSteamAudioImportedProbeNode@@X@@
@@ -1244,15 +1494,21 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCTerrainInput@@VCMapTerrainGround@@X@@
 .?AV?$CConcreteToolAttr@VCTerrainInput@@VCMapTerrainGroupBase@@X@@
 .?AV?$CConcreteToolAttr@VCTerrainInput@@VCMapTerrainGroupOutputs@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCImagePlaneNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapCable@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapCordon@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapDocTestStruct@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapDotaTileGrid@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapGrassTile@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapGroup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapIsoSurface@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapMesh@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapMeshBase@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapNavLink@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapNodeReference@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapPrefab@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapProxy@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapStaticOverlay@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTerrainDetail@@X@@
@@ -1264,6 +1520,9 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTerrainLayerImage@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTerrainPrefab@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCMapTestNode@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapTileMesh@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapTileSet@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCMapWorldLayer@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCSteamAudioMaterialValues@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCTerrainInput@@X@@
 .?AV?$CConcreteToolAttr@VColor@@VCMapCable@@X@@
@@ -1274,18 +1533,28 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@VColor@@VCMapTestNode@@X@@
 .?AV?$CConcreteToolAttr@VColor@@VCMapTileMesh@@X@@
 .?AV?$CConcreteToolAttr@VColor@@VCTileMeshFace@@X@@
+.?AV?$CConcreteToolAttr@VQAngle@@VCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@VQAngle@@VCMapNavLink@@X@@
 .?AV?$CConcreteToolAttr@VQAngle@@VCMapNode@@X@@
+.?AV?$CConcreteToolAttr@VQAngle@@VCMapNodeTransformPin@@X@@
+.?AV?$CConcreteToolAttr@W4AcousticGeometryShadingMode_t@@VCSteamAudioData@@X@@
+.?AV?$CConcreteToolAttr@W4AcousticMaterialShadingMode_t@@VCSteamAudioData@@X@@
+.?AV?$CConcreteToolAttr@W4AlignToAxisMode_t@@VCMapTile@@X@@
 .?AV?$CConcreteToolAttr@W4BendAxis_t@CLatticeDeformer@@VCMapDeformerSimple@@X@@
 .?AV?$CConcreteToolAttr@W4BezierPathTangentType_t@@VCMapPathNode@@X@@
+.?AV?$CConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@X@@
+.?AV?$CConcreteToolAttr@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@X@@
 .?AV?$CConcreteToolAttr@W4DisableShadows_t@@VCMapMeshBase@@X@@
 .?AV?$CConcreteToolAttr@W4DisableShadows_t@@VCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@W4HammerMeshPhysicsType_t@@VCMapMesh@@X@@
 .?AV?$CConcreteToolAttr@W4ImageMode_t@CMapTerrainLayerImage@@V2@X@@
 .?AV?$CConcreteToolAttr@W4InterpolationMode_t@CLatticeDeformer@@VCMapDeformerLattice@@X@@
+.?AV?$CConcreteToolAttr@W4MapNavLinkType_t@@VCMapNavLink@@X@@
 .?AV?$CConcreteToolAttr@W4MapNodeDeformationMode_t@@VCMapGroup@@X@@
 .?AV?$CConcreteToolAttr@W4MapTestNodeEnum_t@@VCMapDocTestStruct@@X@@
 .?AV?$CConcreteToolAttr@W4MapTestNodeEnum_t@@VCMapTestNode@@X@@
+.?AV?$CConcreteToolAttr@W4MapTileSetRampRule_t@@VCMapTileSet@@X@@
+.?AV?$CConcreteToolAttr@W4MapUsageType_t@@VCMapWorld@@X@@
 .?AV?$CConcreteToolAttr@W4OutputFormat_t@CMapTerrainLayerComposite@@V2@X@@
 .?AV?$CConcreteToolAttr@W4PathInterpolationType_t@@VCMapPath@@X@@
 .?AV?$CConcreteToolAttr@W4PathTextureOrientation_t@@VCMapCable@@X@@
@@ -1297,24 +1566,35 @@ $prefix_element$
 .?AV?$CConcreteToolAttr@_NVCMapCable@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapDeformerLattice@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapDocMaterialAdjustStruct@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapDotaTileGrid@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapInstance@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapIsoSurface@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapMesh@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapMeshBase@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapNode@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapNodeTransformPin@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapPath@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapPhysicsPin@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapPrefab@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapProxy@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapSmartProp@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapStaticOverlay@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapTerrainDetail@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapTerrainLayerPaintable@@X@@
 .?AV?$CConcreteToolAttr@_NVCMapTerrainLayerWorldHeight@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapTile@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapTileMesh@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapWorkplaneMarker@@X@@
+.?AV?$CConcreteToolAttr@_NVCMapWorld@@X@@
 .?AV?$CConcreteToolAttr@_NVCSteamAudioImportedProbeBoxNode@@X@@
 .?AV?$CConcreteToolAttr@_NVCSteamAudioImportedProbeNode@@X@@
+.?AV?$CConcreteToolAttr@_NVCSteamAudioProbeGenerationVolume@@X@@
 .?AV?$CConcreteToolAttrGetForModify@$$BY03W4MapTestNodeEnum_t@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
+.?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -1325,6 +1605,7 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetForModify@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCMapDocTestStruct@@VCMapTestNode@@@@
+.?AV?$CConcreteToolAttrGetForModify@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCPiecewiseCurve@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCSteamAudioBandValues@@VCSteamAudioImportedProbeNode@@@@
@@ -1337,15 +1618,24 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@HVCMapCable@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapDeformerLattice@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapDocTestStruct@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCMapDotaTileGrid@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCMapGroupProxy@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCMapIsoSurface@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapNodeReference@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapStaticOverlay@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCMapTerrainLayerPaintable@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCMapTile@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCMapWeightedGroup@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCTerrainInput@@@@
+.?AV?$CConcreteToolAttrGetSet@IVCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCImagePlaneNode@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapCable@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDeformerSimple@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapDocTestStruct@@@@
@@ -1354,6 +1644,8 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@MVCMapNavLink@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapNode@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapPath@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapPathLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapProxy@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapSmartPropLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapStaticOverlay@@@@
@@ -1361,27 +1653,44 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@MVCMapTerrainGround@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapTerrainLayerComposite@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapTile@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapTileMesh@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCMapTileSet@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCSteamAudioAmbisonicValues@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCSteamAudioBandValues@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCSteamAudioImportedProbeNode@@@@
 .?AV?$CConcreteToolAttrGetSet@MVCSteamAudioMaterialValues@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CConcreteToolAttrGetSet@MVCSteamAudioProbeNode@@@@
 .?AV?$CConcreteToolAttrGetSet@URange_t@@VCMapDocTestStruct@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec2D@M@@VCMapTerrainElement@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapDeformer@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapNavLink@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapNode@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapNodeTransformPin@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapPathNode@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapPhysicsPin@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCMapSmartPropLocator@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCSteamAudioImportedProbeNode@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCSteamAudioProbeExclusionVolume@@@@
+.?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCImagePlaneNode@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapCable@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapCordon@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapDocTestStruct@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapDotaTileGrid@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapGrassTile@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapGroup@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapIsoSurface@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapMesh@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapMeshBase@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapNavLink@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapNode@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapNodeReference@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapPrefab@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapProxy@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapStaticOverlay@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainDetail@@@@
@@ -1391,6 +1700,9 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainLayerComposite@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTerrainPrefab@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapTileSet@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCSteamAudioMaterialValues@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCTerrainInput@@@@
 .?AV?$CConcreteToolAttrGetSet@VColor@@VCMapCable@@@@
@@ -1401,17 +1713,27 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@VColor@@VCMapTestNode@@@@
 .?AV?$CConcreteToolAttrGetSet@VColor@@VCMapTileMesh@@@@
 .?AV?$CConcreteToolAttrGetSet@VColor@@VCTileMeshFace@@@@
+.?AV?$CConcreteToolAttrGetSet@VQAngle@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@VQAngle@@VCMapNavLink@@@@
 .?AV?$CConcreteToolAttrGetSet@VQAngle@@VCMapNode@@@@
+.?AV?$CConcreteToolAttrGetSet@VQAngle@@VCMapNodeTransformPin@@@@
+.?AV?$CConcreteToolAttrGetSet@W4AcousticGeometryShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CConcreteToolAttrGetSet@W4AcousticMaterialShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CConcreteToolAttrGetSet@W4AlignToAxisMode_t@@VCMapTile@@@@
 .?AV?$CConcreteToolAttrGetSet@W4BendAxis_t@CLatticeDeformer@@VCMapDeformerSimple@@@@
 .?AV?$CConcreteToolAttrGetSet@W4BezierPathTangentType_t@@VCMapPathNode@@@@
+.?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CConcreteToolAttrGetSet@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CConcreteToolAttrGetSet@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CConcreteToolAttrGetSet@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
 .?AV?$CConcreteToolAttrGetSet@W4ImageMode_t@CMapTerrainLayerImage@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4InterpolationMode_t@CLatticeDeformer@@VCMapDeformerLattice@@@@
+.?AV?$CConcreteToolAttrGetSet@W4MapNavLinkType_t@@VCMapNavLink@@@@
 .?AV?$CConcreteToolAttrGetSet@W4MapNodeDeformationMode_t@@VCMapGroup@@@@
 .?AV?$CConcreteToolAttrGetSet@W4MapTestNodeEnum_t@@VCMapDocTestStruct@@@@
+.?AV?$CConcreteToolAttrGetSet@W4MapTileSetRampRule_t@@VCMapTileSet@@@@
+.?AV?$CConcreteToolAttrGetSet@W4MapUsageType_t@@VCMapWorld@@@@
 .?AV?$CConcreteToolAttrGetSet@W4OutputFormat_t@CMapTerrainLayerComposite@@V2@@@
 .?AV?$CConcreteToolAttrGetSet@W4PathInterpolationType_t@@VCMapPath@@@@
 .?AV?$CConcreteToolAttrGetSet@W4PathTextureOrientation_t@@VCMapCable@@@@
@@ -1423,36 +1745,60 @@ $prefix_element$
 .?AV?$CConcreteToolAttrGetSet@_NVCMapCable@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapDeformerLattice@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapDocMaterialAdjustStruct@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapDotaTileGrid@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapInstance@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapIsoSurface@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapMesh@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapMeshBase@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapNode@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapNodeTransformPin@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapPath@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapPhysicsPin@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapPrefab@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapProxy@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapSmartProp@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapStaticOverlay@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapTerrainDetail@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapTerrainLayerPaintable@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapTile@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapTileMesh@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapWorkplaneMarker@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCMapWorld@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCSteamAudioImportedProbeNode@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCSteamAudioProbeGenerationVolume@@@@
 .?AV?$CContextMenuLambda@V<lambda_1>@?1??GetCustomCommands@CLightHelper@@UEBAXPEAVCHammerEditorSession@@PEAVCMapDoc@@AEBV?$CUtlVector@PEAVCMapNode@@HV?$CUtlVectorMemory_Growable@PEAVCMapNode@@H$0A@@@@@PEAV?$CUtlVector@UToolContextMenuItem_t@@HV?$CUtlVectorMemory_Growable@UToolContextMenuItem_t@@H$0A@@@@@@Z@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCImagePlaneNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapCable@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapChoreoAnchor@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapChoreoAnchorLocator@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapChoreoAnchorLocatorData_t@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapCordon@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformer@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformerLattice@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDeformerSimple@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDocMaterialAdjustStruct@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapDocTestStruct@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapDotaTileGrid@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapGrassTile@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapGroup@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapGroupProxy@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapInstance@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapIsoSurface@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapMesh@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapMeshBase@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapMeshLocator@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapNavLink@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapNodeReference@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapNodeTransformPin@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapPath@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapPathLocator@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapPathNode@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapPhysicsPin@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapPrefab@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapProxy@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapSmartProp@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapSmartPropLocator@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapStaticOverlay@@@@
@@ -1469,12 +1815,22 @@ $prefix_element$
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTerrainLayerWorldHeight@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTerrainPrefab@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTestNode@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapTile@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCMapTileMesh@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapTileSet@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapWeightedGroup@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapWorkplaneMarker@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapWorld@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCMapWorldLayer@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioAmbisonicValues@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioBandValues@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioData@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioMaterialValues@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioProbeExclusionVolume@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioProbeNode@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCSteamAudioSignal@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCTerrainInput@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCTileMeshFace@@@@
@@ -1661,6 +2017,8 @@ $prefix_element$
 .?AV?$CDmElementFactory@VCMapAtom@@@@
 .?AV?$CDmElementFactory@VCMapBox@@@@
 .?AV?$CDmElementFactory@VCMapCable@@@@
+.?AV?$CDmElementFactory@VCMapChoreoAnchor@@@@
+.?AV?$CDmElementFactory@VCMapChoreoAnchorLocator@@@@
 .?AV?$CDmElementFactory@VCMapCordon@@@@
 .?AV?$CDmElementFactory@VCMapDeformer@@@@
 .?AV?$CDmElementFactory@VCMapDeformerLattice@@@@
@@ -1670,6 +2028,7 @@ $prefix_element$
 .?AV?$CDmElementFactory@VCMapEntity@@@@
 .?AV?$CDmElementFactory@VCMapEntityIONode@@@@
 .?AV?$CDmElementFactory@VCMapGameDataNode@@@@
+.?AV?$CDmElementFactory@VCMapGameDataNodeLocator@@@@
 .?AV?$CDmElementFactory@VCMapGlobalTileGridMaps@@@@
 .?AV?$CDmElementFactory@VCMapGrassTile@@@@
 .?AV?$CDmElementFactory@VCMapGrassTileCollection@@@@
@@ -1681,17 +2040,21 @@ $prefix_element$
 .?AV?$CDmElementFactory@VCMapLocator@@@@
 .?AV?$CDmElementFactory@VCMapMesh@@@@
 .?AV?$CDmElementFactory@VCMapMeshBase@@@@
+.?AV?$CDmElementFactory@VCMapMeshLocator@@@@
 .?AV?$CDmElementFactory@VCMapNavData@@@@
 .?AV?$CDmElementFactory@VCMapNavLink@@@@
 .?AV?$CDmElementFactory@VCMapNavLinkLocator@@@@
 .?AV?$CDmElementFactory@VCMapNode@@@@
 .?AV?$CDmElementFactory@VCMapOpaqueDataBlob@@@@
 .?AV?$CDmElementFactory@VCMapPath@@@@
+.?AV?$CDmElementFactory@VCMapPathLocator@@@@
 .?AV?$CDmElementFactory@VCMapPathNode@@@@
 .?AV?$CDmElementFactory@VCMapPhysicsPin@@@@
 .?AV?$CDmElementFactory@VCMapPoint@@@@
 .?AV?$CDmElementFactory@VCMapPrefab@@@@
 .?AV?$CDmElementFactory@VCMapPrefabSubInstance@@@@
+.?AV?$CDmElementFactory@VCMapPrefabVariableLocator@@@@
+.?AV?$CDmElementFactory@VCMapProceduralLocator@@@@
 .?AV?$CDmElementFactory@VCMapProxy@@@@
 .?AV?$CDmElementFactory@VCMapProxyInstance@@@@
 .?AV?$CDmElementFactory@VCMapRootElement@@@@
@@ -1725,12 +2088,13 @@ $prefix_element$
 .?AV?$CDmElementFactory@VCMapTileProxy@@@@
 .?AV?$CDmElementFactory@VCMapTileSet@@@@
 .?AV?$CDmElementFactory@VCMapTransform@@@@
-.?AV?$CDmElementFactory@VCMapVariableChoice@@@@
-.?AV?$CDmElementFactory@VCMapVariableChoiceGroup@@@@
-.?AV?$CDmElementFactory@VCMapVariableSet@@@@
+.?AV?$CDmElementFactory@VCMapVariableChoiceGroupStorage@@@@
+.?AV?$CDmElementFactory@VCMapVariableChoiceStorage@@@@
+.?AV?$CDmElementFactory@VCMapVariableSetStorage@@@@
 .?AV?$CDmElementFactory@VCMapVisCluster@@@@
 .?AV?$CDmElementFactory@VCMapVisData@@@@
 .?AV?$CDmElementFactory@VCMapWeightedGroup@@@@
+.?AV?$CDmElementFactory@VCMapWorkplaneMarker@@@@
 .?AV?$CDmElementFactory@VCMapWorld@@@@
 .?AV?$CDmElementFactory@VCMapWorldLayer@@@@
 .?AV?$CDmElementFactory@VCObjectSelectionSetDataElement@@@@
@@ -1834,6 +2198,7 @@ $prefix_element$
 .?AV?$CEvaluatedAttributeEnum@W4SmartPropGridOriginBasis_t@@@@
 .?AV?$CEvaluatedAttributeEnum@W4SmartPropGridPlacementMode_t@@@@
 .?AV?$CEvaluatedAttributeEnum@W4SmartPropPathPositions_t@@@@
+.?AV?$CEvaluatedAttributeEnum@W4SmartPropPlaceMeshOrientationMode_t@@@@
 .?AV?$CEvaluatedAttributeEnum@W4SmartPropRadiusPlacementMode_t@@@@
 .?AV?$CEvaluatedAttributeEnum@W4SmartPropSpace_t@@@@
 .?AV?$CEvaluatedAttributeEnum@W4TraceNoHitResult_t@@@@
@@ -1847,6 +2212,7 @@ $prefix_element$
 .?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropGridOriginBasis_t@@@@
 .?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropGridPlacementMode_t@@@@
 .?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropPathPositions_t@@@@
+.?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropPlaceMeshOrientationMode_t@@@@
 .?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropRadiusPlacementMode_t@@@@
 .?AV?$CEvaluatedAttributeSchemaEnum@W4SmartPropSpace_t@@@@
 .?AV?$CEvaluatedAttributeSchemaEnum@W4TraceNoHitResult_t@@@@
@@ -1875,6 +2241,7 @@ $prefix_element$
 .?AV?$CSmartPropVariable_Enum@W4SmartPropGridOriginBasis_t@@@@
 .?AV?$CSmartPropVariable_Enum@W4SmartPropGridPlacementMode_t@@@@
 .?AV?$CSmartPropVariable_Enum@W4SmartPropPathPositions_t@@@@
+.?AV?$CSmartPropVariable_Enum@W4SmartPropPlaceMeshOrientationMode_t@@@@
 .?AV?$CSmartPropVariable_Enum@W4SmartPropRadiusPlacementMode_t@@@@
 .?AV?$CSmartPropVariable_Enum@W4SmartPropSpace_t@@@@
 .?AV?$CSmartPropVariable_Enum@W4TraceNoHitResult_t@@@@
@@ -1892,6 +2259,7 @@ $prefix_element$
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@@@
+.?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@@@
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@@@
@@ -1902,6 +2270,7 @@ $prefix_element$
 .?AV?$CToolAttrGetForModifyAccess@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCMapDocMaterialAdjustStruct@@VCMapStaticOverlay@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCMapDocTestStruct@@VCMapTestNode@@@@
+.?AV?$CToolAttrGetForModifyAccess@VCMapNodeTransformPin@@VCMapNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCPiecewiseCurve@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCSteamAudioAmbisonicValues@@VCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCSteamAudioBandValues@@VCSteamAudioImportedProbeNode@@@@
@@ -1914,15 +2283,24 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@HVCMapCable@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapDeformerLattice@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapDocTestStruct@@@@
+.?AV?$CToolAttrGetSetAccess@HVCMapDotaTileGrid@@@@
+.?AV?$CToolAttrGetSetAccess@HVCMapGroupProxy@@@@
+.?AV?$CToolAttrGetSetAccess@HVCMapIsoSurface@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapNodeReference@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapStaticOverlay@@@@
 .?AV?$CToolAttrGetSetAccess@HVCMapTerrainLayerPaintable@@@@
+.?AV?$CToolAttrGetSetAccess@HVCMapTile@@@@
+.?AV?$CToolAttrGetSetAccess@HVCMapWeightedGroup@@@@
 .?AV?$CToolAttrGetSetAccess@HVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetSetAccess@HVCTerrainInput@@@@
+.?AV?$CToolAttrGetSetAccess@IVCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@MVCImagePlaneNode@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapCable@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDeformerSimple@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDocMaterialAdjustStruct@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapDocTestStruct@@@@
@@ -1931,6 +2309,8 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@MVCMapNavLink@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapNode@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapPath@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapPathLocator@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapProxy@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapSmartPropLocator@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapStaticOverlay@@@@
@@ -1938,27 +2318,44 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@MVCMapTerrainGround@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapTerrainLayerComposite@@@@
 .?AV?$CToolAttrGetSetAccess@MVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapTile@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapTileMesh@@@@
+.?AV?$CToolAttrGetSetAccess@MVCMapTileSet@@@@
 .?AV?$CToolAttrGetSetAccess@MVCSteamAudioAmbisonicValues@@@@
 .?AV?$CToolAttrGetSetAccess@MVCSteamAudioBandValues@@@@
 .?AV?$CToolAttrGetSetAccess@MVCSteamAudioImportedProbeNode@@@@
 .?AV?$CToolAttrGetSetAccess@MVCSteamAudioMaterialValues@@@@
+.?AV?$CToolAttrGetSetAccess@MVCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CToolAttrGetSetAccess@MVCSteamAudioProbeNode@@@@
 .?AV?$CToolAttrGetSetAccess@URange_t@@VCMapDocTestStruct@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec2D@M@@VCMapTerrainElement@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapDeformer@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapNavLink@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapNode@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapNodeTransformPin@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapPathNode@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapPhysicsPin@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCMapSmartPropLocator@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCSteamAudioImportedProbeNode@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCSteamAudioProbeExclusionVolume@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCSteamAudioProbeGenerationVolume@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCImagePlaneNode@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapCable@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapCordon@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapDocTestStruct@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapDotaTileGrid@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapGrassTile@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapGroup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapIsoSurface@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapMesh@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapMeshBase@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapNavLink@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapNode@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapNodeReference@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapPrefab@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapProxy@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapStaticOverlay@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainDetail@@@@
@@ -1968,6 +2365,9 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainLayerComposite@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainLayerImage@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTerrainPrefab@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTileMesh@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapTileSet@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCMapWorldLayer@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCSteamAudioMaterialValues@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCTerrainInput@@@@
 .?AV?$CToolAttrGetSetAccess@VColor@@VCMapCable@@@@
@@ -1978,17 +2378,27 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@VColor@@VCMapTestNode@@@@
 .?AV?$CToolAttrGetSetAccess@VColor@@VCMapTileMesh@@@@
 .?AV?$CToolAttrGetSetAccess@VColor@@VCTileMeshFace@@@@
+.?AV?$CToolAttrGetSetAccess@VQAngle@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@VQAngle@@VCMapNavLink@@@@
 .?AV?$CToolAttrGetSetAccess@VQAngle@@VCMapNode@@@@
+.?AV?$CToolAttrGetSetAccess@VQAngle@@VCMapNodeTransformPin@@@@
+.?AV?$CToolAttrGetSetAccess@W4AcousticGeometryShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CToolAttrGetSetAccess@W4AcousticMaterialShadingMode_t@@VCSteamAudioData@@@@
+.?AV?$CToolAttrGetSetAccess@W4AlignToAxisMode_t@@VCMapTile@@@@
 .?AV?$CToolAttrGetSetAccess@W4BendAxis_t@CLatticeDeformer@@VCMapDeformerSimple@@@@
 .?AV?$CToolAttrGetSetAccess@W4BezierPathTangentType_t@@VCMapPathNode@@@@
+.?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocator@@@@
+.?AV?$CToolAttrGetSetAccess@W4CMapChoreoLocatorShapeType_t@@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$CToolAttrGetSetAccess@W4DisableShadows_t@@VCMapMeshBase@@@@
 .?AV?$CToolAttrGetSetAccess@W4DisableShadows_t@@VCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@W4HammerMeshPhysicsType_t@@VCMapMesh@@@@
 .?AV?$CToolAttrGetSetAccess@W4ImageMode_t@CMapTerrainLayerImage@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4InterpolationMode_t@CLatticeDeformer@@VCMapDeformerLattice@@@@
+.?AV?$CToolAttrGetSetAccess@W4MapNavLinkType_t@@VCMapNavLink@@@@
 .?AV?$CToolAttrGetSetAccess@W4MapNodeDeformationMode_t@@VCMapGroup@@@@
 .?AV?$CToolAttrGetSetAccess@W4MapTestNodeEnum_t@@VCMapDocTestStruct@@@@
+.?AV?$CToolAttrGetSetAccess@W4MapTileSetRampRule_t@@VCMapTileSet@@@@
+.?AV?$CToolAttrGetSetAccess@W4MapUsageType_t@@VCMapWorld@@@@
 .?AV?$CToolAttrGetSetAccess@W4OutputFormat_t@CMapTerrainLayerComposite@@V2@@@
 .?AV?$CToolAttrGetSetAccess@W4PathInterpolationType_t@@VCMapPath@@@@
 .?AV?$CToolAttrGetSetAccess@W4PathTextureOrientation_t@@VCMapCable@@@@
@@ -2000,24 +2410,31 @@ $prefix_element$
 .?AV?$CToolAttrGetSetAccess@_NVCMapCable@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapDeformerLattice@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapDocMaterialAdjustStruct@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapDotaTileGrid@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapInstance@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapIsoSurface@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapMesh@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapMeshBase@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapNode@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapNodeTransformPin@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapPath@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapPhysicsPin@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapPrefab@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapProxy@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapSmartProp@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapStaticOverlay@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapTerrainDetail@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapTerrainLayerPaintable@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCMapTerrainLayerWorldHeight@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapTile@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapTileMesh@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapWorkplaneMarker@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCMapWorld@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCSteamAudioImportedProbeBoxNode@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCSteamAudioImportedProbeNode@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCSteamAudioProbeGenerationVolume@@@@
 .?AV?$CToolEventMapRegistrationHelper@VCCordonMgr@@@@
 .?AV?$CToolEventMapRegistrationHelper@VCDebugDrawRayTracingEnvironment@@@@
-.?AV?$CToolEventMapRegistrationHelper@VCSteamAudioProbeExclusionVolume@@@@
-.?AV?$CToolEventMapRegistrationHelper@VCSteamAudioProbeGenerationVolume@@@@
-.?AV?$CToolEventMapRegistrationHelper@VCSteamAudioProbeNode@@@@
 .?AV?$CTypedLogLayerSampleData@E@@
 .?AV?$CTypedLogLayerSampleData@H@@
 .?AV?$CTypedLogLayerSampleData@M@@
@@ -2177,17 +2594,20 @@ $prefix_element$
 .?AV?$CVDataFileManager@VCDetailPropType@@@@
 .?AV?$CVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CVDataFileManager@VCNavHullVData@@@@
+.?AV?$ISceneObjectDescBase@VCGridSceneObject@@@@
 .?AV?$ISceneObjectDescBase@VCTextSceneObject@@@@
 .?AV?$ISceneObjectDescBase@VCVertexListSceneObject@@@@
 .?AV?$ISceneObjectDescBase@VCVisualizeWindSceneObject@@@@
 .?AV?$IToolAttrConcreteDataAccess@$$BY03W4MapTestNodeEnum_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@E@@
 .?AV?$IToolAttrConcreteDataAccess@H@@
+.?AV?$IToolAttrConcreteDataAccess@I@@
 .?AV?$IToolAttrConcreteDataAccess@M@@
 .?AV?$IToolAttrConcreteDataAccess@URange_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@@@
+.?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@@@
@@ -2195,9 +2615,11 @@ $prefix_element$
 .?AV?$IToolAttrConcreteDataAccess@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$Vec2D@M@@@@
 .?AV?$IToolAttrConcreteDataAccess@V?$Vec3D@M@@@@
+.?AV?$IToolAttrConcreteDataAccess@VCMapChoreoAnchorLocatorData_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCMapDocMaterialAdjustStruct@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCMapDocTestStruct@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCMapNodeReference@@@@
+.?AV?$IToolAttrConcreteDataAccess@VCMapNodeTransformPin@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCPiecewiseCurve@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCSteamAudioAmbisonicValues@@@@
 .?AV?$IToolAttrConcreteDataAccess@VCSteamAudioBandValues@@@@
@@ -2207,14 +2629,21 @@ $prefix_element$
 .?AV?$IToolAttrConcreteDataAccess@VCUtlString@@@@
 .?AV?$IToolAttrConcreteDataAccess@VColor@@@@
 .?AV?$IToolAttrConcreteDataAccess@VQAngle@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4AcousticGeometryShadingMode_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4AcousticMaterialShadingMode_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4AlignToAxisMode_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4BendAxis_t@CLatticeDeformer@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4BezierPathTangentType_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4CMapChoreoLocatorShapeType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4DisableShadows_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4HammerMeshPhysicsType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4ImageMode_t@CMapTerrainLayerImage@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4InterpolationMode_t@CLatticeDeformer@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4MapNavLinkType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4MapNodeDeformationMode_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4MapTestNodeEnum_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4MapTileSetRampRule_t@@@@
+.?AV?$IToolAttrConcreteDataAccess@W4MapUsageType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4OutputFormat_t@CMapTerrainLayerComposite@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4PathInterpolationType_t@@@@
 .?AV?$IToolAttrConcreteDataAccess@W4PathTextureOrientation_t@@@@
@@ -2224,6 +2653,7 @@ $prefix_element$
 .?AV?$IToolAttrConcreteDataAccess@_N@@
 .?AV?$IToolAttr_TypedValue@E@@
 .?AV?$IToolAttr_TypedValue@H@@
+.?AV?$IToolAttr_TypedValue@I@@
 .?AV?$IToolAttr_TypedValue@M@@
 .?AV?$IToolAttr_TypedValue@URange_t@@@@
 .?AV?$IToolAttr_TypedValue@V?$Vec2D@M@@@@
@@ -2233,14 +2663,21 @@ $prefix_element$
 .?AV?$IToolAttr_TypedValue@VCUtlString@@@@
 .?AV?$IToolAttr_TypedValue@VColor@@@@
 .?AV?$IToolAttr_TypedValue@VQAngle@@@@
+.?AV?$IToolAttr_TypedValue@W4AcousticGeometryShadingMode_t@@@@
+.?AV?$IToolAttr_TypedValue@W4AcousticMaterialShadingMode_t@@@@
+.?AV?$IToolAttr_TypedValue@W4AlignToAxisMode_t@@@@
 .?AV?$IToolAttr_TypedValue@W4BendAxis_t@CLatticeDeformer@@@@
 .?AV?$IToolAttr_TypedValue@W4BezierPathTangentType_t@@@@
+.?AV?$IToolAttr_TypedValue@W4CMapChoreoLocatorShapeType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4DisableShadows_t@@@@
 .?AV?$IToolAttr_TypedValue@W4HammerMeshPhysicsType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4ImageMode_t@CMapTerrainLayerImage@@@@
 .?AV?$IToolAttr_TypedValue@W4InterpolationMode_t@CLatticeDeformer@@@@
+.?AV?$IToolAttr_TypedValue@W4MapNavLinkType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4MapNodeDeformationMode_t@@@@
 .?AV?$IToolAttr_TypedValue@W4MapTestNodeEnum_t@@@@
+.?AV?$IToolAttr_TypedValue@W4MapTileSetRampRule_t@@@@
+.?AV?$IToolAttr_TypedValue@W4MapUsageType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4OutputFormat_t@CMapTerrainLayerComposite@@@@
 .?AV?$IToolAttr_TypedValue@W4PathInterpolationType_t@@@@
 .?AV?$IToolAttr_TypedValue@W4PathTextureOrientation_t@@@@
@@ -2248,9 +2685,10 @@ $prefix_element$
 .?AV?$IToolAttr_TypedValue@W4SteamAudioImportedProbeType_t@@@@
 .?AV?$IToolAttr_TypedValue@_K@@
 .?AV?$IToolAttr_TypedValue@_N@@
-.?AV?$_Func_base@PEBDPEBD@std@@
 .?AV?$_Func_base@XAEAVCNavArea@@@std@@
 .?AV?$_Func_base@XPEAVCGlobalHotkeyCommands@@@std@@
+.?AV?$_Func_base@XPEAVCMapPrefabVariableLocator@@@std@@
+.?AV?$_Func_base@XPEAVCMapPrefabVariableLocator@@_N@std@@
 .?AV?$_Func_base@XPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVCQSessionCycleWidget@@@std@@
@@ -2264,6 +2702,8 @@ $prefix_element$
 .?AV?$_Func_base@XPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
+.?AV?$_Func_base@_NPEBVCMapNode@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
+.?AV?$_Func_base@_NPEBVCMapPrefabVariableLocator@@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
@@ -2292,15 +2732,18 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V<lambda_17>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_18>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropRadiusPlacementMode_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??ApplyMapVariableOverrideValuesToTargetMap@CMapPrefab@@AEBAXXZ@PEBDPEBD@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CollectAreasAssociatedWithMovableMeshInternal@CNavMovableMeshCatalog@@AEAAXIPEAIPEAV?$CUtlVector@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@H$0A@@@@@PEAV?$CUtlVector@PEAVCNavArea@@HV?$CUtlVectorMemory_Growable@PEAVCNavArea@@H$0A@@@@@@Z@XAEAVCNavArea@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Restart@CNewParticleEffect@@QEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??UpdateInstanceLocators@CMapPrefab@@AEAAXXZ@XPEAVCMapPrefabVariableLocator@@_N@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@_NPEBV3@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??UpdateMapVariableLocators@CMapWorld@@QEAAXXZ@XPEAVCMapPrefabVariableLocator@@_N@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?CC@??QuarterSizeAttrWithBoxFilter@CSOAContainer@@QEAAXAEBV3@HHPEAVCCallQueue@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?O@??GetEditableAttributeInfo@CMapPrefab@@UEBA_NPEBDPEAUMapNodeAttributeInfo_t@@@Z@_NPEBVCMapNode@@PEAV?$CUtlVector@UToolAttrGenericChoice_t@@HV?$CUtlVectorMemory_Growable@UToolAttrGenericChoice_t@@H$0A@@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_20>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropChoiceSelectionMode_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_21>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_22>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropColorSelectionMode_t@@@@I$$V@std@@
@@ -2312,6 +2755,7 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V<lambda_28>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPathPositions_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?$PulseBindingSchemaEnumTraits_t@W4ScaleMode_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??UpdateLocators@CMapPrefabVariableLocator@@SAXPEAVCMapNode@@PEBVCMapVariableSet@@PEBVCMapPrefab@@W4EMapPrefabVariableUsageType_t@@AEBV?$function@$$A6AXPEAVCMapPrefabVariableLocator@@_N@Z@std@@@Z@XPEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
@@ -2323,13 +2767,15 @@ $prefix_element$
 .?AV?$_Func_impl_no_alloc@V<lambda_34>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridPlacementMode_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_35>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_36>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropGridOriginBasis_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@I$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_37>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_38>@?$PulseBindingSchemaEnumTraits_t@W4SmartPropPlaceMeshOrientationMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_39>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_40>@?$PulseBindingSchemaEnumTraits_t@W4TraceNoHitResult_t@@@@I$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_41>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@VCPulseValueFullType@@$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_42>@?$PulseBindingSchemaEnumTraits_t@W4ApplyColorMode_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?$PulseBindingResourceHandleTraits_t@V?$CWeakHandle@UInfoForResourceTypeCModel@@@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -2352,6 +2798,7 @@ $prefix_element$
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@HHV?$CUtlVectorMemory_Growable@HH$0A@@@@@VCMapTestNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@MHV?$CUtlVectorMemory_Growable@MH$0A@@@@@VCSteamAudioImportedProbeNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@HV?$CUtlVectorMemory_Growable@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@H$0A@@@@@VCMapTestNode@@X@@
+.?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapChoreoAnchorLocatorData_t@@HV?$CUtlVectorMemory_Growable@VCMapChoreoAnchorLocatorData_t@@H$0A@@@@@VCMapChoreoAnchor@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapDocTestStruct@@HV?$CUtlVectorMemory_Growable@VCMapDocTestStruct@@H$0A@@@@@VCMapTestNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCMapNodeReference@@HV?$CUtlVectorMemory_Growable@VCMapNodeReference@@H$0A@@@@@VCMapSmartProp@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCTerrainInput@@HV?$CUtlVectorMemory_Growable@VCTerrainInput@@H$0A@@@@@VCMapTerrainGroupBase@@X@@
@@ -2361,6 +2808,7 @@ $prefix_element$
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@VCMapTestNode@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapDocTestStruct@@X@@
 .?AVCArrayElementAccess@?$CConcreteToolAttr@V?$CUtlVector@W4MapTestNodeEnum_t@@HV?$CUtlVectorMemory_Growable@W4MapTestNodeEnum_t@@H$0A@@@@@VCMapTestNode@@X@@
+.?AVCBLASBuildHelper@@
 .?AVCBakeAmbientOcclusionHelper@@
 .?AVCBakeResourceHelper@@
 .?AVCBakeSkyLightHelper@@
@@ -2560,6 +3008,8 @@ $prefix_element$
 .?AVCGrassMaterialSlot@@
 .?AVCGrassTileSceneObjectContainer@@
 .?AVCGridRenderBlock@@
+.?AVCGridSceneObject@@
+.?AVCGridSceneObjectDescriptor@@
 .?AVCHammerClipboard@@
 .?AVCHammerModelInstance@@
 .?AVCHammerPolyMesh@@
@@ -2580,7 +3030,7 @@ $prefix_element$
 .?AVCKV3Transfer_AssertAlreadyLoadedResourceLoadInterface@@
 .?AVCLODHintHelper@@
 .?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@Z@
-.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?CA@??FrameUpdate@CMapDoc@@QEAAXM_N0@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?CA@??FrameUpdate@CMapDoc@@QEAAXM_N2@Z@@Z@
+.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?CD@??FrameUpdate@CMapDoc@@QEAAXM_N0@Z@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?CD@??FrameUpdate@CMapDoc@@QEAAXM_N2@Z@@Z@
 .?AVCLayer@CMapDotaTileGrid@@
 .?AVCLayerList@CMapDotaTileGrid@@
 .?AVCLeanSphereHelper@@
@@ -2588,6 +3038,7 @@ $prefix_element$
 .?AVCLightHelper@@
 .?AVCLightHelperBase@@
 .?AVCLightSceneObjectContainer@@
+.?AVCLightStyle@@
 .?AVCLineHelper@@
 .?AVCLogLayerSampleData@@
 .?AVCManifestInstance@@
@@ -2596,6 +3047,8 @@ $prefix_element$
 .?AVCMapBox@@
 .?AVCMapCable@@
 .?AVCMapCableRaytraceEnvironmentUpdateJob@@
+.?AVCMapChoreoAnchor@@
+.?AVCMapChoreoAnchorLocator@@
 .?AVCMapCordon@@
 .?AVCMapDeformer@@
 .?AVCMapDeformerLattice@@
@@ -2609,6 +3062,7 @@ $prefix_element$
 .?AVCMapEntity@@
 .?AVCMapEntityIONode@@
 .?AVCMapGameDataNode@@
+.?AVCMapGameDataNodeLocator@@
 .?AVCMapGameDataNode_AssetKV3FGDProvider@@
 .?AVCMapGameDataNode_UnknownKV3FGDProvider@@
 .?AVCMapGlobalTileGridMaps@@
@@ -2622,20 +3076,25 @@ $prefix_element$
 .?AVCMapLocator@@
 .?AVCMapMesh@@
 .?AVCMapMeshBase@@
+.?AVCMapMeshLocator@@
 .?AVCMapNavData@@
 .?AVCMapNavLink@@
 .?AVCMapNavLinkLocator@@
 .?AVCMapNode@@
 .?AVCMapNodeDataProvider@@
 .?AVCMapNodeReference@@
+.?AVCMapNodeTransformPin@@
 .?AVCMapNodeTransformationBaseline@@
 .?AVCMapOpaqueDataBlob@@
 .?AVCMapPath@@
+.?AVCMapPathLocator@@
 .?AVCMapPathNode@@
 .?AVCMapPhysicsPin@@
 .?AVCMapPoint@@
 .?AVCMapPrefab@@
 .?AVCMapPrefabSubInstance@@
+.?AVCMapPrefabVariableLocator@@
+.?AVCMapProceduralLocator@@
 .?AVCMapProxy@@
 .?AVCMapProxyInstance@@
 .?AVCMapReference@@
@@ -2647,6 +3106,7 @@ $prefix_element$
 .?AVCMapSmartPropInstance@@
 .?AVCMapSmartPropLocator@@
 .?AVCMapSmartPropParameter@@
+.?AVCMapSmartPropShapeMesh@@
 .?AVCMapSmartPropShapePath@@
 .?AVCMapSmartPropUpdateJob@@
 .?AVCMapSpawnGroup@@
@@ -2676,12 +3136,14 @@ $prefix_element$
 .?AVCMapTileProxy@@
 .?AVCMapTileSet@@
 .?AVCMapTransform@@
-.?AVCMapVariableChoice@@
-.?AVCMapVariableChoiceGroup@@
+.?AVCMapVariableChoiceGroupStorage@@
+.?AVCMapVariableChoiceStorage@@
 .?AVCMapVariableSet@@
+.?AVCMapVariableSetStorage@@
 .?AVCMapVisCluster@@
 .?AVCMapVisData@@
 .?AVCMapWeightedGroup@@
+.?AVCMapWorkplaneMarker@@
 .?AVCMapWorld@@
 .?AVCMapWorldLayer@@
 .?AVCMaterialListVirtualAttribute@@
@@ -2746,9 +3208,11 @@ $prefix_element$
 .?AVCPulseCell_WaitForCursorsWithTag@@
 .?AVCPulseCell_WaitForCursorsWithTagBase@@
 .?AVCPulseCell_WaitForObservable@@
+.?AVCPulseCursorBaseObservableScope@@
 .?AVCPulseExecCursor@@
 .?AVCPulseGraphDef@@
 .?AVCPulseGraphInstance_SmartPropEval@@
+.?AVCPulseGraphLoadContext@@
 .?AVCQBindNameFilterWidget@@
 .?AVCQBindableCommandAction@@
 .?AVCQBindableCommandPushButton@@
@@ -2806,6 +3270,7 @@ $prefix_element$
 .?AVCSmartPropAttributeMaterialGroup@@
 .?AVCSmartPropAttributeMaterialName@@
 .?AVCSmartPropAttributeModelName@@
+.?AVCSmartPropAttributeOrientationMode@@
 .?AVCSmartPropAttributePathPositions@@
 .?AVCSmartPropAttributePickMode@@
 .?AVCSmartPropAttributeRadiusPlacementMode@@
@@ -2831,6 +3296,7 @@ $prefix_element$
 .?AVCSmartPropElement_PickOne@@
 .?AVCSmartPropElement_PlaceInSphere@@
 .?AVCSmartPropElement_PlaceMultiple@@
+.?AVCSmartPropElement_PlaceOnMesh@@
 .?AVCSmartPropElement_PlaceOnPath@@
 .?AVCSmartPropElement_PropDynamic@@
 .?AVCSmartPropElement_PropPhysics@@
@@ -2905,10 +3371,14 @@ $prefix_element$
 .?AVCSmartPropResourceModel@@
 .?AVCSmartPropSelectionCriteria@@
 .?AVCSmartPropSelectionCriteria_ChoiceWeight@@
+.?AVCSmartPropSelectionCriteria_EdgeAngleCriteria@@
 .?AVCSmartPropSelectionCriteria_EndCap@@
 .?AVCSmartPropSelectionCriteria_IsValid@@
 .?AVCSmartPropSelectionCriteria_LinearLength@@
+.?AVCSmartPropSelectionCriteria_MaterialCriteria@@
 .?AVCSmartPropSelectionCriteria_PathPosition@@
+.?AVCSmartPropSelectionCriteria_TopoEdgeCountCriteria@@
+.?AVCSmartPropSelectionCriteria_VertexCountCriteria@@
 .?AVCSmartPropTransformOperation@@
 .?AVCSmartPropVariable@@
 .?AVCSmartPropVariable_Angles@@
@@ -2927,6 +3397,7 @@ $prefix_element$
 .?AVCSmartPropVariable_Material@@
 .?AVCSmartPropVariable_MaterialGroup@@
 .?AVCSmartPropVariable_Model@@
+.?AVCSmartPropVariable_OrientationMode@@
 .?AVCSmartPropVariable_PathPositions@@
 .?AVCSmartPropVariable_PickMode@@
 .?AVCSmartPropVariable_RadiusPlacementMode@@
@@ -2940,6 +3411,7 @@ $prefix_element$
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCQSessionCycleWidget@@@@
 .?AVCSphereHelper@@
+.?AVCStandardEditorModelInstance@@
 .?AVCStaticOverlayInstanceUpdateJob@@
 .?AVCSteamAudioAmbisonicValues@@
 .?AVCSteamAudioBandValues@@
@@ -3042,8 +3514,10 @@ $prefix_element$
 .?AVIMapResourceRegistrationTable@@
 .?AVIMapResourceReplacementTable@@
 .?AVIMapSmartPropShape@@
+.?AVIMaterialEditListener@@
 .?AVIModelConfigPreviewHost@@
 .?AVIModelInstanceRenderContext@@
+.?AVIModelVertexDataProvider@@
 .?AVIParticleEHandleHelper@@
 .?AVIParticleEffect@@
 .?AVIParticlePropertyOuter@@
@@ -3052,6 +3526,8 @@ $prefix_element$
 .?AVIProceduralUpdateJob@@
 .?AVIPulseExecLog@@
 .?AVIPulseGraphDef@@
+.?AVIPulseGraphLoadErrorReporter@@
+.?AVIPulseHost_BaseObservable@@
 .?AVIPulseHost_Cursor@@
 .?AVIPulseHost_Unknown@@
 .?AVIPulseHost_YieldingCursor@@
@@ -3062,6 +3538,7 @@ $prefix_element$
 .?AVISelectionState@@
 .?AVISequence@@
 .?AVISmartPropShape@@
+.?AVISmartPropShapeMesh@@
 .?AVISmartPropShapePath@@
 .?AVIStreamDataBuffer@@
 .?AVITerrainDataSource@@
@@ -3154,7 +3631,7 @@ $prefix_element$
 .?AVQWidget@@
 .?AVQWidgetAction@@
 .@CBaseEditorSession::Revert - Perforce unavailable: %s\n
-.ADump all new particles, optional name substring.
+.Acl_aggregate_particles
 .HCK\v
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -3609,7 +4086,6 @@ $prefix_element$
 474E4U4W4c4i4m4
 4<Td
 4@AA
-4CParallelComputeSurfacePoints
 4Ch;
 4F0I
 4Mv8
@@ -3648,7 +4124,6 @@ $prefix_element$
 6-zeZ
 62$|S)6f
 64 283 0
-64 64 64
 64CK\vH
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
 6666666666666666jjjjjjjjjjjjjjjj[
@@ -3770,6 +4245,7 @@ $prefix_element$
 ;LGEW
 ;Qo0
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 ;`Fzc
 ;bwP*
 ;xsK
@@ -3813,12 +4289,12 @@ $prefix_element$
 =O?AqP
 =Q9M
 =cdE
+=hammer_isosurface_subtract
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
 >4|6eXg_e
 >7^0g
 >JUMP
->SPHERE
 >Sem
 >WK6
 >\v?\r?7?;?=?A?Y?_?e?g?y?}?
@@ -4029,6 +4505,7 @@ $prefix_element$
 ??YQString@@QEAAAEAV0@PEBD@Z
 ?HAI\t81\t9dcG'
 ?HP4
+?ParallelComputeSurfacePoints
 ?RGBA8888
 ?Unknown
 ?VBH;
@@ -4174,7 +4651,7 @@ $prefix_element$
 ?fromUtf8@QString@@SA?AV1@PEBDH@Z
 ?getAndRef@ExternalRefCountData@QtSharedPointer@@SAPEAU12@PEBVQObject@@@Z
 ?gwL
-?hammer_show_light_truncation_error
+?hammer_parallel_terrain_update
 ?hasChildren@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
 ?headerData@QSortFilterProxyModel@@UEBA?AVQVariant@@HW4Orientation@Qt@@H@Z
 ?index@QSortFilterProxyModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
@@ -4474,6 +4951,7 @@ $prefix_element$
 ?parentWidget@QAction@@QEBAPEAVQWidget@@XZ
 ?parentWidget@QWidget@@QEBAPEAV1@XZ
 ?pos@QWidget@@QEBA?AVQPoint@@XZ
+?position
 ?property@QMetaObject@@QEBA?AVQMetaProperty@@H@Z
 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z
 ?propertyCount@QMetaObject@@QEBAHXZ
@@ -4925,8 +5403,7 @@ $prefix_element$
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @0pp
 @BH]f
-@C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\utlsortvector.h
-@Generic
+@CMapLocator
 @Integer overflow in %s
 @MfKZ
 @Pgl
@@ -4944,6 +5421,7 @@ $prefix_element$
 @n2w
 @spawn
 A new location must be selected in order to save the file.
+A node may be 'pinned' to another node, causing its transform to be computed relative to the target node, meaning it will move and rotate with the target node, but potentially with a relative offset. Note that transform pins can be globally toggled on the toolbar.
 A seed value for randomly generated content associated with this object, such as detail props.
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A tint color to apply to the entire smart prop. The evaluation of the smart prop receives this color and may use it directly or may modify it before assigning a tint to the individual parts of the smart prop.
@@ -5155,7 +5633,6 @@ AcG\nt
 Acatmullrom_normalize_x
 Acceptable OCSP Responses
 Acoustic Material
-Activate
 Activate %s
 ActivateAndClose
 ActivateSelectedAndClose
@@ -5191,6 +5668,7 @@ AdobeDeflate
 Affiliation Changed
 Ag*g*
 Align To Axis
+All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon.
 Allocation of the face failed (not a topology failure).
 Allow Deformation
 Allow models in the smart prop to emit lighting
@@ -5200,12 +5678,13 @@ Alpha Fade and Decay
 Alpha Random
 Alpha decoder initialization failed.
 Alpha of the fade, where 0 = fully transparent and 255 = fully opaque.
+Always
 Always Orient Up
 Ambisonics field of how to reach to nearby inside probes in small spaces.
 Ambisonics field of how to reach to nearby outside probes.
 AnalogBalance
 And R%d <- R%d && R%d
-AnimGraph2Clip()
+Angle at closed edge of face.
 AnimatableSceneObjectDesc
 Animation Bone Flags
 Animation Configuration File
@@ -5246,6 +5725,7 @@ Arms
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -5262,13 +5742,16 @@ AsShotNeutral
 AsShotPreProfileMatrix
 AsShotWhiteXY
 Assert True
-AssertFatalCast
+AssetBrowse( vmap, *extraFilterString=tileset )
+AssetBrowse( vnmclip )
+AssetBrowse( vnmgraph )
+AssetBrowse(vmat)
 AssignMaterialToFaces
 AssignMaterialToOverlay
 AssignSmoothingModeToEdges
 Async Fire C%d:I%d
 Async Simulate Particles
-AtlasToVolumeTextureConversion(3089): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempted to add two format updaters with the same file format (%s)!\n
 Attempted to add two legacy updaters with the same file format (%s)!\n
 Attempted to add two serializers with the same file encoding (%s)!\n
@@ -5458,6 +5941,7 @@ Bad variable long name
 Bad verticalPolicy "%s"
 Bad vmdl
 BadFaxLines
+Bake As Double-Sided
 Bake Lighting
 Bake Lighting As If Double-Sided
 Bake To World
@@ -5473,7 +5957,7 @@ Band (High)
 Band (Low)
 Band (Mid)
 Base Height
-Base Map 
+Base Map
 Base Size
 Base Width
 Base-10 logarithm
@@ -5516,7 +6000,9 @@ Blend Layer 1 (R)
 Blend Layer 2 (G)
 Blend Layer 3 (B)
 BlendLayersUsingTimeSelection
+Blocking Load for info_interction VData
 BoX5
+Both Baked and Realtime
 Bottom Edge
 Bottom Left Corner
 Bottom Right Corner
@@ -5549,7 +6035,7 @@ BuildMapWorld_2
 BuildOnlyBaseTileGometry
 BuildParticleSimList
 BuildRenderDataForPolygonGroup
-BuildRenderDataForPolygonGroup(482): 
+BuildRenderDataForPolygonGroup(483): 
 BuildSolidRenderData(554): 
 BuildSteamAudioCustomData
 BuildSteamAudioPaths
@@ -5567,6 +6053,7 @@ C3ps
 C6DN
 C7HSY
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\tools\toolscenenodes\_vpc_toolscenenodes\default\win64\_msvc_\Retail\toolscenenodes.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\areafootprinthelper.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\detailpropobjectmanager.cpp
@@ -5580,8 +6067,10 @@ C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapdotatilegrid.c
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapfilemanager.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapglobaltilegridmaps.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapinstance.cpp
+C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapmeshlocator.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapnodefactory.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mappath.cpp
+C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mappathlocator.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapprefab.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapproxy.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\mapdoclib\mapstaticoverlay.cpp
@@ -5601,6 +6090,7 @@ C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\utlblockvector
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\vpklib\packedstore.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\texturelib\extract.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\toolrenderutils\toolmatsysutils.cpp
+C:\buildworker\source2_dota_rel_2019_win64\build\src\toolrenderutils\toolstandardmodels.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolutils2\detailprops.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolutils2\toolrenderutils.cpp
@@ -5651,7 +6141,7 @@ CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
 CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
 CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
 CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
-CBaseToolsModelInstance::CreateReversedIBs(4572): 
+CBaseToolsModelInstance::CreateReversedIBs(4559): 
 CBufferString
 CCITT Group 3
 CCITT Group 4
@@ -5715,6 +6205,7 @@ CERTIFICATE PAIR
 CERTIFICATE REQUEST
 CERTIFICATEPOLICIES
 CEdgeSelectionSetDataElement
+CEntityNameString
 CFALayout
 CFAPlaneColor
 CFaceSelectionSetDataElement
@@ -5724,6 +6215,7 @@ CGlobalSymbol
 CGlobalSymbolCaseSensitive
 CGrassMaterialSlot
 CGridRenderBlock::UpdateVertices(240): 
+CGridSceneObject::ConstructVertexBuffer(391): 
 CHECK_BITLEN_DSA
 CHECK_BITLEN_RSA
 CHECK_CONTENT
@@ -5734,7 +6226,7 @@ CHECK_SUITEB_CIPHER_LIST
 CHammerMesh
 CIconHelper::SetMaterialByName
 CImagePlaneNode
-CImagePlaneNode::RebuildRenderBuffers(341): 
+CImagePlaneNode::RebuildRenderBuffers(357): 
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
 CIsosurfaceRayGrid pooled allocator
 CKV3MemberNameSet
@@ -5852,44 +6344,55 @@ CMS_verify
 CManifestInstance
 CMapBox
 CMapCable
+CMapChoreoAnchor
+CMapChoreoAnchorLocator
+CMapChoreoAnchorLocatorData_t
+CMapChoreoLocatorShapeType_t::LINE
+CMapChoreoLocatorShapeType_t::POINT
 CMapCordon
 CMapDeformer
 CMapDeformerLattice
 CMapDeformerSimple
+CMapDoc::FrameUpdate(6644): 
 CMapDocMaterialAdjustStruct
 CMapDocTestStruct
 CMapDotaGridnavMarkup
 CMapDotaTileGrid
-CMapDotaTileGrid::UpdateFlowMap(7259): 
-CMapDotaTileGrid::UpdateFogOpacity(7156): 
+CMapDotaTileGrid::UpdateFlowMap(7460): 
+CMapDotaTileGrid::UpdateFogOpacity(7357): 
 CMapEntity
 CMapEntityIONode
 CMapFileManager::CopyMapDataFromReference
 CMapGameDataNode
+CMapGameDataNodeLocator
 CMapGlobalTileGridMaps
 CMapGrassTile
-CMapGrassTile::Render(720): 
+CMapGrassTile::Render(730): 
 CMapGrassTileCollection
 CMapGroup
 CMapGroupProxy
 CMapInstance
 CMapIsoSurface
-CMapIsoSurface::ConstructMeshRenderData(623): 
+CMapIsoSurface::ConstructMeshRenderData(671): 
 CMapLatticeControlPointLocator
-CMapLocator
 CMapMesh
 CMapMeshBase
+CMapMeshLocator
 CMapNavData
 CMapNavLink
 CMapNavLinkLocator
 CMapNode
 CMapNodeReference
+CMapNodeTransformPin
 CMapOpaqueDataBlob
 CMapPath
+CMapPathLocator
 CMapPathNode
 CMapPhysicsPin
 CMapPrefab
 CMapPrefabSubInstance
+CMapPrefabVariableLocator
+CMapProceduralLocator
 CMapProxy
 CMapProxyInstance
 CMapRootElement
@@ -5934,10 +6437,11 @@ CMapVariableSet
 CMapVisCluster
 CMapVisData
 CMapWeightedGroup
+CMapWorkplaneMarker
 CMapWorld
 CMapWorldLayer
-CMaterialSampler::AllocateVertexBuffers(168): 
-CMaterialSampler::DrawMaterialSamplePoints(309): 
+CMaterialSampler::AllocateVertexBuffers(169): 
+CMaterialSampler::DrawMaterialSamplePoints(310): 
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)\n
 CMesh Cannot create packed input layout, too many blend weights per vertex %d, max %d\n
 CModelHelper::UpdateMaterialOverride
@@ -5980,7 +6484,7 @@ CPackedStore::CPackedStore
 CPackedStore::VerifySingleChunk
 CParticleCollectionBindingInstance::HACK_UnusedBinding
 CParticleHelper::SetDefinitionByName
-CParticleMgr::SimulateParticles(), C:\buildworker\source2_dota_rel_2019_win64\build\src\particleslib\particlemgr.cpp:1142
+CParticleMgr::SimulateParticles(), C:\buildworker\source2_dota_rel_2019_win64\build\src\particleslib\particlemgr.cpp:1188
 CParticleProperty::AddControlPoint
 CParticleProperty::SetControlPoint
 CPerLayerGrassData
@@ -5993,6 +6497,7 @@ CPolygonMeshRenderData_Model
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -6004,6 +6509,7 @@ CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
@@ -6029,7 +6535,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseGraphInstance_SmartPropEval::Evaluate
@@ -6080,6 +6585,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -6097,6 +6603,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -6208,6 +6715,7 @@ CSmartPropAttributeLocatorName
 CSmartPropAttributeMaterialGroup
 CSmartPropAttributeMaterialName
 CSmartPropAttributeModelName
+CSmartPropAttributeOrientationMode
 CSmartPropAttributeStateName
 CSmartPropAttributeString
 CSmartPropAttributeSurfaceProperty
@@ -6215,6 +6723,7 @@ CSmartPropAttributeVariableValue
 CSmartPropAttributeVector
 CSmartPropAttributeVector2D
 CSmartPropAttributeVector4D
+CSmartPropElement_PlaceOnMesh
 CSmartPropExprAPI::EvaluationDepth
 CSmartPropExprAPI::InstanceCount
 CSmartPropExprAPI::InstanceIndex
@@ -6256,8 +6765,13 @@ CSmartPropPulse_SelectionChoiceWeight::CheckRequirement
 CSmartPropPulse_SelectionEndCap::CheckRequirement
 CSmartPropPulse_SelectionLinearLength::CheckRequirement
 CSmartPropPulse_SmartProp::Run
+CSmartPropSelectionCriteria_EdgeAngleCriteria
+CSmartPropSelectionCriteria_MaterialCriteria
+CSmartPropSelectionCriteria_TopoEdgeCountCriteria
+CSmartPropSelectionCriteria_VertexCountCriteria
 CSmartPropVariableComparison
 CSmartPropVariableValue
+CSmartPropVariable_OrientationMode
 CSteamAudioAmbisonicValues
 CSteamAudioBandValues
 CSteamAudioData
@@ -6272,6 +6786,7 @@ CSteamAudioSignal
 CStoredCamera
 CStoredCameras
 CStrongHandle
+CSubassetTypeInfo
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
@@ -6321,9 +6836,11 @@ CUtlBlockVector<struct StoredTriangleVertexPositions_t,int,class CMemAllocAlloca
 CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<class CLightStyle *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CMapEntity *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<enum DmElementHandle_t,class CDefFastCaselessStringLess>::Insert
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
+CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CNewParticleEffect *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<bool> *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct ActiveLayer_t<class CUtlSymbolLarge> *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
@@ -6356,12 +6873,13 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned sh
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CNavGrid::VecGridSplit_t,int,class CMemAllocAllocator>,struct CNavGrid::VecGridSplit_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct CNavMovableMeshesManager::MovableMeshContext_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct CNavMovableMeshesManager::MovableMeshContext_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,class CUtlIntString<int,6>,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct CNavMovableMeshesManager::MovableMeshContext_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct CNavMovableMeshesManager::MovableMeshContext_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class CUtlReference<class CMapNode>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class CUtlReference<class CMapNode>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
@@ -6408,6 +6926,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<class CMeshFace,int,class CDefLess<class CM
 CUtlRBTree<struct CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::Node_t,class CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CMeshVertex,int,class CDefLess<class CMeshVertex>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::Node_t,class CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor>,int,class CDefLess<class CSmartPtr<class CSelectionHandle,class CRefCountAccessor> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,class CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefLess<class CUtlString>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CMapNode *,class CLessFunc<&private: static bool __cdecl CMapWorld::NodeNameLessFunc(class CUtlSymbolLarge const &,class CUtlSymbolLarge const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
@@ -6415,10 +6934,10 @@ CUtlRBTree<struct CUtlOrderedMapBase<class ISceneWorld *,class CUtlVector<struct
 CUtlRBTree<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,class CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IUndoable *,unsigned int,class CDefLess<class IUndoable *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CDetailPropType *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CDetailPropType *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CDetailPropType *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CDetailPropType *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct LayerEvent_t<bool>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<bool>::LessFunc(struct LayerEvent_t<bool> const &,struct LayerEvent_t<bool> const &)>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
@@ -6535,6 +7054,7 @@ CheekH
 Choice A
 Choice B
 Choice C
+Choreo Anchor Locator
 ChromaBlurRadius
 Chunk hash not found.
 ChunkHashFraction_t::GetBLAKE3HashContents
@@ -6554,6 +7074,7 @@ Clear History
 Clear Material Overrides
 Clear any previous material overrides.
 ClearInputHistory
+Climb Up
 ClipBoard
 ClipPath
 CloneObjects
@@ -6620,7 +7141,6 @@ ComputeShaderSkinning
 ComputeTilesForModelInstances
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
-Condition
 Conditional
 Configured
 ConnectionData
@@ -6676,6 +7196,7 @@ Could not decode alpha data.
 Could not determine full file path for sky texture %s\n
 Could not load sky material %s\n
 Could not load sky texture %s\n
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 CounterStrike
 Courier
 Cpoint_deformer
@@ -6695,7 +7216,6 @@ CryptAcquireContextW
 CryptGenRandom
 CryptReleaseContext
 Cskybox
-Ctags
 Ctrl
 Cull Distance
 Cull Random
@@ -6969,11 +7489,12 @@ DYNAMIC_CTRL
 DYNAMIC_GET_DATA_CTX
 DYNAMIC_LOAD
 DYNAMIC_SET_DATA_CTX
-D\tV_log2f
 D_BORDER
+D_DEPTH_BIAS
 D_NO_ZTEST
 D_SNAP_TO_SCREEN_PIXELS
 D_THICK_LINES
+D_TRANSLUCENT
 Dampen Movement Relative to Control Point
 Data Encipherment
 DataModel needs the file system to function
@@ -7027,6 +7548,7 @@ DeleteFaces
 DeleteVertices
 Density
 Density Layer
+Density Scale
 Dependent on context, single convex if part of an entity, mesh if world geometry
 DeregisterEventSource
 Derived must implement
@@ -7037,6 +7559,7 @@ Detach R%d
 Detail Objects
 DetailDistance
 DetailProps:LoadModels
+Determine how child elements are oriented when mapped to face.
 Dhq0\ri
 Didn't expect '=' for non-flags non-choices variable %s
 Different CRL scope
@@ -7406,6 +7929,7 @@ EDH-DSS-DES-CBC3-SHA
 EDH-RSA-DES-CBC3-SHA
 EDIPARTYNAME
 EECDH
+EGAME
 EG{M
 ELEM_NAME__ENT_ATTR_TYPES
 ELF0
@@ -7539,12 +8063,12 @@ EXTERNAL
 E[3M
 E[hr
 E\nQc
-E\tV_logd
 EarlyRetireParticleSystems
 Ease In
 Ease In/Out
 Ease Out
 EatEscapeKeyPress
+Edge Count
 EdgeCutAddedVerts
 EdgeCutAlignedEdge
 EdgeCutEdge
@@ -7583,6 +8107,7 @@ End Fade Dist
 End Target
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
+Enforce Shared Vert
 Enter
 Enter 
 Enter PEM pass phrase:
@@ -7593,6 +8118,8 @@ Entity
 Entity: %s
 Entity: Unknown
 EntityName
+Entry Clearance
+Entry Location
 EnumArray
 Enumerator Types
 EovVY
@@ -7637,6 +8164,7 @@ Evaluation Depth
 EvaluationDepth
 Event %u layer %i at time %i type %s\n
 EventActiveEditScopeChanged_t
+EventActiveEditScopeChanging_t
 EventActiveHistoryChanged_t
 EventActiveInstanceChanged_t
 EventActiveMapRootElementChanged_t
@@ -7646,7 +8174,7 @@ EventCordonChange_t
 EventDocumentAssetReferencesChanged_t
 EventDocumentLoaded_t
 EventDocumentUnloaded_t
-EventForceRenderNextFrame_t
+EventForceRenderDocumentNextFrame_t
 EventGridNavMarkupDataChanged_t
 EventGridNavMarkupDimensionsChanged_t
 EventHelperRemovedFromDocument_t
@@ -7670,7 +8198,8 @@ EventMapNodeReparented_t
 EventMapNodeTransformCapabilitiesChanged_t
 EventMapRootElementDestroyed_t
 EventMapTopologyChanged_t
-EventMapVariablePostRemoved_t
+EventMapVariableConnectionChanged_t
+EventMapVariableValueChanged_t
 EventMeshSnapshotUpdated_t
 EventNodeVisibilityChange_t
 EventObjectAddedToDocument_t
@@ -7719,6 +8248,7 @@ Expected a default value
 Expected a string literal for description
 Expected a string or integer as default value
 Expected an integer default value after <description> ':'
+Expected an integer default value after <friendlyName> ':'
 Expected eg. [10,20] or 30
 Expected identifier after '@'
 Expected matching '{' '}'
@@ -7804,6 +8334,8 @@ FIPS_CIPHER_CTX_SET_KEY_LENGTH
 FIPS_DIGESTINIT
 FIPS_MD_CTX_COPY
 FIPS_mode_set
+FIRST_CLOSED_EDGE
+FIRST_OPEN_EDGE
 FN|p
 FORCE_UINT
 FORM
@@ -7873,8 +8405,13 @@ Field Type: %s\n
 Field=
 FieldOfViewCotangent
 File not open for reading
+FileBrowse(Image)
 FillOrder
 Film
+Filter Edges by Angle
+Filter Faces By Material
+Filter Faces By Open Edges
+Filter Faces By Vertex Count
 Filter Probability
 Filter Surface Angle
 Filter Using Exclusion Volumes
@@ -7888,11 +8425,17 @@ FilterSurfaceAngle
 FilterTextures
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 Find:
 FindAttrNode
 Fingers
 Fingers_L
 Fingers_R
+Fired immediately when this node begins for chaining purposes.
+Fired when the observable boolean is false, and killed when true.
+Fired when the observable boolean is true, and killed when false.
+First Closed Edge
+First Open Edge
 Fixed
 Fixed Array Enums
 FixedArrayEnums
@@ -7908,13 +8451,15 @@ Float To Game Time
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSize3D
 FloatBitMap_t::CopyFloatBitmap: Received NULL pointer!\n
-FloatBitMap_t::LoadFromFile(3281): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
 FloatBitMap_t::LoadFromFloatBitmap: Received improper bitmap size, skipping!\n
-FloatBitMap_t::LoadFromTGA(2230): Error loading %s\n
+FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
 Flow Node ID
+FlowMap_Enabled
+FlowMap_NodeMaxRadius
 FlushConsoleInputBuffer
 Fm{#t
 FoW Viewer helper
@@ -8020,6 +8565,7 @@ GXqN
 GXy{
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 Game Blackboards: 
+Game Data Node Locator
 Game Time To Float
 GameDefaultFarZ
 GameFeatureSet
@@ -8088,8 +8634,10 @@ GridHigh10
 GridHigh1024
 GridHighSpec
 GridIntensity
+GridSceneObject
 GridSnappingEnabled
 GridSpacing
+GridVertexLayout
 Gridhigh64
 Ground
 Group (%d objects)
@@ -8127,6 +8675,7 @@ HMAC-MD5
 HMAC-SHA1
 HMAC_Init_ex
 HO8?
+HSPHERE
 HU>mA$_E*
 HWyn
 HalfLife
@@ -8137,14 +8686,18 @@ Hammer temp export
 Hammer/ForceHighPrecisionTexcoords
 Hammer/GridDisplayExtent
 Hammer/ModelStateAutoConversionEntities
+Hammer/UseAnalyticGrid
 HammerCables
 HammerCablesSolid
 HammerCustomVisGroupPicker
 HammerEntityPicker()
+HammerGrid
 HammerImagePlaneNode.vtex
 HammerImagePlane_Indices
 HammerImagePlane_Verts
 HammerInfo
+HammerObjectPicker( CMapGroup )
+HammerObjectPicker( list: )
 HammerObjectPicker()
 Handle Shape
 HandleColor
@@ -8158,7 +8711,7 @@ Heap32First
 Heap32ListFirst
 Heap32ListNext
 Heap32Next
-HelperLoadFbmByFileExtension(3061): Error! Unknown file type for %s\n
+HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
 Hg>?S
 Hhr+g
 Hide surface
@@ -8192,6 +8745,7 @@ HqI9x
 Ht4qw
 Hull Per Element
 Hull Per Mesh
+HullParams
 HullPerElement
 HullPerMesh
 H{1S
@@ -8240,6 +8794,7 @@ IP address mismatch
 IPSec End System
 IPSec Tunnel
 IPSec User
+IPulseGraphLoadErrorReporter
 IPulseReloadListener
 ISO JBIG
 ISO Member Body
@@ -8262,7 +8817,9 @@ If enabled and the smart prop is inside a prefab, the evaluation of the smart pr
 If enabled the prefab will be loaded when it is the child of another prefab, if disabled, this prefab will not be loaded if it is the child of another prefab.
 If enabled the prefab will not be baked into the parent map during map compile, but instead will be dynamically loaded in the game. This requires the target map to be compiled separately. Additionally this requires support for dynamic loading of maps by the game, which may not be supported by all games and game systems. Do not use without checking to see if this is fully supported by the game you are working on.
 If enabled, any entity target names within the prefab will have a prefix applied to ensure they are unique. This prevents any issues with entities in two different prefabs having name collisions.
+If enabled, double clicking on the marker will re-orient the camera in addition to setting the workplane.
 If enabled, there will be a point_prefab entity at runtime representing this prefab as an EntityIO target (requires Relays and a Target Name). Map Relay connections will not be baked, but will instead route through this entity.
+If enabled, transforming this node will transform the target node such that the relative offset is maintained, essentially locking the transform of the two objects together regardless of which one is edited. Normally when this is disabled, moving this object will not affect the target node and will instead update the pin offset values.
 If set, the contents of the prefab will not be included in visibility calculations.
 If specified, each wait interval will vary randomly between WaitInterval this value
 If specified, provides the name of an entry in scripts/collision_properties.txt that specifies the collision group and interaction layers to use, rather than those specified in the material. 
@@ -8292,6 +8849,7 @@ ImageMode
 ImagePlane
 ImagePlane (%s)
 ImageWidth
+Impl::AssertCastImpl
 Impulse Response for Ambisonic Channel 0.
 ImpulseResponse()
 Inappropriate photometric interpretation %d for SGILog compression; %s
@@ -8381,6 +8939,7 @@ Invalid tile size x :
 Invalid tile size y : 
 InvalidStream
 Invalidity Date
+Invert
 Invoke Cell%d [eid=%d] %s%s
 Invoke Lib %s
 InvokeCommand
@@ -8397,6 +8956,8 @@ IsosurfaceWireframeIndices
 Issuer certificate lookup error
 ItemFile
 ItemsFiles
+Iterate through faces with 'n' open edges (edges with only one neighboring face).
+Iterate through faces with target vertex count.
 Iw,e=2-b[
 IytF
 I{i3|G
@@ -8423,6 +8984,7 @@ JawV
 Jq;v
 Jq?a
 Jr\tA
+Jump Down
 Jump to Instr I%d
 Jvp)
 Jy).A
@@ -8448,7 +9010,6 @@ KMBo8[
 KQSlB
 KRB5
 KSV<
-KV3 save transfer failed: %s
 KV3 syntax error: %s
 KV3 syntax error: %s while parsing @entitygroup %s
 KV3DefaultTestFnName
@@ -8477,7 +9038,6 @@ KeyValues: Element uses unknown element type %s\n
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
 KlD#
 Kochanek-Bartels
 Kochanek-Bartels Early
@@ -8578,6 +9138,7 @@ LightmapUV
 LightmapUVW
 Lightmapped
 Lightprobed
+Line
 Line Length
 Line length mismatch
 LineColor
@@ -8610,9 +9171,13 @@ Loading prefab: %s
 LocalKeySet
 LocalizedCameraModel
 Locator
+Locator Set
 Locator: %s
 Locators
+Locators/Game Data
 Locators/Lattice Control Points
+Locators/Map Variable
+Locators/Workplane Markers
 Lock Evaluation
 LockWorkplane
 Locking Textures
@@ -8624,6 +9189,7 @@ LogLuvDecode24: Not enough data at row %d (short %d pixels)
 LogLuvDecode32: Not enough data at row %d (short %d pixels)
 LogLuvInitState
 LowPrecisionUv
+LowPrecisionUv1
 LqH!)8
 LsiX
 Ltc$
@@ -8728,7 +9294,11 @@ MapBuilder
 MapClass
 MapDoc Cloth World
 MapGrassTile
-MapLoctorModel
+MapLocatorModel
+MapNavLinkType_t::CLIMB_UP
+MapNavLinkType_t::GENERIC
+MapNavLinkType_t::JUMP_DOWN
+MapNavLinkType_t::VAULT_OVER
 MapNode
 MapPoint
 MapSmartProp
@@ -8792,6 +9362,7 @@ Mesh %s has poylgonal faces defined which have bad vertex counts, these will be 
 Mesh (%d faces)
 Mesh Edges
 Mesh Faces
+Mesh Locator
 Mesh Vertices
 Mesh contains %d blend weights per vertex;  truncating to %d\n
 MeshHardEdges
@@ -8823,6 +9394,8 @@ Minimum
 Minimum Size Scale
 Minimum of two values (float)
 Minimum of two values (int)
+Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
 MinimumExpanding
 Mirror
 MirrorAcrossPlane
@@ -8845,6 +9418,7 @@ ModelMaterialGroupName()
 Module32First
 Module32Next
 Modulus:
+Monitor Observable
 Morph
 Most active material around a probe.
 Mouse4
@@ -8945,6 +9519,7 @@ Name\t\t\t\t\tCount\t\tParticle Count\n
 Natural logarithm (base e)
 Nav mesh (v%d/%d) loaded with %u nav areas for %u hulls.\n
 Nav mesh Recast
+NavGenParams
 NavGeometryManager -> Computing Vertex Attributes - done\n
 NavGeometryManager -> Computing Vertex Attributes...\n
 NavLink
@@ -9156,6 +9731,7 @@ Object Signing
 Object Signing CA
 Object Spacing
 Objects
+Observable
 Occlusion Deviation
 Occlusion Path Ratio
 Occlusion Probe
@@ -9164,6 +9740,8 @@ Occlusion path deviation between the source and selected probe.
 Occlusion path ratio of direct path over shortest path between the source and selected probe.
 Occlusion ratio of indirect reflection energy over direct energy between the source and selected probe.
 Occlusion value between the source and selected probe.
+Offset Angles
+Offset Origin
 OffsetFacesAlongNormal
 Oh%u'
 OkClicked
@@ -9233,13 +9811,16 @@ Operate
 Operator cycle found during dependency graph traversal!\n
 OptimizeCollisionV2
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Or R%d <- R%d || R%d
 Order: 
 Orient Rotation to 2D Direction
 Orient To Surface
 OrientPrimitives
+Orientation Mode
+Orientation of child elements placed on faces will be driven by orthonormalized UV basis at face center. U axis is prioritized during orthonormalization.
+Orientation of child elements placed on faces will be driven by position of center of first closed edge relative to face center.
+Orientation of child elements placed on faces will be driven by position of center of first open edge relative to face center.
 OriginalRawFileData
 OriginalRawFileName
 OrqK
@@ -9257,6 +9838,7 @@ OverlayProjectionDirection
 OverlaySurface
 OverlaySurfaceIndices
 OverlaySurfaceVertices
+Override: 
 Ow!y
 P!bxo
 P(UH 
@@ -9503,6 +10085,7 @@ ParticleCompileBinaryIdenticalHack_underlying_struct
 ParticlesLib
 Pass Outflow
 Path Cable
+Path Locator
 Path Name
 Path Node
 Path Node <%s>
@@ -9543,10 +10126,14 @@ PhysicsTypeOverride_MultiConvex
 PhysicsTypeOverride_SingleConvex
 Pick
 Piecewise Bezier
+Pin Angles
+Pinned To
 PivotPaint
 PivotToolSnapToBBox
 PixarLog
 Place
+Place Children on Mesh Components.
+Place on Mesh
 PlaceInSphere Parent Cursor
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
@@ -9592,6 +10179,7 @@ PredictorSetup
 Prefab
 Prefab (%s)
 Prefab Group
+Prefab Map Variable Locator
 Prefab: %i
 Prefab: %s
 Prefabs
@@ -9623,11 +10211,10 @@ Proc-Type:
 Proc-Type: 4,
 Procedural
 Process Selector
-ProcessNotifyList: encountered a deleted object. Tell a programmer.
 Program has invalid instruction %i
 Program uses more temp variables than are supported. Needs %i, max is %i
 Project On Backfacing
-ProjectPolygonsOntoTriangles(), C:\buildworker\source2_dota_rel_2019_win64\build\src\meshutils\triangulatepolygon.cpp:1923
+ProjectPolygonsOntoTriangles(), C:\buildworker\source2_dota_rel_2019_win64\build\src\meshutils\triangulatepolygon.cpp:1925
 Projection Distance
 Projection Mode
 Projection Targets
@@ -9638,6 +10225,7 @@ Property '%s.%s' not writable
 Property for Ambisonic Order 0.
 Property for Ambisonic Order 1.
 Property for low frequency band.
+Property: 
 Proxy
 Proxy Certificate Information
 Proxy Instance
@@ -9697,7 +10285,6 @@ QWidget { padding: 2px; background-color : #b26262; color : black; }
 QWidget { padding: 2px; background-color : #e9ce93; color : black; }
 QWidget { padding: 2px;\t\t\t\t\t\t\t\t\t\t\t  }
 QWidget*
-Q\tV_powd
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Q`uV
 Qdsma
@@ -9912,7 +10499,7 @@ R\r1>Vp
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
-R\vp\z
+R\vpL 
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
@@ -9926,6 +10513,7 @@ Random Offset
 Random Rotation
 Random Scale
 Random Seed
+Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Randomly Flip Yaw
 Randomness
@@ -9934,6 +10522,7 @@ RawDataUniqueID
 RayTracingEnvironment::RefineNode
 RayTracingEnvironment::RefineNodeJob
 Rbg.E
+Re-orient camera on activation
 ReSelectOnReturn
 Read Only
 Read-Only
@@ -10009,6 +10598,7 @@ ResultMinZ
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -10053,6 +10643,7 @@ Rotation Spin Roll
 Rotation Spin Yaw
 Rotation Yaw Flip Random
 Rotation Yaw Random
+RotationScale
 RotationSnapAngle
 RotationSnappingEnabled
 Rotator: %s
@@ -10369,6 +10960,7 @@ Shared Environment
 Shift
 Should baked lighting be generated for this object. If default is selected, the choice is left to individual parts.
 Should have already been loaded via CVDataTypeManager::RegisterExtRefs
+Should the pin apply to the angles of this node. If disabled this node will only translate with the target node, its rotation will be unaffected by the rotation of node it is pinned to.
 ShouldPunchThroughPolymorphism
 Show Clustered Probes Only
 Show Collision Models
@@ -10442,6 +11034,7 @@ SmartPropAttributeEditor(SurfaceProperty)
 SmartPropAttributeEditor(angles)
 SmartPropAttributeEditor(bool)
 SmartPropAttributeEditor(color)
+SmartPropAttributeEditor(enum:SmartPropPlaceMeshOrientationMode_t)
 SmartPropAttributeEditor(float)
 SmartPropAttributeEditor(integer)
 SmartPropAttributeEditor(locator)
@@ -10454,6 +11047,7 @@ SmartPropAttributeEditor(vector3)
 SmartPropAttributeEditor(vector4)
 SmartPropEval
 SmartPropInstanceRendering
+SmartPropPlaceMeshOrientationMode_t
 SmartPropVariableValueEditor( comparison )
 SmartPropVariableValueEditor()
 Smoothing Angle
@@ -10461,7 +11055,6 @@ Sn^G
 SnappingEnabled
 SnapshotFile
 Software
-SortKey_t
 Source Data Layers
 Source Node
 Source Output
@@ -10531,6 +11124,8 @@ StoNits
 Stop Timer
 Stop any active timers - the completed outflow will still fire
 StretchArches
+String Length
+String value for CTransform only had %u components\n
 StringArrayArray
 Strings Are Equal Case Sensitive
 StripByteCounts
@@ -10540,7 +11135,6 @@ Struct Array
 StructArray
 Studio Model
 Stylesheet
-Sub Graph
 Sub R%d <- R%d - R%d
 SubIFD
 Subdiv wireframe indices
@@ -10663,6 +11257,7 @@ TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 TXJw^{
 TYPE=
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T\tV_log2f
 Tabbed Mode
 Tag 
 Tag %d
@@ -10672,8 +11267,14 @@ Tag Value
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 TangentU_SignV
+Target Entry Points
 Target Name
+Target Node
 Target Objects
+Target Vertex Count
+Target Warp Location
+Target Warps
+Target material name.
 TargetGroup
 TargetPrinter
 Terrain
@@ -10714,6 +11315,8 @@ The gameinfo.gi file is missing or incomplete.
 The map properties of this prefab's map specify a targetname of '%s', which is a classname! Please change to avoid using a classname.
 The nav mesh needs a full nav_analyze\n
 The only detail layers this mesh belongs to
+The relative position offset of this node from the target node.
+The relative rotation offset of this node from the target node.
 The selected map is not marked as a shared environment: <pre> %s </pre> In the shared map, go to Map > Map Properties and set Map Type to 'Shared Environment'\n
 The selected skybox map is not marked as a skybox map: <pre> %s </pre> In the skybox map, go to Map > Map Properties and set Map Type to '3D Skybox'\n
 There is already another open editor session with this pathname.
@@ -10810,6 +11413,7 @@ Tools_Unlit_Overlay0
 Tools_Unlit_Overlay1
 Tools_Unlit_Overlay2
 Tools_Unlit_Overlay3
+Tools_Unlit_PreOverlay
 Top Edge
 Top Left Corner
 Top Right Corner
@@ -10836,6 +11440,7 @@ TrySendVNotify - SendKV3 failed\n
 Trying to assign 2 different collision groups to the same shape! (%s and %s)\n
 Trying to find a flex controller (%s) that doesn't actually exist in the model.\n
 Tu\t(OR
+Two way pin
 Type of data stored inside the probe.
 Type of probes to filter for visualization.
 Type=
@@ -10869,14 +11474,20 @@ UNIV
 UNIVERSALSTRING
 URI:%s
 USERNOTICE
+UScale
 UTCTIME
 UTF8
 UTF8STRING
 UTF8String
 UUUUUUUUUUUUUU<o(
 UUUUUUUUUUUa\f\v
+UV Channel 1
+UV Channel 2
+UVMAP1
+UVMAP2
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
+U\tV_logd
 U^Pg
 Ugi<
 Unable to create unknown element %s!\n
@@ -10954,6 +11565,7 @@ UpdateTerrainElements
 Updates the paramter of the active probe on the mix graph.
 Updating references to file: %s\n
 Use Best Size Match
+Use Closed Edges
 Use For Custom Bake
 Use For Pathing
 Use For Reverb
@@ -11026,6 +11638,7 @@ VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
 VPK directory for '%s' corrupt
+VScale
 VY5[;o
 VZ#-DLU[3=h
 V\rKk
@@ -11042,7 +11655,9 @@ ValveSMMem:%s
 ValveSMMut:%s
 Variable "%s" has %i components, a specific component must be specified, for example use: "%s.x"
 Variable %s has bad default value %s (no choices with that name or value)
+Variable: 
 Variation Id
+Vault Over
 VbfOc,p
 Vcsc 
 Vec2
@@ -11140,6 +11755,7 @@ WTLS curvs over a 224 bit prime field
 WZTR
 W\noB
 Wait Complete
+Wait Until
 WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning: NavMesh place %s is undefined?\n
@@ -11156,7 +11772,12 @@ WfMD{
 When False
 When True
 When enabled, the normals of the final surface will use the normals from the base polygons of the overlay instead of the normals of the surface that the overlay is being projected onto.
+When true, discard edges within the angle threshold.
+When true, discard faces with matching material.
+When true, only consider open/closed edges that share a vert with another open/closed edge.
+When true, we only consider closed edges (edges with exactly two neighboring faces).
 Whether to continue executing
+While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled.
 WhiteLevel
 WhiteOnBlack
 WhitePoint
@@ -11170,6 +11791,7 @@ WipeRedo '%s'\n
 WipeUndo '%s'\n
 Wmn|CH
 Wn4'
+Workplane Marker
 World Files
 World Height
 World Layer
@@ -11526,7 +12148,6 @@ Z~wl
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\f\tV_expd
 \f]ne3
 \fdhWTh
 \fiaR
@@ -11579,6 +12200,7 @@ Z~wl
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
 \n\tIPSec/IKE/Oakley curve #4 over a 185 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
+\n\tV_atanf
 \ndummyfilename.tif
 \nqYu
 \ntM(ie-V
@@ -11646,8 +12268,18 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
+\tT?parent@QWindow@@QEBAPEAV1@XZ
+\tV_acosd
+\tV_asind
+\tV_atan2d
 \tV_cosd
 \tV_coshf
+\tV_exp2f
+\tV_expd
+\tV_strnchr
+\tV_tand
+\tV_tanhf
+\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
 \tbody_groups = %s\n
@@ -11678,11 +12310,11 @@ Z~wl
 \vNCE\v
 \vUY6[E
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\v\tV_exp2f
 \v\vTSG
 \vj0k
 \vjC7
 ]1h=bfz
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]FhSD}
 ]GT7]
 ]G\nY1
@@ -11711,7 +12343,6 @@ _TIFFVGetField
 _TIFFVSetField
 _YWL
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
-_\tV_sind
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __CACHED_editcontext_provider_lookup
 __CursorQueue__
@@ -11791,6 +12422,7 @@ aRWZ5
 aRecord
 aSRP
 aXvC
+a\tV_powd
 a]?xG
 aaControls
 aaaaaaaazzzzzzzz
@@ -11885,6 +12517,7 @@ altrendercolor
 always
 alwaysOrientUp
 alwaysRender
+always_draw_handles
 always_hit_test
 ambientOcclusionMode
 ambient_occlusion
@@ -11914,6 +12547,7 @@ animations
 animflags
 animgraph
 animgraph2_clip
+animgraph2_graph
 animgraph2_identifier
 animgraph_enum
 ansi-X9-62
@@ -11952,6 +12586,7 @@ aspectRatio
 assetTag
 asset_keys_indirect_model_gamedata_key
 asset_keys_indirect_model_gamedata_subkey
+asset_keys_indirect_vdata_gamedata_fieldkey
 asset_keys_mapcompile_opaque
 asset_specific_keys_destination
 associatedDomain
@@ -12031,8 +12666,8 @@ bUseFixedUpDirection
 bUseProjectedDistance
 bValue
 bV}TS
+bWasAnObservableComputation
 b\fzUkm
-b\tV_sinhf
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 b]jY
 backFacingAngle
@@ -12115,6 +12750,7 @@ bad value
 bad version number
 bad write retry
 bad x509 filetype
+bakeLightDoubleSided
 bakeLightingDoubleSided
 bakeToWorld
 bakeambientocclusion
@@ -12170,7 +12806,6 @@ bindable_command_buttons
 bio not set
 bio write failure
 biometricInfo
-bip_head
 bits too small
 bl <= (int)sizeof(ctx->buf)
 blendColor
@@ -12229,7 +12864,6 @@ boneRotations
 boneTransforms
 bone_index_and_weight
 bonemask
-bonename
 bookmarkSets
 bookmarks
 bookmarksW
@@ -12429,7 +13063,9 @@ characteristic-two-field
 checkstate
 childBindRotation
 choiceValue
+choice_group
 choices
+choreoanchorclass
 chunk >= 0
 chunkCount
 ci;e*
@@ -12457,7 +13093,6 @@ client finished
 client write key
 clientAuth
 clienthello tlsext
-clip
 clipType
 clipmap_levels
 closed
@@ -12532,6 +13167,7 @@ commonName
 comp
 compatible
 compileAsOverride
+compile_source_id
 complete
 completeCount
 componentType
@@ -12564,7 +13200,6 @@ connect error
 connection id is different
 connection type not set
 connection_1
-connections
 connectionsData
 cons: 
 const char *__cdecl Reflection::Internal::GetFuncName<class IMaterialAttributeAnimTag>(void)
@@ -12909,6 +13544,7 @@ digest_alg
 digest_enc_alg
 digital envelope routines
 digitalSignature
+dimmer
 dinfo
 dirName
 direction
@@ -13333,26 +13969,6 @@ extra_vertex_data
 extracted_motion
 eyBH_
 eyeOffset
-eye_data_list
-eye_target
-eye_target_bone_index
-eye_target_forward
-eye_target_pos
-eye_target_up
-eyeball_bind_forward
-eyeball_bind_l_forward
-eyeball_bind_l_pos
-eyeball_bind_l_up
-eyeball_bind_pos
-eyeball_bind_r_forward
-eyeball_bind_r_pos
-eyeball_bind_r_up
-eyeball_bind_up
-eyeball_bone_index
-eyeball_bone_l_index
-eyeball_bone_r_index
-eyeball_l
-eyeball_r
 eyelid
 eyes
 eyj5yR
@@ -13373,6 +13989,7 @@ faceData
 faceDataIndices
 faceEdgeIndices
 faceIds
+faceIndex
 faceSelectionSetData
 faceSet
 faceSets
@@ -13401,6 +14018,7 @@ fbx2dmx
 fdxfv%
 feop(
 fgd_files
+fgd_metadata_merge
 fgd_type
 field missing
 field too large
@@ -13420,6 +14038,7 @@ finish failed
 fips
 fips mode not supported
 fips2
+fire_time
 first num too large
 first octet invalid
 fixed_height
@@ -13453,7 +14072,9 @@ flInitialMinY
 flInitialMinZ
 flInputA
 flInputB
+flMaxRadius
 flMinAngle
+flMinRadius
 flOffsetAlongPath
 flOriginOffset
 flOutputA
@@ -13582,9 +14203,15 @@ gXC.nT\v
 g\r?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
 g]i/H
+g_f1024InchHighlight
+g_f64InchHighlight
 g_flBrightnessExposureBias
+g_n1024InchMask
+g_n64InchMask
 g_pApplication is not yet initialized!\n
 g_tSkyTexture
+g_v1024InchHighlightColor
+g_vOriginColor
 game/
 game:
 game:tools/images/assettypes/generic_lg.png
@@ -13712,6 +14339,8 @@ hammer
 hammerClipboard
 hammerMeshDataBuffer
 hammerUniqueId
+hammer_analytic_grid
+hammer_analytic_grid_transparent
 hammer_bevel_leave_edges
 hammer_dota_path_falloff
 hammer_dota_path_fixup
@@ -13736,12 +14365,11 @@ hammer_gridnav_show_ward_blocking
 hammer_isosurface_merge_tolerance
 hammer_isosurface_remove_interior
 hammer_isosurface_sample_offset
-hammer_isosurface_subtract
 hammer_overlay_draw_projection_triangles
-hammer_parallel_terrain_update
 hammer_preview_lighting
 hammer_raytrace_debug_draw
 hammer_render_model_bounding_spheres
+hammer_show_light_truncation_error
 hammer_spawn_area_base_alpha
 hammer_spawn_area_outline_alpha
 hammer_tile_border_size
@@ -14357,7 +14985,6 @@ jTuf
 jV*d9O
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 j[6Z
-j\tV_sscanf_s
 j\v?event@QTextBrowser@@MEAA_NPEAVQEvent@@@Z
 j\vIP{s
 janetMailbox
@@ -14598,7 +15225,9 @@ locator
 locatorAngles
 locatorOffset
 locatorangles
+locatorindex
 locatoroffset
+locatoroorigin
 lock to bone
 lodLevel
 lod_level
@@ -14626,6 +15255,7 @@ mXRecord
 mZKB
 m\ta=\ruWb
 m_ActiveValue
+m_Always
 m_Bindings
 m_ChoiceGroups
 m_ChoiceValues
@@ -14650,6 +15280,7 @@ m_LocalToWorld
 m_LocatorConfig
 m_MaterialOverrideTables
 m_MaterialTintTables
+m_MeshName
 m_MeshResourceName
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_Normals
@@ -14658,10 +15289,12 @@ m_Positions
 m_ReferencedMeshSnapshots
 m_ReplacementTable
 m_ResourceNames
-m_Results
 m_Stops
 m_Streams
+m_SubassetTypes
 m_TagValue
+m_TargetEntries
+m_TargetWarps
 m_Texcoords
 m_TintTable
 m_VariableValue.m_TargetName
@@ -14673,6 +15306,7 @@ m_bCordonsVisible
 m_bDrawLast
 m_bFirstEvaluate
 m_bFlipFaces
+m_bFollowReferences
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bIsCordoning
@@ -14683,14 +15317,17 @@ m_bOnlyShadow
 m_bRemoveWhenOutOfScope
 m_bRenderClusteredProbesOnly
 m_bRenderProbeRadius
+m_bSharedVert
 m_bShowCompressedIR
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_externalMethodTargetGraph
 m_fMoveTo
 m_flDeltaValue
+m_flDensityMinScale
 m_flDimensionsInOutValue
 m_flDimensionsSizeValue
+m_flEntryDistance
 m_flOcclusionDeviation
 m_flOcclusionDistanceRatio
 m_flOcclusionReflectionRatio
@@ -14705,8 +15342,10 @@ m_flProbeRadius
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hDef
+m_horizontalRange
 m_iszNPC
 m_materialsValues
+m_nBlackboardIndex
 m_nClusterIndex
 m_nCurrentWakeIndex
 m_nCursorID
@@ -14725,10 +15364,10 @@ m_nProbeIndex
 m_nProbeIndexSource
 m_nProbeType
 m_nResourceNameIndex
-m_nResult
 m_nSelectedProbeType
 m_nStackDepthWhenAdded
-m_nSubjectID
+m_nTargetOpenEdgeCount
+m_nTargetVertexCount
 m_nYieldToken
 m_pInstanceProceduralConnectionsClass
 m_pVertexData
@@ -14744,6 +15383,7 @@ m_vDimensionsOutsideField
 m_vNonUniformScale
 m_vNumDivisions
 m_vecNavLinkMovementNames
+m_verticalRange
 ma\v\r01!
 mac absent
 mac generation error
@@ -14769,7 +15409,6 @@ mapUsageType
 mapVariables
 map_asset_references
 map_sg_%s
-mapbuilder.acceptvis
 mapbuilder.blocklos
 mapbuilder.blocksound
 mapbuilder.ladder
@@ -14781,7 +15420,6 @@ mapbuilder.passbullets
 mapbuilder.playerclip
 mapbuilder.sky
 mapbuilder.teleportclip
-mapbuilder.visblocker
 mapbuilder.water
 mapkeys
 mapkeys_choice_name
@@ -14968,6 +15606,7 @@ model_breakpiece
 model_cloth_effect
 model_cloth_node
 model_cloth_vertex_map
+model_from_key
 model_morphchannel
 model_path
 model_physics_shape
@@ -14977,7 +15616,12 @@ modelanimevent
 modelbreakcommand
 modelgamedata
 modellib
+models/editor/axis_helper.vmdl
+models/editor/axis_helper_disabled.vmdl
 models/editor/axis_helper_thick.vmdl
+models/editor/axis_helper_thick_disabled.vmdl
+models/editor/camera.vmdl
+models/editor/choreo_anchor_locator_model.vmdl
 models/editor/cordon_helper.vmdl
 models/editor/proxy_helper.vmdl
 models/props/navlink/nav_link_hammer_model.vmdl
@@ -15093,6 +15737,7 @@ nav_unmark; nav_mark ladder %d; nav_warp_to_mark\n
 nav_validate
 navclip
 navlink
+navlink_type
 navlinkclass
 navplace.db
 nbio connect error
@@ -15329,6 +15974,7 @@ oWnS
 oXHT
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 oad2:,
 oaep
@@ -15353,6 +15999,7 @@ objectsTreeType
 objectsVariationId
 objsign
 observable_listeners
+observable_scope
 observer_cursors
 occluder
 occlusion_exponent
@@ -15362,6 +16009,8 @@ odMsh
 odd number of chars
 odd number of digits
 oeap
+offsetAngles
+offsetOrigin
 offsetTime
 oi3o
 old session cipher not returned
@@ -15390,6 +16039,7 @@ operation not defined
 operation not supported for this keytype
 operation not supported on this type
 operaton not initialized
+operator short
 operators
 opqMU
 optionalSignature
@@ -15527,6 +16177,7 @@ pathNodeName
 pathNodeNames
 pathNodeRadiusScales
 pathNodes
+pathParameter
 pathTangents
 path_Index
 path_corner
@@ -15574,6 +16225,8 @@ peer error unsupported certificate type
 peer key error
 pem name bad prefix
 pem name too short
+per_edge
+per_tile
 permitted
 permitted subtree violation
 permittedSubtrees
@@ -15608,6 +16261,7 @@ pilotObject
 pilotObjectClass
 pilotOrganization
 pilotPerson
+pinAngles
 pinEnabled
 pin_enabled
 pivotOffset
@@ -15831,7 +16485,6 @@ qPq2k
 qTm_fC=
 qUN1
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
-q\tV_strnchr
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 qangle log
 qangle_array
@@ -15861,7 +16514,8 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\fp\z
+r\fpL 
+r\tV_sinhf
 r\vDi
 rad2deg
 radiusScale
@@ -15879,6 +16533,7 @@ random position on model
 random yaw
 randomAmount
 randomSeed
+random_position
 randomizable
 rawControlNames
 rc2-40-cbc
@@ -15951,6 +16606,7 @@ renderwithdynamic
 renegotiate ext too long
 renegotiation encoding err
 renegotiation mismatch
+reorientCamera
 repeatable
 replacedParentField
 replacedParentIndex
@@ -15984,7 +16640,6 @@ result too large
 result too small
 result_left
 result_right
-result_set
 retransmit:  message %d non-existant\n
 reuse cert length not zero
 reuse cert type not zero
@@ -16113,11 +16768,12 @@ scripts/activity_modifier_weights.txt
 scripts/collision_detail_layers.vdata
 scripts/collision_properties.txt
 scripts/hammerinfo.txt
+scripts/light_styles.vdata
 scripts/nav_hulls.vdata
 scripts/nav_hulls_presets.vdata
+scripts/navlinks.vdata
 scripts/npc_units.vdata
 scripts/population.txt
-scripts/vscripts/
 scroll_widget
 scsv received when renegotiating
 sdsiCertificate
@@ -16419,6 +17075,7 @@ shadowtextureheight
 shadowtexturewidth
 shape
 shapeReferences
+shapetype
 shared
 shared info error
 sharedenvironment
@@ -16483,14 +17140,11 @@ skinned_physics_mesh_key_name
 sky_camera
 sky_lightingonly_name
 skyambientbounce
-skybouncelight
 skybouncescale
-skybox
 skyboxMapPath%i
 skybox_map
 skybox_reference
 skycolor
-skydirectlight
 skyintensity
 skyname
 skytexture
@@ -16550,6 +17204,7 @@ sourceOutputName
 sourceProxy
 source_column
 source_file_searchpath
+source_key
 spacing
 spawnFlags
 spawnflags
@@ -16733,6 +17388,7 @@ stereoSingleFile
 stereoscopic
 store
 store init error
+strValue
 streamSourceType
 stream_data
 streaming not supported
@@ -16823,7 +17479,6 @@ tangentsIndices
 tangentu
 tangentu_signv
 tangentv
-target
 targetBodyName
 targetDataType
 targetFilePath
@@ -16847,8 +17502,10 @@ targetType
 targetTypeFlags
 targetWeight
 target_destination
+target_entry
 target_name_or_class
 target_source
+target_warp
 targetname
 tbsRequest
 tbsResponseData
@@ -16924,6 +17581,7 @@ time_array
 time_steps
 timesToFire
 timestampsign
+tint
 tintColor
 tintInput
 tintKey
@@ -17004,6 +17662,7 @@ trail_length_random
 trailerField
 transform locked
 transformLocked
+transformPin
 transforms
 translucent
 transparency
@@ -17018,6 +17677,7 @@ tsa name mismatch
 tsa untrusted
 tst info setup error
 twistJoints
+twoWay
 type not compressed data
 type not constructed
 type not data
@@ -17285,6 +17945,7 @@ valueOrientation
 valuePivot
 valuePosition
 valueTransform
+value_to_vmdl
 value_with_specific_type
 valuechannel
 values
@@ -17292,6 +17953,7 @@ vanim
 variable
 variable has no value
 variableAndChoiceOrder
+variableGroupNames
 variableNames
 variableOverrideKeys
 variableOverrideNames
@@ -17333,6 +17995,8 @@ vertexFormat
 vertexLightingData
 vertexLightingNormals
 vertexLightingPositions
+vertexPaintBlendParams
+vertexPaintDetailWeight
 vertexSelectionSetData
 verticalPolicy
 verticalStretch
@@ -17359,7 +18023,6 @@ vmatrix log
 vmdl_c
 vmesh
 vmks
-vnmclip
 vnotify_ui
 volume_box_maxs
 volume_box_mins
@@ -17439,8 +18102,11 @@ wm"h
 wn)*T$4?5z
 world
 worldLayerName
+world_angle
 world_layer_%s
 world_point
+world_transform
+worldname
 worldnode
 worldspawn
 wrap error
@@ -17540,7 +18206,7 @@ zF):O4
 zG2m8
 zRXU 
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-z\tV_tand
+z\tV_sscanf_s
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 zfar
@@ -17566,6 +18232,7 @@ zz2K
 |11Jv
 |3ox
 |<C!FReQ
+|Bmodel_default_preview_sequence_name
 |InzT
 |XYl
 |hdX)
@@ -17577,7 +18244,6 @@ zz2K
 }W70d
 }Xee+
 }\n?dragMoveEvent@QAbstractItemView@@MEAAXPEAVQDragMoveEvent@@@Z
-}\tV_tanhf
 }gE3
 }n2W
 ~9ob

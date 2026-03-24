@@ -1791,7 +1791,6 @@ GetClipboardFormatNameW
 GetCursor
 GetCursorInfo
 GetCursorPos
-GetDC
 GetDeviceCaps
 GetDisplayAutoRotationPreferences
 GetDoubleClickTime
@@ -1812,7 +1811,6 @@ GetMonitorInfoW
 GetObjectW
 GetOpenFileNameW
 GetOutlineTextMetricsW
-GetParent
 GetPixelFormat
 GetPointerDeviceRects
 GetPointerFrameTouchInfo
@@ -2625,7 +2623,6 @@ RPC_E_CHANGED_MODE
 RPC_E_THREAD_NOT_INIT
 RPC_E_WRONG_THREAD
 R\vpl\t
-R\vpt
 Read Error
 Read failure in png_handle_zTXt
 Read palette index exceeding num_palette
@@ -2642,7 +2639,6 @@ RegisterTouchWindow() failed for window '%s'.
 RegisterWindowMessageW
 Registry
 ReleaseCapture
-ReleaseDC
 ReleaseStgMedium
 Releasing EGL display 
 Releasing automatic mouse capture 
@@ -2718,7 +2714,6 @@ Scaron
 Scaronsmall
 Scedilla
 Screen "
-ScreenToClient
 Segoe UI
 SelectClipRgn
 Semibold

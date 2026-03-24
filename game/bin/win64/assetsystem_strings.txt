@@ -125,6 +125,8 @@
 !V_strcmp( hVTex->m_TestPayload.GetMemberString( "tga_payload" ), "updated_tga_content" )
 !V_strcmp( pAsset->GetCompileStateReason_Transient(), "Missing required special dependency 'TestResource_RequiredDependency'" )
 !V_strcmp( pAsset->GetCompileStateReason_Transient(), "No Game File" )
+!V_strcmp( pAssetA->GetCompileStateReason_Transient(), "No Game File" )
+!V_strcmp( pAssetB->GetCompileStateReason_Transient(), "No Game File" )
 !V_strcmp( pBaseWavThenLeafMP3->GetAbsolutePath_Transient( ASSET_LOCATION_CONTENT ), "t:/content/base/base_wav_then_leaf_mp3." WAV_FAKE )
 !V_strcmp( pBaseWavThenLeafMP3_Second->GetAbsolutePath_Transient( ASSET_LOCATION_CONTENT ), "t:/content/leaf/base_wav_then_leaf_mp3." MP3_FAKE )
 !V_strcmp( pMP3ThenWAV_First->GetAbsolutePath_Transient( ASSET_LOCATION_CONTENT ), "t:/content/base/base_mp3_then_leaf_wav." MP3_FAKE )
@@ -140,6 +142,8 @@
 !m_nPackFileNumber
 !name
 !pAsset->HasFileInLocation( ASSET_LOCATION_GAME )
+!pAssetA->HasFileInLocation( ASSET_LOCATION_GAME )
+!pAssetB->HasFileInLocation( ASSET_LOCATION_GAME )
 !pBaseWavThenLeafMP3->HasFileInLocation( ASSET_LOCATION_GAME )
 !pBaseWavThenLeafMP3_Second->HasFileInLocation( ASSET_LOCATION_GAME )
 !pContentOnlyMP3->HasFileInLocation( ASSET_LOCATION_GAME )
@@ -184,6 +188,7 @@
 #P0_?G0
 #Q7z
 #\t#\v#'#)#/#3#5#E#Q#S#Y#c#k#
+#\tV_fgets
 #\v+(bF&drJ:x#
 #k+ka\T
 #lyj
@@ -314,6 +319,7 @@ $prefix_element$
 %s------%s--%s%s
 %s--> NO ASSET FOUND: %s\n
 %s--> NO FILE(s): %s\n
+%s/%s.txt
 %s2-d encoding
 %s: %s at line %u of %s %u (got %u, expected %u)
 %s: (%d bit)\n
@@ -426,6 +432,7 @@ $prefix_element$
 * ==> Total assetsystem memory usage: ~%.2fMiB\n
 * Asset info saved %s times\n
 * ~%.2fMiB additional used by asset system\n
+* ~%.2fMiB dirs (%d)\n
 * ~%.2fMiB subasset\n
 *%*/*O*U*_*e*k*m*s*
 *** Converter error - element "%s" already has a non-int attribute "%s"!\n
@@ -516,6 +523,7 @@ $prefix_element$
 .?AUIAssetTypeDependenciesContext@@
 .?AUResourceAssetTypeDependenciesContext_t@@
 .?AUVDataInitInfo_t@@
+.?AV<lambda_1>@?1??Init@CAssetSystem@@QEAAXPEAVIAssetFileSystemInterface@@@Z@
 .?AV<lambda_1>@?1??StartNewReadRequest@CAsyncLoadResourceHeaderPromise@@AEAAX_K_N@Z@
 .?AV<lambda_1>@?4??SubmitCacheRequest@CBitmapAsset@@AEAAX_N@Z@
 .?AV<lambda_1>@?8??SrgbLinearToGamma@CSOAContainer@@QEAAXH@Z@
@@ -714,6 +722,7 @@ $prefix_element$
 .?AV?$CUndoAttributeSetValueElement@_K@@
 .?AV?$CUndoAttributeSetValueElement@_N@@
 .?AV?$CVDataFileManager@VCAssetTagInfo@@@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Init@CAssetSystem@@QEAAXPEAVIAssetFileSystemInterface@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StartNewReadRequest@CAsyncLoadResourceHeaderPromise@@AEAAX_K_N@Z@XPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??SubmitCacheRequest@CBitmapAsset@@AEAAX_N@Z@XPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?8??SrgbLinearToGamma@CSOAContainer@@QEAAXH@Z@X$$V@std@@
@@ -722,6 +731,7 @@ $prefix_element$
 .?AV?$_Ref_count_obj2@VCInMemoryLoadResourceHeaderPromise@@@std@@
 .?AVCAllAssetsWorkingSet@@
 .?AVCAsset@@
+.?AVCAssetDir@@
 .?AVCAssetEditinfoFilter@@
 .?AVCAssetFileSystemChangeHandlerVisitor@?1??ProcessFileChanges@CAssetSystem@@QEAAXXZ@
 .?AVCAssetFileSystemDirectoryVisitor@@
@@ -735,6 +745,7 @@ $prefix_element$
 .?AVCAssetSystemTest@@
 .?AVCAssetTagFilterDef@@
 .?AVCAssetTagVDataManager@@
+.?AVCAssetTagsManager@@
 .?AVCAssetType@@
 .?AVCAssetTypeFilter@@
 .?AVCAsyncLoadResourceHeaderPromise@@
@@ -830,6 +841,8 @@ $prefix_element$
 .?AVCVMMDAssetTypeInfo@@
 .?AVFindByTypeVisitor@@
 .?AVIAsset@@
+.?AVIAssetDir@@
+.?AVIAssetFileListener@@
 .?AVIAssetFileSystemInterface@@
 .?AVIAssetSystem@@
 .?AVIAssetSystemTest@@
@@ -1142,6 +1155,7 @@ $prefix_element$
 09,h
 0;Q5[
 0<cz
+0D14
 0M2~@p
 0W/5
 0Z@q
@@ -1191,7 +1205,8 @@ $prefix_element$
 2\fWQx
 2\nP!E
 2\rlhp
-2\vpD
+2\vpD14
+2\vpd
 2^pV
 2a"l
 2bT~
@@ -1224,7 +1239,7 @@ $prefix_element$
 474E4U4W4c4i4m4
 4<Td
 4@AA
-4CSortKey_t
+4CC:\buildworker\source2_dota_rel_2019_win64\build\src\public\vpklib\packedstore.h
 4Ch;
 4F0I
 4Mv8
@@ -1680,7 +1695,6 @@ AsShotICCProfile
 AsShotNeutral
 AsShotPreProfileMatrix
 AsShotWhiteXY
-AssertFatalCast
 Asset '%s' auto-recompile suppressed (%d)\n
 Asset '%s' auto-recompile unsuppressed (%d)\n
 Asset '%s' does not have shipped file '%s/%s'\n
@@ -1690,6 +1704,7 @@ Asset System - %s\n
 Asset System - Updating dependency information...\n
 Asset System Reload Manifest
 Asset Tags
+Asset Tags file change notification without any changes. %d files checked in %.2fs.\n
 Asset Type: %s
 Asset Types
 Asset changed on disk: %s
@@ -1936,10 +1951,10 @@ C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\assetsystemtest
 C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\assettags.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\resourceassettype.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\utlcoveragetest.h
+C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\check_cast.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\utlblockvector.h
-C:\buildworker\source2_dota_rel_2019_win64\build\src\public\vpklib\packedstore.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\resourcefile\resourcefile.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\vpklib\packedstore.cpp
 CA Compromise
@@ -1990,7 +2005,7 @@ CAssetSystem::InitializeAssetSystem
 CAssetSystem::NotifyResourceStatusChange( %s ) - %s\n
 CAssetSystem::ProcessFileChanges unable to acquire the file change suspension cross-process mutex.
 CAssetSystem::Test_PreRecompileResourceAsset
-CAssetSystem::UpdateAllAssetFileCRCs(), C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\assetsystem.cpp:4317
+CAssetSystem::UpdateAllAssetFileCRCs(), C:\buildworker\source2_dota_rel_2019_win64\build\src\assetsystem\assetsystem.cpp:4584
 CAssetSystemTest::RunTests
 CAssetSystemTestSetup::DiscardInMemoryReplacement
 CAssetSystemTestSetup::EnsureAssetIsUpToDate
@@ -2242,6 +2257,7 @@ CResourceAssetType::CalculateDependencies
 CResourceNameTyped
 CSPName
 CStdAssetFileSystem::AssetFS_TraverseDirectoryAndWatchForChanges
+CSubassetTypeInfo
 CT Certificate SCTs
 CT Precertificate Poison
 CT Precertificate SCTs
@@ -2275,10 +2291,11 @@ CUtlCoverageTestGroup::VerifyCoverageGroup
 CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CUtlKeyValuePair<unsigned __int64,class CAsset *>,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
+CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CUtlKeyValuePair<unsigned int,class CAssetDir *>,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct FileHandleTracker_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<unsigned char,64,int,class CMemAllocAllocator>,unsigned char,int>::AddMultipleToTail
@@ -2289,8 +2306,8 @@ CUtlRBTree<class CDmElement *,class CDefLess<class CDmElement *>,int,class CUtlL
 CUtlRBTree<class IDmeOperator *,class CDefLess<class IDmeOperator *>,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CDmElementSerializationDictionary::ElementInfo_t,class CLessFunc<&private: static bool __cdecl CDmElementSerializationDictionary::LessFunc(struct CDmElementSerializationDictionary::ElementInfo_t const &,struct CDmElementSerializationDictionary::ElementInfo_t const &)>,int,class CUtlBlockVector<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CAssetTagInfo *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CAssetTagInfo *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CAssetTagInfo *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,class CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum DmElementHandle_t,enum DmElementHandle_t,class CDefLess<enum DmElementHandle_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CAssetTagInfo *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CAssetTagInfo *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CAssetTagInfo *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct ChunkHashFraction_t,class CUtlSortVectorDefaultLess<struct ChunkHashFraction_t::SortKey_t>,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlVectorMemory_Growable<struct ChunkHashFraction_t,int,0> > >::Find
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
@@ -2311,6 +2328,7 @@ CameraCalibration1
 CameraCalibration2
 CameraSerialNumber
 Can not read scanlines from a tiled image
+Can't RegisterPathSymbols( %s, %s ) for %s\n
 Cannot allocate abstract class
 Cannot handle different per-sample values for field "%s"
 Cannot read TIFF header
@@ -2329,6 +2347,7 @@ Certificate:\n
 Cessation Of Operation
 ChGg
 Char=
+Checked tag files for changes, some changes found. %d files checked in %.2fs.\n
 Checking compile state for asset: %s\n
 Checking whether dependencies of asset %s are being written:\n
 CheekH
@@ -2343,6 +2362,7 @@ ClQ(|
 Class does not allow allocation from its schema binding
 CleanFaxData
 Cleanup
+Cleared all tags from assets in %.2fs.\n
 ClipBoard
 ClipPath
 Close the group automatically after a short wait (good for 'success' messages)
@@ -2668,7 +2688,6 @@ DYNAMIC_CTRL
 DYNAMIC_GET_DATA_CTX
 DYNAMIC_LOAD
 DYNAMIC_SET_DATA_CTX
-D\tV_log2f
 Dampen Movement Relative to Control Point
 Data Encipherment
 DataModel needs the file system to function
@@ -2681,6 +2700,7 @@ DefaultCropOrigin
 DefaultCropSize
 DefaultScale
 Deflate
+Density Scale
 Depends on out-of-date '%s':\n -> reason: %s
 DeregisterEventSource
 Dhq0\ri
@@ -3069,7 +3089,6 @@ EXTENDED_KEY_USAGE
 EXTERNAL
 E[3M
 E\nQc
-E\tV_logd
 EdiPartyName
 EdiPartyName:<unsupported>
 EditGameClassProps
@@ -3150,7 +3169,6 @@ F6tr
 F7!z
 F9q'
 F<mb
-FAILED
 FDA~i
 FF!w
 FILE pointer
@@ -3206,6 +3224,7 @@ Fi:je
 Field Type: %s\n
 Field=
 FieldOfViewCotangent
+File change for %s, reloading tags\n
 File not open for reading
 File: %s\n
 Filename
@@ -3336,8 +3355,6 @@ H8,2
 H8xp
 H=`HY
 H@H9xqI
-HA(K
-HA*K
 HBJ\nTRF
 HEAD 
 HH&a
@@ -3366,7 +3383,6 @@ Heap32Next
 Hello World
 Hg>?S
 Hhr+g
-Hi'K
 HiddenAssetFlag
 Hide unless error/warning occurs
 Hofw
@@ -3449,6 +3465,7 @@ ImageFullLength
 ImageFullWidth
 ImageLength
 ImageWidth
+Impl::AssertCastImpl
 ImplicitDependencies
 ImplicitDependingOnMe
 Inappropriate photometric interpretation %d for SGILog compression; %s
@@ -3619,7 +3636,7 @@ LoadLibraryW
 Loaded
 Loaded %d tags for %d assets in %.2fs.\n
 Loaded Resources
-Loading Asset Tags...\n
+Loading Asset %d Tags...\n
 LocalKeySet
 LocalizedCameraModel
 LogL16Decode: Not enough data at row %d (short %d pixels)
@@ -3705,6 +3722,8 @@ MinghuaQu
 MinghuaQu)
 MinghuaQuS
 MinghuaQuw
+Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
 Missing required special dependency '%s'
 Missing required special dependency 'TestResource_RequiredDependency'
 MissingRequired
@@ -4225,6 +4244,8 @@ Premature end-of-partition0 encountered.
 Preset File
 PrimaryChromaticities
 Prime:
+Print assets in the specified dir.
+Print assetsystem dir tree.
 Print internal assetsystem data.
 Private Key
 Private-Key
@@ -4233,6 +4254,7 @@ Privilege Withdrawn
 Proc-Type: 
 Proc-Type: 4,
 Procedural
+Processed %d tags in %.2fs.\n
 Proxy Certificate Information
 Public Key
 Public-Key
@@ -4244,7 +4266,6 @@ Q4EX
 Q6p]
 QAngle
 QTk$
-Q\tV_powd
 Q`uV
 Qdsma
 Qjh/T
@@ -4390,7 +4411,7 @@ RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
 R\r1>Vp
-R\vpD
+R\vpd
 R]Di
 R_T5Y
 Radius Random
@@ -4426,7 +4447,6 @@ Remap Distance Between Two Control Points to Scalar
 Remap Distance to Control Point to Scalar
 Remap Noise to Scalar
 Remap Scalar
-Remember to check in the asset tag database!\n%s
 Remove From CRL
 ReportEventW
 Require Explicit Policy
@@ -4656,6 +4676,7 @@ SampleFormat
 SamplesPerPixel
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 1
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 3
+Saved %d changed tags for %d assets in %.2fs.\n
 ScalpD
 Scanning for Asset Files (%d/%d): '%s' = %s, previously scanned %u directories and %u files\n
 Scanning for Asset Files (%d/%d): previously scanned %u directories and %u files
@@ -4802,6 +4823,7 @@ TS_VERIFY_CERT
 TS_VERIFY_CTX_new
 TXJw^{
 TYPE=
+T\tV_log2f
 Tag 
 Tag %d
 Tag Update Failed
@@ -4812,6 +4834,7 @@ Test failure - mismatched recompile reason\nExpected starts with: %s\nActual    
 Test ignore suppressed dependency
 Test resort expected 1 argument: <number>\n
 TestDependsOnOtherResourceContent
+TestExtensionOnlyFile
 TestFileWritabilityAndTimestampFeature
 TestFusedChildResource
 TestInMemoryFingerprint
@@ -4824,6 +4847,10 @@ TestRequiredSpecialDependency
 TestSimpleVmatTga
 TestSimpleVmatTgaSearchPath
 TestSimpleVmatTxtAppearance
+TestSpecialInputDependencyAssetDBSerialization
+TestSpecialInputDependencyBasic
+TestSpecialInputDependencyCaching
+TestSpecialInputDependencyHotReload
 TestTgaChangeReloadCounts
 TestTgaChangeReloadCounts_OnlyVtexResident
 TestTwoContentFileResourceType
@@ -4903,9 +4930,12 @@ UTF8String
 UUUUUUUUUUUUUU<o(
 UUUUUUUUUUUa\f\v
 U\8h(
+U\tV_logd
 U^Pg
 Ugi<
 Unable to create unknown element %s!\n
+Unable to load kv3 userdata
+Unable to save special input dependency userdata: %s\n
 Unable to set type unless you're creating untyped elements!\n
 Undo\n======\n
 Unexpected EOF in quoted string
@@ -4934,7 +4964,9 @@ Unsupported PSD color mode!\n
 Unsupported extension feature
 Unsuppressed auto-recompile
 Untagged
-Updating Asset Tags...
+Updated auto tags %.2fs.\n
+Updated change times on tag files. %d files checked in %.2fs.\n
+Updated tags on assets in %.2fs.\n
 Updating asset dependency information...
 Updating dependencies: %d%% (%s/%s) - %s
 Usage: "assetsystem_dump_table <table_name>" where table_name is either * (for all) or one of:\n
@@ -5055,7 +5087,7 @@ WARNING: Failed on-demand recompile for asset %s\n
 WARNING: Failed to load %s: %s\n
 WARNING: Failed to load data for bitmap asset '%s'\n
 WARNING: Failed to read '%s': %s\n
-WARNING: Failed to write '%s': %s\n
+WARNING: Failed to write '%s'\n
 WARNING: ImmediatelyRefreshInformationAfterCompileAndReloadChildren failed to find asset for '%s' (abs='%s')\n
 WARNING: Include paths specified but no exclude paths specified! Ignoring includes.\n
 WARNING: ReadFile failed for asset database '%s', error %u.\n
@@ -5229,7 +5261,6 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X9)K
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -5367,10 +5398,10 @@ Z~wl
 \fKS1
 \fW9c
 \fXu"L
-\f\tV_expd
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\v`D14
 \ful2
 \fy&3Gl
 \l:ArR
@@ -5424,7 +5455,8 @@ Z~wl
 \tJm_9
 \tLa0+
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
-\tV_fgets
+\tV_atan2d
+\tV_expd
 \t\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StrSubst
 \t_V_StringAfterPrefixCaseSensitive
@@ -5479,6 +5511,7 @@ _}eOk
 `28)fk
 `:zQF
 `D$daM-l
+`D14
 `DZG
 `H(hqA1p
 `ITS
@@ -5519,6 +5552,7 @@ aRWZ5
 aRecord
 aSRP
 aXvC
+a\tV_powd
 a]?xG
 aaControls
 ac-auditEntity
@@ -5632,9 +5666,34 @@ asn1 lib
 asn1 parse error
 asn1 sig parse error
 asn1 unknown field
-asset
+asset_diagnostic: AddAsset -> UpdateRelatedFile\n
+asset_diagnostic: AddAsset\n
+asset_diagnostic: HandleFileChange "%s"\n
+asset_diagnostic: HandleFileChange -> AddAsset\n
+asset_diagnostic: HandleFileChange -> UpdateRelatedFile\n
+asset_diagnostic: HandleNewPossibleAssetFileSymbolParts "%s" "%s"\n
+asset_diagnostic: HandleNewPossibleAssetFileSymbolParts -> AddAsset\n
+asset_diagnostic: HandleNewPossibleAssetFileSymbolParts -> IgnoreAssetDirectory\n
+asset_diagnostic: HandleNewPossibleAssetFileSymbolParts -> IgnoreByRestrictedWrite\n
+asset_diagnostic: HandleNewPossibleAssetFileSymbolParts -> IgnoreNewPossibleAssetFile\n
+asset_diagnostic: LoadPersistentInfo "%s"\n
+asset_diagnostic: LoadPersistentInfo -> Assigning new slot (%d)\n
+asset_diagnostic: LoadPersistentInfo -> Authoritative readonly DB setting NotStale and ReadOnly\n
+asset_diagnostic: LoadPersistentInfo -> Bad asset type or invalid extension\n
+asset_diagnostic: LoadPersistentInfo -> CheckModPath returned false\n
+asset_diagnostic: LoadPersistentInfo -> Maintaining NotStale from existing entry\n
+asset_diagnostic: LoadPersistentInfo -> Maintaining ReadOnly from existing entry\n
+asset_diagnostic: LoadPersistentInfo -> Maintaining TimeStamp\n
+asset_diagnostic: LoadPersistentInfo -> Replacing data in existing slot (%d)\n
+asset_diagnostic: LoadPersistentInfo Final MayBeStale = %d\n
+asset_diagnostic: MarkFileNotStale "%s"\n
+asset_diagnostic: PruneStaleAssets "%s"\n
+asset_diagnostic: PruneStaleInfo -> Entire Asset MayBeStale = Prune\n
+asset_diagnostic: PruneStaleInfo -> loc=%d idx=%d; MayBeStale == false\n
+asset_diagnostic: PruneStaleInfo -> loc=%d idx=%d; MayBeStale == true -> Removing\n
+asset_diagnostic: UpdateFileInfo -> m_bMayBeStale = false\n
+asset_diagnostic: UpdateRelatedFile -> UpdateFileInfo\n
 asset_ext_versions
-asset_tag_assignments.txt
 asset_warnings
 assets
 assetsThatDependOnTheTGA.Count() == 1
@@ -5649,8 +5708,13 @@ assetsystem_check_compile_state
 assetsystem_check_compile_state could not find asset: %s\n
 assetsystem_count
 assetsystem_debug_substring
+assetsystem_dump_all_dirs
+assetsystem_dump_one_dir
+assetsystem_dump_one_dir expected 1 argument: <dir>\n
+assetsystem_dump_one_dir unknown dir '%s'\n
 assetsystem_dump_string_threshold
 assetsystem_dump_table
+assetsystem_fail_compile_on_dependants
 assetsystem_legacy_explicit_reload_child_resources
 assetsystem_legacy_process_file_changes_after_compile
 assetsystem_old_loop_algorithm
@@ -6102,7 +6166,6 @@ conflicting engine id
 connect error
 connection id is different
 connection type not set
-connections
 connectionsData
 cons: 
 constrainVelocity
@@ -6757,6 +6820,8 @@ fog_lighting
 fogcontributionstrength
 fogshadows
 fogstrength
+folder.vtest
+folder/.vtest
 fopen
 fopen('
 for "ReferenceBlackWhite" array
@@ -6867,6 +6932,7 @@ hShared.GetReloadCounter() == 1
 hTest.GetReloadCounter() == 1
 hTest.GetReloadCounter() == 2
 hTest.HasData()
+hTestStrong.GetReloadCounter() == 1
 hTestVMAT.GetReloadCounter() == 0
 hTestVMAT.GetReloadCounter() == 1
 hTestVMAT.GetReloadCounter() == 2
@@ -7211,6 +7277,7 @@ identified-organization
 idp mismatch
 if.F<h
 ifTK
+ignored_value
 ihD5
 ik.R
 ilRdV
@@ -7417,7 +7484,6 @@ jOJw"
 jTuf
 jV*d9O
 j[6Z
-j\tV_sscanf_s
 j\vIP{s
 janetMailbox
 jb:5
@@ -7629,13 +7695,16 @@ m_SpecialInputDependencies
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
+m_SubassetTypes
 m_UserData
 m_WeakReferenceList
 m_bFileExists
+m_bFollowReferences
 m_bIsGameFile
 m_bOptional
 m_ePromiseState != EPromiseState::Unresolved
 m_fMoveTo
+m_flDensityMinScale
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
@@ -8076,6 +8145,7 @@ operation not defined
 operation not supported for this keytype
 operation not supported on this type
 operaton not initialized
+operator short
 operators
 opqMU
 optionalSignature
@@ -8137,6 +8207,14 @@ pAsset->CompileState() == ASSET_FILE_COMPILED
 pAsset->CompileState() == ASSET_FILE_UNCOMPILED
 pAsset->HasFileInLocation( ASSET_LOCATION_GAME )
 pAsset->RecompileAsset()
+pAssetA->CompileState() == ASSET_FILE_COMPILED
+pAssetA->CompileState() == ASSET_FILE_UNCOMPILED
+pAssetA->HasFileInLocation( ASSET_LOCATION_GAME )
+pAssetA->RecompileAsset()
+pAssetB->CompileState() == ASSET_FILE_COMPILED
+pAssetB->CompileState() == ASSET_FILE_UNCOMPILED
+pAssetB->HasFileInLocation( ASSET_LOCATION_GAME )
+pAssetB->RecompileAsset()
 pBaseWavThenLeafMP3 != nullptr
 pBaseWavThenLeafMP3->HasFileInLocation( ASSET_LOCATION_CONTENT )
 pBaseWavThenLeafMP3_Second == pBaseWavThenLeafMP3
@@ -8151,6 +8229,7 @@ pContentOnlyWAV->HasFileInLocation( ASSET_LOCATION_CONTENT )
 pContentWAVAndGame != nullptr
 pContentWAVAndGame->HasFileInLocation( ASSET_LOCATION_CONTENT )
 pContentWAVAndGame->HasFileInLocation( ASSET_LOCATION_GAME )
+pD14
 pD4t
 pEnabledState->m_Enabled[ iPathID ].Count() == nCount
 pFromFile
@@ -8967,6 +9046,12 @@ source_column
 source_file_searchpath
 spawnFlags
 spawnflags
+special input dependency
+special_dependency_value
+special_dependency_valueA
+special_dependency_valueB
+special_input.vtest_special
+special_input_deps
 specificImpulse
 specific_impulse
 specular_direction_day
@@ -9143,6 +9228,7 @@ strips
 strlen(objstr) + 23 + 2 * enc->iv_len + 13 <= sizeof buf
 strong.vtest
 style
+subassettypes
 subgroup factor:
 subgroup order:
 subject
@@ -9182,6 +9268,7 @@ t:/content/leaf/
 t:/content/leaf/base_mp3_then_leaf_wav.vtest_alt2
 t:/content/leaf/base_wav_then_leaf_mp3.vtest_alt1
 t:/content/leaf/content_wav_then_mp3_compile_test.vtest_alt2
+t:/content/leaf/folder/.vtest
 t:/content/leaf/simple.vtest
 t:/content/leaf/test.vtest
 t:/content/leaf/test_tga.vtestcontent
@@ -9224,7 +9311,6 @@ tNt5
 tag mismatch
 tag value too high
 tag=
-tag_ids
 tag_list
 tag_list_dynamic
 tangent$0
@@ -9251,6 +9337,8 @@ telephoneNumber
 teletexTerminalIdentifier
 telexNumber
 test.EnsureAssetIsUpToDate( vmatName ) == ASSET_UP_TO_DATE
+test.FindAssetByAssetRelativePath( "folder.vtest" ) == nullptr
+test.FindAssetByAssetRelativePath( "folder/.vtest" ) == nullptr
 test.GetRecompiledByAssetsystemCount( pAsset ) == 0
 test.GetRecompiledByAssetsystemCount( pAsset ) == 1
 test.GetRecompiledByAssetsystemCount( pAsset ) == 2
@@ -9378,6 +9466,7 @@ too large
 too long
 too many iterations
 too many temporary variables
+tools/assettags
 tools/images/assetbrowser/filter_tags_empty.png
 tools/images/common/document_sm.png
 tools/images/common/favorite_sm.png
@@ -9585,6 +9674,9 @@ userClass
 userId
 userNotice
 userPassword
+uses_special_input.vtest
+uses_special_inputA.vtest
+uses_special_inputB.vtest
 utf8only
 uxX/
 v'A>M6
@@ -9815,6 +9907,7 @@ z>Hz
 zF):O4
 zG2m8
 zRXU 
+z\tV_sscanf_s
 zlVO
 zlib compression
 zone
@@ -9831,7 +9924,6 @@ zz2K
 |11Jv
 |3ox
 |<C!FReQ
-|BX*G
 |InzT
 |XYl
 |hdX)

@@ -991,7 +991,6 @@ stylelang
 superblack
 superbold
 syntax error
-target
 text declaration not well-formed
 thin
 ti-er

@@ -9,7 +9,7 @@
 .?AV<lambda_1>@?1???1CNavSpace@@UEAA@XZ@
 .?AV<lambda_1>@?1??CalcClusters_Prepare@CNavTree@@QEAAXXZ@
 .?AV<lambda_1>@?1??ForEachBlock@CNavSpace@@QEAAXAEAV?$function@$$A6A?AW4NavSearchResult_t@@AEAVCNavBlock@@@Z@std@@@Z@
-.?AV<lambda_1>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBV1@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
+.?AV<lambda_1>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBVVectorWS@@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
 .?AV<lambda_1>@?1??IsAgentAbleToStandOnVoxelFace@CNavOrientedMesh@@AEAA_NAEBUVoxelData_t@CVoxelData@2@EMAEA_N@Z@
 .?AV<lambda_1>@?1??IslandRemoval@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0_NAEBVCNavGenParams@@@Z@
@@ -26,7 +26,7 @@
 .?AV<lambda_1>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlVectorMemory_Growable@V?$Vec3D@M@@H$0A@@@@@AEAV?$CUtlVector@IHV?$CUtlVectorMemory_Growable@IH$0A@@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlVectorMemory_Growable@UNavGenProcessorMovableMeshInput_t@@H$0A@@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_1>@?BE@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@NNN@Z@
 .?AV<lambda_1>@?BI@??CollectAdjacentNodes@?$CNavAdjacencyList@VCNavArea@@@@QEAAXAEBVCNavArea@@I@Z@
-.?AV<lambda_2>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBV1@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
+.?AV<lambda_2>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBVVectorWS@@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
 .?AV<lambda_2>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@
 .?AV<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@V?$CUtlLeanVector@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@HVCMemAllocAllocator@@@@$00@@@Z@
 .?AV<lambda_2>@?1??RunBuildTree@CNavSpaceBuildTreeJob@@AEAAXXZ@
@@ -44,15 +44,14 @@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CBaseTypesafeVDataFileManager@VCNavHullVData@@@@
 .?AV?$CErrorContextValue@PEBVKeyValues3@@@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV1?8??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?BH@??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV<lambda_2>@?BH@??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@@@YAXHHPEBD$$QEAV1?1??CalculateAllPathsBetweenFlowMapNodes@CNavFlowMapGenerator@@AEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CTier0AppSystem@VINavSystem@@$0A@@@
 .?AV?$CTier1AppSystem@VINavSystem@@$0A@@@
 .?AV?$CTier2AppSystem@VINavSystem@@$0A@@@
 .?AV?$CTier3AppSystem@VINavSystem@@$0A@@@
 .?AV?$CVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CVDataFileManager@VCNavHullVData@@@@
-.?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBV4@PEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
+.?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBVVectorWS@@PEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@M@std@@
@@ -72,7 +71,7 @@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@N@ZPEAV3@AEBU?$_Ph@$00@2@M@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV4@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@M@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBA_NAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
-.?AV?$_Func_base@V?$Vec3D@M@@AEBV1@PEBV1@@std@@
+.?AV?$_Func_base@V?$Vec3D@M@@AEBVVectorWS@@PEBV1@@std@@
 .?AV?$_Func_base@VVecDouble3@@AEBV1@@std@@
 .?AV?$_Func_base@W4NavSearchResult_t@@AEAVCNavBlock@@@std@@
 .?AV?$_Func_base@W4NavSearchResult_t@@AEBUSpaceCell_t@CNavSpace@@H@std@@
@@ -96,7 +95,7 @@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???1CNavSpace@@UEAA@XZ@W4NavSearchResult_t@@AEAVCNavBlock@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CalcClusters_Prepare@CNavTree@@QEAAXXZ@XAEBUTreeIter_t@3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??ForEachBlock@CNavSpace@@QEAAXAEAV?$function@$$A6A?AW4NavSearchResult_t@@AEAVCNavBlock@@@Z@std@@@Z@W4NavSearchResult_t@@AEBUSpaceCell_t@3@H@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBV1@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBVVectorWS@@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@EE_N@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??IsAgentAbleToStandOnVoxelFace@CNavOrientedMesh@@AEAA_NAEBUVoxelData_t@CVoxelData@3@EMAEA_N@Z@_NAEBV?$Vec3D@H@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??IslandRemoval@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0_NAEBVCNavGenParams@@@Z@XH@std@@
@@ -113,7 +112,7 @@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlVectorMemory_Growable@V?$Vec3D@M@@H$0A@@@@@AEAV?$CUtlVector@IHV?$CUtlVectorMemory_Growable@IH$0A@@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlVectorMemory_Growable@UNavGenProcessorMovableMeshInput_t@@H$0A@@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BE@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@NNN@Z@_NAEBVCNavGenPoly@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BI@??CollectAdjacentNodes@?$CNavAdjacencyList@VCNavArea@@@@QEAAXAEBVCNavArea@@I@Z@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBV1@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@XH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??Generate@CNavGenOrientedMesh@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEBV?$function@$$A6A?AV?$Vec3D@M@@AEBVVectorWS@@PEBV1@@Z@std@@PEAVIThreadPool@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@XH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@AEBW4OrientedMeshSparseVoxelState_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@V?$CUtlLeanVector@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@HVCMemAllocAllocator@@@@$00@@@Z@_NAEBU4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??RunBuildTree@CNavSpaceBuildTreeJob@@AEAAXXZ@_NAEBUAABB_t@@@std@@
@@ -127,7 +126,7 @@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?M@??RemovePolysMarkedNoNav@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@NNN_N@Z@_NAEBVCNavGenPoly@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?M@??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlVectorMemory_Growable@V?$Vec3D@M@@H$0A@@@@@AEAV?$CUtlVector@IHV?$CUtlVectorMemory_Growable@IH$0A@@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlVectorMemory_Growable@UNavGenProcessorMovableMeshInput_t@@H$0A@@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAUNavGenVertexData_t@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlVectorMemory_Growable@UNavGenRecastDebugStage_t@@H$0A@@@@@@Z@XHHHHEI@std@@
-.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBV4@PEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@V?$Vec3D@M@@AEBV3@PEBV3@@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBVVectorWS@@PEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@V?$Vec3D@M@@AEBVVectorWS@@PEBV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@0AEBVCNavGenParams@@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@M@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlVectorMemory_Growable@VCNavGenPoly@@H$0A@@@@@AEAV3@@std@@
@@ -180,14 +179,12 @@
 .?AVISequence@@
 .?AVIVDataResourceListener@@
 .?AVrcContext@@
-0=astar, 1=allpaths, -1=test mode (runs both and compares)
 1\r51h
 2\vpD
 ;1#INF
-=MovementGaitId_t
+=slow
 >0 = watershed, 1 = monotone, 2 = layers
 >>FLOWMAP: %d super nodes (%.0f%%)\n
->>FLOWMAP: Calc All Paths %d%%\n
 >>FLOWMAP: Calculating Adjacency Graph\n
 >>FLOWMAP: Merge Complete %d nodes\n
 >>FLOWMAP: Merging %d nodes\n
@@ -211,28 +208,22 @@
 >nav_pathfind_multithread
 ?expf
 ?ffffff
-AVOID
 AddJumps
 Already in the goal area
 Area too far
 Blocked area %d\n
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\navsystem\_vpc_navsystem\default\win64\_msvc_\Retail\navsystem.pdb
-C:\buildworker\source2_dota_rel_2019_win64\build\src\navlib\nav_gen_flow_map.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\navlib\nav_mesh.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\navlib\nav_pathfind.cpp
-CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar
 CNavMesh::GetGroundHeight
-CNavMesh::GetNearestNavArea
 CNavSpaceBuilder
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct HashMapFunctor_t<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::SearchNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::SearchNode_t *,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct HashMapFunctor_t<void *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t,class CDefLess<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: static void __cdecl CNavFlowMapGenerator::GetPathPointTowardsTarget_AStar(struct FlowMapNode_t *,struct FlowMapNode_t *,class CUtlVector<struct FlowMapNode_t *,int,class CUtlVectorMemory_Growable<struct FlowMapNode_t *,int,0> > &,class CVarBitVec &)'::`2'::OpenSearch_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t,class CDefLess<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: void __cdecl CNavFlowMapGenerator::Generate(void)'::`2'::Scan_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct FlowMapNode_t *,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<unsigned int,struct empty_t,class CDefEquals<unsigned int>,struct DefaultHashFunctor<unsigned int>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct FlowMapNode_t *,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<void *,struct empty_t,class CDefEquals<void *>,struct DefaultHashFunctor<void *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullPresetVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CNavHullVData *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t,class CDefLess<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct `public: void __cdecl CNavFlowMapGenerator::Generate(struct NavHull_t,float)'::`2'::Scan_t,int>,int,class CMemAllocAllocator> >::Insert
 CalcBlocks_IntercellConnections %d/%d\n
 CalcBlocks_IntracellConnections v0 %d/%d\n
 CalcBlocks_IntracellConnections v1 %d/%d\n
@@ -257,7 +248,6 @@ ERROR: Unconnected ladder bottom at ( %g, %g, %g )\n
 ERROR: Unconnected ladder top at ( %g, %g, %g )\n
 Error (problem that prevents task success)
 FLOWMAP path find ALLPATHS duration: %llums\n
-FLOWMAP path find ASTAR duration: %llums\n
 Failed to allocate an instance of a class
 Failed with no pGoalArea and no pGoalPos
 Failed with no pStartArea
@@ -297,6 +287,7 @@ GetNearestNav: [%d] Areas that failed poly test
 Hide unless error/warning occurs
 IslandRemoval
 IslandRemoval - unable to find a poly near navlink location %g %g %g\n
+L=AVOID
 LadderConnect
 Level of validation for nav system.  Higher will be slower.
 LightmapUV
@@ -355,7 +346,6 @@ Polyclip : Optimising to Quads...
 Polyclip pipeline: \n
 PropWorldOrigin
 RSDS;x
-R\fpD
 Raw Contours
 Recast
 Recast: 
@@ -440,7 +430,6 @@ buildPolyDetail: Could not triangulate polygon (%d verts).
 canRemoveVertex: Out of memory 'edges' (%d).
 clear_group
 compressedtangentframe
-connections
 content/
 cost
 curvature
@@ -470,7 +459,6 @@ m_bNoShadow
 m_bOnlyShadow
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
-mapOpenSearches.Remove( OpenSearch_t { pSearch->pNode, pSearch } )
 medianFilterWalkableArea: Out of memory 'areas' (%d).
 medium
 mergeAndFilterLayerRegions: Out of memory 'regions' (%d).
@@ -480,7 +468,6 @@ mergeHoles: Failed to merge contours %p and %p.
 mergeRegionHoles: Failed to allocated diags %d.
 monitor_pid
 nav_corner_adjust_adjacent
-nav_gen_flow_map_all_pairs_mode
 nav_id
 nav_ids
 nav_max_vis_delta_list_length
@@ -493,7 +480,6 @@ nodes
 optionallycompressedtangentframe
 posxyz
 quiet
-r\vpD
 radius used to raise/lower corners in nearby areas when raising/lowering corners.
 rcBuildCompactHeightfield: Heightfield has too many layers %d (max: %d)
 rcBuildCompactHeightfield: Out of memory 'chf.areas' (%d)

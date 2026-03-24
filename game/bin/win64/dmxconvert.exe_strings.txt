@@ -12,19 +12,20 @@
  delete
  delete[]
  new
+!\tV_fflush
 !link
 "\nis running without a known mod!\n\nSet the VMOD environment variable or run with -game to set the mod name.\n
 "id" "elementid" 
 #AppFramework_InvalidLocalFiles
 #AppFramework_OutOfMemory
 #General_UnableToStartGame
+$\tV_fileno
 $prefix_attribute$
 $prefix_element$
 %-40s\t%6d\t%9d\t\t%5.2f
 %.04f
 %.10f
 %02i/%02i %02i:%02i:%02i 
-%\tV_ftell
 %d %d %d %d
 %d_%lld_%x.dmx
 %d_%lld_%x_in.dmx
@@ -53,7 +54,7 @@ $prefix_element$
 %s: nLoadError: %d, RequestModule: %s, RequestInterface: %s, Module: %s, Interface: %s
 %s: no space for allocation of %u\n
 %s: unable to grow count by %u (currently %u)\n
-'\tV_fwrite
+(\tV_fopenUTF8
 *** Converter error - element "%s" already has a non-int attribute "%s"!\n
 *** Element "%s" has attribute "%s" with an unexpected type!\n
 *** Log "%s" has attribute "%s" with an unexpected type (expected int array)!\n
@@ -437,8 +438,10 @@ $prefix_element$
 3>N;kU
 3>fvw
 4-byte data pool
+4\tV_ftell
 5sfm_v8
 64 283 0
+6\tV_fwrite
 8-byte data pool
 8text
 ;?0123456789:;<=>?
@@ -480,6 +483,8 @@ $prefix_element$
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
@@ -574,7 +579,7 @@ $prefix_element$
 ?StripExtension@CBufferString@@QEAAPEBD_N@Z
 ?StripExtension@CUtlString@@QEBA?AV1@XZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
+?ThreadAtomicNotifyOne@@YAXPEBI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?ToLowerFast@CUtlString@@QEAAXXZ
 ?UUUUUU
@@ -646,6 +651,7 @@ BinaryProperties_GetValue
 Body
 BrowInV
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\utils\dmxconvert\_vpc_dmxconvert\default\win64\_msvc_\Retail\dmxconvert.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\appframework\gameinfo.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\appframework\tier2app.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\tslist.h
@@ -747,8 +753,8 @@ CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
@@ -771,6 +777,7 @@ Cannot run executable from '_build_' intermediate dir: %s
 Cannot unserialize a prefix element here (type "$prefix_element$")
 CheekH
 Cleanup
+ClientServerSharedHandleSystem001
 ClientToolsInfo_001
 ClipBoard
 CloseClipboard
@@ -808,7 +815,6 @@ DMX Model Pipeline Preprocess File
 DMX Model Pipeline Root Script File
 DMXConvert is missing a required interface!\n
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 December
@@ -817,6 +823,7 @@ Default_Keys
 DeleteCriticalSection
 DemoUpconverterVersion001
 Dependencies
+DisallowGameInfoConditionals
 Distance Between Control Points Scale
 Distance to Control Points Scale
 Dm Memory usage: type\t\t\t\tcount\ttotalsize\twastage %%\touter\t\tinner\t\tdatamodel\trefs\t\ttree\t\tatts\t\tdata\t(att count)\n
@@ -928,6 +935,7 @@ Error
 Error in the undo system! Grab a programmer!\n
 Error reading attribute "%s"
 Error reading in array attribute "%s" element %d
+EvalGameInfoConditionals
 Executable Location
 Executable Location: %s
 ExitProcess
@@ -1142,6 +1150,7 @@ MiniDumpExceptionHandler
 MinidumpAgeLogs
 MinidumpLog
 Mismatched CTier2AppSystemDict::SetAllowAddonChanges!!!\n
+Mod specifies 'DisallowGameInfoConditionals' but %d conditionals were evaluated
 ModelDocUtils001
 Monday
 MountAddon: Failed to find ADDONS search path.\n
@@ -1181,6 +1190,7 @@ Orient Rotation to 2D Direction
 Oscillate Scalar
 Oscillate Vector
 Other
+P4File
 PLATFORM
 PanoramaCoreStartup
 PanoramaTextServices001
@@ -1244,7 +1254,6 @@ Procedural
 PropertyEditorSystem_001
 QueryPerformanceCounter
 RSDS
-R\tV_powf
 Radius Random
 Radius Scale
 RaiseException
@@ -1362,7 +1371,7 @@ Sunday
 Symbol table:  %d entries %llu bytes\n
 System
 TUUUU
-T\tV_qsort_s
+T\tV_log2f
 TerminateProcess
 Test
 TestScriptMgr001
@@ -1438,7 +1447,6 @@ VMOD
 VMaterialSystem2_001
 VMediaFoundation001
 VP4003
-VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProfService_001
@@ -1467,8 +1475,6 @@ V_StringToInt64
 V_StringToUint16
 V_StringToUint64
 V_UnqualifiedFileName
-V_atan2f
-V_atoi
 Valve Map File
 ValveMain
 Velocity Inherit from Control Point
@@ -1508,10 +1514,10 @@ You are trying to unmount addon '%s', but SetAllowAddonChanges is false which pr
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
 \tSupported DMX file encodings:\n
 \tSupported DMX file formats:\n
+\tV_atan2f
+\tV_atoi
 \tV_fclose
-\tV_fflush
-\tV_fileno
-\tV_fopenUTF8
+\tV_tanf
 \tV_vsnprintf
 \tWarning
 \tWorldsize_Init
@@ -1524,7 +1530,6 @@ You are trying to unmount addon '%s', but SetAllowAddonChanges is false which pr
 \t_V_strnicmp_fast
 \tg_pMemAlloc
 \tkE>fvw
-^\tV_sincosf
 __based(
 __cdecl
 __clrcall
@@ -1625,6 +1630,7 @@ autoTime
 auto_time
 axis
 axisSystem
+b\tV_powf
 background
 backgroundMap
 bad address
@@ -1678,7 +1684,6 @@ brightness
 brightness_units
 brightnessscale
 broken pipe
-c\tV_snprintf
 cable_static
 can_override_npc_state
 candle_1
@@ -1737,6 +1742,7 @@ cross device link
 curve info
 curvetypes
 custom
+d\tV_qsort_s
 data
 dddd, MMMM dd, yyyy
 default set
@@ -1875,7 +1881,6 @@ hold_left
 hold_right
 host unreachable
 houdini
-i\tV_sscanf
 identifier removed
 illegal byte sequence
 inappropriate io control operation
@@ -1901,7 +1906,6 @@ isOrientation
 isPosition
 isgame
 item_item_crate
-j\tV_sscanf_s
 jointIndices
 jointIndicesIndices
 jointList
@@ -1996,7 +2000,7 @@ multilevelchannel
 n03>Pu
 nLayoffState
 nTries < 10000000
-n\tV_stricmp_fast
+n\tV_sincosf
 name
 nearclipplane
 network down
@@ -2114,6 +2118,7 @@ publiccontent
 publish_data
 publish_data.txt
 purecall
+pvConditionalsEvaluated
 qangle
 qangle_array
 quaternion
@@ -2164,6 +2169,7 @@ rotation_random
 rotation_speed_random
 rotation_spin
 rotation_spin yaw
+s\tV_snprintf
 saturation
 scale
 scene
@@ -2388,5 +2394,7 @@ wrinkle$0Indices
 wrinkleIndices
 write
 wrong protocol type
+y\tV_sscanf
+z\tV_sscanf_s
 zero
-{\tV_tanf
+~\tV_stricmp_fast

@@ -1,9 +1,7 @@
  !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
- (08@HPX`j
- (08@HPXb
- (08@HPZ
- (08@HR
- (0X`hpz
+ (08@HPX`j0p
+ (08@HPZ0p
+ (08@J0p
 %.1fs total merge time\n
 %.3f cpu s cast, %.3f cpu s rasterize\n
 %08dx.geo
@@ -25,7 +23,8 @@
 %s/%s/%s.los
 %s/%s/%s.rte
 %s/%s/%s.viscfg
-&\nNx+\nCh,\n'
+(40s
+*\nNx+\nCh,\n'
 .?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
 .?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
 .?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
@@ -81,18 +80,22 @@
 .?AVIResourceTypeCompilerDynamicLoad@@
 .?AVISequence@@
 .?AVIVertColorBase@@
-08@HR
-08@J
+08@HR0p
+08B0p
 0\rP!4
 2Pp\t
-2\vp4
 2\vpP
+8@J0p
+8B0p
+8Fp'
+8\n0p
 =fff?
 ?333?
 ?expf
-@08N
-@HPX`hv
+@20p
+@ht0s
 Adaptive border clusters (%.fs)\n
+Aslow
 Assigned %d clusters in %.2f seconds\n
 AxialRays
 Build
@@ -147,6 +150,7 @@ DebugWriteTracesFromCluster.gl
 Distance merged regions (%d merged to %d)\n
 Error loading %s!\n
 Error: %s loading vis config!\n
+F\n0p
 Failed to read %s\n
 Failed to unserialize ray tracing environment.\n
 Failed to write %d LOS hints in file %s!\n
@@ -156,6 +160,7 @@ Found %u useful LOS in hint set.\n
 Generated clusters for %d regions in %.2f seconds\n
 Hint %.2f (%.2f regions)\n
 IKV3TransferInterface_ResourceSave
+IND)ind)"
 Increased LOS limit for debugging!\n
 Initial regions %d, collapsed to %d\n
 InitialRegionStatus
@@ -179,17 +184,16 @@ MutualVisibilityMatrix
 NeighborsScan BuildTracePointsForClusters() completed - %d points, %.1f per cluster side (%.1fs)\n
 No triangles found to compute visibility\n
 Note, removing %u lines of sight, too much memory! (was %s, use -debuglos to preserve more of these for debugging)\n
+OBJECT_TYPE_HAS_AGGREGATE_RTPROXY
+OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS
 Outside detection took %.2f seconds\n
 OverlayProjectionDirection
-P08@J
-P08J
-P08N
+P20p
 PackedBlobNormal
 PerVertexLighting
-Pfp,
 Physics
 PivotPaint
-Pn0.
+Pj0p
 Pre-merged nodes %.2f seconds\n
 PropWorldOrigin
 RSDS^;
@@ -236,11 +240,16 @@ Voxelize (%.f units) took %.2f seconds (%s nodes)\n
 Wrote %d LOS hints for next time %s!\n
 Wrote vis hints to %s\n
 Wrote vis resource %s bytes\n
-X`hr
+X`hr0p
+Xf0(
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte\n
 \nLoading kd-trees\n
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \tg_flConfigMaxCoord
+`20p
+`b0p
+`d0p
+`ht0s
 bentnormal
 blendindices
 blendweight
@@ -278,7 +287,9 @@ matrix3x4_t
 medium
 oldvis
 optionallycompressedtangentframe
-p08@H^
+p20p
+p6`1
+pb0p
 posxyz
 pre-merged to %d clusters\n
 preMergeDist.gl

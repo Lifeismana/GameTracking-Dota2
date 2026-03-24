@@ -103,7 +103,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnUpdateStatusBar()
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\vp8\r
+2\vp$B
 2clicked ( )
 2clicked()
 2rangeChanged( int, int )
@@ -526,6 +526,7 @@ Qt5Widgets.dll
 RSDSU4
 RW?restore@QPainter@@QEAAXXZ
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R\vp$B
 Reliable
 Reliable %s
 Rescale

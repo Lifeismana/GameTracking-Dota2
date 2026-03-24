@@ -153,6 +153,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpd
 2changed( QClipboard::Mode )
 2clicked()
 2currentChanged( int )
@@ -760,6 +761,8 @@ CQScreenshotPreviewPopup
 CQScreenshotsTab
 CQSmartTextEdit
 CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBugReporterWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQBugReporterWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQBugReporterWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlSortVector<char const *,class CStringLess,class CUtlVector<char const *,int,class CUtlVectorMemory_Growable<char const *,int,0> > >::InsertIfNotFound
+CUtlSortVector<int,class CLessInt,class CUtlVector<int,int,class CUtlVectorMemory_Growable<int,int,0> > >::InsertIfNotFound
 Category:
 Clear Form
 Close

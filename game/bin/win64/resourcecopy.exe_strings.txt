@@ -23,6 +23,7 @@
  delete[]
  new
 != (or missing)
+!\tV_fflush
 !link
 "\nis running without a known mod!\n\nSet the VMOD environment variable or run with -game to set the mod name.\n
 "id" "elementid" 
@@ -34,6 +35,7 @@
 #RenderSystemChange_Title
 #RenderSystemChange_Yes
 #RenderSystemOldDriver_Text
+$\tV_fileno
 $prefix_attribute$
 $prefix_element$
 %-40s\t%6d\t%9d\t\t%5.2f
@@ -41,7 +43,6 @@ $prefix_element$
 %.10f
 %02d
 %02i/%02i %02i:%02i:%02i 
-%\tV_ftell
 %d %d %d %d
 %d_%lld_%x.dmx
 %d_%lld_%x_in.dmx
@@ -71,7 +72,7 @@ $prefix_element$
 %s: nLoadError: %d, RequestModule: %s, RequestInterface: %s, Module: %s, Interface: %s
 %s: no space for allocation of %u\n
 %s: unable to grow count by %u (currently %u)\n
-'\tV_fwrite
+(\tV_fopenUTF8
 *** Converter error - element "%s" already has a non-int attribute "%s"!\n
 *** Element "%s" has attribute "%s" with an unexpected type!\n
 *** Log "%s" has attribute "%s" with an unexpected type (expected int array)!\n
@@ -483,13 +484,14 @@ $prefix_element$
 0x%llx
 11Y@
 16-byte data pool
-2\vpd
 37>k
 3>N;kU
 3>fvw
 4-byte data pool
+4\tV_ftell
 5sfm_v8
 64 283 0
+6\tV_fwrite
 8-byte data pool
 8text
 ;?0123456789:;<=>?
@@ -542,6 +544,8 @@ $prefix_element$
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@@Z
+?Assert_ConditionFailed_Fatal@@YAXAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
@@ -581,7 +585,7 @@ $prefix_element$
 ?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
 ?GetFirstValue@KeyValues@@QEAAPEAV1@XZ
 ?GetForModify@CUtlString@@QEAAPEADXZ
-?GetGameInfoBool@@YA_NPEBD_N@Z
+?GetGameInfoPlatformSpecificBool@@YA_NPEBD_N@Z
 ?GetInt@KeyValues@@QEBAHPEBDH@Z
 ?GetName@KeyValues@@QEBAPEBDXZ
 ?GetNextKey@KeyValues@@QEAAPEAV1@XZ
@@ -646,7 +650,7 @@ $prefix_element$
 ?StripExtension@CBufferString@@QEAAPEBD_N@Z
 ?StripExtension@CUtlString@@QEBA?AV1@XZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
+?ThreadAtomicNotifyOne@@YAXPEBI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?ToLowerFast@CUtlString@@QEAAXXZ
 ?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
@@ -753,6 +757,7 @@ Body
 BrowInV
 BuildVersion
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\utils\resourcecopy\_vpc_resourcecopy\default\win64\_msvc_\Retail\resourcecopy.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\appframework\gameinfo.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\appframework\tier2app.h
 C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\tslist.h
@@ -848,6 +853,7 @@ CPU_EMULATED
 CResourceAssetTypeInfo
 CResourceNameTyped
 CSimpleAssetTypeInfo
+CSubassetTypeInfo
 CTSQueue corruption
 CTSQueue: Misaligned queue\n
 CTSQueue<struct CThreadedLogger::Buffer_t *,0>::Push
@@ -876,8 +882,8 @@ CUtlDict<class CDmElement *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CDmElementFactoryHelper *,class CDefFastCaselessStringLess>::Insert
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<class IDmeOperator *,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct DmMemoryInfo_t,class CDefLess<class CUtlSymbolLarge>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
@@ -911,6 +917,7 @@ Class data is a '%s', not a table\n
 Class does not allow allocation from its schema binding
 Cleanup
 Clear
+ClientServerSharedHandleSystem001
 ClientToolsInfo_001
 ClipBoard
 CloseClipboard
@@ -951,7 +958,6 @@ DMX Model Pipeline Physics Script File
 DMX Model Pipeline Preprocess File
 DMX Model Pipeline Root Script File
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 December
@@ -962,6 +968,7 @@ DefaultToolsRenderSystem
 Default_Keys
 DeleteCriticalSection
 DemoUpconverterVersion001
+Density Scale
 Dependencies
 Dest addon         : '%s'\n
 Dest file          : '%s'\n
@@ -969,6 +976,7 @@ Dest mod           : '%s'\n
 Dest search path   : '%s'\n
 Detail Prop Type
 Didn't find enough free disk space to extend the pagefile: \n   Estimated %llumb CPU, %llumb GPU needed\n   Pagefile free %llumb, need ~%llumb additional, maximum %llumb disk free\n
+DisallowGameInfoConditionals
 DisplayMessage
 Distance Between Control Points Scale
 Distance to Control Points Scale
@@ -1090,6 +1098,7 @@ Error reading attribute "%s"
 Error reading in array attribute "%s" element %d
 EstimatedMaxCPUMemUsageMB
 EstimatedMinGPUMemUsageMB
+EvalGameInfoConditionals
 Example:\n
 Executable Location
 Executable Location: %s
@@ -1362,10 +1371,12 @@ Minimum blend weight value for which the model will be placed. If the blend weig
 Minimum random scale value to apply to the model.
 Minimum range of random offset to apply along the model's local up direction
 Minimum range of the random rotation to apply the model. Random rotation is applied in the local space of the model. Rotation values are ordered pitch, yaw, roll.
-Minimum scale to apply to the model based on the blend weight. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
 Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value based on the surface normal where horizontal surface (floor) is 0, vertical surface (wall) is 90, and a horizontal upside down surface (ceiling) is 180.
 MinorVersion
 Mismatched CTier2AppSystemDict::SetAllowAddonChanges!!!\n
+Mod specifies 'DisallowGameInfoConditionals' but %d conditionals were evaluated
 Model
 Model to be displayed.
 ModelDocUtils001
@@ -1521,7 +1532,6 @@ RESOURCE_ENCODING_VRMAN
 RESOURCE_ENCODING_VSNAP
 RESOURCE_ENCODING_VTEX
 RSDS
-R\tV_powf
 Radius Random
 Radius Scale
 RaiseException
@@ -1669,7 +1679,7 @@ Sunday
 Symbol table:  %d entries %llu bytes\n
 System
 TUUUU
-T\tV_qsort_s
+T\tV_log2f
 TerminateProcess
 Test
 TestScriptMgr001
@@ -1766,7 +1776,6 @@ VMOD
 VMaterialSystem2_001
 VMediaFoundation001
 VP4003
-VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProfService_001
@@ -1802,8 +1811,6 @@ V_StringToUint64
 V_UInt32ToString_Unsafe
 V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
-V_atan2f
-V_atoi
 Valid Content Absolute Path
 Valid External Path
 Valid Game Absolute Path
@@ -1855,10 +1862,10 @@ You are trying to unmount addon '%s', but SetAllowAddonChanges is false which pr
 [%d] Pushing undo '%s'\n
 [%s] Forced dmxconvert - Finished [%s] in %0.2f secs. Please re-save or upconvert this asset!\n
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
+\tV_atan2f
+\tV_atoi
 \tV_fclose
-\tV_fflush
-\tV_fileno
-\tV_fopenUTF8
+\tV_tanf
 \tV_vsnprintf
 \tWarning
 \tWorldsize_Init
@@ -1872,7 +1879,6 @@ You are trying to unmount addon '%s', but SetAllowAddonChanges is false which pr
 \t_V_strnicmp_fast
 \tg_pMemAlloc
 \tkE>fvw
-^\tV_sincosf
 __based(
 __cdecl
 __clrcall
@@ -1981,6 +1987,7 @@ autoTime
 auto_time
 axis
 axisSystem
+b\tV_powf
 background
 backgroundMap
 bad address
@@ -2037,7 +2044,6 @@ brightness
 brightness_units
 brightnessscale
 broken pipe
-c\tV_snprintf
 cable_static
 can_override_npc_state
 candle_1
@@ -2099,6 +2105,7 @@ cross device link
 curve info
 curvetypes
 custom
+d\tV_qsort_s
 data
 dddd, MMMM dd, yyyy
 default set
@@ -2233,7 +2240,6 @@ hold_left
 hold_right
 host unreachable
 houdini
-i\tV_sscanf
 identifier removed
 illegal byte sequence
 inappropriate io control operation
@@ -2261,7 +2267,6 @@ isOrientation
 isPosition
 isgame
 item_item_crate
-j\tV_sscanf_s
 jointIndices
 jointIndicesIndices
 jointList
@@ -2386,6 +2391,7 @@ m_SpecialInputDependencies
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
+m_SubassetTypes
 m_SupportedExts
 m_SuppressSubstrings
 m_TagAliases
@@ -2411,6 +2417,7 @@ m_bContentFileIsText
 m_bDebugCommandline
 m_bDoNotWarnAboutLargeAssetBatches
 m_bFileExists
+m_bFollowReferences
 m_bHideTypeByDefault
 m_bIgnoreCompiledState
 m_bIsGameFile
@@ -2438,6 +2445,7 @@ m_flBlendWeightMax
 m_flBlendWeightMin
 m_flBlendWeightMinScale
 m_flDensity
+m_flDensityMinScale
 m_flEndFadeSize
 m_flMaxSurfaceSlope
 m_flMinSurfaceSlope
@@ -2505,7 +2513,7 @@ multilevelchannel
 n03>Pu
 nLayoffState
 nTries < 10000000
-n\tV_stricmp_fast
+n\tV_sincosf
 name
 nearclipplane
 network down
@@ -2626,6 +2634,7 @@ publiccontent
 publish_data
 publish_data.txt
 purecall
+pvConditionalsEvaluated
 qangle
 qangle_array
 quaternion
@@ -2688,6 +2697,7 @@ rotation_random
 rotation_speed_random
 rotation_spin
 rotation_spin yaw
+s\tV_snprintf
 saturation
 scale
 scene
@@ -2797,6 +2807,7 @@ string too long
 string_array
 string_instanced
 style
+subassettypes
 subkeys
 success
 syncEngineFramerate
@@ -2929,6 +2940,8 @@ wrinkle$0Indices
 wrinkleIndices
 write
 wrong protocol type
+y\tV_sscanf
+z\tV_sscanf_s
 zero
-{\tV_tanf
 ~CGenericFilter
+~\tV_stricmp_fast

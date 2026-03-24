@@ -1,9 +1,4 @@
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
- (08@HPX`j
- (08@HPXb
- (08@HPZ
- (08@HR
- (0X`hpz
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ \
 %%s%%s%%d:  sv[%%%d.%ds] cl[%%%d.%ds]\n
 %s:  IGameSystem::LoopActivateAllSystems {\n
 %s:  IGameSystem::LoopDeactivateAllSystems {\n
@@ -100,18 +95,15 @@
 .?AVISequence@@
 .?AVISinglePlayerSharedMemory@@
 .?AVISource2Host@@
-08@HR
-08@J
-0:Pt\n
-8B N
+0DO\r
+2\vpDO\r
 ?expf
-@08N
-@60q
-@60t
-@HPX`hv
+@60v
+@60y
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
 APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\n
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!\n
+Am_bUseShadowFastPath
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\game\host\_vpc_host_dota\default\win64\_msvc_\Retail\host.pdb
 CAnimScriptParam
 CDotaMapUtils: Failed to load tree map %s\n
@@ -120,13 +112,13 @@ CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class World
 CUtlRBTree<class CDiffInfo,class CLessFunc<&public: static bool __cdecl CDiffInfo::Less(class CDiffInfo const &,class CDiffInfo const &)>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDiffInfo,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct CDotaTreeMap::TreeMapChunkInfo_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct CDotaTreeMap::TreeMapChunkInfo_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct CDotaTreeMap::TreeMapChunkInfo_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::Find
-CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::FindLessOrEqual
 CUtlSortVector<struct CAnimScriptRegistry::ScriptInfo_t,struct CAnimScriptRegistry::ScriptInfo_t,class CUtlVector<struct CAnimScriptRegistry::ScriptInfo_t,int,class CUtlVectorMemory_Growable<struct CAnimScriptRegistry::ScriptInfo_t,int,0> > >::Insert
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
 DebugDrawQueueManager001
 DotaMapUtils001
+EconVData001
 EntitySubclassUtilsV001
 Entry %s was not found in surfaceproperties_footsteps.txt\n
 Error loading %s: %s\n
@@ -141,18 +133,18 @@ HostUtils001
 IGameSystem::Init( %-80s ) %8.3f msec
 IGameSystem::InitAllSystems
 IGameSystem::PostInit( %-80s ) %8.3f msec
+IND)ind)"
 LightmapUV
 LightmapUVW
 OverlayProjectionDirection
-P08@J
-P08JP
-P08N
+PDO\r
 PackedBlobNormal
 PerVertexLighting
 Physics
 PivotPaint
 PredictionDiffManager001
 PropWorldOrigin
+R\vpDO\r
 ResponseRulesCache001
 SaveRestoreDataVersion001
 Shared memory space %s (%i) still has %i references.\n
@@ -167,9 +159,10 @@ VertexGenericIntegerData
 VertexPaintBlendParams
 VertexPaintBlendParams1
 VertexPaintTintColor
-X`hr
+\fpDO\r
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \tg_flConfigMaxCoord
+\vpDO\r
 bad 
 bentnormal
 blendindices
@@ -193,17 +186,13 @@ m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
 m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
 maps/%s.trm
 maps/%s.vhcg
 medium
 optionallycompressedtangentframe
-p08@H^
-p0jP
-p2 N
-pF0s
+pDO\r
+pF0x
 posxyz
-prev
 runleft
 runright
 scripts/surfaceproperties_footsteps.txt

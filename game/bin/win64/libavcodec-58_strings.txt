@@ -2840,7 +2840,6 @@ bmv_audio
 bmv_video
 book_idx
 border_position non monotone.\n
-both
 bottom
 bottom coded first (swapped)
 bottom first

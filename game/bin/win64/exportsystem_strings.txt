@@ -69,10 +69,6 @@ $prefix_element$
 %s encoding %s %d format %s %d %s\n
 %s(%d) : %s\n
 %s(%s) = %s
-%s.f[%d] :: Degenerate face :: Face vertex count == %d, less than 3 face vertices\n
-%s.f[%d] :: Zero length edge :: same position index\n
-%s.f[%d] :: Zero length edge :: same position value\n
-%s.f[%d] :: Zero length edge :: same vertex index\n
 %sEdgeActive
 %sEdgeCurveType
 %sEdgeValue
@@ -86,7 +82,6 @@ $prefix_element$
 '?SetCount@FbxLayerElementArray@fbxsdk@@QEAA_NHW4EFbxMemoryClearMode@2@@Z
 '?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z
 '?SetFileName@FbxFileTexture@fbxsdk@@QEAA_NPEBD@Z
-(5s2
 (?SetLegacyStyle@FbxShape@fbxsdk@@QEAAX_N@Z
 (?SetLink@FbxCluster@fbxsdk@@QEAAXPEBVFbxNode@2@@Z
 (?SetLinkMode@FbxCluster@fbxsdk@@QEAAXW4ELinkMode@12@@Z
@@ -98,7 +93,6 @@ $prefix_element$
 (?SetNodeAttribute@FbxNode@fbxsdk@@QEAAPEAVFbxNodeAttribute@2@PEAV32@@Z
 (?SetNormals@FbxLayer@fbxsdk@@QEAAXPEAVFbxLayerElementNormal@2@@Z
 (?SetOriginalUpAxis@FbxGlobalSettings@fbxsdk@@QEAAXAEBVFbxAxisSystem@2@@Z
-(Ys2
 )?SetSecondDouble@FbxTime@fbxsdk@@QEAAXN@Z
 )?SetShadingMode@FbxNode@fbxsdk@@QEAAXW4EShadingMode@12@@Z
 )?SetSkeletonType@FbxSkeleton@fbxsdk@@QEAAXW4EType@12@@Z
@@ -806,15 +800,14 @@ $prefix_element$
 .png
 .tga
 .vmat
-0>XI)
 0x%llx
 16-byte data pool
 2(?SetFrame@FbxTime@fbxsdk@@QEAAX_JW4EMode@12@@Z
 2\nP!E
+2\vpd
 4-byte data pool
 4C~CGenericFilter
 5sfm_v8
-62I)
 64 283 0
 7'?SetAt@FbxLayerElementArray@fbxsdk@@QEAAXHPEBXW4EFbxType@2@@Z
 8-byte data pool
@@ -824,7 +817,6 @@ $prefix_element$
 <UNKNOWN_EXPORT_TYPE>
 <\v??BFbxString@fbxsdk@@QEBAPEBDXZ
 ='?SetAxisSystem@FbxGlobalSettings@fbxsdk@@QEAAXAEBVFbxAxisSystem@2@@Z
-=m_bUseShadowFastPath
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 ??0FbxAMatrix@fbxsdk@@QEAA@AEBV01@@Z
 ??0FbxAMatrix@fbxsdk@@QEAA@XZ
@@ -971,6 +963,7 @@ $prefix_element$
 ?GetTextureCount@FbxScene@fbxsdk@@QEBAHXZ
 ?alpha
 ?expf
+?model_default_preview_sequence_name
 ?vtex
 AddNewLayer
 AddUndoElement '%s'\n
@@ -1001,6 +994,7 @@ BlendLayersUsingTimeSelection
 BrowInV
 Bump
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\utils\exportsystem\_vpc_exportsystem\default\win64\_msvc_\Retail\exportsystem.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\tinyexr_impl.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\datamodel\dependencygraph.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\movieobjects\dmelog.cpp
@@ -1102,6 +1096,7 @@ CMapWorld
 CModelMaterialGroupName
 CResourceNameTyped
 CStrongHandle
+CSubassetTypeInfo
 CTerrainSelection
 CTrajectoryPath
 CTrajectoryPathNode
@@ -1153,8 +1148,8 @@ CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<float>,unsigned sh
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<int>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned __int64>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct LayerEvent_t<unsigned char>,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct HashMapFunctor_t<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct HashMapFunctor_t<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CDmElement *,struct empty_t,class CDefEquals<class CDmElement *>,struct DefaultHashFunctor<class CDmElement *>,int>::HashBucket_t,int>::AddMultipleToTail
+CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMap<class CUtlSymbolLarge,struct empty_t,class CDefEquals<class CUtlSymbolLarge>,struct DefaultHashFunctor<class CUtlSymbolLarge>,int>::HashBucket_t,int>::AddMultipleToTail
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlMemoryBlockAllocator<struct UtlRBTreeNode_t<struct CDmElementSerializationDictionary::ElementInfo_t,int>,class CMemAllocAllocator>::AddPage
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int,class CMemAllocAllocator> >::Insert
@@ -1235,13 +1230,13 @@ DMX Model Pipeline Root Script File
 DMX anim export can only do a single conversion
 DMX save failed
 DMX_MODEL_SOURCE_UNKNOWN
-D\tV_log2f
 Dampen Movement Relative to Control Point
 DataModel needs the file system to function
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
 DecompressTextureBits
+Density Scale
 Derived must implement
 DiffuseColor
 Distance Between Control Points Scale
@@ -1488,19 +1483,17 @@ GenericType
 GetClipboardData
 GetProfile_ultrafast
 GlobalSize
-H!p2
-HIp2
+HU\2
 Hammer temp export
 HemiOctAnisoRoughness_RG_BA
 HemiOctIsoRoughness_RG_B
 HemiOctNormal
 Hold
-Hup2
 I(?SetGlobalTimeMode@FbxTime@fbxsdk@@SAXW4EMode@12@N@Z
 IExportSystem
 IKV3TransferInterface_ResourceSave
 IOSRoot
-I^q2
+Ij]2
 Inherit Velocity
 Initial Repulsion Velocity
 Initial Scalar Noise
@@ -1563,6 +1556,8 @@ Maya
 Mesh
 Mesh     :: 
 MeshUtils
+Minimum scale to apply to the model based on the final material layer blend weight. The model will be given this scale value when the layer blend weight equals the minimum blend weight and will be 1.0 when the maximum blend weight has been reached. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale. Set this if you want the model to scale up as the material blend fades in. The smaller the value, the smaller the model will start as the material begins to fade in.
+Minimum scale to apply to the model based the painted detail prop density. The minimum of the detail and blend weight scale values is multiplied with the random scale value to determine the final scale.
 Model    :: 
 MorphOperator::Operate: invalid delta state name: %s\n
 Movement Basic
@@ -1692,6 +1687,7 @@ Solved Knee
 Solved Thigh
 StereoFlip
 Symbol table:  %d entries %llu bytes\n
+T\tV_log2f
 Take 001
 TanFrameQuat
 Texture  :: %s\n
@@ -1776,6 +1772,7 @@ ZFP compression is not supported in this build
 \t??8FbxVector4@fbxsdk@@QEBA_NAEBV01@@Z
 \tError\n
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
+\tV_strnchr
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t_V_StringAfterPrefixCaseSensitive
@@ -1798,8 +1795,7 @@ _selfillummask_
 _specexp_
 _specmask_
 _texcoordNames
-`Uu2
-`er2
+`ea2
 activeBookmarkSet
 adding layer %d to stack\n
 addlayer: log %p lc[%d], layer %p
@@ -1947,7 +1943,6 @@ compressedtangentframe
 compression
 compression error would be too large %f [%f %f]\n
 concommands
-connections
 connectionsData
 constantAttenuation
 constrainVelocity
@@ -2135,7 +2130,6 @@ isRigid
 isVisible
 isWorldAligned
 item_item_crate
-j\tV_sscanf_s
 j\v??HFbxVector4@fbxsdk@@QEBA?AV01@AEBV01@@Z
 jitteriterations
 jitterscale
@@ -2222,12 +2216,14 @@ m_SpecialInputDependencies
 m_String
 m_SubassetDefinitions
 m_SubassetReferences
+m_SubassetTypes
 m_UserData
 m_WeakReferenceList
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
 m_bDrawLast
 m_bFileExists
+m_bFollowReferences
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bIsGameFile
@@ -2236,7 +2232,9 @@ m_bNoShadow
 m_bOnlyShadow
 m_bOptional
 m_bUseCompressedNormalTangent
+m_bUseShadowFastPath
 m_fMoveTo
+m_flDensityMinScale
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
@@ -2390,7 +2388,6 @@ prop_physics_respawnable
 propdataname
 pvTarget
 q)?SetRow@FbxAMatrix@fbxsdk@@QEAAXHAEBVFbxVector4@2@@Z
-q\tV_strnchr
 q\v??Hfbxsdk@@YA?AVFbxString@0@AEBV10@PEBD@Z
 qangle log
 qangle_array
@@ -2563,7 +2560,6 @@ tangent$0Indices
 tangents
 tangentsIndices
 tangentu_signv
-target
 targetGroup
 targetGroupNodeID
 targetName
@@ -2682,6 +2678,7 @@ wrinkle$0Indices
 wrinkleIndices
 wrinkleScales
 z)?SetScale@FbxTexture@fbxsdk@@QEAAXNN@Z
+z\tV_sscanf_s
 zfar
 znear
 {+?currentDateTimeGMT@FbxDateTime@fbxsdk@@SA?AV12@XZ

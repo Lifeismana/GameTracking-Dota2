@@ -65,7 +65,7 @@
 .?AVCSchemaType_Ptr@@
 .?AVISchemaSystem@@
 .?AVISchemaSystemTypeScope@@
-2\vp$d
+2\vp4o
 <%s, cat %d>
 <No schema binary for binding>
 <No schemasystem>
@@ -138,6 +138,7 @@ CUtlStringTokenWithStorage
 CUtlSymbol
 CUtlVectorFixed
 CUtlVectorFixedGrowable
+CVDataHandle
 CVDataLocalizedToken
 CVarBitVec
 Class

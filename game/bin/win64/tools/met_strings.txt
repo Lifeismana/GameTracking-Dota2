@@ -70,6 +70,7 @@
  clean
  receiver regenerated
  uncorrected errors
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?triggerAction@QAbstractSlider@@QEAAXW4SliderAction@1@@Z
 !?triggered@QAction@@QEAAX_N@Z
 !?unsetCursor@QWidget@@QEAAXXZ
@@ -161,8 +162,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 %.100s: Can not read TIFF directory
-%.2f FPS (%.2fms%s)
-%.3f %.3f %.3f
 %01d
 %03d
 %04d
@@ -175,11 +174,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 %1 properties: \n
 %1x%2
 %1x%2 (%3x%4)
-%30s\t\t%5d\t\t%5d\n
 %A Is
 %[?setRange@QIntValidator@@UEAAXHH@Z
 %\?setUnderline@QFont@@QEAAX_N@Z
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+%c%c%c%c%c%c
+%c%c%c%c%c%c%c%c
 %d CallInfos:\n
 %d Cells:\n
 %d Chunks:\n
@@ -189,7 +189,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 %d Vars:\n
 %d instruction(s)\n
 %d register(s) %d byte(s)\n
-%d trace results\n
 %daT
 %dx%d, Lowest:%dx%d, Mips:%d, %s, %s
 %lu: Row out of range, max %lu
@@ -198,16 +197,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 %s %s encoding is not implemented
 %s '%s' (%s)
 %s (%s,%s,%s)
-%s (uid=%d)
 %s <small>( from %s )</small>
-%s AllViewsDirectLight
-%s AllViewsIndirectLight
-%s AllViewsParticles
-%s SceneWorld AllViews
-%s View ActiveView
-%s View Lights
-%s View ScreenSpace
-%s View WorldSpace
 %s compression support is not configured
 %s%s "%s"%s\n
 %s%s: DynamicWidget: %s\n
@@ -286,7 +276,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 &View
 &X?setAlphaF@QColor@@QEAAXN@Z
 &Yes
-&\nNx+\nCh,\n'
 &\v?ensureWidgetVisible@QScrollArea@@QEAAXPEAVQWidget@@HH@Z
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
@@ -296,11 +285,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
 (Custom Colors Disabled)
 (Filter)
-(I6J
 (On the line reading %s):\n
 (Set via dynamic expression)
 (This surface property is only applied to geometry authored in Hammer. Model surface properties are authored directly on their hitboxes/collision.)
-(U1J
 (Value inherited from <tt><b>%s</b></tt>)
 (Value inherited from layer reference)
 (Value set via reference)
@@ -319,9 +306,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 * Rehandling active codes
 * { font-size: 10px }
 *"?updateGeometries@QHeaderView@@MEAAXXZ
-*** CVfx::GenerateUiFeatureHiddenRuleErrorIndices(8206): Programmer Error! NULL pointer passed into function!\n
-*** CVfx::GenerateUiFeatureHiddenRuleErrorIndices(8232): Programmer Error! Non feature rule found in feature rule array!\n
-*** CVfx::StartupSanityCheck(7005): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
+*** CVfx::GenerateUiFeatureHiddenRuleErrorIndices(8325): Programmer Error! NULL pointer passed into function!\n
+*** CVfx::GenerateUiFeatureHiddenRuleErrorIndices(8351): Programmer Error! Non feature rule found in feature rule array!\n
+*** CVfx::StartupSanityCheck(7115): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!\n
 *** Error adding variable to array!\n
 *** Error masking unused parts! Equal sign not found after token "%s"! (line %d)\n
 *** Error! Multiple dynamic combos are putting the same constant (%s) in different descriptor sets. This won't work correctly.\n
@@ -330,14 +317,14 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 *** Error! Multiple dynamic combos are putting the same texure (%s) in different descriptor set slots. This won't work correctly.\n
 *** Problem remapping texture reference!\n
 *** Test failure: "%s"
-*** VfxReadAndPrepForCrc(1253): Error opening file "%s"!\n\n
-*** VfxReadAndPrepForCrc(1263): Error masking unused parts for "%s"!\n\n
+*** VfxPopulateSourceCache(1137): Error opening file "%s"!\n\n
+*** VfxPopulateSourceCache(1145): Error opening file "%s"!\n\n
+*** VfxReadAndPrepForCrc(1295): Source cache incomplete, file "%s" missing!\n\n
+*** VfxReadAndPrepForCrc(1307): Error masking unused parts for "%s"!\n\n
 *.vfx
 *.vmat
 *NONE*VALID*
 *\f?focusOutEvent@QAbstractSpinBox@@MEAAXPEAVQFocusEvent@@@Z
-*_left
-*_right
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
 +#?windowState@QWidget@@QEBA?AV?$QFlags@W4WindowState@Qt@@@@XZ
@@ -352,77 +339,29 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
 -> Success (%d attempts)\n
--\nLx.\nAh/\n/4h
 -]?size@QFontMetrics@@QEBA?AVQSize@@HAEBVQString@@HPEAH@Z
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
-.?AUVDataInitInfo_t@@
-.?AV<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AV<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_11>@?BO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_11>@?N@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_12>@?BP@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_12>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_13>@?CA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_13>@?P@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_14>@?BA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_14>@?CD@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_15>@?BB@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_15>@?CE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_16>@?CF@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@
-.?AV<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQToolSceneWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_1>@?8??SrgbLinearToGamma@CSOAContainer@@QEAAXH@Z@
-.?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
-.?AV<lambda_1>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_20>@?CO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_21>@?CP@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_22>@?DC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_23>@?DD@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_24>@?DE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_25>@?DH@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_26>@?DI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQToolSceneWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?BA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
 .?AV<lambda_2_>@?0???0CAssetSelectionListenerHelper@@QEAA@PEAVIAssetSelectionListener@@@Z@
-.?AV<lambda_30>@?DO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_31>@?EC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_32>@?ED@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_3>@?BC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_4>@?BE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_5>@?6???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_5>@?6???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_5>@?BG@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_6>@?7???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_6>@?BI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_7>@?8???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_7>@?BJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_8>@?9???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_8>@?BK@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_9>@?BL@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_9>@?L@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV?$CBaseAppSystem@VIToolSystem2@@@@
-.?AV?$CBaseTypesafeVDataFileManager@VCToolSceneLightRig@@@@
-.?AV?$CBindTargetDescriptor@VCBindableCamera@@@@
 .?AV?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
-.?AV?$CBindTargetDescriptor@VCLightingControlRig@@@@
-.?AV?$CBindTargetDescriptor@VCQToolSceneWidget@@@@
 .?AV?$CDynamicWidgetFactory@VCQDraggableWidgetList@@@@
 .?AV?$CDynamicWidgetFactory@VCQFilteredTreeWidget@@@@
 .?AV?$CDynamicWidgetFactory@VCQTreeWidgetWithHover@@@@
@@ -455,29 +394,17 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$CDynamicWidgetFactory_Custom@VQToolButton@@@@
 .?AV?$CDynamicWidgetFactory_Orientation@VQHeaderView@@@@
 .?AV?$CDynamicWidgetFactory_Orientation@VQSplitter@@@@
-.?AV?$CErrorContextValue@PEBVKeyValues3@@@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?9??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@@@YAXHHPEBD$$QEAV1?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@PEAVCRenderableBinding@@V?$CMemberFuncJobItemProcessor@PEAVCRenderableBinding@@VCRenderableUpdater@@V2@@@$00@@@@
 .?AV?$CTier0AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier1AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier2AppSystem@VIToolSystem2@@$0A@@@
 .?AV?$CTier3AppSystem@VIToolSystem2@@$0A@@@
-.?AV?$CVDataFileManager@VCToolSceneLightRig@@@@
 .?AV?$IOpCodeHandler@H@@
 .?AV?$IOpEvaluator@H@@
-.?AV?$ISceneObjectDescBase@VCToolSceneAxisObject@@@@
-.?AV?$ISceneObjectDescBase@VCToolSceneGridObject@@@@
-.?AV?$ISceneObjectDescBase@VCToolSceneHitBoxObject@@@@
-.?AV?$ISceneObjectDescBase@VCUiMaterialPreviewSceneObject@@@@
-.?AV?$ISceneObjectDescBase@VCVertexListSceneObject@@@@
 .?AV?$_Func_base@XAEBUAssetSelectionInfo_t@@@std@@
-.?AV?$_Func_base@XPEAVCBindableCamera@@@std@@
 .?AV?$_Func_base@XPEAVCGlobalHotkeyCommands@@@std@@
-.?AV?$_Func_base@XPEAVCLightingControlRig@@@std@@
 .?AV?$_Func_base@XPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
-.?AV?$_Func_base@XPEAVCQToolSceneWidget@@@std@@
 .?AV?$_Func_base@XPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQDockWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQMainWindow@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
@@ -500,104 +427,40 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_11>@?BO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_11>@?N@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_12>@?BP@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_12>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_13>@?CA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_13>@?P@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_14>@?BA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_14>@?CD@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_15>@?BB@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_15>@?CE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_16>@?CF@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetupAccelerationStructure@RayTracingEnvironment@@QEAAXXZ@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??StopEmission@CNewParticleEffect@@QEAAX_N000@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQToolSceneWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?8??SrgbLinearToGamma@CSOAContainer@@QEAAXH@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_20>@?CO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_21>@?CP@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_22>@?DC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_23>@?DD@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_24>@?DE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_25>@?DH@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_26>@?DI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQToolSceneWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?BA@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2_>@?0???0CAssetSelectionListenerHelper@@QEAA@PEAVIAssetSelectionListener@@@Z@XAEBUAssetSelectionInfo_t@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_30>@?DO@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_31>@?EC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_32>@?ED@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?4???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?BC@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?5???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?BE@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_5>@?6???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_5>@?6???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_5>@?BG@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_6>@?7???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_6>@?BI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_7>@?8???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_7>@?BJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_8>@?9???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_8>@?BK@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_9>@?BL@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_9>@?L@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Ref_count_obj2@UDecompressedComboData_t@CVfxStaticComboData@@@std@@
 .?AVCBaseDynamicWidgetFactory@@
-.?AVCBasePulseGraphInstance@@
 .?AVCBaseToolSystem2@@
-.?AVCBaseToolsModelInstance@@
-.?AVCBaseVDataFileManager@@
 .?AVCBindTargetDescriptorBase@@
-.?AVCBindTargetProxy@@
-.?AVCBindableCamera@@
 .?AVCBindableCommand@@
-.?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@
 .?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@
-.?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@
-.?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQToolSceneWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@
 .?AVCBufferedErrorLoggingResponsePolicy@@
 .?AVCBufferedLoggingListener@@
 .?AVCCompileTargetExprOpCodeHandler@@
 .?AVCCompileTargetExprStackMachineBuilder@@
 .?AVCEmptySequence@@
 .?AVCGlobalHotkeyCommands@@
-.?AVCHitBoxObjectDesc@@
 .?AVCInputLayoutRegistration_s_hColoredVertexLayout@@
 .?AVCIntOpEvaluator@@
-.?AVCKV3Transfer_AssertAlreadyLoadedResourceLoadInterface@@
-.?AVCLambdaJob@?1???$QueueJobWithFlags@V<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@IThreadPool@@QEAA?AV?$CSmartPtr@VCThreadedJob@@VCRefCountAccessor@@@@PEBDW4JobPriority_t@@I$$QEAV<lambda_1>@?1???R<lambda_2>@?1??SimulateParticles@CParticleMgr@@AEAAXAEAV?$CUtlVectorFixedGrowableCompat@UParticleSimListItem_t@CParticleMgr@@$0EAA@H@@@Z@QEBA@XZ@@Z@
-.?AVCLightingControlRig@@
-.?AVCLightingPreviewPopupUI@@
 .?AVCMaterialAssetSelector@@
 .?AVCMaterialEditorTool@@
 .?AVCModelInstanceManager@@
-.?AVCModelInstanceSceneObjectContainer@@
-.?AVCNewParticleEffect@@
-.?AVCOffscreenToolSceneWindow@@
-.?AVCParticleCollectionBindingInstance@@
-.?AVCParticleMgr@@
-.?AVCParticleSystemQuery_ToolScene@@
-.?AVCParticlesLibHost_ToolScene@@
 .?AVCPulseCell_BaseState@@
 .?AVCPulseCell_BooleanSwitchState@@
 .?AVCPulseCell_CursorQueue@@
@@ -625,7 +488,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCPulseCell_WaitForCursorsWithTag@@
 .?AVCPulseCell_WaitForCursorsWithTagBase@@
 .?AVCPulseCell_WaitForObservable@@
-.?AVCPulseExecCursor@@
 .?AVCPulseGraphDef@@
 .?AVCQAngularSpanControl@@
 .?AVCQAngularSpanPreviewWidget@@
@@ -729,9 +591,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQTexturePreviewPopup@@
 .?AVCQTextureSettingsDialog@@
 .?AVCQTitledGroupBox@@
-.?AVCQToolSceneSettingsPopup@@
-.?AVCQToolSceneWidget@@
-.?AVCQToolSceneWidgetAutoUpdate@@
 .?AVCQTreeWidgetWithHover@@
 .?AVCQUVSettingsWidget@@
 .?AVCQUserMaterialAttributesWidget@@
@@ -745,104 +604,35 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVCQWidgetList@@
 .?AVCQWorldMappingWidget@@
 .?AVCQtImageCache@@
-.?AVCRenderOptionsPopupUI@@
-.?AVCSceneObject@@
-.?AVCSceneSkyBoxLightQuery@@
 .?AVCSchemaRegistration_met@@
 .?AVCSchemaRegistration_pulse_runtime_lib@@
-.?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCBindableCamera@@@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
-.?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCLightingControlRig@@@@
-.?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCQToolSceneWidget@@@@
-.?AVCTonemappingPopupUI@@
-.?AVCToolAxisObjectDesc@@
-.?AVCToolGridObjectDesc@@
-.?AVCToolHud@@
-.?AVCToolModelInstance_ConfigNode@@
-.?AVCToolModelInstance_MaterialAttributeTagListener@@
-.?AVCToolScene@@
-.?AVCToolSceneAttachmentNames@@
-.?AVCToolSceneAttachments@@
-.?AVCToolSceneAxis@@
-.?AVCToolSceneAxisObject@@
-.?AVCToolSceneCamera@@
-.?AVCToolSceneGrid@@
-.?AVCToolSceneGridObject@@
-.?AVCToolSceneHitBox@@
-.?AVCToolSceneHitBoxObject@@
-.?AVCToolSceneHitBoxes@@
-.?AVCToolSceneJointAxes@@
-.?AVCToolSceneJointNames@@
-.?AVCToolSceneJointRotations@@
-.?AVCToolSceneLight@@
-.?AVCToolSceneLightRigTypeSystem@@
 .?AVCToolSceneMaterialPreview@@
-.?AVCToolSceneModel@@
-.?AVCToolSceneModelInstance@@
 .?AVCToolSceneNode@@
-.?AVCToolSceneNodeGroup@@
-.?AVCToolSceneSceneObject@@
-.?AVCToolSceneSkeleton@@
-.?AVCToolSceneSkeletonHelpers@@
-.?AVCToolSceneSky@@
-.?AVCToolSceneText@@
-.?AVCToolSceneView@@
-.?AVCToolTextureCache@@
-.?AVCToolsVisPopupUI@@
 .?AVCTreeWidgetFilter@@
 .?AVCTreeWidgetFilter_KeywordList@@
 .?AVCTreeWidgetFilter_Regexp@@
-.?AVCUiMaterialPreviewSceneObject@@
-.?AVCUiMaterialPreviewSceneObjectDesc@@
-.?AVCUtlMultiJobProcessor@@
 .?AVCUtlStackMachineBuilder@@
 .?AVCVNotifyErrorForwarder@@
-.?AVCVertexListSceneObject@@
-.?AVCVertexListSceneObjectDescriptor@@
 .?AVCVfxMaterialParamStackMachineBuilder@@
 .?AVCVfxShaderBuffer@@
 .?AVCVfxStackMachineBuilder@@
-.?AVIAnimTagListener@@
-.?AVIAnimationHelperAnimGraphChangeLister@@
 .?AVIAssetCacheListener@@
 .?AVIAssetFileListener@@
 .?AVIAssetSelectionListener@@
-.?AVIBaseErrorContext@@
 .?AVIBaseSequence@@
 .?AVIBindTarget@@
-.?AVIBindableCameraScene@@
 .?AVIHelpChangeListener@@
-.?AVIModelConfigPreviewHost@@
-.?AVIModelInstanceRenderContext@@
-.?AVIParticleEHandleHelper@@
-.?AVIParticleEffect@@
-.?AVIParticleSystemQuery@@
-.?AVIParticlesLibHost@@
-.?AVIPulseExecLog@@
 .?AVIPulseGraphDef@@
-.?AVIPulseHost_Cursor@@
-.?AVIPulseHost_Unknown@@
-.?AVIPulseHost_YieldingCursor@@
 .?AVIQtImageCache@@
 .?AVIRenderShaderByteCode@@
-.?AVISceneObjectDesc@@
 .?AVISequence@@
 .?AVIShaderReloadListener@@
-.?AVISurfaceEvaluator@@
 .?AVIToolFrameListener@@
 .?AVIToolFrameworkAudioSettingsListener@@
-.?AVIToolHud@@
-.?AVIToolRenderCallbacks@@
-.?AVIToolRenderableViewHost@@
-.?AVIToolSceneCustomTrace@@
-.?AVIToolSceneCustomTraceInfo@@
-.?AVIToolSceneObjectContainer@@
-.?AVIToolSceneWindow@@
-.?AVIToolSpecificPopupUI@@
 .?AVIToolSystem2@@
 .?AVIVDataExternalToolContextProvider@@
 .?AVIVDataResourceListener@@
-.?AVIVertexListObject@@
 .?AVQAbstractButton@@
 .?AVQAbstractItemModel@@
 .?AVQAbstractItemView@@
@@ -884,6 +674,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVQProgressBar@@
 .?AVQPushButton@@
 .?AVQRadioButton@@
+.?AVQRegularExpressionValidator@@
 .?AVQScrollArea@@
 .?AVQScrollBar@@
 .?AVQSlider@@
@@ -911,8 +702,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AVQValidator@@
 .?AVQWidget@@
 .?AVQWidgetAction@@
-.?AVSphereEvaluator@@
-.Acontrol_point
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -929,7 +718,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .[?setRed@QColor@@QEAAXH@Z
 .\r?hideEvent@QMenu@@MEAAXPEAVQHideEvent@@@Z
 .\v?event@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z
-.eBp"E
 .exr
 .ini
 .pfm
@@ -940,7 +728,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .vcs
 .vfx
 .vpk:
-.vsky
 .webp
 /../../../src
 /../content
@@ -949,15 +736,14 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 //-------------------------------------------------\n
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /]?size@QImage@@QEBA?AVQSize@@XZ
-00g'
 0123456789
 0123456789)"
-01:01:52
 0=Wrap,1=Mirror,2=Clamp,3=Border,4=MirrorOnce
-0>9R7
+0>Yi.
 0x%1
 0x%p = %s '%s'
 1/2/3
+11:06:05
 128 x 128
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1AboutAction()
@@ -992,7 +778,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnAutoFillGroupAction()
 1OnAutoFillTextureResAction()
 1OnAutoReloadShadersAction()
-1OnBackgroundColorChanged( const QColor & )
 1OnBrowseMaterialsAsAssets()
 1OnBrowseMaterialsAsFiles()
 1OnBrowseShaders()
@@ -1060,12 +845,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnGroupContentsExpanded( bool )
 1OnImportGroupVariables()
 1OnIndexChanged()
-1OnIndexChangedInternal()
 1OnInheritFromReference()
 1OnLayerNameEditingFinished()
 1OnLayerShiftNext()
 1OnLayerShiftPrev()
-1OnLightingPreviewChanged( QAbstractButton* )
 1OnLineEditingFinished()
 1OnMipAlgorithmChanged(const QString&)
 1OnMipSelectIndexChanged( int )
@@ -1084,7 +867,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnPasteColor()
 1OnPasteGroupVariables()
 1OnPendingColorChangeTimeout()
-1OnPickBackgroundColor()
 1OnPicked(QColor)
 1OnPreferredShaderIndexChanged( int )
 1OnRadioButton()
@@ -1103,6 +885,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnSaveIntoReference()
 1OnSaveToReference()
 1OnSelectionChanged( const QItemSelection &, const QItemSelection & )
+1OnSetColorInternal(FatColor_t)
 1OnSetDefault()
 1OnSettingsAction()
 1OnShowCompiledTexturesAction()
@@ -1132,7 +915,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnTabChanged( int )
 1OnTabCloseRequested( int )
 1OnTabMoved()
-1OnTextChanged( int )
 1OnTextChanged()
 1OnTextureChanged()
 1OnTextureClicked( QMouseEvent * )
@@ -1141,19 +923,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1OnTextureNameEditingFinished()
 1OnTextureResolutionWarningClicked()
 1OnTextureSettings()
-1OnTimerUpdateAutoTonemapValue()
-1OnToggleFPS( bool )
-1OnToggleGrid( bool )
 1OnToggleOrientationAction()
-1OnToggleShadows( bool )
-1OnToggleShowBoneNames( bool )
-1OnToggleSkybox( bool )
-1OnToggleSmoothCamera( bool )
-1OnToggleWireframe( bool )
-1OnTonemapModeButtonPressed()
-1OnTonemapSliderValueChanged( float )
-1OnToolSpecificUIButton( QAbstractButton* )
-1OnToolsVisModeChanged( QAbstractButton* )
 1OnUndoAction()
 1OnUserAttributesModified()
 1OnValueChanged( float )
@@ -1180,12 +950,9 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1SaveAsAction()
 1SelectFirstItemAfterFilter()
 1SetAlphaEditFromSlider(int)
-1SetColorInternal(FatColor_t)
 1ShaderSelectionChanged( const QItemSelection &, const QItemSelection & )
 1SkinnedModelModeChanged( int )
 1SurfacePropertiesSelectionChanged( const QItemSelection &, const QItemSelection & )
-1TakeRenderDocCapture()
-1ToggleSettingsPopup()
 1UpdateButtonStatusFromAction()
 1UpdateEditFromSlider()
 1UpdateFilterModel(QString)
@@ -1194,7 +961,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1ValidateExpression()
 1[?setRedF@QColor@@QEAAXN@Z
 1\n?doItemsLayout@QHeaderView@@UEAAXXZ
-1\tV_isinfd
 1accept()
 1close()
 1deleteLater()
@@ -1205,7 +971,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 1trigger()
 222222
 256 x 256
-2BackgroundColorChanged( const QColor & )
 2ColorPicked( QColor )
 2ColorPicked(QColor)
 2EntityRenderAttributeSelected( QString )
@@ -1237,12 +1002,10 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\nP!E
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp0g'
 2aboutToShow()
 2accepted()
 2actionTriggered( int )
 2activated( int )
-2buttonClicked( QAbstractButton* )
 2cellChanged( int, int )
 2cellClicked( int, int )
 2cellDoubleClicked( int, int )
@@ -1283,18 +1046,18 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2valueChanged(int)
 333333
 333?+
-333?@
 33s?+
 3\f?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 3\n?doItemsLayout@QTableView@@UEAAXXZ
+4[?setRegularExpression@QRegularExpressionValidator@@QEAAXAEBVQRegularExpression@@@Z
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
 5.15.2
 512 x 512
 5;FJ$,XEK4<
 5\f?focusOutEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
-5\r55t
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
+63i.
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\f?focusOutEvent@QPlainTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
@@ -1315,6 +1078,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 :\v?canRead@QImageReader@@QEBA_NXZ
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 <%f %f %f %f>
 <NONE>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
@@ -1344,8 +1108,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 <font color='red'>%1</font>
 <font color=white><b>Preview Not Available!<p>No Active Material. Open Or Select A Material.</font>
 <h2>Material Editor Tool - MET</h2><p>Copyright &copy; Valve Corporation.<p>Version: %1.%2<p>Build: %3 %4<p>Qt Version: %5
-<map_key>
-<map_value>
 <nobr><i>%s</i></nobr>
 <none>\n
 <qt>%s</qt>
@@ -1455,6 +1217,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??0QRect@@QEAA@HHHH@Z
 ??0QRectF@@QEAA@AEBVQRect@@@Z
 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z
+??0QRegularExpression@@QEAA@AEBVQString@@V?$QFlags@W4PatternOption@QRegularExpression@@@@@Z
+??0QRegularExpressionValidator@@QEAA@AEBVQRegularExpression@@PEAVQObject@@@Z
 ??0QScrollArea@@QEAA@PEAVQWidget@@@Z
 ??0QScrollBar@@QEAA@PEAVQWidget@@@Z
 ??0QSizePolicy@@QEAA@W4Policy@0@0W4ControlType@0@@Z
@@ -1559,6 +1323,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??1QRadioButton@@UEAA@XZ
 ??1QRegExp@@QEAA@XZ
 ??1QRegion@@QEAA@XZ
+??1QRegularExpression@@QEAA@XZ
+??1QRegularExpressionValidator@@UEAA@XZ
 ??1QScrollArea@@UEAA@XZ
 ??1QScrollBar@@UEAA@XZ
 ??1QSlider@@UEAA@XZ
@@ -1592,7 +1358,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??1QWidgetAction@@UEAA@XZ
 ??4Connection@QMetaObject@@QEAAAEAV01@$$QEAV01@@Z
 ??4QBrush@@QEAAAEAV0@$$QEAV0@@Z
-??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z
 ??4QColor@@QEAAAEAV0@AEBV0@@Z
 ??4QColor@@QEAAAEAV0@W4GlobalColor@Qt@@@Z
 ??4QCursor@@QEAAAEAV0@$$QEAV0@@Z
@@ -1628,7 +1393,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ??YQString@@QEAAAEAV0@D@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@VQChar@@@Z
-?CToolSceneTraceEnvironment::Draw_SetupIdForCurrentNode - Trying to draw with no node. You need to call Draw_SetCurrentNode() before drawing\n
 ?ParseEXRHeaderFromMemory() failed! Error message: %s\n
 ?QStringList_contains@QtPrivate@@YA_NPEBVQStringList@@AEBVQString@@W4CaseSensitivity@Qt@@@Z
 ?RGBA8888
@@ -1689,7 +1453,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?allocate@QArrayData@@SAPEAU1@_K00V?$QFlags@W4AllocationOption@QArrayData@@@@@Z
 ?append@?$QVector@VQPoint@@@@QEAAXAEBVQPoint@@@Z
 ?append@QByteArray@@QEAAAEAV1@D@Z
-?append@QByteArray@@QEAAAEAV1@PEBD@Z
 ?append@QByteArray@@QEAAAEAV1@PEBDH@Z
 ?append@QListData@@QEAAPEAPEAXXZ
 ?append@QString@@QEAAAEAV1@AEBV1@@Z
@@ -1707,7 +1470,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?beep@QApplication@@SAXXZ
 ?begin@QListData@@QEBAPEAPEAXXZ
 ?button@QDialogButtonBox@@QEBAPEAVQPushButton@@W4StandardButton@1@@Z
-?buttons@QButtonGroup@@QEBA?AV?$QList@PEAVQAbstractButton@@@@XZ
 ?canInsertFromMimeData@QPlainTextEdit@@MEBA_NPEBVQMimeData@@@Z
 ?canInsertFromMimeData@QTextEdit@@MEBA_NPEBVQMimeData@@@Z
 ?cellWidget@QTableWidget@@QEBAPEAVQWidget@@HH@Z
@@ -1748,6 +1510,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?clear@QTreeWidget@@QEAAXXZ
 ?clearContents@QTableWidget@@QEAAXXZ
 ?clearEditText@QComboBox@@QEAAXXZ
+?clearFocus@QWidget@@QEAAXXZ
 ?clearSelection@QAbstractItemView@@QEAAXXZ
 ?clicked@QAbstractButton@@QEAAX_N@Z
 ?clicked@QGroupBox@@QEAAX_N@Z
@@ -1803,7 +1566,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?customContextMenuRequested@QWidget@@QEAAXAEBVQPoint@@@Z
 ?devType@QImage@@UEBAHXZ
 ?devType@QPixmap@@UEBAHXZ
-?devicePixelRatioF@QPaintDevice@@QEBANXZ
 ?drawArc@QPainter@@QEAAXHHHHHH@Z
 ?drawEllipse@QPainter@@QEAAXAEBVQPoint@@HH@Z
 ?drawImage@QPainter@@QEAAXAEBVQPoint@@AEBVQImage@@@Z
@@ -1835,7 +1597,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?end@QPainter@@QEAA_NXZ
 ?expf
 ?families@QFontDatabase@@QEBA?AVQStringList@@W4WritingSystem@1@@Z
-?fill@QImage@@QEAAXAEBVQColor@@@Z
 ?fill@QImage@@QEAAXI@Z
 ?fill@QImage@@QEAAXW4GlobalColor@Qt@@@Z
 ?fill@QPixmap@@QEAAXAEBVQColor@@@Z
@@ -1931,11 +1692,11 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?isIndexHidden@QTableView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTreeView@@MEBA_NAEBVQModelIndex@@@Z
 ?isMaximized@QWidget@@QEBA_NXZ
+?isModified@QLineEdit@@QEBA_NXZ
 ?isNull@QString@@QEBA_NXZ
 ?isNull@QVariant@@QEBA_NXZ
 ?isResettable@QMetaProperty@@QEBA_NXZ
 ?isSelected@QTreeWidgetItem@@QEBA_NXZ
-?isValid@QElapsedTimer@@QEBA_NXZ
 ?isValid@QVariant@@QEBA_NXZ
 ?isVisible@QAction@@QEBA_NXZ
 ?isVisible@QWidget@@QEBA_NXZ
@@ -1992,7 +1753,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?loadResource@QPlainTextEdit@@UEAA?AVQVariant@@HAEBVQUrl@@@Z
 ?loadResource@QTextBrowser@@UEAA?AVQVariant@@HAEBVQUrl@@@Z
 ?loadResource@QTextEdit@@UEAA?AVQVariant@@HAEBVQUrl@@@Z
-?manhattanLength@QPoint@@QEBAHXZ
 ?mapFromGlobal@QWidget@@QEBA?AVQPoint@@AEBV2@@Z
 ?mapFromSource@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 ?mapSelectionFromSource@QSortFilterProxyModel@@UEBA?AVQItemSelection@@AEBV2@@Z
@@ -2491,7 +2251,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?setDefaultSuffix@QFileDialog@@QEAAXAEBVQString@@@Z
 ?setDefaultWidget@QWidgetAction@@QEAAXPEAVQWidget@@@Z
 ?setDirection@QBoxLayout@@QEAAXW4Direction@1@@Z
-?setDisabled@QWidget@@QEAAX_N@Z
 ?setDockOptions@QMainWindow@@QEAAXV?$QFlags@W4DockOption@QMainWindow@@@@@Z
 ?setEditText@QComboBox@@QEAAXAEBVQString@@@Z
 ?setEditTriggers@QAbstractItemView@@QEAAXV?$QFlags@W4EditTrigger@QAbstractItemView@@@@@Z
@@ -2499,7 +2258,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?setEnabled@QAction@@QEAAX_N@Z
 ?setEnabled@QWidget@@QEAAX_N@Z
 ?setEscapeButton@QMessageBox@@QEAAXW4StandardButton@1@@Z
-?setExclusive@QButtonGroup@@QEAAX_N@Z
 ?setExpanded@QTreeWidgetItem@@QEAAX_N@Z
 ?setFeatures@QDockWidget@@QEAAXV?$QFlags@W4DockWidgetFeature@QDockWidget@@@@@Z
 ?setFileMode@QFileDialog@@QEAAXW4FileMode@1@@Z
@@ -2596,7 +2354,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?setPixmap@QLabel@@QEAAXAEBVQPixmap@@@Z
 ?setPlaceholderText@QLineEdit@@QEAAXAEBVQString@@@Z
 ?setPlainText@QPlainTextEdit@@QEAAXAEBVQString@@@Z
-?setPopupMode@QToolButton@@QEAAXW4ToolButtonPopupMode@1@@Z
 ?setProperty@QObject@@QEAA_NPEBDAEBVQVariant@@@Z
 ?setRange@QAbstractSlider@@QEAAXHH@Z
 ?setReadOnly@QLineEdit@@QEAAX_N@Z
@@ -2863,12 +2620,12 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?toSize@QSizeF@@QEBA?AVQSize@@XZ
 ?toStdString@QString@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
 ?toString@QVariant@@QEBA?AVQString@@XZ
+?toUpper@QString@@QEHAA?AV1@XZ
 ?toUtf8@QString@@QEGBA?AVQByteArray@@XZ
 ?toUtf8@QString@@QEHAA?AVQByteArray@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
 ?trimmed@QString@@QEGBA?AV1@XZ
 ?type@QMetaProperty@@QEBA?AW4Type@QVariant@@XZ
-?typeFlags@QMetaType@@SA?AV?$QFlags@W4TypeFlag@QMetaType@@@@H@Z
 ?typeName@QMetaProperty@@QEBAPEBDXZ
 ?typeName@QMetaType@@SAPEBDH@Z
 ?unregisterConverterFunction@QMetaType@@SAXHH@Z
@@ -2877,10 +2634,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @?fff?33s?
 @Integer overflow in %s
-@PkG
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
-@pRG
-@spawn
+@fff>fff>fff>fff>
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A%mB,
@@ -2899,11 +2654,9 @@ Absolute value (float)
 Absolute value (int)
 Accept
 AcceptColorInternal
-Activate
 Active Window Widget
 ActiveArea
 ActiveTabName
-Activity %s has %d sequences with a total weight of %d!\n
 Add Dynamic Expression...
 Add New Attribute. Click Attribute Cells To Modify
 Add R%d <- R%d + R%d
@@ -2915,6 +2668,7 @@ AdobeDeflate
 Align With Gravity Factor: 
 All Images (
 All Variables!
+All values connected to this node must be 'observable'. Variables on this graph will be automatically promoted to observable. Other value nodes must take an explicit context, look for those nodes with a corresponding icon.
 Allow
 Allow editing of texture settings for the "Default" textures.
 Allow editing of untitled materials.
@@ -2925,13 +2679,13 @@ AllowOverwriteOfReadOnlyMaterials
 Alpha decoder initialization failed.
 Alpha:
 AlternateInput
+Always
 AnalogBalance
 And R%d <- R%d && R%d
 Android SM 4.0 (VULKAN)
 Android SM 4.1 (VULKAN)
 Android SM 5.0 (VULKAN)
 AngularSpan
-AnimatableSceneObjectDesc
 Annotate Favorite...
 AntiAliasStrength
 Any Other Cursors Have Tag
@@ -2947,6 +2701,7 @@ Are we currently running unit tests?
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -2963,7 +2718,7 @@ Assert True
 Asset Browser
 Assets
 Async Fire C%d:I%d
-AtlasToVolumeTextureConversion(3089): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
+AtlasToVolumeTextureConversion(3093): Error! Unable to parse grid/slice count from volume atlas filename: %s\n
 Attempting to register the command %s for context %s multiple times\n
 Attributes Used:
 Auto (%dx%d)
@@ -2983,12 +2738,9 @@ BLENDWEIGHT
 BOOLLITERAL
 BUTTON
 B\f?focusWidget@QApplication@@SAPEAVQWidget@@XZ
-B`iF
-BackBufferBlit
 BackGroundFill_t
 BackGroundStyle_t
 Background
-BackgroundColorChanged
 Backspace
 Bad checkstate (expected eg. 'PartiallyChecked')
 Bad code word
@@ -2999,12 +2751,7 @@ Bad reinterpret on ArrayAppend
 Bad reinterpret on ArrayInsert
 Bad reinterpret on ArrayRemoveElementMatching
 Bad sequence in GetSequenceActivityName() for model '%s'!\n
-Bad value for hAlign in AlignedPos!
-Bad value for hAlign in AttachPos!
-Bad value for vAlign in AlignedPos!
-Bad value for vAlign in AttachPos!
 Bad verticalPolicy "%s"
-Bad vmdl
 BadFaxLines
 Base-10 logarithm
 Base-2 logarithm
@@ -3015,7 +2762,6 @@ BayerGreenSplit
 Begin mouse capture [%i]: %s\n
 Begin testing a condition composed of Observable values. Continues checking until canceled.
 Begin testing a condition composed of Observable variable references. Continues checking until true.
-BentNormal
 BestQualityScale
 Binding removed due to active drag: %s
 Bits/sample must be 1 for Group 3/4 encoding/decoding
@@ -3039,38 +2785,26 @@ Bool (expression) =
 Brightness Adjustments
 Browse For Rectangle File
 Browse...
-Btools_renderscenes
 Buffer Size: 
-BuildParticleSimList
 BuildWatch
 C ?toPlainText@QPlainTextEdit@@QEBA?AVQString@@XZ
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\tools\met\_vpc_met\default\win64\_msvc_\Retail\met.pdb
-C:\buildworker\source2_dota_rel_2019_win64\build\src\particleslib\particlemgr.cpp
-C:\buildworker\source2_dota_rel_2019_win64\build\src\public\tier0\utlblockvector.h
+C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\toolrenderutils\toolmatsysutils.cpp
+C:\buildworker\source2_dota_rel_2019_win64\build\src\toolrenderutils\toolstandardmodels.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\met\materialeditor.cpp
-C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
-C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolscene\toolscene_materialpreview.cpp
-C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolscene\toolscene_sky.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\vfx\compiletargetexpr.g
 C:\buildworker\source2_dota_rel_2019_win64\build\src\vfx\vfx_common.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\vfx\vfxexpr.g
-CBasePulseGraphInstance::CBasePulseGraphInstance( %p )\n
-CBasePulseGraphInstance::EndGraphReload( %p ) %s\n
-CBasePulseGraphInstance::InitInstance_Internal( %s; %p ) %s\n
-CBasePulseGraphInstance::Shutdown( %s; %p ) %s\n
-CBasePulseGraphInstance::StartGraphReload( %p ) %s\n
-CBasePulseGraphInstance::~CBasePulseGraphInstance( %p )\n
-CBaseToolsModelInstance::CreateReversedIBs(4572): 
-CBindableCamera
 CBufferString
 CCITT Group 3
 CCITT Group 4
 CCITT RLE
 CCITT RLE/W
 CColorGradient
+CEntityNameString
 CFALayout
 CFAPlaneColor
 CGlobalHotkeyCommands
@@ -3079,12 +2813,6 @@ CGlobalSymbolCaseSensitive
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
-CLightingControlRig
-CLightingControlRig::DestroyBackgroundMap
-CLightingControlRig::ReloadLightRigConfig
-CLightingPreviewPopupUI
-CModelPreviewAttachedModel
-CNewParticleEffect::DetectChanges
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
@@ -3092,11 +2820,11 @@ COMMAND_TEXT_MODE_NONE
 COMMENT
 COMMON
 CParticleCollectionBindingInstance::HACK_UnusedBinding
-CParticleMgr::SimulateParticles(), C:\buildworker\source2_dota_rel_2019_win64\build\src\particleslib\particlemgr.cpp:1142
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -3108,6 +2836,7 @@ CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
@@ -3133,7 +2862,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseMathlib::AbsFloat
@@ -3183,6 +2911,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -3200,6 +2929,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -3337,8 +3067,6 @@ CQTexturePreviewMagnify
 CQTexturePreviewPopup
 CQTextureSettingsDialog
 CQTitledGroupBox
-CQToolSceneSettingsPopup
-CQToolSceneWidget
 CQTreeWidgetWithHover
 CQUserMaterialAttributesWidget
 CQVDataChoicePicker
@@ -3350,123 +3078,63 @@ CQWidgetDebugHighlight
 CQWidgetDebugger
 CQWidgetList
 CQWorldMappingWidget
-CRenderOptionsPopupUI
 CStrongHandle
-CTSQueue<struct ParticleSoundQueueEntry_t *,0>::Push
-CTonemappingPopupUI
-CToolAxisObjectDesc::DrawArray
-CToolHud
-CToolRenderContext::PopRenderMode - stack underflow
-CToolRenderContext::PopTransform - matrix stack underflow
-CToolRenderContext::PushRenderMode - exceeded stack depth\n
-CToolRenderContext::PushTransform - busted through MAX_MATRIX_STACK_DEPTH (%d)
-CToolRenderContext::PushTransform - matrix stack underflow
-CToolSceneAttachmentNames
-CToolSceneAttachments
-CToolSceneAxis
-CToolSceneCamera
-CToolSceneGrid
-CToolSceneHitBox
-CToolSceneHitBoxes
-CToolSceneJointAxes
-CToolSceneJointNames
-CToolSceneJointRotations
-CToolSceneLight
-CToolSceneMaterialPreview
-CToolSceneMaterialPreview::GetDefaultPreviewModel
-CToolSceneModel
-CToolSceneNode
-CToolSceneNodeGroup
-CToolSceneSceneObject
-CToolSceneSkeleton
-CToolSceneSkeletonHelpers
-CToolSceneSky
-CToolSceneText
-CToolsVisPopupUI
 CURVE_TANGENT_FREE
 CURVE_TANGENT_MIRROR
 CURVE_TANGENT_SINE
 CURVE_TANGENT_SPLINE
 CUtlBlockVector<class CVfxStaticComboData,int,class CMemAllocAllocator>::GrowCount
-CUtlBlockVector<class Vec2D<float>,int,class CMemAllocAllocator>::GrowCount
-CUtlBlockVector<class std::function<void __cdecl(void)>,int,class CMemAllocAllocator>::GrowCount
-CUtlBlockVector<struct CacheOptimizedTriangle_t,int,class CMemAllocAllocator>::GrowCount
-CUtlBlockVector<struct StoredTriangleVertexPositions_t,int,class CMemAllocAllocator>::GrowCount
-CUtlDict<class CToolSceneHitBoxData::CBoneInfo *,class CDefFastCaselessStringLess>::Insert
-CUtlDict<class CToolSceneHitBoxData::CMeshHitBoxes *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,bool,class CDefFastCaselessStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CUtlString,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class CVfxStaticComboData,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class CVfxStaticComboData,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct PGDInstruction_t,int,class CMemAllocAllocator>,struct PGDInstruction_t,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<unsigned char,12,short,class CMemAllocAllocator>,unsigned char,short>::AddMultipleToTail
 CUtlMemoryBlockAllocator<class CVfxStaticComboData,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<class std::function<void __cdecl(void)>,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<struct StoredTriangleVertexPositions_t,class CMemAllocAllocator>::AddPage
-CUtlRBTree<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,class CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CQTitledGroupBox *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CQTitledGroupBox *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CQTitledGroupBox *,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class QVBoxLayout *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class QVBoxLayout *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class QVBoxLayout *,class CDefFastCaselessStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class IAsset *,class CUtlRBTree<struct MaterialReference_t *,class CDefLess<struct MaterialReference_t *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct MaterialReference_t *,int>,int,class CMemAllocAllocator> > *,class CDefLess<class IAsset *>,int>::Node_t,class CUtlOrderedMapBase<class IAsset *,class CUtlRBTree<struct MaterialReference_t *,class CDefLess<struct MaterialReference_t *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct MaterialReference_t *,int>,int,class CMemAllocAllocator> > *,class CDefLess<class IAsset *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IAsset *,class CUtlRBTree<struct MaterialReference_t *,class CDefLess<struct MaterialReference_t *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct MaterialReference_t *,int>,int,class CMemAllocAllocator> > *,class CDefLess<class IAsset *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExecutionHistoryNodeDesc_t *,class CDefLess<class PulseDocNodeID_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,class CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct VertexListCreateParams_t,class IVertexListObject *,class CLessFunc<&private: static bool __cdecl CToolRenderContext::LessFunc_CachedVertexLists(struct VertexListCreateParams_t const &,struct VertexListCreateParams_t const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,unsigned int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,unsigned int>::CKeyLess,unsigned int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,bool,class CDefLess<unsigned __int64>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct `public: void __cdecl CVfxStaticComboData::ComputeVariablesUsedInStaticCombo(class CVfxProgramData const *)'::`2'::BindInfo_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct `public: void __cdecl CVfxStaticComboData::ComputeVariablesUsedInStaticCombo(class CVfxProgramData const *)'::`2'::BindInfo_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct `public: void __cdecl CVfxStaticComboData::ComputeVariablesUsedInStaticCombo(class CVfxProgramData const *)'::`2'::BindInfo_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,unsigned int,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,unsigned int,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,unsigned int,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct MaterialReference_t *,class CDefLess<struct MaterialReference_t *>,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct MaterialReference_t *,int>,int,class CMemAllocAllocator> >::Insert
 CUtlStreamBuffer does not support TEXT_BUFFER's use CUtlBuffer\n
 CUtlVectorFixedGrowable
-CVertexListSceneObject
-CVfx::CreateFromVcs(7715): Error opening file %s\n
-CVfx::CreateFromVcs(7748): VCS3 %s Load Failure: %s\n
-CVfx::CreateFromVcs(7761): VCS3 %s Load Failure: %s\n
-CVfx::CreateFromVcs(7790): VCS %s Unserialize hit EOF\n
+CVfx::CreateFromVcs(7834): Error opening file %s\n
+CVfx::CreateFromVcs(7867): VCS3 %s Load Failure: %s\n
+CVfx::CreateFromVcs(7880): VCS3 %s Load Failure: %s\n
+CVfx::CreateFromVcs(7909): VCS %s Unserialize hit EOF\n
 CVfx::ParseResourceFileHeader
 CVfxProgramData::CalcStaticComboIdFromValues
-CVfxProgramData::FindOrCreateStaticComboDataInCache(4373): Error! Ref count !=0 for static combo data cache entry!\n
+CVfxProgramData::FindOrCreateStaticComboDataInCache(4448): Error! Ref count !=0 for static combo data cache entry!\n
 CVfxStaticComboData::Decompress
 Cache Status Changed
 CalibrationIlluminant1
 CalibrationIlluminant2
 Call C%d:I%d (%s)
-Camera
 CameraCalibration1
 CameraCalibration2
-CameraLookAtSelection
 CameraSerialNumber
 Can not read scanlines from a tiled image
 Cancel
 Cancel observing.
 Cannot Debug
 Cannot add multiple root layouts to the same widget
-Cannot allocate abstract class
 Cannot break - no debugger attached!
 Cannot handle different per-sample values for field "%s"
-Cannot load toolscenevismodes: %s\n
 Cannot read TIFF header
 Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot specify 'dock' when root is not a QMainWindow (%s)
 Cannot specify toolbarArea when root is not a QMainWindow (%s)
 Cannot split dock - sibling QDockWidget not found (%s)
 Cannot tabify dock - sibling QDockWidget not found (%s)
-Cannot use CQToolSceneWidgetAutoUpdate outside of Toolframework2!\n
 Cannot write directory, out of space
 CapToggle
 Caps
 Capture Favorite
 Capture current state as favorite.
-CaptureNextPresent
 Categories
 Ceiling - round float up to nearest integer)
 Ceiling Float
@@ -3498,7 +3166,6 @@ Clamp Int
 Clamp value to range (float)
 Clamp value to range (int)
 Class
-Class does not allow allocation from its schema binding
 CleanFaxData
 Clear All
 Clear History
@@ -3510,7 +3177,6 @@ Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
 Close the material.
 CloseAction
-CloudTexture
 Collapse All Groups
 ColorCorrection
 ColorDialogFinished
@@ -3519,9 +3185,10 @@ ColorMatrix1
 ColorMatrix2
 ColorPicked
 ColorResponseUnit
-ColoredVertexLayout
 Colormap
 Combo
+ComboBoxCompleterClosed
+ComboBoxCompleterOpened
 Command Filter
 Command Name
 Command.%s.%s
@@ -3533,6 +3200,8 @@ CompileShadersForFeatureCombo
 CompileTargets
 Compiled Textures
 Completed
+CompleterClosed
+CompleterOpened
 Compression
 Compression / Streaming
 Compression algorithm does not support random access
@@ -3540,7 +3209,6 @@ Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
-Condition
 Configure Material Editor Options.
 Configure history settings.
 Confirm Reference Change
@@ -3567,13 +3235,11 @@ Cosine of angle. Input in radians, output in radians
 Could not decode alpha data.
 Could not find layers to swap
 Could not locate key named '%s' in reference file: %s\n
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 Courier
 Courier New
 Create a new material.
 Create new Reference file?
-CreateTesselatedCube(265): 
-CreateTesselatedPlane(374): 
-CreateTesselatedSphere(140): 
 Cross Product Vector
 Cross Product of Vector a x Vector b
 Ctrl
@@ -3591,12 +3257,6 @@ Ctrl+Z
 CurrentICCProfile
 CurrentPreProfileMatrix
 Cursor Has Tag
-Cursor[ ptr:%p | id:%d | graph:%p ]: CPulseExecCursor()\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d\n
-Cursor[ ptr:%p | id:%d | graph:%p ]: ~CPulseExecCursor()\n
 Cursors Allowed To Run Parallel
 Cursors Allowed To Wait
 Custom Color
@@ -3606,12 +3266,7 @@ DNGBackwardVersion
 DNGPrivateData
 DNGVersion
 DXBC
-D\tV_log2f
-D_BORDER
 D_FADE_COLOR
-D_NO_ZTEST
-D_SNAP_TO_SCREEN_PIXELS
-D_THICK_LINES
 DataType
 Data_Branch1xy
 Data_Branch1zBranch2x
@@ -3619,7 +3274,6 @@ Data_Branch2yz
 DateTime
 Debug Focus Widget
 Debug Widget Under Mouse
-DebugToolScene
 DebugTreeHover
 DebugTreeSelected
 DebugWidgetActiveWindow
@@ -3641,13 +3295,11 @@ DecalSizeVariance
 DecalSkinnedModelMode
 DecalWorldHeight
 DecalWorldWidth
-DecreaseMoveSpeed
 Default Colors
 DefaultAutoPromptForShaderOnNewMaterialCreation
 DefaultColorPicker
 DefaultCropOrigin
 DefaultCropSize
-DefaultPreviewCamera
 DefaultScale
 DefaultShader
 DefaultShaderName_%s
@@ -3674,10 +3326,10 @@ Detach vars from this Reference
 DetachReferenceAction
 Detail Object Assignments
 Detail Props
-DetailPropType_A
-DetailPropType_B
-DetailPropType_G
-DetailPropType_R
+DetailPropType_1
+DetailPropType_2
+DetailPropType_3
+DetailPropType_4
 DetailPropsEnabled
 DevShader
 Developer Options
@@ -3693,8 +3345,6 @@ Done.
 Dot Product Vector
 Dot Product of Vector a 
 DotRange
-DotaForward
-DotaGlobalParams_t
 Down
 DragFinished
 DragOffsetRelativeEnd
@@ -3702,9 +3352,6 @@ DragOffsetRelativeStart
 DragOffsetRelativeUpdate
 DragStarted
 DragUpdated
-Draw Shadows
-DrawBoneNamesChanged
-DrawSkyboxChanged
 DummyNoOp
 DumpModeDecode: Not enough data for scanline %d
 Dynamic Expression
@@ -3745,8 +3392,6 @@ EXRReadFile() - G channel not found!\n
 EXRReadFile() - R channel not found!\n
 EXRReadFile() - cannot read image data!\n
 E\r?endsWith@QByteArray@@QEBA_ND@Z
-E\tV_logd
-EarlyRetireParticleSystems
 EatEscapeKeyPress
 Edit Dynamic Expression...
 Edit a favorite's annotation.
@@ -3810,7 +3455,6 @@ Expression Parser -
 Expression to evaluate at run-time:
 ExternalDescSet
 ExtraSamples
-F(knN
 FEATURES
 FLOATLITERAL
 FLOATSUFFIX
@@ -3820,10 +3464,8 @@ F_WETNESS
 Fade Duration: 
 Fade Start Time: 
 Fail Outflow
-Failed to allocate an instance of a class
 Failed to allocate field info array
 Failed to allocate memory for %s (%ld elements of %ld bytes each)
-Failed to compute bone transform %d for attachment '%s'
 Failed to compute channel layout.\n
 Failed to convert value '%s' to enum/flags '%s' (expecting eg. '%s')
 Failed to create widget %s
@@ -3865,22 +3507,24 @@ Filter:
 Filtered Magnification
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 Find:
+Fired immediately when this node begins for chaining purposes.
+Fired when the observable boolean is false, and killed when true.
+Fired when the observable boolean is true, and killed when false.
 Fixed
 Float (expression) = 
 Float To Game Time
 Float2 (expression) = 
 Float3 (expression) = 
 Float4 (expression) = 
-FloatBitMap_t: Error loading %s\n
 FloatBitMap_t::ConvertLinearToGamma(409): Conversion not supported yet!\n
-FloatBitMap_t::LoadFromFile(3281): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
-FloatBitMap_t::LoadFromTGA(2230): Error loading %s\n
+FloatBitMap_t::LoadFromFile(3285): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s\n
+FloatBitMap_t::LoadFromTGA(2234): Error loading %s\n
 Floating point "Predictor" not supported with %d data format
 Floor - round float down to nearest integer
 Floor Float
 Flow Node ID
-Fly [Toggle: %s]
 Foc:N 
 Foc:Y 
 Focus
@@ -3921,7 +3565,6 @@ GetBlackboardReference R%d <- BR%d (%s)
 GetConst R%d <- C%d (%s)
 GetCursorPos
 GetDomainValue R%d <- DV%d (%s)
-GetDotaGlobalDefaultConstantBuffer
 GetInlineConst R%d <- C%d (%s)
 GetProfile_ultrafast
 GetVar R%d <- V%d (%s)
@@ -3929,7 +3572,6 @@ GetVar R%d <=MOVE*V%d (%s)
 Gf95)1&!\ry9I
 Global
 GlobalHotkeys
-GlobalLightOverride
 GlobalTopLevel
 Goto End
 Goto Start
@@ -3942,14 +3584,10 @@ Grid layout should be an array of arrays
 Group3Options
 Group4Options
 GroupDefaultCollapseState_%s
-HA3J
 HAC K  Unused Binding
 HEADER
 HEXINTEGERLITERAL
 HEX_DIGIT
-HU4J
-Hack Dota Layer Opaque
-Hack Dota Layer Opaque Translucent
 HalftoneHints
 Hammer Surface Properties
 Hammer Texturing
@@ -3961,8 +3599,8 @@ Help - %1
 Help for Dynamic Expressions
 HelpIdPrefix_Default
 HelpIdPrefix_LayeredProperty
-HelperLoadFbmByFileExtension(3061): Error! Unknown file type for %s\n
-HeroViewer
+HelperLoadFbmByFileExtension(3065): Error! Unknown file type for %s\n
+Hex:
 Hide unless error/warning occurs
 Highest
 History
@@ -3971,16 +3609,12 @@ History Settings
 History_%i
 Home
 Horizontal differencing "Predictor" not supported with %d-bit samples
-HorizontalStrafeCamera
 HostComputer
 Hotspot Mode:
 HoverItemChanged
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
-I*4J
 I/O Failure! Could Not Read File.
 IAssetSelectionListener
-IBindTarget
-IBindableCameraScene
 ICC Profile
 ICON
 IHelpChangeListener
@@ -3991,26 +3625,21 @@ IOS_VULKAN
 IOS_VULKAN_4_0
 IOS_VULKAN_4_1
 IOS_VULKAN_5_0
-IPulseReloadListener
 ISGN
 ISO JBIG
 IS_DIRECTX
-IS_EFFECTS_LAYER
 IS_MOBILE
 IS_PC
 IS_SM_
 IS_VULKAN
 IToolFrameListener
 IToolFrameworkAudioSettingsListener
-IToolSceneWindow
-IToolSpecificPopupUI
 IToolsResourceListener
 IVDataResourceListener
 I[?setRgbF@QColor@@QEAAXNNNN@Z
 I\n?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z
 I\r?endsWith@QString@@QEBA_NVQChar@@W4CaseSensitivity@Qt@@@Z
 I\r?hitButton@QCheckBox@@MEBA_NAEBVQPoint@@@Z
-Iexpr
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
 If -1 timer will continue forever
@@ -4037,7 +3666,6 @@ Include Hidden
 Include Inactive
 Incorrect keyframe parameters.
 Incorrect vpk path delimiter for shader %s\n
-IncreaseMoveSpeed
 Indicate Test Failure
 Indicate that a checkpoint has been reached.
 Indicates a test failure if Value is false.
@@ -4097,17 +3725,13 @@ Is In Test Mode
 Is Valid Vector
 Is Valid World Vector
 ItemActivated
-ItemIsolateView
-ItemIsolateVignette
 J%f%f%f%f%f%f%f%f
 JPEG
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
-J\tV_modfd
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 Jump to Instr I%d
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 KT?pixel@QImage@@QEBAIAEBVQPoint@@@Z
-KV3 save transfer failed: %s
 K[?setRgba@QColor@@QEAAXI@Z
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
@@ -4118,7 +3742,6 @@ KeyValues3
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -4143,6 +3766,8 @@ LastChosenShaderName
 LastChosenSurfacePropertiesName
 LastChosenTextureDirectory
 LaunchEngineTool
+Layer %1
+Layer %1 (%2)
 Layer %i
 Layer '%s' could not load referenced material: %s [%s]\n
 Layer property '%s' doesn't end in layer index %i, unsure how to modify
@@ -4166,8 +3791,6 @@ LessEq R%d <- R%d <= R%d
 Lexer encountered %i errors parsing compile targets expression "%s"\n
 Light
 LightSim_DiffuseAlbedoTexture
-Lighting Preview
-LightingControl
 LightmapUV
 LightmapUVW
 Line length mismatch
@@ -4176,10 +3799,8 @@ LinearizationTable
 LoadEXRImageFromMemory failed! Error message: %s\n
 LoadEXRImageFromMemory() failed! Error message: %s\n
 LoadFromInMemoryEXR( %s ) failed.\n
-LoadKV3Object error: %s\n
 LoadKV3ObjectInPlace error: %s\n
 LocalizedCameraModel
-Lock Height [Toggle: %s]
 Log10
 Log2
 Log: ERRORS!
@@ -4189,8 +3810,6 @@ LogL16InitState
 LogLuvDecode24: Not enough data at row %d (short %d pixels)
 LogLuvDecode32: Not enough data at row %d (short %d pixels)
 LogLuvInitState
-LowPrecisionUv
-LowPrecisionUv1
 M?globalPos@QMouseEvent@@QEBA?AVQPoint@@XZ
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
@@ -4207,7 +3826,6 @@ MODES
 MPropertyFlattenIntoParentRow
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
-MSAA Resolve
 MVDataOutlinerLeafNameFn
 MWheelDn
 MWheelLeft
@@ -4247,14 +3865,6 @@ Material Reference
 Material References (*.%s *.vmat)
 Material Saved.
 MaterialEditor
-MaterialEditorPreviewRectangleHeight
-MaterialEditorPreviewRectangleWidth
-MaterialEditorPreviewUMax
-MaterialEditorPreviewUMin
-MaterialEditorPreviewVMax
-MaterialEditorPreviewVMin
-MaterialEditorPreviewYSwingAmount
-MaterialEditorPreviewYSwingPeriod
 MaterialID
 MaterialLayerCount
 MaterialLayerName%i
@@ -4264,7 +3874,6 @@ MaterialLayerReferenceShader_
 MaterialLayerReference_%i
 MaterialLayerType
 MaterialLayers
-MaterialPreviewUseLayerViewportExtents
 Materials (*.vmat)
 MatrixAxisAngle
 MatrixAxisToAxis
@@ -4314,25 +3923,14 @@ Mod Name
 Mod R%d <- R%d %% R%d
 Modified
 Modify ToolTips
+Monitor Observable
 MotionVectorsMaxDistance
 Mouse4
 Mouse4DoubleClick
 Mouse5
 Mouse5DoubleClick
-MouseControlCamera
-MouseControlCamera2D
-MouseControlCamera3D
-MouseControlCamera3D_Toggle
-MouseLook3D
 Move to next material state.
 Move to previous material state.
-MoveCameraBackward3D
-MoveCameraDown3D
-MoveCameraForward3D
-MoveCameraLeft3D
-MoveCameraRight3D
-MoveCameraUp3D
-Movement Speed: %0.*fx   [%s] to reset
 Mul R%d <- R%d * R%d
 Mute Game (In Tools)
 Mute Tools
@@ -4351,7 +3949,6 @@ NULL VP8Io parameter in VP8Decode().
 N\n?averageCharWidth@QFontMetrics@@QEBAHXZ
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 N_U9203
-Name\t\t\t\t\tCount\t\tParticle Count\n
 Natural logarithm (base e)
 Navigate To File
 NavigateToFile
@@ -4380,7 +3977,6 @@ No User-Selectable Variables Available.
 No Variables KV Found.
 No Widget Under Mouse
 No Widget Under Mouse @(%1,%2)
-No bone or attachment named '%s'
 No conversion from KV3 to variant type %d (%s)
 No signal '%s'
 No slot '%s'
@@ -4409,8 +4005,6 @@ Not a TIFF file, bad magic number %d (0x%x)
 Not a TIFF file, bad version number %d (0x%x)
 Not a key frame.
 Not enough
-Not safe to 'new' this class due to alignment requirements
-NotReloading
 Num0
 Num1
 Num2
@@ -4429,11 +4023,11 @@ NumMul
 NumSub
 NumToggle
 NumberOfInks
-O41\f#
 OCTAL_ESC
 OSGN
 O\n?done@QFileDialog@@MEAAXH@Z
 Oa?width@QImage@@QEBAHXZ
+Observable
 Old-style JPEG
 Old-style LZW codes, convert file
 OldSubfileType
@@ -4456,7 +4050,6 @@ OnAutoFillGroupAction
 OnAutoFillTextureResAction
 OnAutoReloadShadersAction
 OnAutoUpdateTimer
-OnBackgroundColorChanged
 OnBrowseMaterialsAsAssets
 OnBrowseMaterialsAsFiles
 OnBrowseShaders
@@ -4528,25 +4121,21 @@ OnGoTo
 OnGotoFirstAction
 OnGotoLastAction
 OnGroupContentsExpanded
-OnHoverChanged
+OnHexChanged
 OnImportGroupVariables
 OnIndexChanged
-OnIndexChangedInternal
 OnInheritFromReference
 OnInterval
 OnLayerNameEditingFinished
 OnLayerShiftNext
 OnLayerShiftPrev
-OnLightingPreviewChanged
 OnLineEditingFinished
-OnLiveRenderingSwapChainChanged
 OnMipAlgorithmChanged
 OnMipSelectIndexChanged
 OnModeChanged
 OnModifyToolTipsAction
 OnMuteGameInToolsChanged
 OnMuteToolsChanged
-OnNodeClicked
 OnOpenFolderInExplorer
 OnOpenRecentFileAction
 OnOpenUsingAssetBrowserAction
@@ -4561,7 +4150,6 @@ OnPasteAction
 OnPasteColor
 OnPasteGroupVariables
 OnPendingColorChangeTimeout
-OnPickBackgroundColor
 OnPicked
 OnPreferredShaderIndexChanged
 OnRadioButton
@@ -4583,6 +4171,7 @@ OnSaveAsAction
 OnSaveIntoReference
 OnSaveToReference
 OnSelectionChanged
+OnSetColorInternal
 OnSetDefault
 OnSettingsAction
 OnShowCompiledTexturesAction
@@ -4620,19 +4209,7 @@ OnTextureInputType
 OnTextureNameEditingFinished
 OnTextureResolutionWarningClicked
 OnTextureSettings
-OnTimerUpdateAutoTonemapValue
-OnToggleFPS
-OnToggleGrid
 OnToggleOrientationAction
-OnToggleShadows
-OnToggleShowBoneNames
-OnToggleSkybox
-OnToggleSmoothCamera
-OnToggleWireframe
-OnTonemapModeButtonPressed
-OnTonemapSliderValueChanged
-OnToolSpecificUIButton
-OnToolsVisModeChanged
 OnTreeHoverChanged
 OnTreeMenuRequested
 OnTreeSelectionChanged
@@ -4660,9 +4237,7 @@ OpenBuildWatch
 OpenMutexA
 OpenVConsole
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
-OptionallyCompressedTangentFram
 Options...
 Or R%d <- R%d || R%d
 Original
@@ -4697,7 +4272,6 @@ PC_SM_5_0
 PC_SM_5_0_VULKAN
 PC_SM_6_0_VULKAN
 PLAT_
-POISONED 
 POSITION
 PROGRAM
 PS_RENDER_STATE
@@ -4710,7 +4284,6 @@ PackBitsDecode: discarding %ld bytes to avoid buffer overrun
 PackedBlobNormal
 PageName
 PageNumber
-PanCamera3D
 PanelID
 Parent Map: %s\n
 ParseEXRHeaderFromMemory failed! Error message: %s\n
@@ -4726,7 +4299,6 @@ Paste Material Attributes
 PasteColor
 Path Not Set.
 Path Overflow, must be less than 260 characters.
-PatternType
 PerVertexLighting
 PerViewConstantBufferVR_t
 PerViewConstantBuffer_t
@@ -4737,25 +4309,20 @@ Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
 Photoshop
 Physics
-Physics Debug Draw
 PhysicsSurfaceProperties
 PhysicsSurfaceProperties%d
 PhysicsSurfaceProperties1
 PhysicsSurfacePropertiesWet
 Pick
-Pick Global Background
 PickCancelled
 PickColor
-PitchCameraDown
-PitchCameraUp
 PivotPaint
 PixarLog
-PlH'
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Policy
 PopupClosed
-PosXyz
+PopupOpened
 Position
 Predictor
 PredictorEncodeTile
@@ -4768,13 +4335,10 @@ Preview
 Preview - %1
 Preview Size: 
 PreviewModel
-PreviewUIMaterialOnModel
 Previous
 Primary
 PrimaryChromaticities
 PrimaryToolBar
-Probable infinite loop detected! Terminating pulse cursor after %d consecutive instructions (%s)
-Probable runaway cursor creation detected! Permanently disabling this graph instance (%s)
 Process Selector
 Program MD5 is out of date with features! %s\n
 Programmer Error! Static combo not loaded!\n
@@ -4786,11 +4350,9 @@ Property For Wet Areas:
 Pull From Global Browser
 PullSelectionFromGlobalBrowser
 Pulse domain which enables particle content to query leaf code to introspect game state.
-Pulse: %s 
 Push To Global Browser
 PushSelectionToGlobalBrowser
 Q?loadFromData@QPixmap@@QEAA_NAEBVQByteArray@@PEBDV?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
-QAbstractButton*
 QAction
 QAction*
 QCheckBox
@@ -4835,14 +4397,12 @@ QVector<double>
 QWheelEvent*
 QWidget
 QWidget*
-Q\tV_powd
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
 Qt5Widgets.dll
-Qt::KeyboardModifiers
-Qt::MouseButton
 QtMetaTypePrivate::QSequentialIterableImpl
 R Sqrt
 R channel not found!\n
+R?metaObject@QRegularExpressionValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QValidator@@UEBAPEBUQMetaObject@@XZ
 R?metric@QImage@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
@@ -4859,19 +4419,17 @@ RGBA\t%1\t%2\t%3\t%4
 RMouse
 RMouseDoubleClick
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
-R\fp0g'
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
+Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 Range Max
 Range Min
 Raw Output
 RawDataUniqueID
-RayTracingEnvironment::RefineNode
-RayTracingEnvironment::RefineNodeJob
 ReSelectOnReturn
 Ready.
 Really delete this widget?<br><br>***THIS MAY CRASH THE PROGRAM***<br>
@@ -4895,9 +4453,7 @@ Registering anonymous field with tag %d (0x%x) failed
 Reinterpret Instance %s R%d <- %s R%d
 Reload Shaders
 Reload shaders. Enables Dynamic Shader Compile.
-ReloadLightRigDefinitions
 ReloadShadersAction
-Reloading
 Reloading...
 Remap Clamped Float
 Remap and clamp input value from input range to output range (float)
@@ -4917,10 +4473,6 @@ RenameColor
 Render All Windows
 Render Attribute Name
 Render Attribute Used
-Render Options
-Render UI material to RT
-Render Wireframe
-RenderDebugOverlays
 ReplaceColor
 RepresentativeTexture
 Requires
@@ -4929,17 +4481,16 @@ Reset To Default
 Reset To Defaults
 Reset To Inherited
 Reset to initial defaults at next restart. Requires restart of the Tool Chain.
-ResetMoveSpeed
 ResetToDefaults
 Resettable
 Resolution Warning - %s
 ResolutionUnit
 ResourceCompiler/TextureCompiler/PublicToolsDefaultMaxRes
-RestartSim
 Restore the image's original size.
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -4953,8 +4504,6 @@ Revert the material to disk contents.
 RevertAction
 RichTIFFIPTC
 Right Mouse (Average)
-RotateAboutTarget3D
-RotateLights
 Round - round float up or down to integer
 Round Float
 Row pixels integer overflow (rowpixels %u)
@@ -5063,14 +4612,8 @@ Save the material under a new name.
 SaveAction
 SaveAllAction
 SaveAsAction
-ScalableAOBias
-ScalableAORadius
-ScalableAOStrength
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
-SceneCameraChanged
-ScenePreview
-SceneSystem
 ScrLk
 ScrToggle
 Seek error at scanline %lu
@@ -5094,8 +4637,6 @@ SetBackStyleSlot
 SetBackgroundEnabledDBG
 SetBlackboardReference BR%d (%s) <- R%d 
 SetColor
-SetColorInternal
-SetCurrentPopupUI
 SetCursorPos
 SetDragEnd
 SetDragStart
@@ -5131,12 +4672,10 @@ Shader Source Change: %s\n
 Shader variable %s is illegal to use in expression. Only artist-editable variables are usable.
 ShaderIDColor
 ShaderSelectionChanged
-ShaderVar_WireframeBackfaces
 Shaders
 Shaders...
 ShadingComplexity
 ShadowScale
-SharedToolCommands
 SharpenMedium
 SharpenSoft
 SharpenStrong
@@ -5145,24 +4684,19 @@ Shift
 Shift this layer to the next slot
 Shift this layer to the previous slot
 Shift+Ctrl+R
-Should have already been loaded via CVDataTypeManager::RegisterExtRefs
-Show Bone Names
 Show Compiled Textures
 Show Core Shaders
 Show Debug Aggregate States
 Show Debug Feature States
 Show Debug Variable States
 Show Dev Shaders
-Show FPS
 Show Full Paths
-Show Grid
 Show Key Bindings
 Show Original Contents
 Show Preferred Shaders
 Show Properties
 Show Raw Output
 Show Shader Attributes
-Show Skybox
 Show material load auto-sanitize fixups as modification.
 Show regardless of user setting
 Show shader variable and sort keys. Used to iterate on shader variable grouping.
@@ -5188,7 +4722,6 @@ Sign Float
 Sign Int
 Signal '%s' not compatible with slot '%s'
 Signature hook to fill out arguments for OnInterval
-SimulateParticles
 Sine of angle. Input in radians, output in radians
 Size Variance: 
 SizePolicy
@@ -5198,8 +4731,6 @@ SkinnedModelModeChanged
 Slider
 Slider2
 SliderValueChanged
-Smooth Camera
-SnapCameraToSelection
 Software
 Space
 Span
@@ -5226,7 +4757,6 @@ Square root
 SrgbGammaToLinear
 SrgbLinearToGamma
 Start a timer with the specified duration, fire the OnInterval output 
-StartSendingCameraTo
 StateCaptureBufferSize
 StateCapturePreviewSize
 StateHistory
@@ -5236,12 +4766,11 @@ StaticComboRule
 StoNits
 Stop Timer
 Stop any active timers - the completed outflow will still fire
-StopSendingCameraTo
+String Length
 Strings Are Equal Case Sensitive
 StripByteCounts
 StripOffsets
 Stylesheet
-Sub Graph
 Sub R%d <- R%d - R%d
 Sub-rect file:
 Sub-rect mapping
@@ -5251,7 +4780,6 @@ Subrect Files (*.rect)
 SubrectDefinition
 SubrectDefinitionUV2
 SubsurfaceProfile
-SupportsActivities
 SupportsMappingDimensions
 Suppress Compilation
 SuppressVNotifyMessages
@@ -5293,6 +4821,7 @@ TIFFVStripSize
 TIFFVTileSize
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T\tV_log2f
 TabName%d
 TabOrder
 TabStyle_t
@@ -5301,10 +4830,8 @@ Tag %d
 Tag Cursor
 Tag Self When Complete
 Tag Value
-TakeRenderDocCapture
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
-TangentU_SignV
 TargetPrinter
 Test Mode Assert True
 TestCheckpoint: %s
@@ -5343,64 +4870,37 @@ TileWidth
 Time since the start of the timer
 Toggle Favorite
 Toggle favorite status.
-ToggleLights
-ToggleLockCameraHeight
-ToggleSettingsPopup
-Tone Mapping
-Too many simultaneously active particle systems!\n
 Too much
 Tool
 ToolAttributes
 ToolBarArea
 ToolFramework
 ToolScene
-ToolSceneDebugOverlays
-ToolSceneTraceResult_t*
-ToolSceneWidget
-ToolSceneWidget%d
 ToolSystem2_001
 ToolTip - "%s" not found.
 ToolTips
-ToolWindowGrid
 Tools  
 Tools audio currently muted
-ToolsEnvironment
-ToolsLightMode
-ToolsUploadImage.vtex
-ToolsVis Modes
-ToolsVisMode: %s
-Tools_ScreenSpace
-Tools_ScreenSpace_Overlay
-Tools_Unlit_Opaque
-Tools_Unlit_OpaqueNOZ
-Tools_Unlit_Overlay0
-Tools_Unlit_Overlay1
-Tools_Unlit_Overlay2
-Tools_Unlit_Overlay3
-Tools_Unlit_PostTranslucent
-Tools_Unlit_Translucent
-Tools_Unlit_TranslucentNOZ
-Tools_Unlit_Wireframe
-Toolscene screen space view
 Track Mouse & Focus
 TransferFunction
 Truncated header.
 TrySendVNotify - SendKV3 failed\n
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QDoubleValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
+U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 U?qt_metacast@QValidator@@UEAAPEAXPEBD@Z
-UIMatRTTexture.vtex
-UITextureOnModel
 UNICODE_ESC
 UV2 World Mapping
 UVSet1FastTextureOp
 UVSet2FastTextureOp
 U\8h(
 U\r?home@QTextBrowser@@UEAAXXZ
+U\tV_logd
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Unable to load shader config: %s\n
 Unable to load tooltips: %s\n
@@ -5423,9 +4923,7 @@ Unknown compression type.
 Unknown data format %d for LogLuv compression
 Unknown encoding %d for LogLuv compression
 Unknown variable name %s.
-UnknownType
 Unlimited
-UnlitPostPass
 Unrecognized VFX UI Type (%d).
 Unrecognized VFX UI Type (%d). Send an e-mail to GraphicsDev.
 Unrecognized action class '%s'
@@ -5433,18 +4931,16 @@ Unrecognized property '%s.%s'
 Unrecognized widget class %s
 Unsupported PSD color mode!\n
 Unsupported VFX UI Type '%s'.
-Unsupported primitive type: %d\n
 Unused {\n
 UnusedVariables
 UpdateActionsAndStatus
 UpdateButtonStatusFromAction
-UpdateDirtySceneObjects
 UpdateEditFromSlider
 UpdateFilterModel
 UpdateMenu
-UpdateNewEffects
 UpdateSliderFromEdit
 Use filtering for image magnification operations.
+UseSlangForDX11
 Used to flag a test as having failed.
 User Attribute
 User Material Attributes
@@ -5459,7 +4955,6 @@ V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VCS3 %s Load Failure: Could not find DATA block\n
 VConsole
-VData:%s
 VFX_COMBO_ALIAS
 VFX_COMBO_DYNAMIC
 VFX_COMBO_STATIC
@@ -5483,7 +4978,6 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
-VRenderingSiblingWidget
 VS_MS_RTX
 VS_RTX
 VTOOLDICTIONARY003
@@ -5513,13 +5007,11 @@ VectorText
 Verbose resource compiles. Used to monitor compilation activity.
 VerboseCompilation
 Version
-VertexColorUVPos_t
 VertexElementAnnotation
 VertexGenericIntegerData
 VertexPaintBlendParams
 VertexPaintBlendParams1
 VertexPaintTintColor
-VerticalStrafeCamera
 Vfx file "%s" has both compute shader and other shaders. Compute shaders must be the only shader type in a vfx file.\n
 VfxComboType_t
 VfxLoadShaderSource(16): Cannot use absolute paths for shader includes. Found %s\n
@@ -5548,25 +5040,22 @@ W?screenAt@QGuiApplication@@SAPEAVQScreen@@AEBVQPoint@@@Z
 W?screens@QGuiApplication@@SA?AV?$QList@PEAVQScreen@@@@XZ
 WARNING: %1 materials depend on this reference file and may be affected:
 WARNING: MET cannot ensure file '%s' is writable - no asset!\n
-WARNING: Pulse failed to restore yielded cursor - error with cell state (%d:%s)\n
-WARNING: Pulse failed to restore yielded cursor - no yielding cell or landing pad (%d:%s)\n
-WARNING: Pulse failed to save yielded cursor - no yielding cell or landing pad (C%d:I%d)\n
 WARNING: VNotify abandoned after too many attempts:\n%s\n
 WDG,r3
 WIDGET DEBUGGER DELETING widget: 0x%p\n
 WW:9999WWW
 Wait Complete
+Wait Until
 WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning: This text ends with whitespace
 When False
 When True
+While active, manage child cursors based on the results of a boolean condition. When the observable result changes, the prior cursor will be canceled and the appropriate outflow will fire a new child cursor. Will monitor continuously until externally canceled.
 WhiteLevel
 WhitePoint
 Widget Debugger
 Widget Properties
-WireframeEffectsBloom
-WireframeTranslucent
 World Height:
 World Height: 
 World Vector To Vector
@@ -5599,7 +5088,6 @@ XResolution
 XYZ, Luv
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-Xy3J
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setDecimals@QDoubleValidator@@QEAAXH@Z
@@ -5618,8 +5106,6 @@ YPosition
 YResolution
 YW?rgb@QColor@@QEBAIXZ
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
-YawCameraLeft
-YawCameraRight
 Yield, Resume=%s
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
@@ -5641,13 +5127,8 @@ ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
 Z\f?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
+Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
-ZoomAllCamerasIn
-ZoomAllCamerasOut
-ZoomCameraIn
-ZoomCameraOut
-ZoomForwardBack2D
-ZoomForwardBack3D
 [ Chunk%d ]
 [ written at chunk start last-read I%d ]
 [ written by I%d last-read I%d ]
@@ -5662,7 +5143,6 @@ ZoomForwardBack3D
 [Default] General information
 [IMMEDIATE_HALT]
 [INVALID]
-[Inactive]
 [NOP]
 [NO_ACTION]
 [NoWidget]
@@ -5721,7 +5201,6 @@ ZoomForwardBack3D
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?cmp@QVariant@@QEBA_NAEBV1@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\f\tV_expd
 \game\
 \materials
 \n     > %s (other texture in this material)
@@ -5745,13 +5224,13 @@ ZoomForwardBack3D
 \n*** A feature in %s doesn't start with "F_"! Aborting shader compile!\n\n
 \n*** A static combo in %s doesn't start with "S_"! Aborting shader compile!\n\n
 \n*** CMaterialEditorTool::InitDynamicShaderCompileDLL(449): ERROR! Can't load %s, dynamic shader compile unavailable\n
-\n*** CVfx::ParseCombosAndRulesFromFileHelper(6493): Error opening file "%s"!\n\n
-\n*** CVfx::ParseDescriptionFromFile(6389): Error opening file "%s"!\n\n
-\n*** CVfx::ParseDevBoolFromFile(6316): Error opening file "%s"!\n\n
-\n*** CVfx::ParseFeaturesFromFile(6003): Error opening file "%s"!\n\n
-\n*** CVfx::ParseIncludeFiles(5962): Error opening include file in features list"%s"!\n\n
-\n*** CVfx::ParseModesFromFile(5812): Error opening file "%s"!\n\n
-\n*** CVfx::ParseVersionFromFile(6350): Error opening file "%s"!\n\n
+\n*** CVfx::ParseBoolFromFile(6414): Error opening file "%s"!\n\n
+\n*** CVfx::ParseCombosAndRulesFromFileHelper(6603): Error opening file "%s"!\n\n
+\n*** CVfx::ParseDescriptionFromFile(6499): Error opening file "%s"!\n\n
+\n*** CVfx::ParseFeaturesFromFile(6100): Error opening file "%s"!\n\n
+\n*** CVfx::ParseIncludeFiles(6059): Error opening include file in features list"%s"!\n\n
+\n*** CVfx::ParseModesFromFile(5909): Error opening file "%s"!\n\n
+\n*** CVfx::ParseVersionFromFile(6460): Error opening file "%s"!\n\n
 \n*** Combo "%s" in %s doesn't match a known combo source!\n\n
 \n*** Combo "%s" in %s either does not follow the 0..N format, is not a valid dynamic combo name, or doesn't match an existing feature or mode argument!\n\n
 \n*** Combo "%s" in %s has arg %s that doesn't match an existing feature!\n\n
@@ -5804,9 +5283,8 @@ ZoomForwardBack3D
 \n*** Unable to parse Version in HEADER section of %s!\n\n
 \n*** Unknown rule "%s" in %s!\n\n
 \n*** Unknown text found in FEATURES section in %s: "%s"\n\n
-\n*** VfxGetCompileTargetsFromVfxFile(1410): Error opening file "%s"!\n\n
-\n*** VfxGetUsedShaderProgramsFromVfxFile(1487): Error opening file "%s"!\n\n
-\n?bits@QImage@@QEAAPEAEXZ
+\n*** VfxGetCompileTargetsFromVfxFile(1451): Error opening file "%s"!\n\n
+\n*** VfxGetUsedShaderProgramsFromVfxFile(1528): Error opening file "%s"!\n\n
 \n?blue@QColor@@QEBAHXZ
 \n?blueF@QColor@@QEBANXZ
 \n?boundingRect@QFontMetrics@@QEBA?AVQRect@@AEBVQString@@@Z
@@ -5945,15 +5423,27 @@ ZoomForwardBack3D
 \tDynamicShaderCompile "1"\n
 \tName = %s [index %i]\n
 \tSystemAttributes\n
+\tT?parent@QWindow@@QEBAPEAV1@XZ
 \tToolAttributes\n
 \tUiGroupName = %s\n
 \tUiName = %s\n
 \tUnusedVariables\n
+\tV_ZSTD_getFrameContentSize
+\tV_acosd
+\tV_asind
+\tV_atan2d
 \tV_cosd
+\tV_exp2f
+\tV_expd
+\tV_strspn
+\tV_strtoui64
+\tV_strupper_fast
+\tV_tand
 \t\f?data@QString@@QEBAPEBVQChar@@XZ
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t"%s" "%s"\n
 \t\tName = %s, Rule = %i, Enabled = %s\n
+\t\tV_atand
 \t\t\t"%s" "%s"\n
 \t\t\t"%s" %i\n
 \t_V_StringAfterPrefixCaseSensitive
@@ -5961,7 +5451,6 @@ ZoomForwardBack3D
 \t_V_strcspn
 \tbool = %i\n
 \tenabled = %s\n
-\tg_flConfigMaxCoord
 \tmin = %i, state = %i\n
 \toptions = %i\n
 \toptions = [\n
@@ -5983,19 +5472,18 @@ ZoomForwardBack3D
 \v?expandingDirections@QBoxLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v?expandingDirections@QGridLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v?expandingDirections@QLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
-\v?find@QWidget@@SAPEAV1@_K@Z
 \v?findData@QComboBox@@QEBAHAEBVQVariant@@HV?$QFlags@W4MatchFlag@Qt@@@@@Z
 \v?findItems@QTableWidget@@QEBA?AV?$QList@PEAVQTableWidgetItem@@@@AEBVQString@@V?$QFlags@W4MatchFlag@Qt@@@@@Z
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \vS?moveTo@QPainterPath@@QEAAXNN@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\v\tV_exp2f
-\vp0g'
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
+^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})
+^#?([0-9A-Fa-f]{8}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{3})$
 ^?text@QClipboard@@QEBA?AVQString@@W4Mode@1@@Z
-^L7B
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 _?texture@QBrush@@QEBA?AVQPixmap@@XZ
@@ -6008,7 +5496,6 @@ _TIFFVGetField
 _TIFFVSetField
 _Variables
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
-_\tV_sind
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __Attribute__
 __CursorQueue__
@@ -6037,7 +5524,6 @@ __feature
 __nElement
 __nRow
 _addons\
-_cells
 _expanded
 _feature
 _not_pickable
@@ -6045,19 +5531,17 @@ _psrs
 _rtx
 _volumeatlas_
 _wjb
-`15J
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`E8J
-`Q5J
+`?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
+a\tV_powd
 acceptedColor
 actions
-active_frame
 align
 allowed_api_features
 allowed_requirements
@@ -6071,24 +5555,18 @@ attributes
 bAccepted
 bChecked
 bCollapsed
-bEnable
 bExpanded
 bInherit
 bR?metaObject@QDoubleValidator@@UEBAPEBUQMetaObject@@XZ
 bValue
+bWasAnObservableComputation
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 background
-backgroundCornerColor0
-backgroundCornerColor1
-backgroundCornerColor2
-backgroundCornerColor3
 backgroundEnabled
 backgroundFill
-backgroundMaterial
 backgroundStyle
 bad partition length
 bentnormal
-bip_head
 black
 blendStateDesc
 blendindices
@@ -6096,7 +5574,6 @@ blendweight
 blendweights
 blue
 bold
-bonename
 bool2
 bool3
 bool4
@@ -6114,7 +5591,6 @@ cannot parse picture header
 cannot parse segment header
 cannot read TIFF_ANY type %d for field "%s"
 cbuffer
-cell_info
 centralWidget
 central_widget
 change
@@ -6130,32 +5606,19 @@ collapseStateChanged
 colorSelected
 colspan
 column
-compiletargetexprLexerNew
-compiletargetexprLexerNewSSD
-compiletargetexprParserNew
-compiletargetexprParserNewSSD
 compressedtangentframe
 compression
 configuration
-connections
-const char *__cdecl Reflection::Internal::GetFuncName<class IMaterialAttributeAnimTag>(void)
-const char *__cdecl Reflection::Internal::GetFuncName<float>(void)
 const char*
 consumestructuredbuffer
 content/
 contentsMargins
-control_storage
 copy
 copy_of_%1(%2).vmat
 copy_of_%1.vmat
 cs_5_0
 cs_6_0
-cube_indices
-cube_verts
 currentColorChanged
-current_value
-cursor_id
-cursors
 curvature
 custom_colors
 d\f?convertToFormat_helper@QImage@@IEBA?AV1@W4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
@@ -6173,7 +5636,6 @@ degrees
 depthStencilStateDesc
 deselected
 dest
-disableVisualEffects
 displayWindow
 dlBNvz!/u{1?cmR^
 doItemsLayout
@@ -6184,7 +5646,6 @@ dot2
 dot3
 dot4
 dqe-KO{/3
-drawShadows
 dummyfilename.tif
 dynamicparams
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -6197,30 +5658,9 @@ end_as_info
 end_group
 environmentmapped
 exclusive
-execution_history
 exp2
 export
 externaldescriptorset
-eye_data_list
-eye_target
-eye_target_bone_index
-eye_target_forward
-eye_target_pos
-eye_target_up
-eyeball_bind_forward
-eyeball_bind_l_forward
-eyeball_bind_l_pos
-eyeball_bind_l_up
-eyeball_bind_pos
-eyeball_bind_r_forward
-eyeball_bind_r_pos
-eyeball_bind_r_up
-eyeball_bind_up
-eyeball_bone_index
-eyeball_bone_l_index
-eyeball_bone_r_index
-eyeball_l
-eyeball_r
 fValue
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
@@ -6243,6 +5683,8 @@ flFloat
 flFrac
 flInputA
 flInputB
+flMaxRadius
+flMinRadius
 flOutputA
 flOutputB
 flPercentage
@@ -6259,7 +5701,6 @@ flVaue
 flWaitInterval
 flWaitIntervalHigh
 flYaw
-flipped_model_ib
 float2
 float3
 float3x3
@@ -6335,7 +5776,6 @@ g_matWorldToView
 g_matvCubeFogSkyWsToOs
 g_nScaleTexCoordUByModelScaleAxis
 g_nScaleTexCoordVByModelScaleAxis
-g_pToolSceneNodeFactory
 g_sTransformTexture
 g_tTransformTexture
 g_vAoProxyDownres
@@ -6368,8 +5808,6 @@ g_vInvCMTDims
 g_vInvGBufferSize
 g_vInvProjRow3
 g_vInvViewportSize
-g_vLayerBlendParams1
-g_vLayerHeightRangeOffset1
 g_vMiddleEyePositionWs
 g_vMorphTextureAtlasSize
 g_vPerViewConstantExtraData0
@@ -6414,8 +5852,6 @@ game:tools/images/common/add_sm_highlight.png
 game:tools/images/common/auto_mute_game.png
 game:tools/images/common/bind_command_list.png
 game:tools/images/common/bind_command_target.png
-game:tools/images/common/bindable_camera_fly_toggle.png
-game:tools/images/common/bindable_camera_lock_height_toggle.png
 game:tools/images/common/check_sm.png
 game:tools/images/common/color_wheel_sm.png
 game:tools/images/common/copy_sm.png
@@ -6438,7 +5874,6 @@ game:tools/images/common/open.png
 game:tools/images/common/redo_med.png
 game:tools/images/common/refresh.png
 game:tools/images/common/remove_sm.png
-game:tools/images/common/renderdoc_button.png
 game:tools/images/common/save.png
 game:tools/images/common/save_all.png
 game:tools/images/common/setting_med.png
@@ -6446,7 +5881,6 @@ game:tools/images/common/setting_med_active.png
 game:tools/images/common/shutdown_sm.png
 game:tools/images/common/tools_muted.png
 game:tools/images/common/tools_shared_menu_button.png
-game:tools/images/common/toolscene_settings_button.png
 game:tools/images/common/undo_med.png
 game:tools/images/common/widgetdebugger_focus.png
 game:tools/images/common/widgetdebugger_none.png
@@ -6481,7 +5915,6 @@ game:tools/images/met/texture_resolution_minor_info.png
 game:tools/images/met/texture_resolution_warning.png
 game:tools/images/propertyeditor/hierarchy_collapsed.png
 game:tools/images/propertyeditor/hierarchy_expanded.png
-game:tools/images/valve_style/arrow_left.png
 game:tools/images/vconsole/appicon.ico
 game:tools/images/vconsole/appicon_dev.ico
 geometry
@@ -6530,6 +5963,7 @@ italic
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 j\v?event@QTextBrowser@@MEAA_NPEAVQEvent@@@Z
 k"?value@QAbstractSlider@@QEBAHXZ
+kDecalMin
 kQ?lineSpacing@QFontMetrics@@QEBAHXZ
 kX?setBlue@QColor@@QEAAXH@Z
 k\v?event@QTextEdit@@MEAA_NPEAVQEvent@@@Z
@@ -6556,10 +5990,10 @@ lowprecisionuv1
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+m_Always
 m_Bindings
 m_Context
 m_InputMacros
-m_Results
 m_Stops
 m_TagValue
 m_allVars
@@ -6571,7 +6005,6 @@ m_attributes
 m_bAllowLayerOverride
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
-m_bChildCursorsShouldInherit
 m_bConditionValue
 m_bDevShader
 m_bDrawLast
@@ -6584,7 +6017,6 @@ m_bIsLayerConstant
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bRemoveWhenOutOfScope
 m_bStaticCB
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
@@ -6606,7 +6038,6 @@ m_flDefault
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flUiStep
-m_hDef
 m_hash
 m_iFeatureIndex
 m_indexAndRegisterOffsetArray
@@ -6619,6 +6050,7 @@ m_intMax
 m_intMin
 m_mipProcessingCommand
 m_modeArray
+m_nBlackboardIndex
 m_nByteCodeDataIdx
 m_nChannelDesc
 m_nChannelInfoIndex
@@ -6627,7 +6059,6 @@ m_nCompareValue
 m_nConstantBufferSize
 m_nContextStateAffectedByVariable
 m_nCurrentWakeIndex
-m_nCursorID
 m_nDescriptorSet
 m_nExtraRuleData
 m_nFirstConstantElement
@@ -6640,14 +6071,10 @@ m_nMinPrecisionBits
 m_nOffs
 m_nRegisterElements
 m_nRegisterOffset
-m_nResult
 m_nSize
-m_nStackDepthWhenAdded
-m_nSubjectID
 m_nTypeSpecificBits
 m_nVariableBinding
 m_nVariableSourceMax
-m_nYieldToken
 m_offs
 m_outputColorSpace
 m_outputTextureFormat
@@ -6687,7 +6114,6 @@ mat_reloadshaders\n
 materials/default/default.%s
 materials/default/default.tga
 materials/default/default_%s.%s
-materials/dev/gray_50.vmat
 materials/dev/tools_2d_generic.vmat
 materials/met_configuration.txt
 materials/tools/fill_vertex_color.vmat
@@ -6710,11 +6136,9 @@ materials/tools/handle_square.vmat
 materials/tools/handle_square_ring.vmat
 materials/tools/handle_square_ring_translucent.vmat
 materials/tools/handle_square_translucent.vmat
-materials/tools/light_probe.vmat
 materials/tools/selection_overlay.vmat
 materials/tools/selection_overlay_nocull.vmat
 materials/tools/show_hitboxes.vmat
-materials/tools/ui_material_preview_on_model.vmat
 materials/tools/vertex_color_solid.vmat
 materials/tools/vertex_color_translucent.vmat
 materials/tools/wireframe_vertex_color.vmat
@@ -6734,6 +6158,8 @@ minimum_encode_quality
 mipAlgorithmName
 mip_algorithm
 mip_filter_strength
+models/editor/axis_helper_thick.vmdl
+models/editor/camera.vmdl
 modes
 monitor_pid
 ms_6_5
@@ -6747,8 +6173,6 @@ nFirst
 nKillPriority
 nMaxElements
 nMode
-nModifiers
-nMouseButton
 nNumerator
 nQuality
 nRow
@@ -6761,10 +6185,8 @@ n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 newColor
 newValue
-next_cursor_id
 no memory during frame initialization.
 nocompress
-node_id
 node_name
 nolod
 nomip
@@ -6775,16 +6197,13 @@ null VP8Io passed to VP8GetHeaders()
 o KPBf
 oY.o<
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
-observable_listeners
-observer_cursors
 offsetDelta
 opqMU
 optionallycompressedtangentframe
 orientation
 originalColor
-p0g'
-p>eQ7
 pAction
 pCheckpointName
 pCurrentFocusWidget
@@ -6792,32 +6211,21 @@ pDescription
 pEvent
 pFilter
 pItem
-pLightRigButton
 pMouseEvent
 pPrevFocusWidget
 pTagName
-pToolButton
-pToolsVisModeButton
-pTraceResult
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWheelEvent
-pWidget
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
-parent
-parent_cursor_id
 paste
 pet_preview_gravity
 pet_preview_underwater
 pickedColor
 pixelAspectRatio
-plane_indices
-plane_verts
 polymorphic_arg
-port_name
 posxyz
-previous_value
 propattr_flatten_into_parent_row
 ps_4_0
 ps_4_1
@@ -6827,29 +6235,18 @@ pseudo-
 psrs
 pszPath
 pulse_node_custom_attributes
-pulse_open_graph_id %u %u
 pulse_runtime_lib
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
 rQ?lineTo@QPainterPath@@QEAAXNN@Z
-r\tV_strspn
-r\vp0g'
 rad2deg
 radians
 random
+random_position
 rasterizerStateDesc
-readbackcolor
 rect
-registers
 remap
-renderDecals
-renderOpaque
-renderSSAO
-renderScalableAO
-requested_cancel
-result_set
-rigIdx
 right
 root
 rotate2d
@@ -6880,20 +6277,12 @@ samplerCUBEARRAY
 samplerstateindex
 saturate
 scanline
-scratchColor
-scratchDepth
-scratchcolor_screenspace
-scratchcolor_ui_material_on_model
-scratchdepth_debugoverlay
-scratchdepth_screenspace
 screenWindowCenter
 screenWindowWidth
 scripts/activity_modifier_weights.txt
 scroll_widget
 selected
 self
-self_handle
-self_with_wearables
 separator
 setMaximum
 setMinimum
@@ -6917,12 +6306,11 @@ smoothstep
 source_column
 source_file_searchpath
 spacing
-sphere_indices
-sphere_verts
 stacked
 stacked_one
 std::pair
 step
+strValue
 stretch
 strip
 strips
@@ -6933,7 +6321,6 @@ struct VS_INPUT
 structuredbuffer
 subsurface profiles
 surfacePropertiesName
-system_state
 t\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@AEBVQMetaMethod@@01W4ConnectionType@Qt@@@Z
 t\t?addFile@QIcon@@QEAAXAEBVQString@@AEBVQSize@@W4Mode@1@W4State@1@@Z
 tabStyle
@@ -6961,24 +6348,16 @@ to fetch tag value
 to read "TransferFunction" tag
 to read TIFF directory
 toggleViewAction
-tonemapping
-toolSpecificUI
 toolbarArea
 toolhud_enable
-tools.light_volume_boundary
-tools.reference_notrace
 tools/colors/shared_colors.txt
 tools/images/pulse_editor/cursor_kill.png
 tools/images/pulse_editor/kill_cursor_with_tag.png
 tools/keybindings/global_key_bindings.txt
-tools/keybindings/shared_tool_key_bindings.txt
 tools/met/met_configuration.txt
 tools/met/met_shaderconfig.kv3
 tools/met/met_tooltips.kv3
-toolsVisModeIndex
 tools_preview
-toolscenevismodes.txt
-transient
 transparency
 t|AO
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
@@ -7012,10 +6391,6 @@ vffValueSetIn
 vfx_dx11
 vfx_vulkan
 vfxc
-vfxexprLexerNew
-vfxexprLexerNewSSD
-vfxexprParserNew
-vfxexprParserNewSSD
 vmat_prefab
 vnotify_ui
 vs_4_0
@@ -7025,7 +6400,6 @@ vs_6_0
 vtex
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-w\tV_strtoui64
 waiting_group
 warn
 white
@@ -7035,15 +6409,13 @@ x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x0Ysqx
 xT?pointSizeF@QFont@@QEBANXZ
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
-x\tV_strupper_fast
 yO?insertText@QTextCursor@@QEAAXAEBVQString@@@Z
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 y\n?dragLeaveEvent@QPlainTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 y\v?eventFilter@QCompleter@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-yield_token
 z>AlignedByteArray not properly aligned\n
+zD(knN
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-z\tV_tand
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 {Y?setFixedPitch@QFont@@QEAAX_N@Z

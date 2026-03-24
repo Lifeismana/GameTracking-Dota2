@@ -1910,6 +1910,7 @@ ArcadeTwist adware
 Arg list too long
 ArtworkPublished
 Ascending
+Assert
 Assert Dialog
 Assert( %s ):%s:%d\n
 Assertion Failed: stack%2d: %s (%d): %s
@@ -3864,7 +3865,6 @@ Individual
 Infinite time value
 Inherit all
 Inhibit Policy Mapping
-Init
 Init Failed
 InitOnceExecuteOnce
 InitVirtualHeap( %d ) called twice (%d)\n
@@ -11040,6 +11040,7 @@ m_strTargetHostName
 m_strTargetPath
 m_strTempFile
 m_strURL
+m_strValue
 m_stringDimensions
 m_symbolDimensions
 m_totalTime

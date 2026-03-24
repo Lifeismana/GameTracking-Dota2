@@ -617,6 +617,7 @@ VGUI_System010
 VGUI_ivgui008
 VGame
 VMPI_GAMEINFO
+VPhysics2_Handle_Interface_001
 VProject
 VR_001
 VS_RTX
@@ -765,6 +766,46 @@ _rtx
 allmodels
 allplatforms
 allprograms
+antlr3BaseRecognizerNew
+antlr3BitsetCopy
+antlr3BitsetList
+antlr3BitsetLoad
+antlr3BitsetNew
+antlr3BitsetOf
+antlr3BitsetSetAPI
+antlr3CommonTokenDebugStreamSourceNew
+antlr3CommonTokenNew
+antlr3CommonTokenStreamNew
+antlr3CommonTokenStreamSourceNew
+antlr3EnumNew
+antlr3ExceptionNew
+antlr3Hash
+antlr3HashTableNew
+antlr3IntStreamNew
+antlr3IntTrieNew
+antlr3LexerNew
+antlr3LexerNewStream
+antlr3ListNew
+antlr3MTExceptionNew
+antlr3NewAsciiStringCopyStream
+antlr3NewAsciiStringInPlaceStream
+antlr3NewUCS2StringInPlaceStream
+antlr3ParserNew
+antlr3ParserNewStream
+antlr3ParserNewStreamDbg
+antlr3RecognitionExceptionNew
+antlr3SetTokenAPI
+antlr3SetVectorApi
+antlr3StackNew
+antlr3StringFactoryNew
+antlr3TokenFactoryNew
+antlr3TokenStreamNew
+antlr3UCS2StringFactoryNew
+antlr3VectorFactoryNew
+antlr3VectorNew
+antlr3dfapredict
+antlr3dfaspecialStateTransition
+antlr3dfaspecialTransition
 bOnlyUseDirectoryName=1 and pDirectoryName=NULL.
 bool4
 build-note: |\n  %s (%s)\n  %s\n
@@ -813,6 +854,7 @@ fileNameLength
 file_index
 file_info_file_relative_path
 filesystem_stdio.dll
+fillBufferExt
 firstrenderstatelement < 0 : i = %d, frse = %d\n
 float2
 float3

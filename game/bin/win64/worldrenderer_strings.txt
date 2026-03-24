@@ -51,6 +51,7 @@
 .?AVCWorldNodeManager@@
 .?AVCWorldRendererMgr@@
 .?AVCWorldSceneObjectRef@@
+.?AVCWorldVPKReference@@
 .?AVIAsyncProcessedDataResult@@
 .?AVIBaseSequence@@
 .?AVIGrassTileSceneObject@@
@@ -64,8 +65,8 @@
 .?AVIWorld@@
 .?AVIWorldReference@@
 .?AVIWorldRendererMgr@@
+.?AVIWorldVPKReference@@
 .vwnod
-0Pf\v
 <<NULL ENTITY LUMP>>
 <no classname>
 <no targetname>
@@ -78,8 +79,11 @@ AllocateAndLoad failed for '%s' (%s)\n
 AllocateAndLoad failed for '%s'\n
 AllocateResource: Cannot find DATA block in resource %s!\n
 AllocateResource: Cannot find VXVS data in resource %s!\n
+Amodellib
+B\vp\n0
 Bad KV3 data for resource '%s': %s\n
 C:\buildworker\source2_dota_rel_2019_win64\build\_build_\worldrenderer\_vpc_worldrenderer\default\win64\_msvc_\Retail\worldrenderer.pdb
+C:\buildworker\source2_dota_rel_2019_win64\build\src\bitmap\floatbitmap.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\entity2\entitykeyvalues.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\worldrenderer\grasstilesceneobject.cpp
 C:\buildworker\source2_dota_rel_2019_win64\build\src\worldrenderer\worldrenderermgr.cpp
@@ -160,6 +164,8 @@ NOT an attr
 No DATA block for resource '%s'\n
 No DATA block for resource\n
 Not safe to 'new' this class due to alignment requirements
+OBJECT_TYPE_HAS_AGGREGATE_RTPROXY
+OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS
 OverlayProjectionDirection
 PackedBlobNormal
 PerVertexLighting
@@ -173,7 +179,6 @@ RESOURCE_TYPE_WORLD_NODE
 RESOURCE_TYPE_WORLD_VIS
 RTProxyGeometry
 RTProxyUniqueAlbedo
-R\vpD
 ResourceCompiler/BakedLighting/Version
 ResourceCompiler/DefaultMapBuilders/bakedlighting
 ResourceCompiler/DefaultMapBuilders/dontrequirebakedlighting
@@ -230,7 +235,6 @@ entity_lump_spew %s %s
 fast
 keyValues3Data
 kv 0x%p AddRef refcount == %d\n
-kv 0x%p Release refcount == %d\n
 lightmaps
 lowprecisionuv
 lowprecisionuv1
@@ -255,10 +259,8 @@ maps\
 materials/grass/grasstile.vmat
 matrix3x4_t
 medium
-modellib
 optionallycompressedtangentframe
 posxyz
-r\fpD
 resourcesystem
 standard
 tangent

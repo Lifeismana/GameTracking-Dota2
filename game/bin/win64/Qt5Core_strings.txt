@@ -9981,7 +9981,6 @@ ActionChanged
 ActionMask
 ActionRemoved
 ActionsContextMenu
-Activate
 Activate by mouseclick
 ActivateControl
 ActivationChange
@@ -10925,7 +10924,6 @@ Desktop
 DesktopLocation
 Destination file exists
 Destination file is the same file.
-Destroy
 Destroy hwnd 
 DevanagariScript
 DevicePaths
@@ -22842,7 +22840,6 @@ news
 news.hu
 newspaper.museum
 newyork.museum
-next
 nextdirect
 nexus
 neyagawa.osaka.jp
@@ -25401,7 +25398,6 @@ tara.saga.jp
 tarama.okinawa.jp
 taranto.it
 tarasa
-target
 targetObject
 targetState
 targetStateChanged
