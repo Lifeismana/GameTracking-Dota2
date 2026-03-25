@@ -84,7 +84,6 @@
 08B0p
 0\rP!4
 2Pp\t
-2\vpP
 8@J0p
 8B0p
 8Fp'
@@ -92,6 +91,7 @@
 =fff?
 ?333?
 ?expf
+@08N
 @20p
 @ht0s
 Adaptive border clusters (%.fs)\n
@@ -188,6 +188,7 @@ OBJECT_TYPE_HAS_AGGREGATE_RTPROXY
 OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS
 Outside detection took %.2f seconds\n
 OverlayProjectionDirection
+P08N
 P20p
 PackedBlobNormal
 PerVertexLighting
@@ -287,6 +288,7 @@ matrix3x4_t
 medium
 oldvis
 optionallycompressedtangentframe
+p08@H^
 p20p
 p6`1
 pb0p

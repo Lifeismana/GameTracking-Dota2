@@ -8693,6 +8693,7 @@ $modelname$_surface
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@08N
 @HPX`hv O
 @HV0]
 @Integer overflow in %s
@@ -11759,6 +11760,7 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
+P08N
 P6 j
 P60I
 P6@o
@@ -14334,6 +14336,7 @@ overrideclass
 overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
+p08@H^
 p<5z
 pEvent != nullptr
 pParentTrack != nullptr

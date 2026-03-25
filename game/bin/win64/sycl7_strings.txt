@@ -416,7 +416,6 @@ $6:8.:.<.>&@`B,6(D<F.H.J(L.N&P.R&T*V|6$(:*.,...0&2`4,(\f\
 14.39
 2Px*
 2\n2\fj
-2\vpP
 2pk$
 40c0
 4\fpc-
@@ -6834,7 +6833,6 @@ queue_destroy
 queue_impl
 queue_profiling
 rKUU
-r\vpP
 read from 
 read_write
 realloc

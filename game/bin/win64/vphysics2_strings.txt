@@ -418,7 +418,6 @@
 0m_flPosition
 0x%08X 
 2\vp!T
-2\vpd
 2_BONE_IK
 4\r54t
 8a\v6;

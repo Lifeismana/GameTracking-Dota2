@@ -14730,6 +14730,7 @@ $prefix_element$
 @%s_lookFrame_0
 @%s_lookFrame_1
 @%s_lookFrame_2
+@08N
 @Integer overflow in %s
 @Invalid
 @\tV_isinfd
@@ -21276,6 +21277,7 @@ Overwrite With Current
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
+P08N
 P604
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
@@ -26756,6 +26758,7 @@ overwrite_existing
 overwrite_existing_flags_only
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
+p08@H^
 p>5K
 p>TK
 pAction

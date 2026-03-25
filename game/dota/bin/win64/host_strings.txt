@@ -98,6 +98,7 @@
 0DO\r
 2\vpDO\r
 ?expf
+@08N
 @60v
 @60y
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!\n
@@ -137,6 +138,7 @@ IND)ind)"
 LightmapUV
 LightmapUVW
 OverlayProjectionDirection
+P08N
 PDO\r
 PackedBlobNormal
 PerVertexLighting
@@ -190,6 +192,7 @@ maps/%s.trm
 maps/%s.vhcg
 medium
 optionallycompressedtangentframe
+p08@H^
 pDO\r
 pF0x
 posxyz

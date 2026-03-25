@@ -4421,6 +4421,7 @@ RMouseDoubleClick
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpt
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 R_T5Y
 Rad2 Deg
@@ -6240,6 +6241,7 @@ q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
 rQ?lineTo@QPainterPath@@QEAAXNN@Z
+r\fpt
 rad2deg
 radians
 random

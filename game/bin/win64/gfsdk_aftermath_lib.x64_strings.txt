@@ -1088,6 +1088,7 @@ $@(2.(0f6(:b@
 =5au
 >global
 @08B
+@08N
 @20z\n
 @HJP~
 @HPV
@@ -3901,6 +3902,7 @@ RT_INTERNAL_FUNC_LABEL
 RT_INTERNAL_FUNC_TYPE
 RUNE
 R\fpt
+R\vpt
 R]Fe
 Radians
 Ran out of stack space trying to match the regular expression.

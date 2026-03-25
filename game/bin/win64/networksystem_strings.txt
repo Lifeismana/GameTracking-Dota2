@@ -259,6 +259,7 @@
 08@J p
 ::Storage_t
 <classname> <fieldname>:  spew why field was excluded from networking for classname.
+@08N
 @6Pz
 @N0d
 @ht0
@@ -670,6 +671,7 @@ Order,'From','To',Bits\n
 OutSeqNumAck
 Overrides IP for multihomed hosts
 P08@J p
+P08N
 P2 p
 P60Q
 P6p~
@@ -1069,6 +1071,7 @@ out-of-order
 outgoing_data_bytespersecond
 outgoing_sequence
 outgoing_sequence_start
+p08@H^
 p2 p
 p\rP\f0!h
 packet_status

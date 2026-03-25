@@ -904,6 +904,7 @@ $hRh
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08N
 @0pp
 @BH]f
 @MfKZ
@@ -2627,6 +2628,7 @@ P-256
 P-384
 P-521
 P08@Jpj
+P08N
 P1\t98"
 P2pj
 P5[1
@@ -5904,6 +5906,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^
 p2pj
 p2{l
 p4Z3

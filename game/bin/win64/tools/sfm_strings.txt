@@ -6502,6 +6502,7 @@ $prefix_element$
 ?waitForFinished@QProcess@@QEAA_NH@Z
 ?waitForReadyRead@QProcess@@UEAA_NH@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
+@08N
 @Integer overflow in %s
 @\n?document@QPlainTextEdit@@QEBAPEAVQTextDocument@@XZ
 @\tV_isinfd
@@ -10501,6 +10502,7 @@ Overwrite With Current
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
 P08@J 
 P08Jp
+P08N
 P4 Operation failed
 P4?u
 P4InteractionDialog
@@ -14767,6 +14769,7 @@ overrideShutterSpeedValue
 ownerelement
 ownerlog
 p"?value@QSpinBox@@QEBAHXZ
+p08@H^
 p0jp]+
 p4?u
 p4win

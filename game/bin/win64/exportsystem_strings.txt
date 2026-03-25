@@ -804,7 +804,6 @@ $prefix_element$
 16-byte data pool
 2(?SetFrame@FbxTime@fbxsdk@@QEAAX_JW4EMode@12@@Z
 2\nP!E
-2\vpd
 4-byte data pool
 4C~CGenericFilter
 5sfm_v8

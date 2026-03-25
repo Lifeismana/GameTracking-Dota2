@@ -153,7 +153,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpd
 2changed( QClipboard::Mode )
 2clicked()
 2currentChanged( int )
