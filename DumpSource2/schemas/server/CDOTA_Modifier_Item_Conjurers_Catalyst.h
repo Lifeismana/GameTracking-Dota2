@@ -7,4 +7,5 @@ class CDOTA_Modifier_Item_Conjurers_Catalyst : public CDOTA_Buff
 	bool has_hands;
 	ParticleIndex_t m_nFXIndex;
 	ParticleIndex_t m_nFXIndexB;
+	bool m_bOverheating;
 };

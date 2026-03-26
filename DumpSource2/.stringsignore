@@ -41391,6 +41391,7 @@ m_bOutside
 m_bOututBehindness
 m_bOututBehindness == false
 m_bOverheadEffectOffset
+m_bOverheating
 m_bOverrideArmor
 m_bOverrideBotLateGame
 m_bOverrideDuration
@@ -47313,6 +47314,7 @@ m_iManaCost
 m_iManaSpent
 m_iManaToRemove
 m_iMapType
+m_iMaxBounces
 m_iMaxCharges
 m_iMaxClip1
 m_iMaxClip2
