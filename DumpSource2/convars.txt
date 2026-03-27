@@ -1789,6 +1789,9 @@ dota_731_teaser_enabled 0 (developmentonly gamedll clientdll replicated cheat)
 dota_ability_amphibian_rhapsody_hear_click_track true (clientdll archive per_user)
 	Whether you hear a click track for the beat.
 
+dota_ability_contribution_assert_minimum 100 (developmentonly gamedll defensive)
+	Minimum threshold for ability contribution delta before triggering asserts.
+
 dota_ability_debug false (gamedll cheat)
 	<no description>
 
@@ -2270,9 +2273,6 @@ dota_bot_debug_pathing false (developmentonly gamedll defensive)
 	<no description>
 
 dota_bot_debug_potential_location 0 (developmentonly gamedll defensive)
-	<no description>
-
-dota_bot_debug_roles false (developmentonly gamedll)
 	<no description>
 
 dota_bot_debug_team 0 (developmentonly gamedll clientdll replicated defensive)

@@ -1179,6 +1179,9 @@ dota_battle_report_show_popup (developmentonly clientdll)
 dota_bot_avg_fps (developmentonly gamedll defensive)
 	Reports the average fps for this dota game
 
+dota_bot_debug_assign_hero_roles (developmentonly gamedll defensive)
+	<no description>
+
 dota_bot_debug_clear (gamedll cheat)
 	Disables all bot debugging.
 

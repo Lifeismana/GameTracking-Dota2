@@ -15,6 +15,7 @@ class CDOTA_TeamCommander
 	float32[4][2] m_LaneFrontCreepsAmounts;
 	float32[4][2] m_LaneFrontTowersAmounts;
 	CountdownTimer m_LaneReassignTimer;
+	CountdownTimer m_LaneMigrationTimer;
 	CUtlVector< int32 > m_AvoidanceGrid;
 	CHandle< CBaseEntity > m_hRoamingUnit;
 	DOTA_LANE m_RoamTargetLane;

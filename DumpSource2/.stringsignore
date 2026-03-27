@@ -4449,6 +4449,7 @@ CDOTA_Ability_Rubick_Hidden1
 CDOTA_Ability_Rubick_Hidden2
 CDOTA_Ability_Rubick_Hidden3
 CDOTA_Ability_Rubick_Hidden4
+CDOTA_Ability_Rubick_Hidden5
 CDOTA_Ability_Rubick_Might_And_Magus
 CDOTA_Ability_Rubick_NullField
 CDOTA_Ability_Rubick_SpellSteal
@@ -12866,6 +12867,7 @@ C_DOTA_Ability_Rubick_Hidden1
 C_DOTA_Ability_Rubick_Hidden2
 C_DOTA_Ability_Rubick_Hidden3
 C_DOTA_Ability_Rubick_Hidden4
+C_DOTA_Ability_Rubick_Hidden5
 C_DOTA_Ability_Rubick_Might_And_Magus
 C_DOTA_Ability_Rubick_NullField
 C_DOTA_Ability_Rubick_SpellSteal
@@ -22099,6 +22101,7 @@ Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value ba
 Minimum slope on which the target will be placed. Slope is a [ 0, 180 ] value of the surface normal rotation from up such that 0 is a horizontal surface (floor), 90 is a vertical surface (wall), 180 is horizontal upside down surface (ceiling).
 Minimum stopping speed when on ground.
 Minimum tablet level to unlock this type of gem, -1 or 0 for always unlocked
+Minimum threshold for ability contribution delta before triggering asserts.
 Minimum time after the mouse enters the minimap before we accept a move command. Used to prevent misclicks.
 Minimum time between ability contributions error log entries
 Minimum time in seconds that must elapse before printing prediction error summary. 0 to disable.
@@ -30431,6 +30434,7 @@ dota_731_teaser_enabled
 dota_aa_test_reduce_playtime_remaining
 dota_ability_amphibian_rhapsody_hear_click_track
 dota_ability_autocast
+dota_ability_contribution_assert_minimum
 dota_ability_debug
 dota_ability_draft_dump_heroes
 dota_ability_draft_force_gamemode_flag
@@ -30594,6 +30598,7 @@ dota_bot_avg_fps
 dota_bot_challenge_submode
 dota_bot_chat_throttle_duration
 dota_bot_client_debug
+dota_bot_debug_assign_hero_roles
 dota_bot_debug_clear
 dota_bot_debug_clear_all
 dota_bot_debug_force_push_tower
@@ -30610,7 +30615,6 @@ dota_bot_debug_path_avg
 dota_bot_debug_path_draw
 dota_bot_debug_pathing
 dota_bot_debug_potential_location
-dota_bot_debug_roles
 dota_bot_debug_team
 dota_bot_debug_team_power
 dota_bot_debug_ward_spots
@@ -38605,6 +38609,7 @@ m_LaneFrontCreepsAmounts
 m_LaneFrontTowersAmounts
 m_LaneFrontUpdate
 m_LaneLengths
+m_LaneMigrationTimer
 m_LaneNodes
 m_LaneReassignTimer
 m_LaneStatusTimer
