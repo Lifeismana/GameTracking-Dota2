@@ -158,10 +158,12 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPXb0
- (08@HR0
- (08@J0
- (0X`hpz0
+ (08@HPX`j 
+ (08@HPXbP
+ (08@HPZ 
+ (08@HRP
+ (08@JP
+ (0X`hpzP
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
  (Negative)
@@ -2702,6 +2704,7 @@ $hRh
 *,vJEd
 *.CMsgSteamLearn_InferenceMetadata_Response"D
 *.CMsgSteamLearn_RegisterDataSource_Request
+*09l
 *0fT
 *1~Pt
 *5\n\rESourceEngine
@@ -23456,7 +23459,9 @@ $hRh
 0123456789
 02V8[
 05=k
-08@J0
+08@HR 
+08@JP
+08B 
 08bX
 09,h
 0;Q5[
@@ -23726,6 +23731,7 @@ $hRh
 2..CDOTAUserMsg_MadstoneAlert.EMadstoneAlertType
 2..CMvpData.MvpDatum.MvpAccolade.MvpAccoladeType
 20.CMsgClientToGCGetBattleReportResponse.EResponse
+209l
 20t\f
 21.CMsgClientToGCDotaLabsFeedbackResponse.EResponse"
 21.CMsgClientToGCUnpackBundleResponse.EUnpackBundle
@@ -23799,9 +23805,6 @@ $hRh
 2I y)
 2J.CMsgClientToGCMonsterHunterDevClaimInvestigationRewardsResponse.EResponse"u\n\tEResponse
 2L.CMsgClientToGCMonsterHunterRequestMaterialsNeededByFriendResponse.EResponse
-2P9l
-2P\rp
-2P{n
 2Tm=#
 2Uiwp"9
 2Zq)
@@ -23911,7 +23914,6 @@ $hRh
 2\r.DOTA_GC_TEAM:
 2\r.ELeaguePhase
 2\rlhp
-2\vpt#
 2^pV
 2_bot
 2_mid
@@ -23924,7 +23926,10 @@ $hRh
 2nIg
 2ndry
 2p"6
+2p9l
+2p\rp
 2prB
+2p{n
 3%3+3/353A3G3[3_3g3k3s3y3
 31tPR
 32:B\n
@@ -24434,6 +24439,7 @@ $hRh
 9r#xV
 : unrecognized parent "%s"\n
 :':+:1:K:Q:[:c:g:m:y:
+:09l
 :4\n\vdescription
 :9\n\tkey_field
 :BAD OBJECT
@@ -24482,7 +24488,6 @@ $hRh
 :eaI
 :gN(dq
 :mIR
-:p7l
 :parsed on tick %d of %d got %d new commands through command number %d [%s]\n
 :w4v
 ;!;#;-;9;E;S;Y;_;q;{;
@@ -24796,6 +24801,7 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
+AA:09l
 AABBDirection
 AACompromise
 ABILITY
@@ -39735,8 +39741,7 @@ P-224
 P-256
 P-384
 P-521
-P08@J0
-P08J`
+P08@JP
 P08N
 P1\t98"
 P5[1
@@ -40674,7 +40679,6 @@ RUNE_STATUS_MISSING
 RUNE_STATUS_UNKNOWN
 RUNE_WATER
 RUNE_XP
-R\fpt#
 R\n\fActivityInfo
 R\r1>Vp
 R\vp!y
@@ -45418,6 +45422,7 @@ XYD%
 X\n summary_description_embed_values
 X\n\rkilling_blows
 X\tQo
+X`hr 
 Xbox VDP is not supported on this platform.
 Xd3h
 XfJ7
@@ -45472,6 +45477,7 @@ Z"T-47\f8
 Z#Pe
 Z+5AS
 Z0000
+Z09l
 Z0zd
 Z7"c
 Z72\v
@@ -46141,6 +46147,7 @@ Z~wl
 \n\fwhat_changed
 \n\fwinner_score
 \n\fwinning_team
+\n\n09l
 \n\nAddGesture
 \n\nAnswerTeam
 \n\nBuffRecord
@@ -47088,8 +47095,6 @@ Z~wl
 \n\vwin_percent
 \n\vzoom_amount
 \ngrant_periodic_action '%s' doesn't specify an action to grant
-\np9l
-\np9v
 \nqYu
 \ntM(ie-V
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
@@ -47296,8 +47301,9 @@ _tools_event_desc
 _turbo
 _xU`u
 _}eOk
+`209l
 `28)fk
-`2P\rp
+`2p\rp
 `:zQF
 `D$daM-l
 `DZG
@@ -53527,7 +53533,7 @@ hoverposeposition
 howl_duration
 hp_cost
 hp_missing_per_extra_illusion_pct
-hpz0
+hpzP
 hr_H
 http request
 http://%s
@@ -62290,13 +62296,12 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^
-p0j0
+p0jP
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
-p6p1
 p@0pqE5tsO?|1
 pAbilityName1
 pAbilityName2
@@ -66148,7 +66153,6 @@ rZ1VwGf5
 rZPM
 r\n\nHuntReward
 r\vDi
-r\vpt#
 rad2deg
 radar_cooldown
 radial_count
@@ -66844,7 +66848,6 @@ round_end
 round_start
 routing
 routing_app_id
-rp>v
 rsa not implemented
 rsa operations not supported
 rsa routines
