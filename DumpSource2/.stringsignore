@@ -40185,6 +40185,7 @@ m_bDisablePushClamp
 m_bDisableShadows
 m_bDisableSharedCooldown
 m_bDisableSolidCollisionsForHierarchy
+m_bDisableStacking
 m_bDisableWearables
 m_bDisableZBuffering
 m_bDisabled

@@ -1866,7 +1866,6 @@ $hRh
 (0.1s interval)
 (0x%08X)'??'
 (1tg
-(4p-t
 (5Me
 (5jP
 (9wg
@@ -23452,7 +23451,7 @@ $hRh
 05=k
 08bX
 09,h
-0:p4l
+0: 5l
 0;Q5[
 0<cz
 0M2~@p
@@ -23683,8 +23682,6 @@ $hRh
 2 .CMsgBattleReport_CompareContext"
 2 .CMsgConnectedPlayers.SendReason
 2 .CMsgGCRoutingInfo.RoutingMethod:
-2 4l
-2 vn
 2!.CMsgAddSocketResponse.EAddSocket"
 2!.CMsgBattleReport_HighlightRarity
 2!.CMsgDevModifyCodexAction.EAction"#\n
@@ -23722,7 +23719,7 @@ $hRh
 2..CDOTAUserMsg_MadstoneAlert.EMadstoneAlertType
 2..CMvpData.MvpDatum.MvpAccolade.MvpAccoladeType
 20.CMsgClientToGCGetBattleReportResponse.EResponse
-20\tp
+205l
 20t\f
 21.CMsgClientToGCDotaLabsFeedbackResponse.EResponse"
 21.CMsgClientToGCUnpackBundleResponse.EUnpackBundle
@@ -23905,7 +23902,6 @@ $hRh
 2\r.DOTA_GC_TEAM:
 2\r.ELeaguePhase
 2\rlhp
-2\vpD
 2^pV
 2_bot
 2_mid
@@ -24430,6 +24426,7 @@ $hRh
 9r#xV
 : unrecognized parent "%s"\n
 :':+:1:K:Q:[:c:g:m:y:
+:05l
 :4\n\vdescription
 :9\n\tkey_field
 :BAD OBJECT
@@ -24653,7 +24650,6 @@ $hRh
 >\n\vcheer_types
 >\n\vdiagnostics
 >\n\vitemdetails
->\npvn
 >\rAverage Kills
 >\rMax Last Hits
 >\rOverall Value
@@ -24669,7 +24665,7 @@ $hRh
 >fN46R^
 >l\rur
 >p00<
->special_bonus_attack_range_325
+>special_bonus_unique_drow_ranger_7
 >yhP
 >ztq
 ???CRR_Response bogus index
@@ -24708,13 +24704,13 @@ $hRh
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
-@08N
+@08ND
 @0pp
 @333?
-@:p5v
 @@CDOTA_Item
 @BH]f
 @BoneSetup
+@HPX`hv0e
 @Invalid attach type specified for particle effect anim event. Trying to spawn effect '%s' on model %s\n
 @MfKZ
 @Pgl
@@ -24742,7 +24738,6 @@ $hRh
 @end_camera
 @fff>fff>fff>fff>
 @fff@
-@htp-t
 @i1V
 @n2w
 @player_start_teleport_destination
@@ -26139,7 +26134,6 @@ B\n\tbuildings
 B\np\t0
 B\vP\n0
 B\vp\n0
-B`2l
 B`4I
 Back compat: Is this entity a player pawn *or* controller?
 BackpackCooldownOverride
@@ -31844,7 +31838,6 @@ Download files with result code %d
 Download has stalled.  (Was at %llu bytes downloaded %.1fs ago, now is at %llu/%llu bytes downloaded)
 Downloaded %llu of %llu bytes.  %.1fs elapsed
 Downloading item
-Dp-t
 Dq;n
 DraftPool
 Drag during mouse down required.
@@ -34644,7 +34637,7 @@ HARDSUPPORT
 HAS_LADDERS
 HB@T\tJ
 HBJ\nTRF
-HBnavspace_create_water_smooth_connections
+HBnavspace_create_water_transition_connections
 HDR Color Scale: %0.3f
 HEAD
 HEAD 
@@ -39735,8 +39728,7 @@ P-224
 P-256
 P-384
 P-521
-P08J0
-P08N
+P08ND
 P1\t98"
 P5[1
 PAGN_4
@@ -40116,6 +40108,7 @@ Persona
 PersonaNameReplacementToken
 Pet NPC Script Override:
 Pet failed to pickup item because there was no attachment name specified.\n
+Pfp1
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEnableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -40232,6 +40225,7 @@ Please specify the filename containing your stats definition.\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
+Pnp2
 Point entity.
 PointToLineDistance
 Policy Qualifier CPS
@@ -40673,7 +40667,6 @@ RUNE_STATUS_MISSING
 RUNE_STATUS_UNKNOWN
 RUNE_WATER
 RUNE_XP
-R\fpD
 R\n\fActivityInfo
 R\r1>Vp
 R\vp!y
@@ -45483,7 +45476,6 @@ ZXF,`i
 Z\n\fPositionPair
 Z\n\fSubChallenge
 Z\n\nmap_values
-Z`2l
 Zd[w
 Ze2Zh@
 Zero Pose Task
@@ -45593,9 +45585,11 @@ Z~wl
 \fKS1
 \fW9c
 \fXu"L
+\f\nPYs
 \f]ne3
 \fdhWTh
 \fiaR
+\fp\vPd
 \ful2
 \fy&3Gl
 \l:ArR
@@ -45804,7 +45798,6 @@ Z~wl
 \n.steammessages_unified_base.steamworkssdk.proto
 \n/CMsgServerToGCCompendiumChosenInGamePredictions
 \n/CMsgServerToGCCompendiumInGamePredictionResults
-\n01l
 \n0CMsgClientToGCMonsterHunterGiftMaterialsResponse
 \n0CMsgClientToGCOverworldDevClearInventoryResponse
 \n0CMsgClientToGCSurvivorsGameTelemetryDataResponse
@@ -45876,7 +45869,6 @@ Z~wl
 \nLeagueID_t"
 \nLeagueID_t"M\n;CMsgServerToGCCloseCompendiumInGamePredictionVotingResponse
 \nLeagueID_t"N\n$CMsgServerToGCGetCheerConfigResponse
-\nP1l
 \nPlayerID_t
 \nPlayerID_t"
 \nSimulating Entities:\n\n
@@ -47090,6 +47082,7 @@ Z~wl
 \n\vwin_percent
 \n\vzoom_amount
 \ngrant_periodic_action '%s' doesn't specify an action to grant
+\np3l
 \nqYu
 \ns0g
 \ntM(ie-V
@@ -47299,7 +47292,6 @@ _xU`u
 _}eOk
 `1lg
 `28)fk
-`6pY
 `9jg
 `:zQF
 `D$daM-l
@@ -47330,6 +47322,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
+aBvD
 aD/x
 aDSS
 aECDH
@@ -62290,12 +62283,13 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p08@H^D
 p2{l
 p4Z3
 p5Z3
 p5\nL,
 p618
+p6@y
 p@0pqE5tsO?|1
 pAbilityName1
 pAbilityName2
@@ -62305,7 +62299,6 @@ pAttachment
 pAttachmentName
 pAttachmentname
 pAttributeName
-pBFACET_COLOR_RED
 pBodyGroupName
 pCheckpointName
 pClassName
@@ -62316,6 +62309,7 @@ pData->GetDataDescMap() == pTemplateDataMap
 pDefault
 pDescription
 pEntity
+pF`5
 pField
 pFilter
 pG_*h
@@ -66134,7 +66128,6 @@ r184
 r3A~
 r<\rND
 r@33
-r@9v
 rAGW
 rB2pBB
 rC3rp
@@ -66149,7 +66142,6 @@ rZ1VwGf5
 rZPM
 r\n\nHuntReward
 r\vDi
-r\vpD
 rad2deg
 radar_cooldown
 radial_count
@@ -68242,6 +68234,7 @@ special_bonus_attack_range_200
 special_bonus_attack_range_250
 special_bonus_attack_range_275
 special_bonus_attack_range_300
+special_bonus_attack_range_325
 special_bonus_attack_range_400
 special_bonus_attack_range_50
 special_bonus_attack_range_60
@@ -68679,7 +68672,6 @@ special_bonus_unique_drow_ranger_1
 special_bonus_unique_drow_ranger_2
 special_bonus_unique_drow_ranger_3
 special_bonus_unique_drow_ranger_6
-special_bonus_unique_drow_ranger_7
 special_bonus_unique_drow_ranger_8
 special_bonus_unique_earth_spirit_2
 special_bonus_unique_earth_spirit_5
@@ -71416,7 +71408,6 @@ zG2m8
 zNear
 zPos
 zRXU 
-z`2l
 zealots
 zero_value
 zfriction

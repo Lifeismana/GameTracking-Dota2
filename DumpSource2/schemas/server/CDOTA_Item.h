@@ -34,6 +34,7 @@ class CDOTA_Item : public CDOTABaseAbility
 	GameTime_t m_flReclaimTime;
 	bool m_bCanBeConsumed;
 	bool m_bCanPutIntoSatchel;
+	bool m_bDisableStacking;
 	bool m_bDisplayOwnership;
 	bool m_bShowOnMinimap;
 	float32 m_flMinimapIconSize;
