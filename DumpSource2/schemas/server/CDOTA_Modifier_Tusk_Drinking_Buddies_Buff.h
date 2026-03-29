@@ -2,4 +2,5 @@ class CDOTA_Modifier_Tusk_Drinking_Buddies_Buff : public CDOTA_Buff
 {
 	int32 movespeed_bonus;
 	int32 armor_bonus;
+	ParticleIndex_t m_nFXIndex;
 };
