@@ -14619,7 +14619,6 @@ Start tag expected.
 StartDocument
 StartElement
 Starting
-State
 StateMachineSignal
 StateMachineWrapped
 Status

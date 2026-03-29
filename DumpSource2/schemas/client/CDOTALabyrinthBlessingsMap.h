@@ -24,7 +24,7 @@
 //}
 // MVDataRoot
 // MVDataSingleton
-// MVDataPreviewWidget (UNKNOWN FOR PARSER)
+// MVDataPreviewWidget = "blessing_graph"
 // MCustomFGDMetadata = "{ promote_children=[ { key="_editor" mode="ARRAY_OF_MULTIPLE" class="blessing_editor_guide" promotion_mode="VDATA_PROMOTE_AS_CHILD_NODE" }, ] }"
 class CDOTALabyrinthBlessingsMap
 {
@@ -41,10 +41,10 @@ class CDOTALabyrinthBlessingsMap
 	CUtlString m_UnlockLegacyHeroBlessingType;
 	CUtlVector< CUtlString > m_vecLegacyHeroNames;
 	int32 m_nNumStartingLegacyHeroesUnlocked;
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 0
 	CUtlDict< BlessingType_t > m_mapBlessingTypes;
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 0
 	CUtlDict< Blessing_t > m_mapBlessings;
-	// MVDataPromoteField (UNKNOWN FOR PARSER)
+	// MVDataPromoteField = 0
 	CUtlVector< BlessingPath_t > m_vecPaths;
 };

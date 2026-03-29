@@ -21306,7 +21306,6 @@ col_fixed_blend_val
 col_pose_param_name
 col_weight_list
 collapsed
-collection
 collision_algorithm
 collision_enabled
 collision_group_override
@@ -21502,7 +21501,6 @@ currentColumn
 currentRow
 currentState
 current_value
-cursor pack
 cursor_id
 cursor_output_dir
 cursors
@@ -21514,11 +21512,9 @@ curve_%s_to_curve_%s
 curveinfo
 curvetypes
 custom
-custom game
 custom_colors
 custom_editor_widget
 custom_wearable.%s.%s
-customwearable
 cut_max
 cut_min
 cuxG
@@ -22813,7 +22809,6 @@ http request
 http://%1.steamcommunity.com/sharedfiles/filedetails/?id=%2
 http://%s.steamcommunity.com/sharedfiles/filedetails/?id=%llu
 https proxy request
-hudskin
 hullIvr-0.obj
 hullIvr-1.obj
 hullIvr-2.obj
@@ -23686,7 +23681,6 @@ list cannot be null
 list error
 loading cert dir
 loading defaults
-loadingscreen
 loadingscreens/%s/loadingscreen.vtex
 loadout_slot
 loc_key
@@ -27173,7 +27167,6 @@ wave_length
 wave_offset
 wci.
 we?0
-wearable
 weight$0
 weight_list_name
 weight_threshold

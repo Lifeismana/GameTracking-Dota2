@@ -43803,7 +43803,6 @@ StatID
 StatName
 StatTracker
 StatValue
-State
 State = %d
 State: %s
 State=%s
@@ -48731,7 +48730,6 @@ blendindices
 blendweight
 blendweights
 blessing
-blessing_graph
 blessings
 blinded
 blink_dagger_purchases
@@ -56180,7 +56178,6 @@ load from entity lump for %s
 load from save file for %s
 loading cert dir
 loading defaults
-loadingscreen
 loadout_default_offset
 loadout_scale
 loadtime
@@ -71096,7 +71093,6 @@ weapon_shotgun
 weapon_smg1
 weapon_stunstick
 weaponclassname
-wearable
 wearable_item
 wearable_item.ventr
 wearable_item_server

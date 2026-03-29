@@ -22830,7 +22830,6 @@ Start a timer with the specified duration, fire the OnInterval output
 Start frame :: %d > End frame :: %d, will result in an empty animation
 StartDebugging
 StartSendingCameraTo
-State
 State Completed
 State Completed Conditions are only allowed to be connected to a single transition
 State Events
@@ -28010,7 +28009,6 @@ water_wake
 wave_amplitude
 wave_length
 wave_offset
-wearable
 weight0
 weightListEditorShowValues
 weight_0

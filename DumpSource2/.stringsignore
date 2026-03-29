@@ -15194,6 +15194,7 @@ Compress the dynamic range of a signal when it is louder than some threshold.
 Compress the dynamic range of both ends of a signal.
 Compression Ratio
 Compression Threshold(dB)
+Compute
 Compute LOD mask internally like since 2016, i.e. force all LOD groups' bones to compute
 Compute a dot or cross product between two 3D vectors
 Compute the distance between two 3D points
@@ -18419,6 +18420,7 @@ EntryOverrideTree
 Enum
 Enum Parameter
 EnumParameter
+Enumerator Types
 Envelope
 Envelope (Relative to Tone Envelope)
 Envelope Analyzer
@@ -21796,6 +21798,7 @@ Makes ropes use average of cubemap lighting instead of max intensity.
 Makes the debug overlay dashboard visible.
 Makes the tutorial end
 ManifestTestResource_t
+Manipulators
 Manual Direction
 Manual Position
 Manual Snapshot Index
@@ -26125,6 +26128,7 @@ Starts the specified arrangement.
 Starts timedemo on given tick.
 Starts/stops a timespan with an ever increasing name.
 StartupBehavior_t
+State
 State Machine
 State Status Condition
 StateActionBehavior
@@ -28643,6 +28647,7 @@ blend
 blend over this many frames
 blend sequence animation frames
 blendtobackground
+blessing_graph
 blind
 blind_debuff_duration
 blind_duration
@@ -29728,6 +29733,7 @@ cold_duration
 cold_slow_melee
 cold_slow_ranged
 collect_entity_model_name
+collection
 collide with water
 collision group
 collision mode
@@ -30027,11 +30033,13 @@ curse_interval
 curse_slow
 cursed_damage
 cursed_damage_pct
+cursor pack
 cursor_pack
 curve_ball
 curve_hook
 curve_hook_debug
 curve_hook_turn_rate
+custom game
 custom game addon name if any; references event_games.txt
 custom_game_detail_max_friend_lobbies
 custom_game_lobby_fake_entries
@@ -30049,6 +30057,7 @@ customgamesetup_set_auto_launch_delay
 customgamesetup_set_remaining_time
 customgamesetup_shuffle_players
 customgamesetup_test_parties
+customwearable
 cutoff radius
 cvarlist
 cycle to the next multiunit page
@@ -34628,6 +34637,7 @@ hud_river_vial_ui_expanded
 hud_skin
 hud_sticky_item_name
 hud_toggle_visibility
+hudskin
 hudtextparms_t
 hue adjust
 hull_radius
@@ -37902,6 +37912,7 @@ load
 load_files_as_key_values
 load_master_item_schema
 loading_screen
+loadingscreen
 loadout_test_activity_modifiers
 local gravity buoyancy scale
 local gravity scale
@@ -39444,6 +39455,7 @@ m_VariableComparison
 m_VariableName
 m_VariableNames
 m_VariableValue
+m_VariableValue.m_TargetName
 m_VariableValues
 m_Variables
 m_Vars
@@ -56499,6 +56511,7 @@ shared_barrier_replenish_amount
 shared_healing_percent
 sheep_movement_speed
 sheet animation time scale
+sheet_file_preview
 shield
 shield_amount
 shield_pct_absorb
@@ -56668,6 +56681,7 @@ slow_resistance_per_threshold
 slow_resistance_per_upgrade
 slow_steps
 smaller_shield
+smart_prop
 smartprop_choice_options
 smash_damage
 smash_distance_from_hero
@@ -58491,6 +58505,7 @@ weapon2
 weapon2_persona_1
 weapon_persona_1
 weapon_switch
+wearable
 weather
 web
 weight
