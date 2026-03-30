@@ -158,8 +158,6 @@
  %s%lu (%s0x%lx)\n
  ' ) - 3 G M Q _ c e i w } 
  (%ld unused bits)\n
- (08@HPX`j`
- (08@HPZ`
  (Dirty Animation)
  (INVALID PSS PARAMETERS)\n
  (Negative)
@@ -1867,29 +1865,24 @@ $hRh
 (0'yX
 (0.1s interval)
 (0x%08X)'??'
+(1vf
+(5Cg
 (5Me
 (5jP
-(9Sg
-(9wf
+(9Pg
 (ACTIVE)
 (BZq
 (D4D
 (DOTA_INVALID_ORDERS nReason) Return the error string of a failed order.
 (Deprecated: use GetNumConnectedHumanPlayers) Players on a valid team (radiant, dire, or custom*) who haven't abandoned the game
-(E6g
-(E7g
 (HSCRIPT hTarget) Determine whether an issued command on a target is valid.
 (HSCRIPT hTarget) Return the error string of a failed command on a target.
 (HSCRIPT hTarget, Vector vLocation) Projectile has collided with a given target or reached its destination (target is invalid).
 (HSCRIPT hTarget, Vector vLocation, int nHandle) Projectile has collided with a given target or reached its destination (target is invalid).
 (HSCRIPT hTarget, Vector vLocation, table kv) Projectile has collided with a given target or reached its destination (target is invalid).
 (Has breakpieces or commands)
-(IXg
-(Iag
-(Ixf
-(Izf
-(M0g
-(MEg
+(Icg
+(Idg
 (NAV IGNORED)
 (NAV_IGNORED)
 (NONE)
@@ -1897,11 +1890,11 @@ $hRh
 (Output drawable)
 (Preview/Unreleased) Gets the player's custom game account record, as it looked at the start of this session
 (Preview/Unreleased) Sets a callback to handle saving custom game account records (callback is passed a Player ID and should return a flat simple table)
-(Qvf
+(Q8g
 (SERVER) Inventory for account (%d):\n
 (Server) 
 (U1h
-(UCg
+(UFg
 (Unknown error)
 (Vector vLocation) Determine whether an issued command on a location is valid.
 (Vector vLocation) Projectile is actively moving.
@@ -1909,7 +1902,8 @@ $hRh
 (Vector vLocation, table kv ) Projectile is actively moving.
 (Vector vOrigin, float flRadius )
 (WIPE AND EXTRACT)
-(YPg
+(YZg
+(Yag
 (ZdOt\n&
 (\f"#\n!CDOTABroadcastMsg_LANLobbyRequest"
 (\f";\n%CDOTAUserMsg_CustomHudElement_Destroy
@@ -2508,12 +2502,15 @@ $hRh
 (\v2\v.CMsgVector"l\n
 (\v2\v.CMsgVector"o\n)CDOTAUserMsg_UpdateLinearProjectileCPData
 (\v2\v.CMsgVector*
+(aXg
+(awf
 (b IncludePregameTime b IncludeNegativeTime) Returns the actual DOTA in-game clock time.
 (bSafeToLeave) - Mark this game as safe to leave.
 (bool RemovePositiveBuffs, bool RemoveDebuffs, bool BuffsCreatedThisFrameOnly, bool RemoveStuns, bool RemoveExceptions)
 (bool bInterrupted) Channel finished.
 (d4t8
 (default)
+(eWg
 (fS{ggRcjh
 (flMinimapCreepIconScale) - Scale the creep icons on the minimap.
 (flMinimapHeroIconScale) - Scale the hero minimap icons on the minimap.
@@ -2525,8 +2522,7 @@ $hRh
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
 (h`H1pqA
 (i/Al
-(icg
-(idg
+(i6g
 (index, bDestroyImmediately, bStatusEffect, priority, bHeroEffect, bOverheadEffect
 (int iIndex, int iPoint, Vector vecPosition)
 (int index, bool bDestroyImmediately) - Destroy a particle, if bDestroyImmediately destroy it without playing end caps.
@@ -2536,6 +2532,8 @@ $hRh
 (int nProjectileHandle) Projectile is actively moving.
 (int targets [0=all, 1=enemy, 2=ally], bool bNow, bool bPermanent, bool bDeath)
 (jvg;
+(mPg
+(mvf
 (nMusicStatus, flIntensity) - Set the music status for this player, note this will only really apply if dota_music_battle_enable is off.
 (nPlayerID)
 (nPlayerID, eEvent, nActionID)
@@ -2547,10 +2545,9 @@ $hRh
 (playerID, heroClassName, gold, XP) - replaces the player's hero with a new one of the specified class, gold and XP
 (playerID, heroClassName, gold, XP) - replaces the player's hero with a new one of the specified class, gold and XP, without transferring items/abilities if same hero
 (position, radius, checkFullTreeRadius?) Checks whether there are any trees overlapping the given point
-(q8g
+(qCg
 (quaternion,quaternion,float) very basic interpolation of v0 to v1 over t on [0,1]
 (quaternion,vector,float) rotates a quaternion by the specified angle around the specified vector axis
-(uFg
 (update disabled)
 (vQF
 (vector,float) constructs a quaternion representing a rotation by angle around the specified vector axis
@@ -2558,8 +2555,8 @@ $hRh
 (vector,vector,float) lerp between two vectors by a float factor returning new vector
 (vector,vector,float) very basic interpolation of v0 to v1 over t on [0,1]
 (wMww
-(yZg
-(yag
+(y5g
+(y9g
 )!)#)?)G)])e)i)o)u)
 ).CMsgSteamLearn_InferenceMetadata_Request
 )Ck?B
@@ -23451,8 +23448,6 @@ $hRh
 0123456789
 02V8[
 05=k
-08@HR`
-08B`
 08bX
 09,h
 0;Q5[
@@ -23560,6 +23555,7 @@ $hRh
 0e\r8
 0pp@5tqE?|sO541
 0tU+xc:
+0v4%
 0x%s
 0}dV
 1!1'1-191C1E1K1]1a1g1m1s1
@@ -23721,7 +23717,6 @@ $hRh
 2-.CMsgInGamePrediction.ERandomSelectionGroup_t
 2..CDOTAUserMsg_MadstoneAlert.EMadstoneAlertType
 2..CMvpData.MvpDatum.MvpAccolade.MvpAccoladeType
-20!p
 20.CMsgClientToGCGetBattleReportResponse.EResponse
 20t\f
 21.CMsgClientToGCDotaLabsFeedbackResponse.EResponse"
@@ -23796,6 +23791,7 @@ $hRh
 2I y)
 2J.CMsgClientToGCMonsterHunterDevClaimInvestigationRewardsResponse.EResponse"u\n\tEResponse
 2L.CMsgClientToGCMonsterHunterRequestMaterialsNeededByFriendResponse.EResponse
+2P-u
 2Tm=#
 2Uiwp"9
 2Zq)
@@ -23905,6 +23901,7 @@ $hRh
 2\r.DOTA_GC_TEAM:
 2\r.ELeaguePhase
 2\rlhp
+2\vpl
 2^pV
 2_bot
 2_mid
@@ -23917,7 +23914,6 @@ $hRh
 2nIg
 2ndry
 2p"6
-2p;l
 2prB
 3%3+3/353A3G3[3_3g3k3s3y3
 31tPR
@@ -24302,20 +24298,21 @@ $hRh
 7sAP'
 7wKR
 7zRQ
-8!Kg
+8!Mg
+8)Jg
 8+Qw
+8-9g
 80F2<
+813g
 82\n:XPH
 851Pe
 8<pl
 8= zp
+8=Lg
 8A6j
-8AMg
 8DemoFile
 8GZS
-8IJg
-8M9g
-8Q3g
+8I:g
 8SIffK5W
 8TZvrv<
 8\n0series_current_selection_priority_used_coin_toss
@@ -24367,13 +24364,11 @@ $hRh
 8\n\rneutral_items
 8\n\rready_members
 8\n\rsubscribe_msg
-8\r1g
 8\v8!83858A8G8K8S8W8_8e8o8q8}8
-8]Lg
 8]Vc2
 8ca1
 8dS2
-8i:g
+8mJg
 8pe7?
 8q-S*]X
 8sOy
@@ -24707,11 +24702,13 @@ $hRh
 ?uWS
 ?x29
 @!@%@+@1@?@C@E@]@a@g@m@
+@08N4%
 @0pp
 @333?
 @@CDOTA_Item
 @BH]f
 @BoneSetup
+@HPX`hv n
 @Invalid attach type specified for particle effect anim event. Trying to spawn effect '%s' on model %s\n
 @MfKZ
 @Pgl
@@ -24790,7 +24787,6 @@ A<fP
 A>x8
 A@d0I
 AA Compromise
-AA:p;l
 AABBDirection
 AACompromise
 ABILITY
@@ -29905,7 +29901,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<class CEntityIndex,int,class CDefLess<class
 CUtlRBTree<struct CUtlOrderedMapBase<class CGlobalSymbol,int,class CDefLess<class CGlobalSymbol>,int>::Node_t,class CUtlOrderedMapBase<class CGlobalSymbol,int,class CDefLess<class CGlobalSymbol>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CGlobalSymbol,int,class CDefLess<class CGlobalSymbol>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,bool,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class CBaseEntity>,bool,class CDefLess<class CHandle<class CBaseEntity> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,bool,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,class CDOTAHeroPositions *,class CDefLess<class CHandle<class CBaseEntity> >,unsigned short>::Node_t,class CUtlOrderedMapBase<class CHandle<class CBaseEntity>,class CDOTAHeroPositions *,class CDefLess<class CHandle<class CBaseEntity> >,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,class CDOTAHeroPositions *,class CDefLess<class CHandle<class CBaseEntity> >,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,float,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class CBaseEntity>,float,class CDefLess<class CHandle<class CBaseEntity> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,float,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,int,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class CBaseEntity>,int,class CDefLess<class CHandle<class CBaseEntity> >,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class CBaseEntity>,int,class CDefLess<class CHandle<class CBaseEntity> >,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CKV3MemberName,class CUtlString,class CLessFunc<&private: static bool __cdecl CEntitySystem::EntityKeyIdLessFunc(class CKV3MemberName const &,class CKV3MemberName const &)>,int>::Node_t,class CUtlOrderedMapBase<class CKV3MemberName,class CUtlString,class CLessFunc<&private: static bool __cdecl CEntitySystem::EntityKeyIdLessFunc(class CKV3MemberName const &,class CKV3MemberName const &)>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CKV3MemberName,class CUtlString,class CLessFunc<&private: static bool __cdecl CEntitySystem::EntityKeyIdLessFunc(class CKV3MemberName const &,class CKV3MemberName const &)>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class BingoExclusiveStatGroupID_t,class CDefLess<class CUtlString>,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class BingoExclusiveStatGroupID_t,class CDefLess<class CUtlString>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class BingoExclusiveStatGroupID_t,class CDefLess<class CUtlString>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlString,class CCraftworksDefinition *,class CDefLess<class CUtlString>,int>::Node_t,class CUtlOrderedMapBase<class CUtlString,class CCraftworksDefinition *,class CDefLess<class CUtlString>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlString,class CCraftworksDefinition *,class CDefLess<class CUtlString>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
@@ -39730,7 +39726,7 @@ P-224
 P-256
 P-384
 P-521
-P08N$#
+P08N4%
 P1\t98"
 P5[1
 PAGN_4
@@ -40110,7 +40106,6 @@ Persona
 PersonaNameReplacementToken
 Pet NPC Script Override:
 Pet failed to pickup item because there was no attachment name specified.\n
-PfP8
 PhysDisableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEnableEntityCollisions called on entities in two different scene worlds (%s - %u vs %s - %u)\n
 PhysEntityCollisionsAreDisabled called on entities in two different scene worlds (%s - %u vs %s - %u)\n
@@ -40227,7 +40222,7 @@ Please specify the filename containing your stats definition.\n
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-PnP9
+Pn4%
 Point entity.
 PointToLineDistance
 Policy Qualifier CPS
@@ -40477,7 +40472,6 @@ QuitServer() executing "quit"\n
 Q{qk
 R Sqrt
 R/Qs
-R0!p
 R2I_CERTPOL
 R2I_PCI
 R=1C&b
@@ -40673,6 +40667,7 @@ RUNE_XP
 R\n\fActivityInfo
 R\r1>Vp
 R\vp!y
+R\vpl
 R]Di
 Rad2 Deg
 Radiant
@@ -45412,7 +45407,6 @@ XYD%
 X\n summary_description_embed_values
 X\n\rkilling_blows
 X\tQo
-X`hr`
 Xbox VDP is not supported on this platform.
 Xd3h
 XfJ7
@@ -45488,7 +45482,6 @@ ZjLS
 Zod6
 Zone1Distance
 Zone2Distance
-Zp;l
 Zpwz
 Z~wl
 [ (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f) ]
@@ -45592,7 +45585,7 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\vPD
+\fp\vPT
 \ful2
 \fy&3Gl
 \l:ArR
@@ -47292,21 +47285,21 @@ _turbo
 _xU`u
 _}eOk
 `28)fk
-`2p;l
+`5gg
 `:zQF
 `D$daM-l
 `DZG
 `H(hqA1p
 `ITS
-`Mpg
-`Ugg
+`Mgg
 `VX:H
 `\n\rvector_values
 `fPw.\vM
 `h9T~
 `htP
-`mgg
+`i4g
 `o_je
+`ugg
 `yNT
 a null shared library handle was used
 a trigger_changelevel doesn't have a map
@@ -47324,7 +47317,7 @@ a:typeparam
 a;Tg
 a@XZ
 aA0k
-aBv$#
+aBv4%
 aD/x
 aDSS
 aECDH
@@ -48611,6 +48604,7 @@ baseitem
 baselayer
 basemodelentity
 baseplayerpawn
+bash_index
 bash_radius
 basher_tested
 basic
@@ -49242,8 +49236,6 @@ cart
 cascadecrossfade
 cascadedistancefade
 cascaderenderstaticobj
-cascading_bash_cooldown
-cascading_bashes_nether_strike_additional_cooldown
 caseIgnoreIA5StringSyntax
 cask
 cast5-cbc
@@ -53045,16 +53037,15 @@ gyroshell
 g{syW*
 g|FeW\v
 g|MT
-h!pg
 h&eC
-h)ug
 h*Ax
+h-Ug
+h-kg
 h0XB
-h1xg
 h2Wl
 h2n_\
 h5N.
-h5ig
+h9}g
 hActivator
 hAggroTarget
 hAttackTarget
@@ -53087,8 +53078,6 @@ hInflictor
 hInfo
 hItem
 hJxRX@_
-hMUg
-hMkg
 hModel
 hModifierTable
 hN2D
@@ -53118,10 +53107,11 @@ hW*m
 hW1M
 hW_z
 hX@e
-hY}g
 h\n"unlocked_chat_wheel_message_ranges
 h\n"unlocked_ping_wheel_message_ranges
 h\n\vHeroAbility
+h\tug
+h]1g
 h`Zr
 haha
 hairball
@@ -53529,6 +53519,7 @@ http://localhost%s
 https proxy request
 https://api.steampowered.com/I%sService/%s/v%u
 https://cdn.beta.steampowered.com/apps/dota2/images/crownfall/comic_part1/english
+hu0g
 hud_ping
 hud_timer_show_tutorial_timer
 hull
@@ -53548,8 +53539,8 @@ huskar_life_break
 hvL&
 hype_loc
 hypnotized
+hyqg
 h|gg
-h}1g
 i <= EVP_MAX_MD_SIZE
 i%YR
 i%|kB
@@ -54812,7 +54803,6 @@ item_enhancement_feverish
 item_enhancement_fierce
 item_enhancement_fleetfooted
 item_enhancement_frenzied
-item_enhancement_giant
 item_enhancement_greedy
 item_enhancement_hulking
 item_enhancement_keen_eyed
@@ -57403,7 +57393,6 @@ modifier_arc_warden_tempest_double
 modifier_arc_warden_tempest_double_debuff
 modifier_arcane_boots_mana_regen
 modifier_ardm_newhero
-modifier_arjun_chariot_mounted
 modifier_armor_per_barracks
 modifier_ascension_acid_blood
 modifier_ascension_acid_blood_thinker
@@ -61328,6 +61317,7 @@ no_plus
 no_ramp
 no_range
 no_save
+no_splash
 no_teleport_at_end
 no_victor
 noclip OFF\n
@@ -62281,6 +62271,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
+p08@H^4%
 p2{l
 p4Z3
 p5Z3
@@ -62305,6 +62296,7 @@ pData->GetDataDescMap() == pTemplateDataMap
 pDefault
 pDescription
 pEntity
+pFP>
 pField
 pFilter
 pG_*h
@@ -65572,6 +65564,7 @@ plus_high_five
 plus_original_start_date
 plus_player_guild_banner
 plus_prediction_streak
+pn4%
 point
 point arithmetic failure
 point at infinity

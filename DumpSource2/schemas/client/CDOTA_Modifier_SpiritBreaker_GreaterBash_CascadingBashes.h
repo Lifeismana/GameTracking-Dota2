@@ -5,4 +5,5 @@ class CDOTA_Modifier_SpiritBreaker_GreaterBash_CascadingBashes : public CDOTA_Bu
 	float32 cascading_bashes_hero_hitbox;
 	float32 cascading_bashes_creep_hitbox;
 	float32 cascading_bashes_creep_penalty;
+	int32 m_nBashIndex;
 };

@@ -56,4 +56,5 @@ class CDOTA_AttackRecord
 	DOTAProjectileAttachment_t m_iCustomProjectileAttachment;
 	KeyValues3 m_kvExtraData;
 	float32 m_flActualDamageDealtResult;
+	bool m_bTrackedRecord;
 };

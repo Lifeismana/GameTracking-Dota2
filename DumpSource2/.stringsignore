@@ -41342,6 +41342,7 @@ m_bNoRange
 m_bNoSave
 m_bNoShootingWhileInAir
 m_bNoSky
+m_bNoSplash
 m_bNoTouch
 m_bNoiseImgPreviewLive
 m_bNonUniformScaling
@@ -41846,7 +41847,6 @@ m_bSetupWarning
 m_bShadowAlphaOverride
 m_bShadows
 m_bShard
-m_bShardAttack
 m_bShardUpgraded
 m_bSharedVert
 m_bSharedWithTeammates
@@ -42145,6 +42145,7 @@ m_bTraceAway
 m_bTraceAway == false
 m_bTraceToClosestSurface
 m_bTrackDamageTaken
+m_bTrackedRecord
 m_bTrackingTeamStats
 m_bTrailBias
 m_bTrailStarted
@@ -48265,6 +48266,7 @@ m_nBaseNodeIdx
 m_nBaseNumDashes
 m_nBaseSequenceFrame
 m_nBaseVertex
+m_nBashIndex
 m_nBashSource
 m_nBeamFXIndex
 m_nBeamFlags
@@ -49098,6 +49100,8 @@ m_nIgnoreStrikeIndex
 m_nIllusionFXIndex
 m_nIllusionManaCost
 m_nImbuedAbility
+m_nImpaleEndAttackRecord
+m_nImpaleStartAttackRecord
 m_nImportance
 m_nImpulse
 m_nImpulseType
