@@ -10,5 +10,6 @@ class CDOTA_Ability_SpiritBreaker_ChargeOfDarkness : public CDOTABaseAbility, pu
 	CUtlVector< CDOTA_Tree* > m_hTrackingProjectileTrees;
 	int32 nFXIndex;
 	int32 m_iCurProjectileIndex;
+	int32 m_nBashIndex;
 	Vector m_vChargeStartPos;
 };
